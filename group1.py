@@ -317,7 +317,6 @@ print(" \n \n")
 """ Test of f1 """
 p = 1873
 g = findnqr2(p)
-g = g
 k4 = group(g,p)
 e = (p-1)//3
 e = 1*e
