@@ -373,7 +373,7 @@ class group:
         t = [t1,t2]
         return(t)
 
-    " Exponentiates in the group """
+    """ Exponentiates in the group """
     def exp(self,e):
         t = self.exp4b2(e,self.a2,self.p)
         return(t)
