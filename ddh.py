@@ -1,6 +1,5 @@
 from group3 import *
 
-
 def ddh(k,x,y,z):
     g = k.g
     i2 = k.i2
@@ -37,7 +36,6 @@ def ddh(k,x,y,z):
         elif (s[i]==t2):
             t1 = (t1+1)%2
         else:
-            # print("\n \n error in ddh invalid parameters ")
             t1 = 1
             t = -1
             break
@@ -75,12 +73,6 @@ def ddh2(c,k,x,y,z):
     if (s==(c-s1)):
         t = True
     return(t)
-        
-        
-
-    
-
-
 
 
 """ Example 1"""
