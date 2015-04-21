@@ -217,10 +217,6 @@ int i;
 integer t;
 integer t1[220] = {0};
 integer t2[220] = {0};
-/*
-integer t1[m] = {0};
-integer t2[m] = {0};
-*/
 
 for (i=0;i<m2;i++)
 	{
@@ -1024,11 +1020,6 @@ int t;
 int t1,t2,t3,t4;
 
 unsigned int i;
-/*
-unsigned int d;
-
-d = d1+1;
-*/
 
 t1 = c1;
 t2 = c2;
@@ -1172,12 +1163,11 @@ unsigned int t1;
 }
 
 void equation44(int m2, integer cs[], integer sn[],
-					 integer cs1[], integer sn1[], integer cs2[], integer sn2[],
-					 STRING ptr2, integer b1[], integer p)
+		integer cs1[], integer sn1[], integer cs2[], integer sn2[],
+		STRING ptr2, integer b1[], integer p)
 {
 integer t1,t2;
 
-/* The following three lines do nothing but prevent a compile error */
 	t1 = cs2[0];
 	t1 = sn2[0];
 	t1 = 0;
@@ -1204,12 +1194,11 @@ integer t1,t2;
 
 
 void equation46a(int m2, integer cs[], integer sn[],
-					 integer cs1[], integer sn1[], integer cs2[], integer sn2[],
-					 STRING ptr2, integer b1[], integer p)
+		integer cs1[], integer sn1[], integer cs2[], integer sn2[],
+		STRING ptr2, integer b1[], integer p)
 {
 integer t1,t2;
 
-/* The following three lines do nothing but prevent a compile error */
 	t1 = cs2[0];
 	t1 = sn2[0];
 	t1 = 0;
@@ -1236,12 +1225,11 @@ integer t1,t2;
 }
 
 void equation46b(int m2, integer cs[], integer sn[],
-					 integer cs1[], integer sn1[], integer cs2[], integer sn2[],
-					 STRING ptr2, integer b1[], integer p)
+		integer cs1[], integer sn1[], integer cs2[], integer sn2[],
+		STRING ptr2, integer b1[], integer p)
 {
 integer t1,t2;
 
-/* The following three lines do nothing but prevent a compile error */
 	t1 = cs1[0];
 	t1 = sn1[0];
 	t1 = 0;
@@ -1264,12 +1252,11 @@ integer t1,t2;
 }
 
 void equation47n2(int m2, integer cs[], integer sn[],
-						integer cs1[], integer sn1[], integer cs2[], integer sn2[],
-						STRING ptr2, integer b1[], integer p)
+		  integer cs1[], integer sn1[], integer cs2[], integer sn2[],
+		  STRING ptr2, integer b1[], integer p)
 {
 integer t1,t2;
 
-/* The following three lines do nothing but prevent a compile error */
 	t1 = cs2[0];
 	t1 = sn2[0];
 	t1 = 0;
@@ -1313,12 +1300,11 @@ integer t1,t2;
 }
 
 void equation48a1(int m2, integer cs[], integer sn[],
-					  integer cs1[], integer sn1[], integer cs2[], integer sn2[],
-					  STRING ptr2, integer b1[], integer p)
+		  integer cs1[], integer sn1[], integer cs2[], integer sn2[],
+		  STRING ptr2, integer b1[], integer p)
 {
 integer t1,t2;
 
-/* The following three lines do nothing but prevent a compile error */
 	t1 = cs1[0];
 	t1 = sn1[0];
 	t1 = 0;
@@ -1357,12 +1343,10 @@ integer t1,t2;
 }
 
 void equation48b1(int m2, integer cs[], integer sn[],
-					  integer cs1[], integer sn1[], integer cs2[], integer sn2[],
-					  STRING ptr2, integer b1[], integer p)
+		  integer cs1[], integer sn1[], integer cs2[], integer sn2[],
+		  STRING ptr2, integer b1[], integer p)
 {
 integer t1,t2;
-
-/* The following three lines do nothing but prevent a compile error */
 
 	t1 = cs2[0];
 	t1 = sn2[0];
@@ -1399,15 +1383,11 @@ integer t1,t2;
 	mult50(m2,1,1,202,203,205,199,ptr2,b1,p);
 	mult50(m2,1,1,204,205,206,199,ptr2,b1,p);
 	set2d(130,206,ptr2);
-/*
-	set2d(129,175,ptr2);
-	set2d(130,176,ptr2);
-*/
 }
 
 void equation31a(int m2, integer a1[], integer cs[], integer sn[],
-					 integer cs1[], integer sn1[], integer cs2[], integer sn2[],
-					 STRING ptr2, integer b1[], integer p)
+		 integer cs1[], integer sn1[], integer cs2[], integer sn2[],
+		 STRING ptr2, integer b1[], integer p)
 {
 integer t1,t2;
 integer a2[2] = {0};
@@ -1460,14 +1440,13 @@ integer a3[2] = {0};
 
 
 void equation32a(int m2, integer a1[], integer cs[], integer sn[],
-					 integer cs1[], integer sn1[], integer cs2[], integer sn2[],
-					 STRING ptr2, integer b1[], integer p)
+		 integer cs1[], integer sn1[], integer cs2[], integer sn2[],
+		 STRING ptr2, integer b1[], integer p)
 {
 integer t1,t2;
 integer a2[2] = {0};
 integer a3[2] = {0};
 
-/* The following three lines do nothing but prevent a compile error */
 	t1 = cs2[0];
 	t1 = sn2[0];
 	t1 = 0;
@@ -1515,14 +1494,13 @@ integer a3[2] = {0};
 }
 
 void equation33a(int m2, integer a1[], integer cs[], integer sn[],
-					 integer cs1[], integer sn1[], integer cs2[], integer sn2[],
-					 STRING ptr2, integer b1[], integer p)
+		 integer cs1[], integer sn1[], integer cs2[], integer sn2[],
+		 STRING ptr2, integer b1[], integer p)
 {
 integer t1,t2;
 integer a2[2] = {0};
 integer a3[2] = {0};
 
-/* The following three lines do nothing but prevent a compile error */
 	t1 = cs2[0];
 	t1 = sn2[0];
 	t1 = 0;
@@ -1567,14 +1545,13 @@ integer a3[2] = {0};
 }
 
 void equation34a(int m2, integer a1[], integer cs[], integer sn[],
-					 integer cs1[], integer sn1[], integer cs2[], integer sn2[],
-					 STRING ptr2, integer b1[], integer p)
+		 integer cs1[], integer sn1[], integer cs2[], integer sn2[],
+		 STRING ptr2, integer b1[], integer p)
 {
 integer t1,t2;
 integer a2[2] = {0};
 integer a3[2] = {0};
 
-/* The following three lines do nothing but prevent a compile error */
 	t1 = cs1[0];
 	t1 = sn1[0];
 	t1 = 0;
@@ -1629,14 +1606,13 @@ integer a3[2] = {0};
 }
 
 void equation35a(int m2, integer a1[], integer cs[], integer sn[],
-					 integer cs1[], integer sn1[], integer cs2[], integer sn2[],
-					 STRING ptr2, integer b1[], integer p)
+		 integer cs1[], integer sn1[], integer cs2[], integer sn2[],
+		 STRING ptr2, integer b1[], integer p)
 {
 integer t1,t2;
 integer a2[2] = {0};
 integer a3[2] = {0};
 
-/* The following three lines do nothing but prevent a compile error */
 	t1 = cs1[0];
 	t1 = sn1[0];
 	t1 = 0;
@@ -1697,8 +1673,8 @@ integer a3[2] = {0};
 }
 
 void equation36a(int m2, integer a1[], integer cs[], integer sn[],
-					 integer cs1[], integer sn1[], integer cs2[], integer sn2[],
-					 STRING ptr2, integer b1[], integer p)
+		 integer cs1[], integer sn1[], integer cs2[], integer sn2[],
+		 STRING ptr2, integer b1[], integer p)
 {
 integer t1,t2;
 integer a2[2] = {0};
@@ -1808,7 +1784,7 @@ else
 }
 
 void lsolve(int m2, int r , int c, integer h11[], integer h12[],
-				STRING ptr2, integer p)
+	    STRING ptr2, integer p)
 {
 int i;
 integer t1,t2,t3,t4;
@@ -1836,9 +1812,7 @@ if (c>0)
 		t = (m2-1)-c;
 		t4 = *(ptr2[r] + t);
 		t2 = inverse2(t4,p);
-/*
-		printf("\n \n in lsolve t2 = %d",t2);
-*/
+		
 		t3 = (t1*t2)%p;
 	}
 t = (m2-1)-r;
@@ -2194,8 +2168,8 @@ return(t2);
 }
 
 void equation67a4(int l2, integer a2[],
-						integer hs1[], integer hs2[], integer h11[], integer h12[],
-						STRING ptr2, integer b2[], integer p)
+		  integer hs1[], integer hs2[], integer h11[], integer h12[],
+		  STRING ptr2, integer b2[], integer p)
 {
 unsigned int i,j;
 unsigned int t;
@@ -2528,7 +2502,7 @@ int a6[2] = {0};
 
 
 void equation63a(int l2, integer a2[], integer h11[], integer h12[],
-					  STRING ptr2, integer b2[], integer p)
+		 STRING ptr2, integer b2[], integer p)
 {
 unsigned int i,j;
 unsigned int t1;
