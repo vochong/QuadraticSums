@@ -38,33 +38,20 @@ void cmult (integer a1[], integer a2[], integer a3[], integer p);
 void equal2 (integer a1[], integer a2[]);
 void exp7(int e, integer a1[], integer a2[], integer p);
 void set2d(unsigned int r, unsigned int r1, STRING ptr2);
-void equal4 (int m2, int e1, int e2, STRING ptr2, integer v1[],
-             integer p);
-void addm4 (int m2, int e1, int e2, int e3, STRING ptr2, integer v1[],
-            integer p);
-void multm4 (int m2, integer c, int e1, int e2, STRING ptr2, integer v1[],
-             integer p);
+void equal4 (int m2, int e1, int e2, STRING ptr2, integer v1[], integer p);
+void addm4 (int m2, int e1, int e2, int e3, STRING ptr2, integer v1[], integer p);
+void multm4 (int m2, integer c, int e1, int e2, STRING ptr2, integer v1[], integer p);
 void mult4 (int m2, int e1, int e2, STRING ptr2, integer p);
-void add5 (int m2, int e1, int e2, int s1, int s2,
-           STRING ptr2, integer v1[], integer p);
-void add5a (int m2, int e1, int e2, int s1, int s2,
-            STRING ptr2, integer v1[], integer p);
-void add41 (int m2, int e, int s1, int s2, STRING ptr2, integer v1[],
-            integer p);
-void add41a (int m2, int e, int s1, int s2, STRING ptr2, integer v1[],
-             integer p);
-void add42 (int m2, int e, int s1, int s2, STRING ptr2, integer v1[],
-            integer p);
-void add42a (int m2, int e, int s1, int s2, STRING ptr2, integer v1[],
-             integer p);
-void add43 (int m2, int e, int s1, int s2, STRING ptr2, integer v1[],
-            integer p);
-void add43a (int m2, int e, int s1, int s2, STRING ptr2, integer v1[],
-             integer p);
-void add44 (int m2, int e, int s1, int s2, STRING ptr2, integer v1[],
-            integer p);
-void add44a (int m2, int e, int s1, int s2, STRING ptr2, integer v1[],
-             integer p);
+void add5 (int m2, int e1, int e2, int s1, int s2,STRING ptr2, integer v1[], integer p);
+void add5a (int m2, int e1, int e2, int s1, int s2,STRING ptr2, integer v1[], integer p);
+void add41 (int m2, int e, int s1, int s2, STRING ptr2, integer v1[], integer p);
+void add41a (int m2, int e, int s1, int s2, STRING ptr2, integer v1[], integer p);
+void add42 (int m2, int e, int s1, int s2, STRING ptr2, integer v1[], integer p);
+void add42a (int m2, int e, int s1, int s2, STRING ptr2, integer v1[], integer p);
+void add43 (int m2, int e, int s1, int s2, STRING ptr2, integer v1[], integer p);
+void add43a (int m2, int e, int s1, int s2, STRING ptr2, integer v1[], integer p);
+void add44 (int m2, int e, int s1, int s2, STRING ptr2, integer v1[], integer p);
+void add44a (int m2, int e, int s1, int s2, STRING ptr2, integer v1[], integer p);
 void det5 (int c1, int c2, int c3, int c4, int m2, int e, int s1, int s2,
            STRING ptr2, integer v1[], integer p);
 void set4a (int r, int c1, STRING ptr2);
@@ -409,8 +396,7 @@ for(i=0;i<d2;i++)
 	}
 }
 
-void equal4 (int m2, int e1, int e2, STRING ptr2, integer v1[],
-				integer p)
+void equal4 (int m2, int e1, int e2, STRING ptr2, integer v1[], integer p)
 {
 int i;
 integer t1;
@@ -423,8 +409,7 @@ for (i=0;i<m2;i++)
 v1[e2] = v1[e1]%p;
 }
 
-void addm4 (int m2, int e1, int e2, int e3, STRING ptr2, integer v1[],
-				integer p)
+void addm4 (int m2, int e1, int e2, int e3, STRING ptr2, integer v1[], integer p)
 {
 int i;
 integer t1;
@@ -439,8 +424,7 @@ for (i=0;i<m2;i++)
 v1[e3] = (v1[e1] + v1[e2])%p;
 }
 
-void multm4 (int m2, integer c, int e1, int e2, STRING ptr2, integer v1[],
-				 integer p)
+void multm4 (int m2, integer c, int e1, int e2, STRING ptr2, integer v1[], integer p)
 {
 int i;
 integer t1;
@@ -466,8 +450,7 @@ for (i=0;i<m2-1;i++)
 *(ptr2[e2]+0) = 0;
 }
 
-void add5 (int m2, int e1, int e2, int s1, int s2, STRING ptr2,
-			  integer v1[], integer p)
+void add5 (int m2, int e1, int e2, int s1, int s2, STRING ptr2, integer v1[], integer p)
 {
 mult4(m2,e2,s1,ptr2,p);
 multm4(m2,p-1,s1,s1,ptr2,v1,p);
@@ -480,8 +463,7 @@ equal4(m2,s1,e1,ptr2,v1,p);
 equal4(m2,s2,e2,ptr2,v1,p);
 }
 
-void add5a (int m2, int e1, int e2, int s1, int s2, STRING ptr2,
-			  integer v1[], integer p)
+void add5a (int m2, int e1, int e2, int s1, int s2, STRING ptr2, integer v1[], integer p)
 {
 mult4(m2,e2,s1,ptr2,p);
 addm4(m2,e1,s1,s1,ptr2,v1,p);
@@ -494,8 +476,7 @@ equal4(m2,s1,e1,ptr2,v1,p);
 equal4(m2,s2,e2,ptr2,v1,p);
 }
 
-void add41 (int m2, int e, int s1, int s2, STRING ptr2, integer v1[],
-				integer p)
+void add41 (int m2, int e, int s1, int s2, STRING ptr2, integer v1[], integer p)
 {
 add5(m2,e+1,e+3,s1,s2,ptr2,v1,p);
 add5(m2,e+2,e+4,s1,s2,ptr2,v1,p);
@@ -510,8 +491,7 @@ add5(m2,e+13,e+15,s1,s2,ptr2,v1,p);
 add5(m2,e+14,e+16,s1,s2,ptr2,v1,p);
 }
 
-void add41a (int m2, int e, int s1, int s2, STRING ptr2, integer v1[],
-				 integer p)
+void add41a (int m2, int e, int s1, int s2, STRING ptr2, integer v1[], integer p)
 {
 add5a(m2,e+1,e+3,s1,s2,ptr2,v1,p);
 add5a(m2,e+2,e+4,s1,s2,ptr2,v1,p);
@@ -526,8 +506,7 @@ add5a(m2,e+13,e+15,s1,s2,ptr2,v1,p);
 add5a(m2,e+14,e+16,s1,s2,ptr2,v1,p);
 }
 
-void add42 (int m2, int e, int s1, int s2, STRING ptr2, integer v1[],
-				integer p)
+void add42 (int m2, int e, int s1, int s2, STRING ptr2, integer v1[], integer p)
 {
 add5(m2,e+1,e+2,s1,s2,ptr2,v1,p);
 add5(m2,e+3,e+4,s1,s2,ptr2,v1,p);
@@ -542,8 +521,7 @@ add5(m2,e+13,e+14,s1,s2,ptr2,v1,p);
 add5(m2,e+15,e+16,s1,s2,ptr2,v1,p);
 }
 
-void add42a (int m2, int e, int s1, int s2, STRING ptr2, integer v1[],
-				 integer p)
+void add42a (int m2, int e, int s1, int s2, STRING ptr2, integer v1[], integer p)
 {
 add5a(m2,e+1,e+2,s1,s2,ptr2,v1,p);
 add5a(m2,e+3,e+4,s1,s2,ptr2,v1,p);
@@ -558,8 +536,7 @@ add5a(m2,e+13,e+14,s1,s2,ptr2,v1,p);
 add5a(m2,e+15,e+16,s1,s2,ptr2,v1,p);
 }
 
-void add43 (int m2, int e, int s1, int s2, STRING ptr2, integer v1[],
-				integer p)
+void add43 (int m2, int e, int s1, int s2, STRING ptr2, integer v1[], integer p)
 {
 add5(m2,e+1,e+5,s1,s2,ptr2,v1,p);
 add5(m2,e+2,e+6,s1,s2,ptr2,v1,p);
@@ -574,8 +551,7 @@ add5(m2,e+11,e+15,s1,s2,ptr2,v1,p);
 add5(m2,e+12,e+16,s1,s2,ptr2,v1,p);
 }
 
-void add43a (int m2, int e, int s1, int s2, STRING ptr2, integer v1[],
-				 integer p)
+void add43a (int m2, int e, int s1, int s2, STRING ptr2, integer v1[], integer p)
 {
 add5a(m2,e+1,e+5,s1,s2,ptr2,v1,p);
 add5a(m2,e+2,e+6,s1,s2,ptr2,v1,p);
@@ -590,8 +566,7 @@ add5a(m2,e+11,e+15,s1,s2,ptr2,v1,p);
 add5a(m2,e+12,e+16,s1,s2,ptr2,v1,p);
 }
 
-void add44 (int m2, int e, int s1, int s2, STRING ptr2, integer v1[],
-				integer p)
+void add44 (int m2, int e, int s1, int s2, STRING ptr2, integer v1[], integer p)
 {
 add5(m2,e+1,e+9,s1,s2,ptr2,v1,p);
 add5(m2,e+2,e+10,s1,s2,ptr2,v1,p);
@@ -606,8 +581,7 @@ add5(m2,e+7,e+15,s1,s2,ptr2,v1,p);
 add5(m2,e+8,e+16,s1,s2,ptr2,v1,p);
 }
 
-void add44a (int m2, int e, int s1, int s2, STRING ptr2, integer v1[],
-				 integer p)
+void add44a (int m2, int e, int s1, int s2, STRING ptr2, integer v1[], integer p)
 {
 add5a(m2,e+1,e+9,s1,s2,ptr2,v1,p);
 add5a(m2,e+2,e+10,s1,s2,ptr2,v1,p);
@@ -623,7 +597,7 @@ add5a(m2,e+8,e+16,s1,s2,ptr2,v1,p);
 }
 
 void det5 (int c1, int c2, int c3, int c4, int m2, int e, int s1, int s2,
-			  STRING ptr2, integer v1[], integer p)
+	   STRING ptr2, integer v1[], integer p)
 {
 int t1,t2,t3,t4;
 
