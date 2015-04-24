@@ -127,26 +127,22 @@ void equation61(integer ws1[], STRING ptr2, integer b2[]);
 void equation64(integer ws1[], STRING ptr2, integer b2[], integer p);
 integer fn66a(unsigned int c, integer ws1[], integer p);
 integer fn66b(unsigned int c, integer ws1[], integer p);
-void equation66(int l2, integer ws1[],
-                integer ws2[], integer cs[], integer sn[], integer h11[],
-                integer h12[], STRING ptr2, integer b2[], integer p);
+void equation66(int l2, integer ws1[], integer ws2[], integer cs[], integer sn[], 
+		integer h11[], integer h12[], STRING ptr2, integer b2[], integer p);
 integer fn67a(unsigned int c, integer hs1[], integer p);
 integer fn67b(unsigned int c, integer hs1[], integer p);
 integer fn67c(unsigned int i, integer c8[], integer p);
 integer fn67e1(integer c8[], integer p);
 integer fn67e2(integer c8[], integer p);
-void equation67a4(int l2, integer a2[],
-                  integer hs1[], integer hs2[], integer h11[], integer h12[],
-                  STRING ptr2, integer b2[], integer p);
+void equation67a4(int l2, integer a2[], integer hs1[], integer hs2[], integer h11[], 
+		  integer h12[], STRING ptr2, integer b2[], integer p);
 void equation63a(int l2, integer a2[], integer h11[], integer h12[],
                  STRING ptr2, integer b2[], integer p);
 void equation63b(int l2, integer a2[], integer a10[], integer a11[],
-                 integer h11[], integer h12[],
-                 STRING ptr2, integer b2[], integer p);
+                 integer h11[], integer h12[], STRING ptr2, integer b2[], integer p);
 void fn68(integer c8[], integer h11[], integer h12[], integer p);
 void equation68(int l2, integer a2[], integer a10[], integer a11[],
-                integer hs2[], integer h11[], integer h12[],
-                integer b2[], integer p);
+                integer hs2[], integer h11[], integer h12[], integer b2[], integer p);
 void display2a2(int r1, STRING ptr2);
 void displayhs2(integer hs1[]);
 void equation62(integer b2[]);
@@ -1913,9 +1909,8 @@ integer t1,t2;
 	return(t2);
 }
 
-void equation66(int l2, integer ws1[],
-					 integer ws2[], integer cs[], integer sn[], integer h11[],
-					 integer h12[], STRING ptr2, integer b2[], integer p)
+void equation66(int l2, integer ws1[], integer ws2[], integer cs[], integer sn[], 
+		integer h11[], integer h12[], STRING ptr2, integer b2[], integer p)
 {
 unsigned int t;
 /*
@@ -2141,9 +2136,8 @@ t2 = (t1+t3)%p;
 return(t2);
 }
 
-void equation67a4(int l2, integer a2[],
-		  integer hs1[], integer hs2[], integer h11[], integer h12[],
-		  STRING ptr2, integer b2[], integer p)
+void equation67a4(int l2, integer a2[], integer hs1[], integer hs2[], integer h11[], 
+		  integer h12[], STRING ptr2, integer b2[], integer p)
 {
 unsigned int i,j;
 unsigned int t;
@@ -2547,8 +2541,7 @@ integer a9[2] = {0};
 }
 
 void equation63b(int l2, integer a2[], integer a10[], integer a11[],
-                 integer h11[], integer h12[],
-                 STRING ptr2, integer b2[], integer p)
+                 integer h11[], integer h12[], STRING ptr2, integer b2[], integer p)
 {
 unsigned int i,j;
 unsigned int t1;
@@ -2768,8 +2761,7 @@ for(i=0;i<3;i++)
 
 
 void equation68(int l2, integer a2[], integer a10[], integer a11[],
-                integer hs2[], integer h11[], integer h12[],
-                integer b2[], integer p)
+                integer hs2[], integer h11[], integer h12[], integer b2[], integer p)
 {
 unsigned int i;
 /*
