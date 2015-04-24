@@ -120,8 +120,7 @@ void displayhs(integer hs1[]);
 void displayws(integer ws1[]);
 void displayh11(integer h11[]);
 integer inverse2(integer a, integer b);
-void lsolve(int m2, int r , int c, integer h11[], integer h12[],
-            STRING ptr2, integer p);
+void lsolve(int m2, int r , int c, integer h11[], integer h12[], STRING ptr2, integer p);
 void l2solve(int m2, integer h11[], integer h12[], STRING ptr2, integer p);
 void equation61(integer ws1[], STRING ptr2, integer b2[]);
 void equation64(integer ws1[], STRING ptr2, integer b2[], integer p);
@@ -1753,8 +1752,7 @@ else
 	}
 }
 
-void lsolve(int m2, int r , int c, integer h11[], integer h12[],
-	    STRING ptr2, integer p)
+void lsolve(int m2, int r , int c, integer h11[], integer h12[], STRING ptr2, integer p)
 {
 int i;
 integer t1,t2,t3,t4;
