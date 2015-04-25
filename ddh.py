@@ -1,4 +1,4 @@
-from group3 import *
+from group2 import *
 
 def ddh(k,x,y,z):
     g = k.g
