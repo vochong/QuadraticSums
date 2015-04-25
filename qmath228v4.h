@@ -459,13 +459,10 @@ void add41 (int m2, int e, int s1, int s2, STRING ptr2, integer v1[], integer p)
 {
 add5(m2,e+1,e+3,s1,s2,ptr2,v1,p);
 add5(m2,e+2,e+4,s1,s2,ptr2,v1,p);
-
 add5(m2,e+5,e+7,s1,s2,ptr2,v1,p);
 add5(m2,e+6,e+8,s1,s2,ptr2,v1,p);
-
 add5(m2,e+9,e+11,s1,s2,ptr2,v1,p);
 add5(m2,e+10,e+12,s1,s2,ptr2,v1,p);
-
 add5(m2,e+13,e+15,s1,s2,ptr2,v1,p);
 add5(m2,e+14,e+16,s1,s2,ptr2,v1,p);
 }
@@ -752,7 +749,6 @@ int i,j;
 int a,b;
 integer t;
 
-
 t = (p-s)%p;
 for(i=0;i<4;i++)
 	{
@@ -832,28 +828,20 @@ int a6[2] = {0};
 
 exp7(d/2,a2,a3,p);
 exp7(d/2,a3,a5,p);
-
 exp7(d,a2,a3,p);
 exp7(d,a3,a6,p);
-
 a6[1] = p-a6[1];
-
 cs1[0] = 1;
 sn1[0] = 0;
-
 cmult(a5,a6,a3,p);
 cs1[1] = a3[0];
 sn1[1] = a3[1];
-
 cs1[2] = a6[0];
 sn1[2] = a6[1];
-
 cs1[3] = a3[0];
 sn1[3] = a3[1];
-
 cs1[4] = 1;
 sn1[4] = 0;
-
 t1 = d/2;
 for(i=5;i<10;i++)
 	{
@@ -877,12 +865,9 @@ int a6[2] = {0};
 
 exp7(d/2,a2,a3,p);
 exp7(d/2,a3,a5,p);
-
 exp7(d,a2,a3,p);
 exp7(d,a3,a6,p);
-
 a6[1] = p-a6[1];
-
 cs2[0] = 1;
 sn2[0] = 0;
 t1 = d/2;
@@ -921,7 +906,6 @@ void swtc2(int c1, int c2, int c, int s1, int s2, STRING ptr2)
 unsigned int i,j;
 
 for(i=0;i<144;i++)
-
 {
 	for(j=0;j<c;j++)
 		{
@@ -972,45 +956,35 @@ if (c4<0)
 	{
 	t4 = -1*c4;
 	}
-
 t = t1+t2+t3+t4;
 if (t==8)
 	{
 	det5(c1,c2,c3,c4,m2,e,s1,s2,ptr2,v1,p);
 	}
-
 if (t==6)
 	{
 	det5(c1,c2,c3,c4,m2,e,s1,s2,ptr2,v1,p);
 	det5(c1,c2,c3,c4,m2,e1,s1,s2,ptr2,v1,p);
-
 	mult51(m2,e1,s1,ptr2,v1,p);
 	mult51(m2,e1,s1,ptr2,v1,p);
-
 	for(i=0;i<16;i++)
 		{
 		addm4(m2,e+i+1,e1+i+1,e+i+1,ptr2,v1,p);
 		}
 	}
-
 if (t==4)
 	{
 	det5(c1,c2,c3,c4,m2,e,s1,s2,ptr2,v1,p);
 	det5(c1,c2,c3,c4,m2,e1,s1,s2,ptr2,v1,p);
-
 	mult51(m2,e1,s1,ptr2,v1,p);
 	mult51(m2,e1,s1,ptr2,v1,p);
-
 	for(i=0;i<16;i++)
 		{
 		addm4(m2,e+i+1,e1+i+1,e+i+1,ptr2,v1,p);
 		}
-
 	mult8a(m2,1,0,e,e1,s1,s2,ptr2,v1,p);
-
 	mult51(m2,e1,s1,ptr2,v1,p);
 	mult51(m2,e1,s1,ptr2,v1,p);
-
 	for(i=0;i<16;i++)
 		{
 		addm4(m2,e+i+1,e1+i+1,e+i+1,ptr2,v1,p);
@@ -1040,7 +1014,6 @@ void equation42(STRING ptr2, integer p)
 	set4b (36,8,5,6,ptr2,p);
 	set4b (45,8,9,10,ptr2,p);
 	set4b (54,8,13,14,ptr2,p);
-
 	set4b (63,8,4,8,ptr2,p);
 	set4b (72,8,5,9,ptr2,p);
 	set4b (81,8,7,11,ptr2,p);
@@ -1140,7 +1113,6 @@ integer t1,t2;
 	set2d(112,171,ptr2);
 	set2d(113,172,ptr2);
 	set2d(114,174,ptr2);
-
 	set2d(115,175,ptr2);
 }
 
@@ -1204,7 +1176,6 @@ integer t1,t2;
 
 	set2d(123,171,ptr2);
 	set2d(124,172,ptr2);
-
 	set2d(125,175,ptr2);
 	set2d(126,176,ptr2);
 }
@@ -1332,7 +1303,6 @@ integer a3[2] = {0};
 
 	mult50(m2,1,p-1,171,201,198,199,ptr2,b1,p);
 	set2d(133,198,ptr2);
-
 	mult50(m2,1,p-1,172,205,198,199,ptr2,b1,p);
 	set2d(134,198,ptr2);
 }
@@ -1381,7 +1351,6 @@ integer a3[2] = {0};
 
 	mult50(m2,1,p-1,171,201,198,199,ptr2,b1,p);
 	set2d(135,198,ptr2);
-
 	mult50(m2,1,p-1,172,209,198,199,ptr2,b1,p);
 	set2d(136,198,ptr2);
 }
@@ -1427,7 +1396,6 @@ integer a3[2] = {0};
 
 	mult50(m2,1,p-1,171,201,198,199,ptr2,b1,p);
 	set2d(137,198,ptr2);
-
 	mult50(m2,1,p-1,172,209,198,199,ptr2,b1,p);
 	set2d(138,198,ptr2);
 }
@@ -1483,7 +1451,6 @@ integer a3[2] = {0};
 
 	mult50(m2,1,p-1,171,151,198,199,ptr2,b1,p);
 	set2d(139,198,ptr2);
-
 	mult50(m2,1,p-1,172,159,198,199,ptr2,b1,p);
 	set2d(140,198,ptr2);
 }
@@ -1542,10 +1509,8 @@ integer a3[2] = {0};
 
 	mult50(m2,1,p-1,171,201,198,199,ptr2,b1,p);
 	set2d(141,198,ptr2);
-
 	mult50(m2,1,p-1,176,207,198,199,ptr2,b1,p);
 	set2d(142,198,ptr2);
-
 	mult50(m2,1,p-1,186,216,198,199,ptr2,b1,p);
 	set2d(117,198,ptr2);
 }
@@ -1591,7 +1556,6 @@ integer a3[2] = {0};
 
 	mult50(m2,1,p-1,171,201,198,199,ptr2,b1,p);
 	set2d(143,198,ptr2);
-
 	mult50(m2,1,p-1,186,216,198,199,ptr2,b1,p);
 	set2d(118,198,ptr2);
 }
@@ -2097,7 +2061,6 @@ int a6[2] = {0};
 	set7(t+4,2,0,ptr2);
 	set7(t+4,3,p-4,ptr2);
 	set7(t+4,4,0,ptr2);
-
 /* 1 */
 	for(i=0;i<9;i++)
 		{
@@ -2168,7 +2131,6 @@ int a6[2] = {0};
 	ns1 = t6;
 
 	ns2 = (t3+t5)%p;
-
 /* 2 */
 	for(i=0;i<9;i++)
 		{
@@ -2376,7 +2338,6 @@ int a6[2] = {0};
 	b2[122] = h11[1];
 }
 
-
 void equation63a(int l2, integer a2[], integer h11[], integer h12[],
                  STRING ptr2, integer b2[], integer p)
 {
@@ -2429,17 +2390,13 @@ integer a9[2] = {0};
 			*(ptr2[150+i]+j) = (t2*t3)%p;
 			}
 		}
-
 	solve2m(9,&ptr2[150],h12,p);
-
 	t1 = det(9,&ptr2[150]);
 	if (t1<9)
 		{
 		printf("\n \n error in equation63a");
 		}
-
 	l2solve(9,h11,h12,&ptr2[150],p);
-
 	b2[90] = h11[0];
 	b2[91] = h11[1];
 	b2[92] = h11[2];
@@ -2490,24 +2447,19 @@ integer a22[2];
 		{
 		exp7(i+1,a8,a5,p);
 		exp7(i+1,a9,a6,p);
-
 		cmult(a5,a20,a3,p);
 		cmult(a6,a22,a4,p);
-
-
 		a6[0] = (a4[0] + (p-1))%p;
 		a6[1] = a4[1];
 		a7[0] = (a3[0] + (p-1))%p;
 		a7[1] = a3[1];
 		exp7(p*p-2,a7,a5,p);
 		cmult(a5,a6,a7,p);
-
 		if((a3[0]==1) && (a3[1]==0))
 			{
 			a7[0] = (l2+1)%p;
 			a7[1] = 0;
 			}
-
 		h12[2*i+1] = a7[0];
 		h12[2*i+2] = a7[1];
 		}
@@ -2518,27 +2470,22 @@ integer a22[2];
 		{
 		exp7(i+1,a8,a5,p);
 		exp7(i+1,a9,a6,p);
-
 		cmult(a5,a20,a3,p);
 		cmult(a6,a22,a4,p);
-
 		a6[0] = (a4[0] + (p-1))%p;
 		a6[1] = a4[1];
 		a7[0] = (a3[0] + (p-1))%p;
 		a7[1] = a3[1];
 		exp7(p*p-2,a7,a5,p);
 		cmult(a5,a6,a7,p);
-
 		if((a3[0]==1) && (a3[1]==0))
 			{
 			a7[0] = (l2+1)%p;
 			a7[1] = 0;
 			}
-
 		h12[2*i+21] = a7[0];
 		h12[2*i+22] = a7[1];
 		}
-
 	t6 = (p+1)/2;
 	h11[0] = h12[0];
 	h11[20] = h12[20];
@@ -2583,10 +2530,8 @@ integer a22[2];
 		{
 		printf("\n \n error in equation63b");
 		}
-
 	setzero2(40,h12);
 	l2solve(9,h12,h11,&ptr2[150],p);
-
 /* 2 */
 	for(i=0;i<9;i++)
 		{
@@ -2605,9 +2550,7 @@ integer a22[2];
 		}
 
 	solve2m(9,&ptr2[150],&h11[20],p);
-
 	t1 = det(9,&ptr2[150]);
-
 	l2solve(9,&h12[20],&h11[20],&ptr2[150],p);
 
 	a4[0] = a11[0];
