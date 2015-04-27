@@ -120,7 +120,7 @@ class group:
         return(a2)
 
     def series_d(self,c1,c2,a2,d,d1,p):
-        h11 = [0,0,0,0]
+        h11 = init2(4)
         for i in range(c1,c2+1):
             a3 = exp2a(i,a2,p)
             a4 = exp2a(i,a3,p)
@@ -141,7 +141,7 @@ class group:
         return(h11)
 
     def series_d1(self,c1,c2,s,a2,d,d1,p):
-        h11 = [0,0,0,0]
+        h11 = init2(4)
         for i in range(c1,c2+1,s):
             a3 = exp2a(i,a2,p)
             a4 = exp2a(i,a3,p)
@@ -162,7 +162,7 @@ class group:
         return(h11)
 
     def series_d3(self,l2,a2,d,d1,p):
-        h11 = [0,0,0,0]
+        h11 = init2(4)
         for i in range(0,l2+1):
             a3 = exp2a(i,a2,p)
             a4 = exp2a(i,a3,p)
