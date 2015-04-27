@@ -98,7 +98,7 @@ class group:
         t = exp1((p-1)//2,self.g,p)        
         self.qnr = True
         if (t==1):
-            self.qnr == False
+            self.qnr = False
             
         if (t==(p-1)):
             i2 = exp1((p-1)//4,self.g,p)
