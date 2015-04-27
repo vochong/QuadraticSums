@@ -49,7 +49,7 @@ def is_prime(p):
 
 """ Calculates quadratic sums in GF(p) in exponential time """
 def series(c1,c2,a2,d,d1,p):
-    h11 = [0,0,0,0]
+    h11 = init2(4)
     for i in range(c1,c2+1):
         a3 = exp2a(i,a2,p)
         a4 = exp2a(i,a3,p)
@@ -217,7 +217,7 @@ class group:
         t = exp1((p-1)//2,g,p)        
         self.quadres = False
         if (t==1):
-            self.quadres == True
+            self.quadres = True
             
         if (t==(p-1)):
             i2 = exp1((p-1)//4,g,p)
