@@ -289,7 +289,6 @@ class group:
         c = init2(9)
         s = init2(9)
         a = e1[0]
-        # b = init2(9)
         for i in range(9):
             t1 = (a[0*9+i]+a[15*9+i])%p
             t2 = (a[3*9+i]+a[12*9+i])%p
@@ -311,7 +310,6 @@ class group:
         c = init2(9)
         s = init2(9)
         a = e1[0]
-        # b = init2(9)
         for i in range(9):
             t1 = (a[0*9+i]+a[12*9+i])%p
             t2 = (a[3*9+i]+a[15*9+i])%p
@@ -327,7 +325,6 @@ class group:
         c = init2(9)
         s = init2(9)
         a = e1[0]
-        # b = init2(9)
         for i in range(9):
             t1 = (a[0*9+i]+a[3*9+i])%p
             t2 = (a[12*9+i]+a[15*9+i])%p
