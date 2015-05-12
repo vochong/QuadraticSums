@@ -407,7 +407,7 @@ class group:
         t = self.series_d3(l2,self.a2,d,d1,self.p)
         return(t)
 
-    """ Exponiates to calculate the nth group element and
+    """ Exponentiates to calculate the nth group element and
     then displays it """
     def display(self,n):
         t = self.exp4b2(n,self.a2,self.p)
