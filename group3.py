@@ -1014,7 +1014,7 @@ def fn61(c1,d1,t1,d2,a2,h11,p):
     return(h15)
     
     
-""" This prints the complex nth roots of unity in GF(p) for p = 1 (mod 4)
+""" This prints the complex nth roots of unity in GF(p) where
 k is defined as k = group(g,p) for some modulus p where p = 1 (mod 4) and
 where p = 1 (mod n) and where g generates a subgroup whose order is divisible by n
 assuming that g mod p does not equal 0,1 or -1 mod p.
