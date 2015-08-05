@@ -124,7 +124,6 @@ class group:
                           "series3","series20","display","display2","display4")
                         
 
-
     def list(self,n):
         if (n<0 or n>3):
             n = 3
@@ -514,7 +513,6 @@ class group:
         display144h(e1[0])
         print()
         display27(e1[1])
-
 
 
 class group2:
@@ -938,7 +936,6 @@ def ddh2(c,k,x,y,z):
 
 
 
-
 """ If h1 = series(c1,c2,a2,0,2,p) and h2 = series(t1,t2,a2,0,2,p) this function
 calculates a3 where a3[0] = (h2[0]-h1[0]) (mod p) and a3[1] = (h2[1]-h1[1]) (mod p)
 If abs(t1-c1) and abs(t2-c2) are reasonably small numbers then this runs in polynomial time
@@ -969,7 +966,6 @@ def fn60(c1,c2,t1,t2,a2,p):
     a3[0] = (a3[0]+a4[0])%p
     a3[1] = (a3[1]+a4[1])%p    
     return(a3)
-
 
 
 """ If h1 = series20(c1,c2,a2,2,p) and h2 = series20(t1,t2,a2,2,p) this function
@@ -1039,7 +1035,6 @@ def fn61(c1,d1,t1,d2,a2,h11,p):
     a6[0] = (a5[0]+a3[0])%p
     a6[1] = (a5[1]+a3[1])%p
 
-
     # 2
     c = (h11[0] + h11[3])%p
     s = (h11[1] + (p-h11[2]))%p
@@ -1081,7 +1076,6 @@ def fn61(c1,d1,t1,d2,a2,h11,p):
 
     # print("\n \n in fn61 h15 = ",h15)
 
-
     # h14 = series(0,t1,a2,d2,2,p)
     # print("\n \n in fn61 h14 = ",h14)
     return(h15)
@@ -1103,8 +1097,6 @@ def fn1(k,n):
             a4 = exp2a(i,a3,p)
             g = (a4[0]+k.i2*a4[1])%p          
             print(i,a4,g,sep="    ")
-
-
 
 
 """ Finds a prime p such that p = 1 (mod c) and p > c*m
