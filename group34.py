@@ -1,7 +1,6 @@
 from math104 import *
 from modsqrt2 import sqrt1 
 
-
 c80 = ((1,4,6,4,1),
        (1,2,0,-2,-1),
        (1,-4,-10,-4,1),
@@ -265,7 +264,6 @@ class group:
                 print("   o = [{0} , {1}]".format(c7,c8))
         return(k2)
 
-        
     def calc23(self,a2,flag4,d1,q,p):
         k2 = init2(6)
         t1 = q%3
@@ -530,7 +528,6 @@ class group:
             h1[3] = (h1[3]+a4[1])%p
         return(h1)
 
-
     def series_d20(self,c1,c2,a2,d1,p):
         a5 = [0,0]
         for i in range(c1,c2+1):
@@ -542,7 +539,6 @@ class group:
             a5[0] = (a5[0]+a3[0])%p
             a5[1] = (a5[1]+a3[1])%p       
         return(a5)
-
 
     """ Shows the relationship between the the 144 tuple of the
     group element e1 which is e1[0] and quadratic sums in GF(p) """
@@ -767,7 +763,6 @@ class group:
         t = [t1,t2]
         display4(t)
 
-
     """ Calculates quadratic sums in GF(p) in exponential time """
     def series(self,c1,c2,d,d1):
         t = self.series_d(c1,c2,self.a2,d,d1,self.p)
@@ -818,9 +813,7 @@ class group:
         display144h(e1[0])
         print()
         display27(e1[1])
-        
-        
-        
+       
         
 class group2:
 
@@ -1175,7 +1168,6 @@ class group2:
                 s[k][i] = (2*t1)%p
         return(c[0],s[0],c[1],s[1])
     
-
     def exp(self,e):
         t = exp5(e,self.a2,self.a3,self.p)
         return(t)
@@ -1410,7 +1402,6 @@ def fn61(c1,d1,t1,d2,a2,h11,p):
 
     a6[0] = (a5[0]+a3[0])%p
     a6[1] = (a5[1]+a3[1])%p
-
 
     # 2
     c = (h11[0] + h11[3])%p
