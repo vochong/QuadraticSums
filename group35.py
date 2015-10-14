@@ -1,7 +1,6 @@
 from math104 import *
 from modsqrt2 import sqrt1 
 
-
 """ Display an element of the group """
 def display4(e1):
     display144h(e1[0])
@@ -42,7 +41,6 @@ def multcnvl2(a,b,p):
         s1 = (a[i]*b[i])%p
         s = (s+s1)%p
     return(s)
-
 
 """ Defines the group and a function for exponentiating in that group
 Also contains display function which displays a group element and
@@ -101,7 +99,6 @@ class group:
         "series_d","series_d1","series_d3","series_d20","hs20","hs21","hs",
         "ws","f1","f20","f21","f25","calc6","exp4b2","exp","h20","series",
         "series1","series3","series20","display","display2","display4")
-                
                         
     def functions(self,n):
         if (n<0 or n>3):
@@ -1450,7 +1447,6 @@ def fn61(c1,d1,t1,d2,a2,h11,p):
 
     a6[0] = (a5[0]+a3[0])%p
     a6[1] = (a5[1]+a3[1])%p
-
 
     # 2
     c = (h11[0] + h11[3])%p
