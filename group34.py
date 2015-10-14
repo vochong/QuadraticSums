@@ -132,7 +132,6 @@ class group:
         print("p =",k.p,"   g =",k.g,"   i2 =",k.i2,end="")
         print("   a2 =",k.a2,"   qnr =",k.qnr)
 
-    
     def find2(self,g,p):
         a = [2,3,5,7,11,13,17,19,23,29]
         t4 = 0
@@ -813,7 +812,6 @@ class group:
         display144h(e1[0])
         print()
         display27(e1[1])
-       
         
 class group2:
 
