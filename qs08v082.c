@@ -429,12 +429,12 @@ int main(void)
     s4 = 2;
 
     calc20d(a3,h15,s4,(s1-1)/(s4),s1);
-	printf("\n \n test of calc23d ");
-	flag4 = 1;
-	calc23d(a3,flag4,k2,2,(s1-1)/2,s1);
+    printf("\n \n test of calc23d ");
+    flag4 = 1;
+    calc23d(a3,flag4,k2,2,(s1-1)/2,s1);
 
-	printf("\n \n test of calc20 (s2^9)");
-	s3 = exp1(9,s2,s1);
+    printf("\n \n test of calc20 (s2^9)");
+    s3 = exp1(9,s2,s1);
     i3 = sqrt1(s1-1,s1);
     i3 = exp1((s1-1)/4,s2,s1);
     calc2(s3,i3,a3,s1);
@@ -454,15 +454,15 @@ int main(void)
 
 
     printf("\n \n test of fn60");
-	fn60(5,29,7,34,a2,a3,p);
-	series(5,29,a2,0,h11,2,p);
-	series(7,34,a2,0,h12,2,p);
-	printf(" \n h11 = ");
-	displayh(4,h11);
-	printf(" \n h12 = ");
-	displayh(4,h12);
-	printf(" \n a3 = ");
-	displayh(2,a3);
+    fn60(5,29,7,34,a2,a3,p);
+    series(5,29,a2,0,h11,2,p);
+    series(7,34,a2,0,h12,2,p);
+    printf(" \n h11 = ");
+    displayh(4,h11);
+    printf(" \n h12 = ");
+    displayh(4,h12);
+    printf(" \n a3 = ");
+    displayh(2,a3);
 
 
     printf("\n \n =========================== test of calc12");
@@ -558,9 +558,9 @@ int main(void)
 	i2 = sqrt1(p-1,p);
 	s2 = exp1((p-1)/2,g,p);
 	if (s2==(p-1))
-        {
-        i2 = exp1((p-1)/4,g,p);
-        }
+        	{
+        	i2 = exp1((p-1)/4,g,p);
+        	}
 	i2 = (p+i2)%p;
 	printf("\n \n from sqrt1 i2 = %d",i2);
     calc2(g,i2,a2,p);
@@ -570,10 +570,10 @@ int main(void)
   	printf("\n \n Enter a value for s1 ");
 	scanf("%d",&s1);
 	if (s1<1)
-        {
-        k = 50;
-        s1 = 1;
-        }
+        	{
+        	k = 50;
+        	s1 = 1;
+        	}
 
 
 
@@ -886,10 +886,10 @@ int main(void)
     printf("\n \n \n \n");
 **/
 
-	calc19(m2,1,e,4,e+e2,a2,h11,h12,ptr2,str1,hs1,hs4,p);
+    calc19(m2,1,e,4,e+e2,a2,h11,h12,ptr2,str1,hs1,hs4,p);
     printf("\n \n \n \n");
 
-	calc19(m2,1,e,8,e+e2,a2,h11,h12,ptr2,str1,hs1,hs2,p);
+    calc19(m2,1,e,8,e+e2,a2,h11,h12,ptr2,str1,hs1,hs2,p);
     printf("\n \n \n \n");
 
 
