@@ -226,7 +226,7 @@ int main(void)
 	integer hs1[144] = {0};
 	integer hs2[144] = {0};
 	integer hs3[144] = {0};
-    integer hs4[144] = {0};
+    	integer hs4[144] = {0};
 
 	integer ws1[27] = {0};
 	integer ws2[27] = {0};
@@ -256,22 +256,22 @@ int main(void)
 	integer s5;
 
 	integer p1[17] = {397,433,577,937,1009,
-                     1153,1297,1657,1801,1873,
-                     2017,2089,2161,2377,541,
-                     613,2521};
+                     	  1153,1297,1657,1801,1873,
+                     	  2017,2089,2161,2377,541,
+                     	  613,2521};
 	integer p2;
 
 	integer k1[16] = {179,674,154,366,
-                      380,528,1162,624};
+                      	 380,528,1162,624};
 	integer k2[20] = {0};
 	integer k3[16] = {0};
 
 	integer k4[16] = {1641,809,512,1493,1096,948,0,0,
-                      545,1398,1709,24,1133,450,0,0};
+                      	  545,1398,1709,24,1133,450,0,0};
 
 
 
-	m2 = m;
+    m2 = m;
 
     p = 3169;
 
@@ -371,7 +371,7 @@ int main(void)
 
 
     printf("\n \n test of calc20d ");
-	calc20d(a2,h15,4,37,149);
+    calc20d(a2,h15,4,37,149);
 
     printf("\n \n test of calc21d(1) ");
     s1 = 149;
@@ -380,18 +380,17 @@ int main(void)
     s2 = exp1((s1-1)/4,11,s1);
     printf("   exp = %d   g = 11",s2);
     calc2(11,i3,a3,s1);
-	calc21d(a3,h15,1,s1-1,s1);
+    calc21d(a3,h15,1,s1-1,s1);
 
     printf("\n \n a3 = ");
     displayh(2,a3);
     printf("  i2 = %d",i3);
-	series(1,12,a3,0,h11,1,s1);
-	printf("\n \n from series h11 = ");
-	displayh(4,h11);
+    series(1,12,a3,0,h11,1,s1);
+    printf("\n \n from series h11 = ");
+    displayh(4,h11);
 
-	printf("\n \n test of calc21d(2) ");
-	s1 = 281;
-	s1 = 421;
+    printf("\n \n test of calc21d(2) ");
+     	s1 = 421;
 	i3 = sqrt1(s1-1,s1);
 	i3 = (s1-i3)%s1;
     printf("   i3 = %d",i3);
