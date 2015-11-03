@@ -345,15 +345,15 @@ int main(void)
 
     calc2(g,i2,a2,p);
     printf("\n \n from calc2 a2 = ");
-	displayh(2,a2);
+    displayh(2,a2);
 
 
 
 
 
-	printf("\n \n");
-	q = (p-1)/4;
-	calc20d(a2,h15,4,q,p);
+    printf("\n \n");
+    q = (p-1)/4;
+     calc20d(a2,h15,4,q,p);
 
     s = find2(5,313);
     printf("\n \n find2 = %d",s);
@@ -390,29 +390,22 @@ int main(void)
     displayh(4,h11);
 
     printf("\n \n test of calc21d(2) ");
-     	s1 = 421;
-	i3 = sqrt1(s1-1,s1);
-	i3 = (s1-i3)%s1;
+    s1 = 421;
+    i3 = sqrt1(s1-1,s1);
+    i3 = (s1-i3)%s1;
     printf("   i3 = %d",i3);
     s2 = exp1((s1-1)/4,3,s1);
     printf("   exp = %d   g = 3",s2);
     calc2(4,i3,a3,s1);
-	calc21d(a3,h15,1,(s1-1)/2,s1);
+    calc21d(a3,h15,1,(s1-1)/2,s1);
 
-	printf("\n \n test of calc21d(3) ");
-	s1 = 593;
-	s1 = 937;
-	s1 = 2113;
-	s1 = 4177;
-	s1 = 461;
-	s1 = 3313;
-	s1 = p;
-	i3 = sqrt1(s1-1,s1);
+    printf("\n \n test of calc21d(3) ");
+    s1 = p;
+    i3 = sqrt1(s1-1,s1);
 
-
-	s2 = find3(s1);
-	i3 = exp1((s1-1)/4,s2,s1);
-	printf("   g = %d",s2);
+    s2 = find3(s1);
+    i3 = exp1((s1-1)/4,s2,s1);
+    printf("   g = %d",s2);
     printf("   i3 = %d",i3);
     s3 = exp1((s1-1)/4,s2,s1);
     printf("   exp = %d",s3);
@@ -420,7 +413,7 @@ int main(void)
 
     s4 = 2;
 
-	calc21d(a3,h15,s4,(s1-1)/s4,s1);
+    calc21d(a3,h15,s4,(s1-1)/s4,s1);
 
 
     printf("\n \n test of calc20d ");
@@ -428,8 +421,8 @@ int main(void)
     s1 = 1201;
     s1 = p;
     s2 = find3(s1);
-	i3 = sqrt1(s1-1,s1);
-	i3 = exp1((s1-1)/4,s2,s1);
+    i3 = sqrt1(s1-1,s1);
+    i3 = exp1((s1-1)/4,s2,s1);
     calc2(s2,i3,a3,s1);
     printf("  s2 = %d",s2);
 
