@@ -334,14 +334,14 @@ int main(void)
 
 
 /** Determine i2 and a2 **/
-	i2 = sqrt1(p-1,p);
-	s1 = exp1((p-1)/2,g,p);
-	if (s1==(p-1))
+    i2 = sqrt1(p-1,p); 
+    s1 = exp1((p-1)/2,g,p);
+    if (s1==(p-1))
         {
         i2 = exp1((p-1)/4,g,p);
         }
-	i2 = (p+i2)%p;
-	printf("\n \n from sqrt1 i2 = %d",i2);
+    i2 = (p+i2)%p;
+    printf("\n \n from sqrt1 i2 = %d",i2);
 
     calc2(g,i2,a2,p);
     printf("\n \n from calc2 a2 = ");
@@ -475,35 +475,35 @@ int main(void)
     displayh(4,h11);
 
 
-	printf("\n \n test of calc24d ");
-	s1 = 101;
-	i3 = sqrt1(s1-1,s1);
-	s2 = find3(s1);
-	printf("\n g = %d",s2);
+    printf("\n \n test of calc24d ");
+    s1 = 101;
+    i3 = sqrt1(s1-1,s1);
+    s2 = find3(s1);
+    printf("\n g = %d",s2);
     calc2(s2,i3,a3,s1);
-	calc24d(a3,h15,4,(s1-1)/4,s1);
+    calc24d(a3,h15,4,(s1-1)/4,s1);
 
 
     printf("\n \n test of calc28d ");
-	s1 = 281;
-	i3 = sqrt1(s1-1,s1);
+    s1 = 281;
+    i3 = sqrt1(s1-1,s1);
     calc2(3,i3,a3,s1);
-	calc28d(a3,h15,2,(s1-1)/2,s1);
+    calc28d(a3,h15,2,(s1-1)/2,s1);
 
 
     printf("\n \n test of calc29d ");
-	s1 = 281;
-	i3 = sqrt1(s1-1,s1);
-	i3 = s1-i3;
+    s1 = 281;
+    i3 = sqrt1(s1-1,s1);
+    i3 = s1-i3;
     calc2(3,i3,a3,s1);
-	calc29d(a3,1,k2,2,(s1-1)/2,s1);
+    calc29d(a3,1,k2,2,(s1-1)/2,s1);
 
 
     printf("\n \n test of fn61");
     s1 = 89;
     s2 = find3(s1);
-	i3 = sqrt1(s1-1,s1);
-	i3 = exp1((s1-1)/4,s2,s1);
+    i3 = sqrt1(s1-1,s1);
+    i3 = exp1((s1-1)/4,s2,s1);
     calc2(s2,i3,a3,s1);
     printf("  s2 = %d",s2);
 
@@ -544,16 +544,12 @@ int main(void)
 
 
 
-
-
-
     printf("\n \n Enter 1 to continue ");
-	scanf("%d",&s1);
+    scanf("%d",&s1);
 
 
-
-	for(k=0;k<50;k++)
-    {
+    for(k=0;k<50;k++)
+    	{
 
 	i2 = sqrt1(p-1,p);
 	s2 = exp1((p-1)/2,g,p);
@@ -563,7 +559,7 @@ int main(void)
         	}
 	i2 = (p+i2)%p;
 	printf("\n \n from sqrt1 i2 = %d",i2);
-    calc2(g,i2,a2,p);
+        calc2(g,i2,a2,p);
 	printf("\n \n from calc2 a2 = ");
 	displayh(2,a2);
 
@@ -604,45 +600,15 @@ int main(void)
         }
 
 	exp7(5,a2,a5,p);
-
-
-
-
-
-
-
-
-
-/*
-	printf("\n \n");
-	for(i=0;i<201;i++)
-		{
-		exp7(i,a2,a3,p);
-		printf("\n i = %d",i);
-		printf("     (%d",a3[0]);
-		printf(" , %d)",a3[1]);
-		}
-
- 	printf("\n \n Enter 1 to continue ");
-	scanf("%d",&s1);
-*/
-
+		
 	l2 = 4;
 	l3 = l2+4;
 
 	setzero(200,ptr2);
 
 
-
 /** if flag0 = 1 then set141 is normal (i.e. correct) **/
-/** if flag0 = 0 then set141 is set to zero plus offset of e1 **/
-
-
-/*
-	printf("\n \n Enter 1 to continue &&&&& ");
-	scanf("%d",&t1);
-*/
-
+/** if flag0 = 0 then set141 is set to zero plus of e1 **/
 	printf("\n \n before exp4d");
 
 /** e mod 4 must equal 0 **/
