@@ -542,7 +542,6 @@ int main(void)
     displayh2(16,k4);
 
 
-
     printf("\n \n Enter 1 to continue ");
     scanf("%d",&s1);
 
@@ -570,16 +569,6 @@ int main(void)
         	}
 
 
-/** test **/
-/**
-    a3[0] = 434;
-    a3[1] = 739;
-    cmult(a2,a3,a4,p);
-    a2[0] = a4[0];
-    a2[1] = (p+a4[1])%p;
-**/
-
-
 	exp7(s1,a2,a3,p);
 	a2[0] = a3[0];
 	a2[1] = a3[1];
@@ -605,7 +594,7 @@ int main(void)
 	printf("\n \n before exp4d");
 
 /** e mod 4 must equal 0 **/
-	flag0 = 1;
+    flag0 = 1;
 
     e = (p-1)/32;
     e2 = 3;
@@ -615,32 +604,27 @@ int main(void)
 
     e = e - 4;
 
-	e1 = e;
-	kmax = 10;
-	x = 2-1;
-	y = 1;
-	c6 = 5*0+1;
-	s = 0;
+    e1 = e;
+    kmax = 10;
+    x = 2;
+    y = 1;
+    c6 = 1;
+    s = 0;
 
-	y = 0;
-	x = 3;
-	c6 = 5;
-	s = 0;
+    flag_2 = 1;
+    t1 = exp4d2(e,a2,kmax,h11,h12,str1,str1a,str2,str2a,m2,
+                flag0,x,y,c6,s,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
+    flag_2 = 0;	
+    printf("\n \n  l2 = %d",e);
+    printf("\n t1 = %d",t1);
+    printf("\n exp4d = ",i);
+    printf("\n s5 = %d",s5);
+    printf("\n \n");
+    displaytuple(1,str1,str1a);
 
-	flag_2 = 1;
-	t1 = exp4d2(e,a2,kmax,h11,h12,str1,str1a,str2,str2a,m2,
-                    flag0,x,y,c6,s,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
-	flag_2 = 0;
-	printf("\n \n  l2 = %d",e);
-	printf("\n t1 = %d",t1);
-	printf("\n exp4d = ",i);
-	printf("\n s5 = %d",s5);
-	printf("\n \n");
-	displaytuple(1,str1,str1a);
-
-	printf("\n \n \n \n from exp4d h11 = \n \n",i);
-	displayh11(h11);
-	printf("\n \n after exp4d");
+    printf("\n \n \n \n from exp4d h11 = \n \n",i);
+    displayh11(h11);
+    printf("\n \n after exp4d");
 
     e1 = e + 4;
     exp4a(1*e1,0,201,a2,ptr2,p);
