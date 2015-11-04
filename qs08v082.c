@@ -350,7 +350,6 @@ int main(void)
 
 
 
-
     printf("\n \n");
     q = (p-1)/4;
      calc20d(a2,h15,4,q,p);
@@ -526,9 +525,9 @@ int main(void)
 
 
     printf("\n \n test of f32");
-	i2 = sqrt1(p-1,p);
-	s2 = exp1((p-1)/2,g,p);
-	if (s2==(p-1))
+    i2 = sqrt1(p-1,p);
+    s2 = exp1((p-1)/2,g,p);
+    if (s2==(p-1))
         {
         i2 = exp1((p-1)/4,g,p);
         }
@@ -550,7 +549,6 @@ int main(void)
 
     for(k=0;k<50;k++)
     	{
-
 	i2 = sqrt1(p-1,p);
 	s2 = exp1((p-1)/2,g,p);
 	if (s2==(p-1))
@@ -572,7 +570,6 @@ int main(void)
         	}
 
 
-
 /** test **/
 /**
     a3[0] = 434;
@@ -581,10 +578,6 @@ int main(void)
     a2[0] = a4[0];
     a2[1] = (p+a4[1])%p;
 **/
-
-
-
-
 
 
 	exp7(s1,a2,a3,p);
@@ -620,8 +613,6 @@ int main(void)
 
 
 
-
-
     e = e - 4;
 
 	e1 = e;
@@ -638,7 +629,7 @@ int main(void)
 
 	flag_2 = 1;
 	t1 = exp4d2(e,a2,kmax,h11,h12,str1,str1a,str2,str2a,m2,
-                flag0,x,y,c6,s,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
+                    flag0,x,y,c6,s,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
 	flag_2 = 0;
 	printf("\n \n  l2 = %d",e);
 	printf("\n t1 = %d",t1);
@@ -652,22 +643,22 @@ int main(void)
 	printf("\n \n after exp4d");
 
     e1 = e + 4;
-	exp4a(1*e1,0,201,a2,ptr2,p);
-	printf("\n \n &&&&&& the answer (exp4a) is ");
-	ndisplay(ptr2[201]);
+    exp4a(1*e1,0,201,a2,ptr2,p);
+    printf("\n \n &&&&&& the answer (exp4a) is ");
+    ndisplay(ptr2[201]);
 
-	exp4a(2*e1,1,202,a2,ptr2,p);
-	printf("\n \n &&&&& the answer (exp4a) is \n");
-	display27(ptr2[202]);
+    exp4a(2*e1,1,202,a2,ptr2,p);
+    printf("\n \n &&&&& the answer (exp4a) is \n");
+    display27(ptr2[202]);
 
     printf("\n \n i2 = %d  a2 = (%d,%d)",i2,a2[0],a2[1]);
-	series(1,p-1,a2,0,h11,2,p);
-	printf("\n \n (2) series h11 = ");
-	displayh(4,h11);
+    series(1,p-1,a2,0,h11,2,p);
+    printf("\n \n (2) series h11 = ");
+    displayh(4,h11);
 
-	series(1,p-1,a2,0,h11,4,p);
-	printf("\n \n (4) series h11 = ");
-	displayh(4,h11);
+    series(1,p-1,a2,0,h11,4,p);
+    printf("\n \n (4) series h11 = ");
+    displayh(4,h11);
 
 /** calc3 **/
 	flag0 = 1;
@@ -678,12 +669,12 @@ int main(void)
 		if(j==0)
 			{
 			calc3d(e,e1,flag0,flag3,a2,kmax,h11,h12,str1,str1a,str2,str2a,m2,
-                   t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
+                               t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
 			}
 		if(j==1)
 			{
 			calc3(e+28,e1,flag0,flag3,a2,kmax,h11,h12,str1,str1a,str2,str2a,m2,
-                  t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
+                              t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
 			}
 		printf("\n \n  l2 = %d",e);
 		printf("\n calc3 = ",i);
@@ -894,11 +885,9 @@ int main(void)
         printf("\n \n \n \n");
 
 
-
         printf("\n \n");
         calc14d(m2,e+4,a2,h11,h12,ptr2,str1,hs1,hs2,p);
         printf("\n \n \n \n");
-
 
 
         printf("\n \n");
@@ -979,13 +968,13 @@ int main(void)
 
 
     series(1,p-1,a2,0,h14,4,p);
-	printf("\n \n \n \n s5 = %d  series =  ",s5);
-	displayh(4,h14);
+    printf("\n \n \n \n s5 = %d  series =  ",s5);
+    displayh(4,h14);
 
-	printf("\n \n g = %d   i2 = %d   p = %d",g,i2,p);
-	printf("\n a2 = ");
-	displayh(2,a2);
-	printf("\n e = %d",e);
+    printf("\n \n g = %d   i2 = %d   p = %d",g,i2,p);
+    printf("\n a2 = ");
+    displayh(2,a2);
+    printf("\n e = %d",e);
 
 
     exp7(e,a2,a3,p);
@@ -993,7 +982,6 @@ int main(void)
     exp7(4,a4,a3,p);
     printf("\n \n exp7 a3 = ");
     displayh(2,a3);
-
 
 
 
@@ -1019,22 +1007,17 @@ int main(void)
     display12d(150,ptr2,h14);
 **/
 
-
-
-	printf("\n \n i2 = %d",i2);
+    printf("\n \n i2 = %d",i2);
     printf("\n \n g = %d",g);
-	printf("\n \n a2 = ");
-	displayh(2,a2);
+    printf("\n \n a2 = ");
+    displayh(2,a2);
 
-
-
-
-	printf("\n \n det_sum = %d",det_sum);
-	printf("\n det_l144 = %d",det_l144);
+    printf("\n \n det_sum = %d",det_sum);
+    printf("\n det_l144 = %d",det_l144);
 
     }
 
-	return(0);
+    return(0);
 
 }
 
