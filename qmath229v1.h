@@ -957,13 +957,7 @@ int t5,t6;
 		{
 		set7(218,i,hs3[i],ptr2);
 		}
-/*
-	printf("\n \n in detws hs3 = \n");
-	displayhs2(hs3);
 
-	printf("\n \in detws (218) = \n");
-	display2a2(218,ptr2);
-*/
 	t1 = multcnvl(143,171,218,ptr2,p);
 	h20[0] = t1;
 	t1 = multcnvl(143,172,218,ptr2,p);
@@ -1123,10 +1117,7 @@ int t5,t6;
 	t4 = (t1+t2)%p;
 	t4 = (t3*t4)%p;
 	h20[26] = t4;
-/*
-	printf("\n \n in detws h20 = ");
-	displayws(h20);
-*/
+
 	exp7(l2,a2,a3,p);
 	exp7(l2,a3,a4,p);
 	t1 = a4[0];
@@ -1173,11 +1164,6 @@ int t5,t6;
 	h20[7] = (h21[7]+h20[34])%p;
 	h20[8] = (h21[8]+h20[35])%p;
 
-/*
-	printf("\n \n in detws h20 = ");
-	displayws(h20);
-*/
-
 	exp7(l2,a2,a3,p);
 	exp7(l2,a3,a4,p);
 	exp7(4,a4,a3,p);
@@ -1212,14 +1198,7 @@ int t5,t6;
 		t3 = (t3+t4)%p;
 		h21[i+27] = t3;
 		}
-/*
-	printf("\n \n in detws h21 = ");
-	displayws2(h21);
 
-	printf("\n \n  a3 = ");
-	printf("(%d",a3[0]);
-	printf(" , %d)",a3[1]);
-*/
 	for(i=0;i<5;i++)
 		{
 		h20[i+9] = h20[i+31];
@@ -1232,10 +1211,7 @@ int t5,t6;
 		h20[i+18] = 0;
 		h20[i+27] = 0;
 		}
-/*
-	printf("\n \n in detws h20 = ");
-	displayws2(h20);
-*/
+
 for (i=0;i<2;i++)
 	{
 	t5 = 9*i+0;
@@ -1267,10 +1243,7 @@ for (i=0;i<2;i++)
 	t1 = (h21[t5+8]+h21[t6+8])%p;
 	ws3[17+t5] = (t1+h20[t6+4])%p;
 	}
-/*
-	printf("\n \n in detws ws3 = ");
-	displayws(ws3);
-*/
+
 	t2 = (p+1)/2;
 	for(i=0;i<9;i++)
 		{
@@ -1283,18 +1256,11 @@ for (i=0;i<2;i++)
 		t1 = (h20[i]+t1)%p;
 		h21[3*i+2] = (t1*t2)%p;
 		}
-/*
-	printf("\n \n in detws h21 = ");
-	displayws(h21);
-*/
+
 	for(i=0;i<27;i++)
 		{
 		ws3[i] = h21[i];
 		}
-/*
-	printf("\n \n answer in detws ws3 = ");
-	displayws(ws3);
-*/
 }
 
 void tuple1(int d, integer *str1, integer *str2, integer *str2a, int m2, int l2, int l3,
@@ -1321,19 +1287,12 @@ for(i=0;i<d;i++)
 	t1 = 144*i;
 	t2 = 27*i;
 	hs1 = &str1[t1];
-/*
-	ws1 = &str1a[t2];
-*/
 
-	set142(m2,l2,l3,a3,hs1,cs,sn,h11,
-			 cs1,sn1,cs2,sn2,ptr2,b2,p);
+	set142(m2,l2,l3,a3,hs1,cs,sn,h11,cs1,sn1,cs2,sn2,ptr2,b2,p);
 
 	solve2m(144,ptr2,b2,p);
 
 	t = det(144,ptr2);
-/*
-	printf("\n \n det t1 = %d",t);
-*/
 	det_sum = det_sum + 1;
 	if (t<144)
 		{
@@ -1516,9 +1475,7 @@ for(i=0;i<d;i++)
 
 	solve2m(144,ptr2,b2,p);
 	t = det(144,ptr2);
-/*
-	printf("\n \n det t1 = %d",t);
-*/
+	
 	det_sum = det_sum + 1;
 	if (t<144)
 		{
