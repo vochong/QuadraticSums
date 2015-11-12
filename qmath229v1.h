@@ -1,4 +1,3 @@
-
 typedef int integer;
 typedef integer *STRING[220];
 
@@ -94,7 +93,6 @@ int i,j;
 		printf(") ");
 		}
 }
-
 
 void exp4(int l2, int c, int e, int e1, integer a2[], STRING ptr2, integer p)
 {
@@ -630,7 +628,6 @@ for(i=0;i<9;i++)
 	}
 }
 
-
 void equation83(int l2, int l3, integer a2[], integer h11[], integer b2[], integer p)
 {
 integer t3,t4;
@@ -979,7 +976,6 @@ int t5,t6;
 	t1 = multcnvl(143,186,218,ptr2,p);
 	h20[8] = t1;
 
-
 	det5b(6,2,0,0,m2,170,200,198,199,ptr2,b2,p);
 	t1 = cs[2];
 	t2 = sn[2];
@@ -987,7 +983,6 @@ int t5,t6;
 	t1 = cs[2];
 	t2 = sn[2];
 	mult8b(m2,t1,t2,200,170,198,199,ptr2,b2,p);
-
 
 	det5b(-2,2,0,0,m2,150,200,198,199,ptr2,b2,p);
 	t1 = cs[2];
@@ -1329,21 +1324,17 @@ integer h2[6] = {0,0,0,0,0,0};
 
 	a20[0] = 1;
 	a20[1]=  0;
-
 	a21[0] = 1;
 	a21[1]=  0;
 
 	exp7(0,a2,a21,p);
 
-	set138(m2,l2,a2,a20,a21,a22,ws1,hs1,ws2,hs2,cs,sn,h11,h12,
-			 cs1,sn1,cs2,sn2,ptr2,b2,p);
-
+	set138(m2,l2,a2,a20,a21,a22,ws1,hs1,ws2,hs2,cs,sn,h11,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
 
 	setzero2a(m2,117,120,ptr2);
 	setzero2a(m2,131,132,ptr2);
 
 	det5b(2,2,0,0,m2,170,200,198,199,ptr2,b2,p);
-
 	t1 = cs[2];
 	t2 = sn[2];
 	mult8a(m2,t1,t2,170,200,198,199,ptr2,b2,p);
@@ -1393,7 +1384,6 @@ integer h2[6] = {0,0,0,0,0,0};
 	set2d(131,163,ptr2);
 	set2d(132,164,ptr2);
 
-
 	t3 = flag0;
 	for(i=0;i<6;i++)
 		{
@@ -1429,7 +1419,6 @@ integer h2[6] = {0,0,0,0,0,0};
 		}
 }
 
-
 void tuple2(int d, integer *str1, integer *str1a, integer *str2, integer *str2a, integer flag0,
             int y, int c6, integer c, int m2, int l2, integer a2[], integer ws1[], integer hs1[],
             integer ws2[], integer hs2[], integer cs[], integer sn[],integer h11[], integer cs1[],
@@ -1459,7 +1448,6 @@ for(i=0;i<d;i++)
 	hs2 = &str1[t1+144];
 	ws2 = &str1a[t2+27];
 
-
 	for(j=0;j<6;j++)
 		{
 		e1[j] = 0;
@@ -1470,12 +1458,9 @@ for(i=0;i<d;i++)
 		e1[c6] = c;
 		}
 
-	set141(m2,2*l2,a3,ws1,hs1,ws2,hs2,cs,sn,cs1,sn1,cs2,sn2,h11,h12,
-			 e1,flag0,ptr2,b2,p);
-
+	set141(m2,2*l2,a3,ws1,hs1,ws2,hs2,cs,sn,cs1,sn1,cs2,sn2,h11,h12,e1,flag0,ptr2,b2,p);
 	solve2m(144,ptr2,b2,p);
 	t = det(144,ptr2);
-	
 	det_sum = det_sum + 1;
 	if (t<144)
 		{
@@ -1484,9 +1469,7 @@ for(i=0;i<d;i++)
 		}
 
 	l2solve(144,&str2[t1],b2,ptr2,p);
-
 	detws2(m2,2*l2,a3,&str2[t1],&str2a[t2],cs,sn,h11,h12,ptr2,b2,p);
-
 	cmult(a3,a3,a4,p);
 	a3[0] = a4[0];
 	a3[1] = a4[1];
