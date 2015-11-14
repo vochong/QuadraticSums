@@ -1,5 +1,5 @@
 from math104 import *
-from modsqrt20 import sqrt1 
+from modsqrt2 import sqrt1 
 
 
 """ Display an element of the group """
@@ -238,7 +238,6 @@ class group:
             print(i,"  ({0} , {1})".format(c1,c2),end="")
             print("    [{0} , {1}]".format(c3,c4),end="")
             print("    [{0} , {1} , {2} , {3}]".format(c5,c6,c7,c8))
-
 
 
     def calc20(self,a2,flag4,d1,q,p):
@@ -754,8 +753,8 @@ class group:
         p = k.p
         e = q//16
 
-        if ((q%32)!=16):
-            print("error in f32 q mod 32 should equal 16")
+        if ((q%16)!=0):
+            print("error in calc32 q mod 16 should equal 0")
 
         e1 = abs(e1)
         e2 = abs(e2)
