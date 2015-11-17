@@ -270,18 +270,9 @@ int main(void)
                       	  545,1398,1709,24,1133,450,0,0};
 
 
+    	m2 = m;
 
-    m2 = m;
-
-    p = 3169;
-
-
-    printf("\n \n char = %d",sizeof(char));
-    printf("\n short = %d",sizeof(short));
-    printf("\n int = %d",sizeof(int));
-    printf("\n long = %d",sizeof(long));
-    printf("\n \n");
-
+    	p = 3169;
 
 	for(i=0;i<m2;i++)
 		{
@@ -295,27 +286,24 @@ int main(void)
 
 /* 1 */
 	if ((str1 = (integer *) calloc(1584,sizeof(integer))) == NULL)
-        {
-         printf("Not enough memory for str1\n");
-		 /*
-		 exit(1);
-		 */
-        }
+        	{
+         	 printf("Not enough memory for str1\n");
+        	}
 /* 2 */
 	 if ((str2 = (integer *) calloc(1584,sizeof(integer))) == NULL)
-        {
+        	{
 		 printf("Not enough memory for str2\n");
-        }
+	 	}
 /* 3 */
 	if ((str1a = (integer *) calloc(297,sizeof(integer))) == NULL)
-        {
+        	{
 		 printf("Not enough memory for str1a\n");
-        }
+        	}
 /* 4 */
 	if ((str2a = (integer *) calloc(297,sizeof(integer))) == NULL)
-        {
+        	{
 		 printf("Not enough memory for str2a\n");
-        }
+        	}
 
 	setzero2(40,h11);
 
