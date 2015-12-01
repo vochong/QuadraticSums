@@ -137,7 +137,7 @@ integer h14[4] = {0};
 	mult12(a3[0],(p-a3[1])%p,h11,h12,&hs1[30],p);
 	mult12(a3[1],a3[0],h11,h12,&hs1[90],p);
 
-    printf("\n \n in calc10d(%d)",c1);
+    	printf("\n \n in calc10d(%d)",c1);
 
 	for(i=0;i<4;i++)
 		{
@@ -279,11 +279,11 @@ integer h14[4] = {0};
 
 	s = (p+1)/2;
 	mult12(s,s,hs2,&hs2[60],hs1,p);
-    mult12(s,s,&hs2[30],&hs2[90],&hs1[30],p);
+    	mult12(s,s,&hs2[30],&hs2[90],&hs1[30],p);
 	mult12(s,(p-s)%p,&hs2[30],&hs2[90],&hs1[60],p);
-    mult12((p-s)%p,s,hs2,&hs2[60],&hs1[90],p);
+    	mult12((p-s)%p,s,hs2,&hs2[60],&hs1[90],p);
 
-    for(i=0;i<4;i++)
+    	for(i=0;i<4;i++)
 		{
 		printf("\n \n in calc17d hs1(%d) = \n ",i);
 		display12(&hs1[30*i]);
@@ -356,7 +356,7 @@ integer a4[2] = {0};
 	for(i=0;i<4;i++)
 		{
 		printf("\n \n hs1(%d) = ",i);
-        printf("\n");
+        	printf("\n");
 		display12(&hs1[30*i]);
 		}
 
@@ -430,7 +430,7 @@ integer a4[2] = {0};
 	for(i=0;i<4;i++)
 		{
 		printf("\n \n hs1(%d) = ",i);
-        printf("\n ");
+        	printf("\n ");
 		display12(&hs1[30*i]);
 		}
 
@@ -499,7 +499,7 @@ integer a4[2] = {0};
 	for(i=0;i<4;i++)
 		{
 		printf("\n \n hs1(%d) = ",i);
-        printf("\n");
+        	printf("\n");
 		display12(&hs1[30*i]);
 		}
 
@@ -591,7 +591,6 @@ integer a4[2] = {0};
 	printf("\n \n h11 = ");
 	displayh(4,h11);
 
-
 	exp7(e/2,a2,a3,p);
 	exp7(e,a3,a4,p);
 	exp7(9,a4,a3,p);
@@ -600,9 +599,6 @@ integer a4[2] = {0};
 	printf("  (%d",a3[0]);
 	printf(" , %d)",a3[1]);
 }
-
-
-
 
 void calc11q(int m2, integer e, integer e2, int c1, integer a2[], integer h11[], integer h12[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p)
@@ -616,7 +612,7 @@ integer a4[2] = {0};
 integer hs3[144] = {0};
 integer hs4[144] = {0};
 
-    flag4 = 0;
+    	flag4 = 0;
 	if((c1!=4)&&(c1!=6))
 		{
 		printf("\n \n error in calc11q c1 = %d",c1);
@@ -624,7 +620,7 @@ integer hs4[144] = {0};
 		c1 = 4;
 		}
 
-    e1 = e+e2;
+    	e1 = e+e2;
 	exp7(e1/2,a2,a4,p);
 	exp7(e1,a4,a3,p);
 
@@ -644,8 +640,6 @@ integer hs4[144] = {0};
 
 	mult12(a3[0],(p-a3[1])%p,hs1,&hs1[30],hs2,p);
 	mult12(a3[1],a3[0],hs1,&hs1[30],&hs2[30],p);
-
-
 
 
 	calc19(m2,flag4,e,c1-2,e+e2,a2,h11,h12,ptr2,str1,hs3,hs4,p);
@@ -683,8 +677,8 @@ integer hs4[144] = {0};
 		printf("\n");
 		}
 
-    e1 = e+e2;
-    printf("\n \n s(%d , %d)(%d)",e1/2,3*(e1/2),c1*e1);
+    	e1 = e+e2;
+    	printf("\n \n s(%d , %d)(%d)",e1/2,3*(e1/2),c1*e1);
 	series(e1/2,3*(e1/2),a2,c1*e1,h11,2,p);
 	printf("\n \n h11 = ");
 	displayh(4,h11);
@@ -815,10 +809,9 @@ integer a5[2] = {0};
 	mult12(a4[0],(p-a4[1])%p,hs1,&hs1[30],hs2,p);
 	mult12(a4[1],a4[0],hs1,&hs1[30],&hs2[30],p);
 
+	 s = ((c1-2)*e)/4;
 
-    s = ((c1-2)*e)/4;
-
-    exp7(2*(s+e),a2,a4,p);
+    	exp7(2*(s+e),a2,a4,p);
 	exp7(s+e,a4,a5,p);
 
 	mult12(a5[0],(p+a5[1])%p,hs2,&hs2[30],hs1,p);
@@ -881,7 +874,7 @@ integer a4[2] = {0};
 integer hs3[144] = {0};
 integer hs4[144] = {0};
 
-    flag4 = 0;
+    	flag4 = 0;
 	if((c1!=4)&&(c1!=6))
 		{
 		printf("\n \n error in calc14q c1 = %d",c1);
@@ -889,7 +882,7 @@ integer hs4[144] = {0};
 		c1 = 4;
 		}
 
-    e1 = e+e2;
+    	e1 = e+e2;
 	exp7(e1/2,a2,a4,p);
 	exp7(e1,a4,a3,p);
 
@@ -949,8 +942,8 @@ integer hs4[144] = {0};
 		printf("\n");
 		}
 
-    e1 = e+e2;
-    printf("\n \n s(%d , %d)(%d)",1,e1/2,c1*e1);
+    	e1 = e+e2;
+    	printf("\n \n s(%d , %d)(%d)",1,e1/2,c1*e1);
 	series(1,e1/2,a2,c1*e1,h11,2,p);
 	printf("\n \n h11 = ");
 	displayh(4,h11);
@@ -1019,7 +1012,7 @@ integer a4[2] = {0};
 	for(i=0;i<4;i++)
 		{
 		printf("\n \n hs1(%d) = ",i);
-        printf("\n");
+        	printf("\n");
 		display12(&hs1[30*i]);
 		}
 
@@ -1050,8 +1043,8 @@ integer a4[2] = {0};
 integer hs3[144] = {0};
 integer hs4[144] = {0};
 
-    flag4 = 0;
-    e1 = e+e2;
+    	flag4 = 0;
+    	e1 = e+e2;
 	exp7(e1/2,a2,a3,p);
 	exp7(e1,a3,a4,p);
 	exp7(1,a4,a3,p);
@@ -1060,7 +1053,7 @@ integer hs4[144] = {0};
 	printf("  (%d",a3[0]);
 	printf(" , %d)",a3[1]);
 
-    calc19(m2,flag4,e,4,e+e2,a2,h11,h12,ptr2,str1,hs3,hs4,p);
+    	calc19(m2,flag4,e,4,e+e2,a2,h11,h12,ptr2,str1,hs3,hs4,p);
 	mult12(1,0,&hs4[0],&hs4[0],h11,p);
 	mult12(1,0,&hs4[90],&hs4[90],h12,p);
 	mult12(1,p-1,h11,h12,hs1,p);
@@ -1071,10 +1064,9 @@ integer hs4[144] = {0};
 
 	mult12(a3[0],(p-a3[1])%p,hs1,&hs1[30],hs2,p);
 	mult12(a3[1],a3[0],hs1,&hs1[30],&hs2[30],p);
+	
 
-
-
-    calc19(m2,flag4,e,0,e+e2,a2,h11,h12,ptr2,str1,hs3,hs4,p);
+    	calc19(m2,flag4,e,0,e+e2,a2,h11,h12,ptr2,str1,hs3,hs4,p);
 	mult12(1,0,&hs4[0],&hs4[0],h11,p);
 	mult12(1,0,&hs4[90],&hs4[90],h12,p);
 	mult12(1,0,h11,h12,hs1,p);
