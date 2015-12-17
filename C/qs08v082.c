@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include "qmath228v4.h"
 
-
 typedef int integer;
 typedef integer *STRING[220];
 
@@ -269,7 +268,6 @@ int main(void)
 	integer k4[16] = {1641,809,512,1493,1096,948,0,0,
                       	  545,1398,1709,24,1133,450,0,0};
 
-
     	m2 = m;
 
     	p = 3169;
@@ -311,15 +309,10 @@ int main(void)
     g = findnqr(p);
     printf("\n g = f(%d) = %d",p,g);
 
-
-
 /** Determine g **/
     g = find3(p);
     printf("\n from find3 g = %d",g);
-
     g = exp1(1,g,p);
-
-
 
 /** Determine i2 and a2 **/
     i2 = sqrt1(p-1,p); 
@@ -334,8 +327,6 @@ int main(void)
     calc2(g,i2,a2,p);
     printf("\n \n from calc2 a2 = ");
     displayh(2,a2);
-
-
 
 
     printf("\n \n");
@@ -477,14 +468,12 @@ int main(void)
     calc2(3,i3,a3,s1);
     calc28d(a3,h15,2,(s1-1)/2,s1);
 
-
     printf("\n \n test of calc29d ");
     s1 = 281;
     i3 = sqrt1(s1-1,s1);
     i3 = s1-i3;
     calc2(3,i3,a3,s1);
     calc29d(a3,1,k2,2,(s1-1)/2,s1);
-
 
     printf("\n \n test of fn61");
     s1 = 89;
@@ -532,7 +521,6 @@ int main(void)
 
     printf("\n \n Enter 1 to continue ");
     scanf("%d",&s1);
-
 
     for(k=0;k<50;k++)
     	{
@@ -5487,9 +5475,7 @@ displayh(2,k2);
 series(k1[0],k1[1],a2,0,h11,4,p);
 printf("\n \n h11 = ");
 displayh(2,h11);
-
 }
-
 
 void calc12(integer e, integer a2[], int flag4, integer k1[], integer k2[], integer p)
 {
@@ -5500,8 +5486,6 @@ integer t1,t2;
 integer h11[4] = {0};
 integer h12[40] = {0};
 integer h14[40] = {0};
-
-
 
 /** Make sure that h12[] is array of size >= kmax **/
 
@@ -5534,10 +5518,8 @@ while(t1!=1)
 		}
 	}
 
-
 	i = i-1;
 	t = (i+(i%2))/2;
-
 	e2 = i;
 
     if (flag4==1)
@@ -5595,9 +5577,6 @@ if (e2<3)
     printf("\n \n error in calc12 e should be greater than or equal to 68");
     }
 
-
-
-
     k1[0] = 1;
     k1[1] = 4*h14[e2-2];
     t1 = h14[e2];
@@ -5612,7 +5591,6 @@ if (e2<3)
     k1[9] = 5*(t2/2);
     k1[10] = 2*t2;
     k1[11] = 3*t2;
-
 
 if (flag4==1)
 {
@@ -5803,7 +5781,6 @@ integer b1[4] = {0};
     printf("\n \n in fn61 a6 = ");
     displayh(2,a6);
 
-
     c = (h11[0] + h11[3])%p;
     s = (h11[1] + (p-h11[2]))%p;
     s1 = d1/4;
@@ -5851,7 +5828,6 @@ integer b1[4] = {0};
     printf("\n \n in fn61 h11 = ");
     displayh(4,h12);
 
-
     t = (p+1)/2;
     h15[0] = (h12[0]+h12[2])%p;
     h15[0] = (t*h15[0])%p;
@@ -5871,9 +5847,7 @@ integer b1[4] = {0};
     series(0,t1,a2,d2,h14,2,p);
     printf("\n \n in fn61 h14 = ");
     displayh(4,h14);
-
 }
-
 
 void fn61d(int c1, int d1, int t1, int d2, integer a2[], integer h11[], integer h15[], integer p)
 
@@ -5916,8 +5890,6 @@ integer b1[4] = {0};
     a6[0] = (a5[0]+a3[0])%p;
     a6[1] = (a5[1]+a3[1])%p;
 
-
-
     c = (h11[0] + h11[3])%p;
     s = (h11[1] + (p-h11[2]))%p;
     s1 = d1/4;
@@ -5950,7 +5922,6 @@ integer b1[4] = {0};
     h12[2] = a4[0];
     h12[3] = a4[1];
 
-
     t = (p+1)/2;
     h15[0] = (h12[0]+h12[2])%p;
     h15[0] = (t*h15[0])%p;
@@ -5963,17 +5934,6 @@ integer b1[4] = {0};
 
     h15[3] = ((p-h12[0])+h12[2])%p;
     h15[3] = (t*h15[3])%p;
-
-/**
-    printf("\n \n in fn61 h15 = ");
-    displayh(4,h15);
-
-
-    series(0,t1,a2,d2,h14,2,p);
-    printf("\n \n in fn61 h14 = ");
-    displayh(4,h14);
-**/
-
 }
 
 void equation4(int m2, integer a2[], integer s3, STRING ptr2, integer b1[], integer e,
@@ -5989,7 +5949,6 @@ integer a3[2] = {0};
 integer a4[2] = {0};
 integer k1[12] = {0};
 integer k2[2] = {0};
-
 
 printf("\n \n in equation4  e = %d   s3 = %d ",e,s3);
 printf("   hs1 = (%d , %d)",hs1[0],hs1[30]);
@@ -6102,7 +6061,6 @@ displayh(2,c1);
 series(1,(q/6)-1,a2,0,h12,2,p);
 printf("\n \n &&&&&&&&&&&& in equation4 h12 = ");
 displayh(4,h12);
-
 
 if((q%4)==0)
     {
@@ -6225,10 +6183,7 @@ for(i=0;i<8;i++)
     k4[2*i] = h1[0];
     k4[2*i+1] = h1[1];
     }
-
 }
-
-
 
 void displayh2(int d, integer h16[])
 {
@@ -6249,9 +6204,7 @@ int e;
 		printf(" %d ",h16[i]);
 		}
 	printf(")");
-
 }
-
 
 void solve16(int m2, integer a2[], STRING ptr2, integer b1[], integer *str1, integer e,
              integer hs1[], integer hs2[], integer q, integer p)
@@ -6266,21 +6219,7 @@ integer h12[12] = {0};
     t = 150;
     setzero2a(16,t,t+15,ptr2);
     setzero2(16,b1);
-
-/**
-    t1 = q/3;
-    exp7((p-1)/3,a2,a3,p);
-    s3 = (2*a3[1])%p;
-    if((t1%3)==2)
-        {
-        s3 = p-s3;
-        }
-
-    equation4(m2,a2,s3,ptr2,b1,e,hs1,t,q,p);
-**/
-
     printf("\n \n in solve16 p = %d  q = %d",p,q);
-
     q1 = q/16;
     if((q1%4)==1)
         {
@@ -6297,39 +6236,10 @@ integer h12[12] = {0};
         set7(t,12,1,ptr2);
         set7(t,14,1,ptr2);
         b1[0] = (p+1)/2;
-
-/**
-        set7(t+1,6,1,ptr2);
-        set7(t+1,7,1,ptr2);
-        set7(t+1,8,1,ptr2);
-        set7(t+1,9,1,ptr2);
-        set7(t+1,10,1,ptr2);
-        set7(t+1,11,1,ptr2);
-        b1[0] =  1;
-
-
-        t1 = (p-s3)%p;
-        set7(t+2,0,1,ptr2);
-        set7(t+2,2,1,ptr2);
-        set7(t+2,4,1,ptr2);
-        set7(t+2,6,t1,ptr2);
-        set7(t+2,8,t1,ptr2);
-        set7(t+2,10,t1,ptr2);
-        b1[2] =  s3-1;
-        t1 = (p+1)/2;
-        b1[2] = (t1*b1[2])%p;
-**/
         }
 
     printf("\n \n");
     display16d(t,ptr2,b1);
-
 }
-
-
-
-
-
-
 
 
