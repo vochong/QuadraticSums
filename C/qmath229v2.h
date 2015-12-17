@@ -121,7 +121,7 @@ exp7(e,a3,a4,p);
 t = l2-e;
 if (t<0)
 	{
-    printf("error in exp4 e1 > l2");
+    	printf("error in exp4 e1 > l2");
 	}
 
 if (t>=0)
