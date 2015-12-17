@@ -1652,9 +1652,6 @@ if (c>0)
 		t = (m2-1)-c;
 		t4 = *(ptr2[r] + t);
 		t2 = inverse2(t4,p);
-/*
-		printf("\n \n in lsolve t2 = %d",t2);
-*/
 		t3 = (t1*t2)%p;
 	}
 t = (m2-1)-r;
@@ -1785,9 +1782,7 @@ void equation66(int l2, integer ws1[], integer ws2[], integer cs[], integer sn[]
                 integer h11[], integer h12[], STRING ptr2, integer b2[], integer p)
 {
 unsigned int t;
-/*
-unsigned int t1;
-*/
+
 integer c11,c12,c22,s11,s12,s22;
 integer t2,t3,t4;
 integer c,s;
@@ -1889,9 +1884,6 @@ int a4[2] = {0};
 	h12[4] = a4[1];
 
 	solve2m(5,&ptr2[t],h12,p);
-/*
-	t1 = det(5,&ptr2[t]);
-*/
 	setzero2(10,h11);
 
 	l2solve(5,h11,h12,&ptr2[t],p);
@@ -2014,9 +2006,7 @@ void equation67a4(int l2, integer a2[], integer hs1[], integer hs2[], integer h1
 unsigned int i,j;
 unsigned int t;
 unsigned int s;
-/*
-unsigned int t1;
-*/
+
 integer c8[9] = {0};
 integer s8[9] = {0};
 integer t2,t3,t4,t5,t6;
@@ -2231,11 +2221,7 @@ int a6[2] = {0};
 	h12[4] = s41;
 
 	solve2m(5,&ptr2[t],h12,p);
-/*
-	t1 = det(5,&ptr2[t]);
-*/
 	setzero2(10,h11);
-
 	l2solve(5,h11,h12,&ptr2[t],p);
 
 	t = 150;
@@ -2276,9 +2262,6 @@ int a6[2] = {0};
 	h12[4] = s42;
 
 	solve2m(5,&ptr2[t],h12,p);
-/*
-	t1 = det(5,&ptr2[t]);
-*/
 	l2solve(5,&h11[5],h12,&ptr2[t],p);
 
 	for(j=0;j<8;j++)
@@ -2859,13 +2842,10 @@ for(i=c1;i<(c2+1);i++)
 
 	a4[0] = (a3[0]*a6[0])%p;
 	a4[1] = (a3[1]*a6[0])%p;
-
 	h11[0] = (h11[0]+a4[0])%p;
 	h11[1] = (h11[1]+a4[1])%p;
-
 	a4[0] = (a3[0]*a6[1])%p;
 	a4[1] = (a3[1]*a6[1])%p;
-
 	h11[2] = (h11[2]+a4[0])%p;
 	h11[3] = (h11[3]+a4[1])%p;
 	}
@@ -2893,13 +2873,10 @@ for(i=c1;i<(c2+1);i=i+s)
 
 	a4[0] = (a3[0]*a6[0])%p;
 	a4[1] = (a3[1]*a6[0])%p;
-
 	h11[0] = (h11[0]+a4[0])%p;
 	h11[1] = (h11[1]+a4[1])%p;
-
 	a4[0] = (a3[0]*a6[1])%p;
 	a4[1] = (a3[1]*a6[1])%p;
-
 	h11[2] = (h11[2]+a4[0])%p;
 	h11[3] = (h11[3]+a4[1])%p;
 	}
@@ -2936,13 +2913,10 @@ for(i=0;i<(l2+1);i++)
 
 	a4[0] = (a3[0]*a6[0])%p;
 	a4[1] = (a3[1]*a6[0])%p;
-
 	h11[0] = (h11[0]+a4[0])%p;
 	h11[1] = (h11[1]+a4[1])%p;
-
 	a4[0] = (a3[0]*a6[1])%p;
 	a4[1] = (a3[1]*a6[1])%p;
-
 	h11[2] = (h11[2]+a4[0])%p;
 	h11[3] = (h11[3]+a4[1])%p;
 	}
