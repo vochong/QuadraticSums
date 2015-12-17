@@ -1,4 +1,3 @@
-
 typedef int integer;
 typedef integer *STRING[220];
 
@@ -54,12 +53,9 @@ integer find2 (integer g, integer p);
 integer find3 (integer p);
 
 
-
 unsigned long det_sum = 0;
 unsigned long det_l144 = 0;
 int flag_2 = 0;
-
-
 
 
 void display27(integer ws1[])
@@ -105,7 +101,6 @@ int i,j;
 		printf(") ");
 		}
 }
-
 
 void exp4(int l2, int c, int e, int e1, integer a2[], STRING ptr2, integer p)
 {
@@ -268,7 +263,6 @@ integer t1,t2;
 		set2d(i+r+9,206,ptr2);
 		}
 }
-
 
 void equation72(int m2, int r, integer cs1[], integer sn1[], integer cs2[], integer sn2[],
                 STRING ptr2, integer b1[], integer p)
@@ -642,7 +636,6 @@ for(i=0;i<9;i++)
 	}
 }
 
-
 void equation83(int l2, int l3, integer a2[], integer h11[], integer b2[], integer p)
 {
 integer t3,t4;
@@ -991,7 +984,6 @@ int t5,t6;
 	t1 = multcnvl(143,186,218,ptr2,p);
 	h20[8] = t1;
 
-
 	det5b(6,2,0,0,m2,170,200,198,199,ptr2,b2,p);
 	t1 = cs[2];
 	t2 = sn[2];
@@ -999,7 +991,6 @@ int t5,t6;
 	t1 = cs[2];
 	t2 = sn[2];
 	mult8b(m2,t1,t2,200,170,198,199,ptr2,b2,p);
-
 
 	det5b(-2,2,0,0,m2,150,200,198,199,ptr2,b2,p);
 	t1 = cs[2];
@@ -1175,7 +1166,6 @@ int t5,t6;
 	h20[6] = (h21[6]+h20[33])%p;
 	h20[7] = (h21[7]+h20[34])%p;
 	h20[8] = (h21[8]+h20[35])%p;
-
 
 	exp7(l2,a2,a3,p);
 	exp7(l2,a3,a4,p);
@@ -1375,7 +1365,6 @@ integer h2[6] = {0,0,0,0,0,0};
 	set2d(117,163,ptr2);
 	set2d(118,164,ptr2);
 
-
 	det5b(3,3,0,0,m2,170,200,198,199,ptr2,b2,p);
 	t1 = cs[3];
 	t2 = sn[3];
@@ -1392,7 +1381,6 @@ integer h2[6] = {0,0,0,0,0,0};
 	set2d(119,163,ptr2);
 	set2d(120,164,ptr2);
 
-
 	det5b(4,4,0,0,m2,170,200,198,199,ptr2,b2,p);
 	t1 = cs[4];
 	t2 = sn[4];
@@ -1408,7 +1396,6 @@ integer h2[6] = {0,0,0,0,0,0};
 
 	set2d(131,163,ptr2);
 	set2d(132,164,ptr2);
-
 
 	t3 = flag0;
 	for(i=0;i<6;i++)
@@ -1444,7 +1431,6 @@ integer h2[6] = {0,0,0,0,0,0};
 		printf("\n  in set141 (131,132) = (%d , %d)",b2[131],b2[132]);
 		}
 }
-
 
 void tuple2(int d, integer *str1, integer *str1a, integer *str2, integer *str2a, integer flag0,
             int y, int c6, integer c, int m2, int l2, integer a2[], integer ws1[], integer hs1[],
@@ -1508,7 +1494,6 @@ for(i=0;i<d;i++)
 	}
 }
 
-
 void zerotuple(int e1, int e2, integer *str1, integer *str1a)
 {
 int i,j;
@@ -1528,7 +1513,6 @@ for(i=e1;i<(e2+1);i++)
 		}
 	}
 }
-
 
 void equaltuple2(int e1, integer *str1, integer *str1a, integer *str2, integer *str2a)
 {
@@ -1572,7 +1556,6 @@ integer t1,t2,t3,t4,t5;
     t4 = (t5*t4)%p;
     s[0] = (t1+t3)%p;
     s[1] = (t2+t4)%p;
-
 }
 
 void exp2q (integer e, integer a1[], integer a2[], integer q[], integer p)
@@ -1626,7 +1609,6 @@ while (e1 != 0)
 	sq = (sq * sq) % n;
 	}
 return(t);
-
 }
 
 integer cl(integer c, integer b, integer p)
@@ -1656,11 +1638,9 @@ t2 = c%p;
 q[0] = t1;
 q[1] = t2;
 
-
 exp2q(e,a,a1,q,p);
 t1 = s*a1[1];
 return(t1);
-
 }
 
 integer sqrt1(integer c, integer p)
