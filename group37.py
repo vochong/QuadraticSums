@@ -1,5 +1,5 @@
 from math104 import *
-from modsqrt20 import sqrt1 
+from modsqrt2 import sqrt1 
 
 
 """ Display an element of the group """
@@ -1563,7 +1563,6 @@ def series21(c1,c2,a2,d,d1,p):
         h1[3] = (h1[3]+a4[1])%p
     return(h1)    
 
-
 def ddh(k,x,y,z):
     g = k.g
     i2 = k.i2
@@ -1586,15 +1585,12 @@ def ddh(k,x,y,z):
     h2 = series(1,t1,a3,0,1,p)
     h3 = series(1,t1,a4,0,1,p)
     h4 = series(1,t1,a5,0,1,p)
-    # print(" in ddh h1 = ",h1,"h2 = ",h2," h3 = ",h3," h4 = ",h4)
 
     s = init2(4)
     s[0] = (h1[0]+h1[1])%p
     s[1] = (h2[0]+h2[1])%p
     s[2] = (h3[0]+h3[1])%p
     s[3] = (h4[0]+h4[1])%p
-
-    # print(" \n \n in ddh s = ",s)
 
     t1 = 0
     t2 = p-s[0]
