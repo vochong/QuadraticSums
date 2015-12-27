@@ -1,25 +1,3 @@
-/* This program is derived from test7557.cpp */
-/* and also derived from test9464.cpp */
-/* and from test9640.cpp */
-/* and qs4128.cpp */
-/* and from qs4350.cpp in qs43 directory */
-/* and qs4689.cpp in qs46 directory */
-/* qs5035.cpp in qs50 directory */
-/* qs5188.cpp in qs51 directory */
-/* qs5254.cpp in qs52 directory */
-/* qs6027a4.cpp in qs73 directory */
-/* test194h.cpp is qs83 directory */
-/* qs8442e8.c in qs85 directory */
-/* qs8585b1.c in qs85 directory */
-/* qs8587a1.c in qs87 directory */
-/* test0541.c in qs87 directory */
-/* test0549.c in qs87 directory */
-/* ds212.c in ds2 directory */
-/* ds228v377.c in qs1 directory */
-/* qs07v87.c in qs20 directory */
-
-/* qmath214.h is the last tested version of qmath.h */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "qmath228v4.h"
