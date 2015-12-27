@@ -103,7 +103,7 @@ int main(void)
 	integer hs1[144] = {0};
 	integer hs2[144] = {0};
 	integer hs3[144] = {0};
-    integer hs4[144] = {0};
+    	integer hs4[144] = {0};
 
 	integer ws1[27] = {0};
 	integer ws2[27] = {0};
@@ -142,7 +142,7 @@ int main(void)
 
 	m2 = m;
 
-    p = 7129;
+    	p = 7129;
 
 
 
@@ -217,15 +217,15 @@ int main(void)
 	i2 = find4(g,p-1,p);
 	printf("\n \n from find4 i2 = %d",i2);
 
-    calc2(g,i2,a2,p);
-    printf("\n \n from calc2 a2 = ");
+    	calc2(g,i2,a2,p);
+    	printf("\n \n from calc2 a2 = ");
 	displayh(2,a2);
 
 
 
 
 
-    printf("\n \n test of fn60");
+    	printf("\n \n test of fn60");
 	fn60(5,29,7,34,a2,a3,p);
 	series(5,29,a2,0,h11,2,p);
 	series(7,34,a2,0,h12,2,p);
@@ -252,11 +252,7 @@ int main(void)
     printf("\n \n test of fn61");
     s1 = 89;
     s2 = find3(s1);
-/*
-	i3 = sqrt1(s1-1,s1);
-	i3 = exp1((s1-1)/4,s2,s1);
-*/
-	i3 = find4(s2,s1-1,s1);
+    i3 = find4(s2,s1-1,s1);
     calc2(s2,i3,a3,s1);
     printf("  s2 = %d",s2);
 
@@ -304,36 +300,32 @@ int main(void)
 
 
 
-
-
-
-    printf("\n \n Enter 1 to continue ");
+	printf("\n \n Enter 1 to continue ");
 	scanf("%d",&s1);
 
 
 
 	for(k=0;k<50;k++)
-    {
-
+    	{
 	i2 = sqrt1(p-1,p);
 	s2 = exp1((p-1)/2,g,p);
 	if (s2==(p-1))
-        {
-        i2 = exp1((p-1)/4,g,p);
-        }
+        	{
+        	i2 = exp1((p-1)/4,g,p);
+        	}
 	i2 = (p+i2)%p;
 	printf("\n \n from sqrt1 i2 = %d",i2);
-    calc2(g,i2,a2,p);
+	calc2(g,i2,a2,p);
 	printf("\n \n from calc2 a2 = ");
 	displayh(2,a2);
 
   	printf("\n \n Enter a value for s1 ");
 	scanf("%d",&s1);
 	if (s1<1)
-        {
-        k = 50;
-        s1 = 1;
-        }
+        	{
+        	k = 50;
+        	s1 = 1;
+	 	}
 
 
 
@@ -347,51 +339,25 @@ int main(void)
 **/
 
 
-
-
-
-
 	exp7(s1,a2,a3,p);
 	a2[0] = a3[0];
 	a2[1] = a3[1];
 	s5 = s1;
 
-   if ((s5%4)==3)
-        {
-        printf("=========================================");
-        i2 = (p-i2)%p;
-        a2[1] = (p-a2[1])%p;
-        }
+   	if ((s5%4)==3)
+        	{
+        	printf("=========================================");
+        	i2 = (p-i2)%p;
+        	a2[1] = (p-a2[1])%p;
+        	}
 
 	exp7(5,a2,a5,p);
 
-
-
-
-
-
-
-
-
-/*
-	printf("\n \n");
-	for(i=0;i<201;i++)
-		{
-		exp7(i,a2,a3,p);
-		printf("\n i = %d",i);
-		printf("     (%d",a3[0]);
-		printf(" , %d)",a3[1]);
-		}
-
- 	printf("\n \n Enter 1 to continue ");
-	scanf("%d",&s1);
-*/
 
 	l2 = 4;
 	l3 = l2+4;
 
 	setzero(200,ptr2);
-
 
 
 /** if flag0 = 1 then set141 is normal (i.e. correct) **/
@@ -411,8 +377,6 @@ int main(void)
     e = (p-1)/9;
     e2 = e%4;
     e = 1*e-e2;
-
-
 
 
 
@@ -445,7 +409,7 @@ int main(void)
 	displayh11(h11);
 	printf("\n \n after exp4d");
 
-    e1 = e + 4;
+    	e1 = e + 4;
 	exp4a(1*e1,0,201,a2,ptr2,p);
 	printf("\n \n &&&&&& the answer (exp4a) is ");
 	ndisplay(ptr2[201]);
@@ -454,7 +418,7 @@ int main(void)
 	printf("\n \n &&&&& the answer (exp4a) is \n");
 	display27(ptr2[202]);
 
-    printf("\n \n i2 = %d  a2 = (%d,%d)",i2,a2[0],a2[1]);
+    	printf("\n \n i2 = %d  a2 = (%d,%d)",i2,a2[0],a2[1]);
 	series(1,p-1,a2,0,h11,2,p);
 	printf("\n \n (2) series h11 = ");
 	displayh(4,h11);
@@ -642,21 +606,20 @@ int main(void)
 
 
 
-	calc19(m2,1,e,2,e+e2,a2,h11,h12,ptr2,str1,hs1,hs4,p);
+    calc19(m2,1,e,2,e+e2,a2,h11,h12,ptr2,str1,hs1,hs4,p);
     printf("\n \n \n \n");
     k3[0] = hs4[30*2];
     k3[1] = hs4[30*3];
 
-	calc19(m2,1,e,6,e+e2,a2,h11,h12,ptr2,str1,hs1,hs2,p);
+    calc19(m2,1,e,6,e+e2,a2,h11,h12,ptr2,str1,hs1,hs2,p);
     printf("\n \n \n \n");
     k3[2] = hs2[30*2];
     k3[3] = hs2[30*3];
 
-
-	calc19(m2,1,e,4,e+e2,a2,h11,h12,ptr2,str1,hs1,hs4,p);
+    calc19(m2,1,e,4,e+e2,a2,h11,h12,ptr2,str1,hs1,hs4,p);
     printf("\n \n \n \n");
 
-	calc19(m2,1,e,8,e+e2,a2,h11,h12,ptr2,str1,hs1,hs2,p);
+    calc19(m2,1,e,8,e+e2,a2,h11,h12,ptr2,str1,hs1,hs2,p);
     printf("\n \n \n \n");
 
 
@@ -810,28 +773,28 @@ int main(void)
 
 
     solve2m(16,&ptr2[150],h14,p);
-	s1 = det(16,&ptr2[150]);
+    s1 = det(16,&ptr2[150]);
 
-	setzero2(16,h11);
-	l2solve(16,h11,h14,&ptr2[150],p);
+    setzero2(16,h11);
+    l2solve(16,h11,h14,&ptr2[150],p);
 
     printf("\n \n \n \n det = %d",s1);
     printf("\n \n");
     display16d(150,ptr2,h14);
 
 
-	printf("\n \n i2 = %d",i2);
+    printf("\n \n i2 = %d",i2);
     printf("\n \n g = %d",g);
-	printf("\n \n a2 = ");
-	displayh(2,a2);
+    printf("\n \n a2 = ");
+    displayh(2,a2);
 
 
-	printf("\n \n det_sum = %d",det_sum);
-	printf("\n det_l144 = %d",det_l144);
+    printf("\n \n det_sum = %d",det_sum);
+    printf("\n det_l144 = %d",det_l144);
 
     }
 
-	return(0);
+return(0);
 
 }
 
