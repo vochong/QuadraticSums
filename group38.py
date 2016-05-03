@@ -1,5 +1,5 @@
 from math104 import *
-from modsqrt20 import sqrt1 
+from modsqrt2 import sqrt1 
 
 
 """ Display an element of the group """
