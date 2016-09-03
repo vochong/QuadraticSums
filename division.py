@@ -237,7 +237,6 @@ def divide(a,b,n1):
     return(s)
 
 
-
 """ Examples """
 
 """ Example 1 """
@@ -253,9 +252,6 @@ print("to calculate {0}/{1} to a precision of 50 decimal digits".format(a,b))
 s = divide(a,b,50)
 print("\n divide({0},{1},50) = {2}".format(a,b,s))
 print("\n\n")
-
-
-
 
 """ Example 2 """
 a = 113253454212386751
@@ -314,5 +310,4 @@ print("referred to as (1) subtractive methods or digit recurrence methods or")
 print("(2) multiplicative methods such as Newton-Raphson")
 
     
-
 
