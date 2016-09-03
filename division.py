@@ -135,7 +135,7 @@ For example 1/17 = 0.058823529... so digits(1,17,1,20) = '05882352941176470588'
 which is the first 20 digits in the decimal expansion of 1/17.  The output is
 returned as a string.  This is based on a different division algorithm based on
 exponentiation modulo b which is different from previous methods that are
-referred to as either (1) subtractive methods such as trial division or
+referred to as either (1) subtractive methods or digit recurrence methods or
 (2) multiplicative methods such as Newton-Raphson.  If n = n2 - n1 then this
 algorithm runs O(n log n (log b)^2 + n (log b)^3) time.  Also it should be
 noted that algorithm runs efficiently even if n1 is a very large integer.
@@ -151,7 +151,6 @@ def digits(a,b,n1,n2):
     b = int(b)
     n1 = int(n1)
     n2 = int(n2)
-    
     t = gcd(a,b)
     if (t>1):
         a = a//t
@@ -191,21 +190,17 @@ def divide(a,b,n1):
     a = int(a)
     b = int(b)
     n1 = int(n1)
-    
     t = gcd(a,b)
     if (t>1):
         a = a//t
         b = b//t
-        
     flag = 0
     if (b!=0) and ((b%2==0) or (b%5==0)):
         flag = 2
-        
     if (b==0):
         a = 0
         b = 1
         flag = 1
-    
     sign = ""
     if (a<0) and (b>0):
         sign = "-"
@@ -302,5 +297,4 @@ print("infeasible with the two other commonly used division methods usually")
 print("referred to as (1) subtractive methods or digit recurrence methods or")
 print("(2) multiplicative methods such as Newton-Raphson")
 
-    
 
