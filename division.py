@@ -46,7 +46,6 @@ def is_prime(p):
         b = False
     return(b)
 
-
 """ Finds a prime p such that p = 1 (mod c) and p > c*m
 If c is odd then the prime p = 3 (mod 4)
 If 2^a divides c and 2^(a+1) does not divide c where a>0
@@ -67,7 +66,6 @@ def findprime(c,m):
         i = i+2
     return(t1)
 
-
 """ Calculates the greatest commmon divisor of a and b """
 def gcd(a,b):
     a = abs(a)
@@ -79,7 +77,6 @@ def gcd(a,b):
         return(1)
     s = gcd(b%a,a)
     return(s)
-    
 
 """ Recursive algorithm for calculating a^-1 (mod b) assuming gcd(a,b) = 1"""
 def inverse2(a,b):
@@ -90,7 +87,6 @@ def inverse2(a,b):
     else:
         t = (b-((b*inverse2(b%a,a))//a))
         return(t)
-
 
 def f10v3(n,a,p,q):
     p1 = p*q
@@ -106,7 +102,6 @@ def f10v3(n,a,p,q):
     s = (s*a*t-1)//p
     s = s%q
     return(s)
-
 
 def f10v4(n,a,p):
     n = -n
@@ -133,11 +128,10 @@ def f10v4(n,a,p):
     s = a1*s%q
     return(s)
 
-
 """ Given two integers a and b of arbitrary size, this calculates the
 n1 to the n2 digits in the base 10 decimal expansion of the fractional part
 of a/b which is |a|/|b| if |a| < |b| and is (|a| mod |b|)/|b| if |a| > |b|.
-For example 1/17 = 0.58823529... so digits(1,17,1,20) = '05882352941176470588'
+For example 1/17 = 0.058823529... so digits(1,17,1,20) = '05882352941176470588'
 which is the first 20 digits in the decimal expansion of 1/17.  The output is
 returned as a string.  This is based on a different division algorithm based on
 exponentiation modulo b which is different from previous methods that are
@@ -182,7 +176,6 @@ def digits(a,b,n1,n2):
     if (flag==2):
         string1 = "error gcd(10,b/gcd(a,b)) > 1"
     return(string1)
-
 
 """ Given two integers a and b of arbitrary size, this calculates the value
 of a/b to n1 digits of decimal precision in base 10.  Most previously used
