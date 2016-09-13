@@ -7,9 +7,10 @@ There are two main functions in this program:
 (2) digits(a,b,n1,n2) which calculates the n1 to n2 digits in the fractional
 part of the decimal expansion of a/b
 The function digits is efficient even if n1 is a large integer provided that
-n2 - n1 is reasonably small.  Other division algortihms such trial division
-or Newton-Raphson are not efficient or computationally feasible for large
-values of n1.  The output of both functions is returned as a string.
+n2 - n1 is reasonably small.  Other division algortihms such as subtractive
+methods or multiplicative (iterative) methods such as Newton-Raphson 
+are not efficient or computationally feasible for large values of n1.  
+The output of both functions is returned as a string.
 See the comments in front of the definitions of both of the functions divide
 and digits below for more information """
 
