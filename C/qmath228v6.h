@@ -126,7 +126,6 @@ void set138(int m2, int l2, integer a2[], integer a10[], integer a11[],
             integer sn2[], STRING ptr2, integer b2[], integer p);
 void series(int c1, int c2, integer a2[], int d, integer h11[], long int d1, integer p);
 void series1(int c1, int c2, int s, integer a2[], int d, integer h11[], long int d1, integer p);
-void series3(int l2, integer a2[], int d, integer h11[], long int d1, integer p);
 
 
 void setzero (int m2, STRING ptr2)
@@ -2895,48 +2894,3 @@ for(i=c1;i<(c2+1);i=i+s)
 	h11[3] = (h11[3]+a4[1])%p;
 	}
 }
-
-void series3(int l2, integer a2[], int d, integer h11[], long int d1, integer p)
-{
-int i;
-integer a3[2] = {0,0};
-integer a4[2] = {0,0};
-integer a5[2] = {0,0};
-integer a6[2] = {0,0};
-
-h11[0] = 0;
-h11[1] = 0;
-h11[2] = 0;
-h11[3] = 0;
-for(i=0;i<(l2+1);i++)
-	{
-	exp7(i,a2,a3,p);
-	exp7(i,a3,a4,p);
-	exp7(d1,a4,a3,p);
-
-	exp7(l2-i,a2,a4,p);
-	exp7(l2-i,a4,a6,p);
-	exp7(d1,a6,a5,p);
-
-	exp7(i,a2,a4,p);
-	exp7(d,a4,a6,p);
-
-    cmult(a3,a5,a4,p);
-	a3[0] = a4[0];
-	a3[1] = a4[1];
-
-	a4[0] = (a3[0]*a6[0])%p;
-	a4[1] = (a3[1]*a6[0])%p;
-
-	h11[0] = (h11[0]+a4[0])%p;
-	h11[1] = (h11[1]+a4[1])%p;
-
-	a4[0] = (a3[0]*a6[1])%p;
-	a4[1] = (a3[1]*a6[1])%p;
-
-	h11[2] = (h11[2]+a4[0])%p;
-	h11[3] = (h11[3]+a4[1])%p;
-	}
-}
-
-
