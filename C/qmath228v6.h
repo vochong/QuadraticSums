@@ -160,10 +160,6 @@ int i;
 integer t;
 integer t1[220] = {0};
 integer t2[220] = {0};
-/*
-integer t1[m] = {0};
-integer t2[m] = {0};
-*/
 
 for (i=0;i<m2;i++)
 	{
@@ -705,7 +701,6 @@ for(i=0;i<16;i++)
 	}
 }
 
-
 void mult8a (int m2, integer c, integer s, int e, int k, int s1, int s2,
              STRING ptr2, integer v1[], integer p)
 {
@@ -788,7 +783,6 @@ for(i=0;i<8;i++)
 	multm4(m2,1,s1,k+b,ptr2,v1,p);
 	}
 }
-
 
 integer multcnvl (int l2, int e1, int e2, STRING ptr2, integer p)
 {
@@ -953,11 +947,6 @@ int t;
 int t1,t2,t3,t4;
 
 unsigned int i;
-/*
-unsigned int d;
-
-d = d1+1;
-*/
 
 t1 = c1;
 t2 = c2;
@@ -1291,10 +1280,6 @@ integer t1,t2;
 	mult50(m2,1,1,202,203,205,199,ptr2,b1,p);
 	mult50(m2,1,1,204,205,206,199,ptr2,b1,p);
 	set2d(130,206,ptr2);
-/*
-	set2d(129,175,ptr2);
-	set2d(130,176,ptr2);
-*/
 }
 
 void equation31a(int m2, integer a1[], integer cs[], integer sn[], integer cs1[], integer sn1[],
@@ -1653,9 +1638,6 @@ if (c>0)
 		t = (m2-1)-c;
 		t4 = *(ptr2[r] + t);
 		t2 = inverse2(t4,p);
-/*
-		printf("\n \n in lsolve t2 = %d",t2);
-*/
 		t3 = (t1*t2)%p;
 	}
 t = (m2-1)-r;
@@ -1786,9 +1768,6 @@ void equation66(int l2, integer ws1[], integer ws2[], integer cs[], integer sn[]
                 integer h11[], integer h12[], STRING ptr2, integer b2[], integer p)
 {
 unsigned int t;
-/*
-unsigned int t1;
-*/
 integer c11,c12,c22,s11,s12,s22;
 integer t2,t3,t4;
 integer c,s;
@@ -2015,9 +1994,6 @@ void equation67a4(int l2, integer a2[], integer hs1[], integer hs2[], integer h1
 unsigned int i,j;
 unsigned int t;
 unsigned int s;
-/*
-unsigned int t1;
-*/
 integer c8[9] = {0};
 integer s8[9] = {0};
 integer t2,t3,t4,t5,t6;
@@ -2234,11 +2210,7 @@ int a6[2] = {0};
 	h12[4] = s41;
 
 	solve2m(5,&ptr2[t],h12,p);
-/*
-	t1 = det(5,&ptr2[t]);
-*/
 	setzero2(10,h11);
-
 	l2solve(5,h11,h12,&ptr2[t],p);
 
 	t = 150;
@@ -2279,9 +2251,6 @@ int a6[2] = {0};
 	h12[4] = s42;
 
 	solve2m(5,&ptr2[t],h12,p);
-/*
-	t1 = det(5,&ptr2[t]);
-*/
 	l2solve(5,&h11[5],h12,&ptr2[t],p);
 
 	for(j=0;j<8;j++)
