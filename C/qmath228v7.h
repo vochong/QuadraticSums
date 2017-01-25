@@ -163,10 +163,6 @@ int i;
 integer t;
 integer t1[220] = {0};
 integer t2[220] = {0};
-/*
-integer t1[m] = {0};
-integer t2[m] = {0};
-*/
 
 for (i=0;i<m2;i++)
 	{
@@ -955,12 +951,7 @@ void det5b (int c1, int c2, int c3, int c4, int m2, int e, int e1,
 int t;
 int t1,t2,t3,t4;
 
-unsigned int i;
-/*
-unsigned int d;
-
-d = d1+1;
-*/
+unsigned int i
 
 t1 = c1;
 t2 = c2;
