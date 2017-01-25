@@ -951,7 +951,7 @@ void det5b (int c1, int c2, int c3, int c4, int m2, int e, int e1,
 int t;
 int t1,t2,t3,t4;
 
-unsigned int i
+unsigned int i;
 
 t1 = c1;
 t2 = c2;
