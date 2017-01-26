@@ -1285,10 +1285,6 @@ integer t1,t2;
 	mult50(m2,1,1,202,203,205,199,ptr2,b1,p);
 	mult50(m2,1,1,204,205,206,199,ptr2,b1,p);
 	set2d(130,206,ptr2);
-/*
-	set2d(129,175,ptr2);
-	set2d(130,176,ptr2);
-*/
 }
 
 void equation31a(int m2, integer a1[], integer cs[], integer sn[], integer cs1[], integer sn1[],
@@ -1602,8 +1598,6 @@ integer a3[2] = {0};
 	set2d(118,198,ptr2);
 }
 
-
-
 integer inverse2(integer a, integer b)
 {
 integer temp;
@@ -1780,9 +1774,6 @@ void equation66(int l2, integer ws1[], integer ws2[], integer cs[], integer sn[]
                 integer h11[], integer h12[], STRING ptr2, integer b2[], integer p)
 {
 unsigned int t;
-/*
-unsigned int t1;
-*/
 integer c11,c12,c22,s11,s12,s22;
 integer t2,t3,t4;
 integer c,s;
@@ -2009,9 +2000,6 @@ void equation67a4(int l2, integer a2[], integer hs1[], integer hs2[], integer h1
 unsigned int i,j;
 unsigned int t;
 unsigned int s;
-/*
-unsigned int t1;
-*/
 integer c8[9] = {0};
 integer s8[9] = {0};
 integer t2,t3,t4,t5,t6;
