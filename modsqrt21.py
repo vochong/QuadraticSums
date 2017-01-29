@@ -15,7 +15,6 @@ More information on these functions can be found in the paper
 "On Calculating Square Roots in GF(p)" written by David S. Knight
 """
 
-
 """ This calculates g^e (mod n) for integers e,g, and n """
 def exp1(e,g,n):
     t = 1
@@ -29,7 +28,6 @@ def exp1(e,g,n):
             e1 = e1//2
         sq = (sq*sq)%n
     return(t)
-
 
 """ This multiplies two polynomials in GF(p^2)
 that is it calculates c(x) = a(x)*b(x) <mod q(x)>
@@ -48,7 +46,6 @@ def mult2(a,b,q,n):
     t4 = (t5*t4)%n
     c = [(t1+t3)%n , (t2+t4)%n]
     return(c)
-
 
 """ This multiplies two polynomials in GF(p^3)
 that is it calculates c(x) = a(x)*b(x) <mod q(x)>
@@ -93,7 +90,6 @@ def mult3(a,b,q,n):
     t12 = (t6+t1)%n
     c = [t12 , t11, t10]
     return(c)
-
     
 """ exp2 exponentiates in GF(p^2) by calculating (g(x))^e mod <q(x)> """
 def exp2(e,g,q,n):
@@ -109,7 +105,6 @@ def exp2(e,g,q,n):
         sq = mult2(sq,sq,q,n)
     return(t)
 
-
 """ exp3 exponentiates in GF(p^3) by calculating (g(x))^e mod <q(x)> """
 def exp3(e,g,q,n):
     t = [0,0,1]
@@ -123,8 +118,7 @@ def exp3(e,g,q,n):
             e1 = e1//2
         sq = mult3(sq,sq,q,n)
     return(t)
-            
-
+         
 """ This is the main function used in the Cipolla-Lehmer algorithm for
 calculating square roots mod a prime p """
 def CL(c,b,p):
@@ -146,7 +140,6 @@ def CL(c,b,p):
     t = s*t3[1]
     return(t)
 
-
 """ This algorithm calculates cube roots mod p assuming p is a prime
 that = 5 (mod 6) or p = 4 (mod 9) or p = 7 (mod 9)"""
 def cuberoot(g,p):
@@ -167,7 +160,6 @@ def cuberoot(g,p):
             t = 0
     return(t)
 
-
 """ This determines if a cubic polynomial q(x) is irreducible in GF(p) """
 def ir(q,p):
     t = 1
@@ -179,12 +171,10 @@ def ir(q,p):
         t = 0
     return(t)
 
-
 """ This calculates the multiplicative inverse of a in GF(p) """
 def inverse(a,p):
     t = exp1(p-2,a,p)
     return(t)
-
 
 """ This is the main function used in the GF(p^3) algorithm for
 calculating square roots mod a prime p where p = 5 (mod 6) or
@@ -222,7 +212,6 @@ def S(d,b,p):
         t = -1
     return(t)
 
-
 """ This is the Cipolla-Lehmer algorithm. It calculates a square root
 of c mod p assuming c is a quadratic residue mod p where p is a prime > 2"""
 def sqrt1(c,p):
@@ -236,7 +225,6 @@ def sqrt1(c,p):
             t = y
             break
     return(t)
-
 
 """ This is GF(p^3) square root algorithm.  It calculates a square root
 of d mod p assuming d is a quadratic residue in GF(p) and p is a prime
@@ -253,7 +241,6 @@ def sqrt2(d,p):
                 t = y
                 break
     return(t)
-
 
 def verify(a,b,p):
     a1 = [0,0]
@@ -277,7 +264,6 @@ def verify(a,b,p):
         a1 = exp2(e,g,q1,p)
     return(a1)    
     
-
 """ Creates a r x c matrix and initializes all entries to 0"""
 def init1(r,c):
     s = range(r)
@@ -286,7 +272,6 @@ def init1(r,c):
         for j in range(r):
             a[j].append(0)
     return(a)
-
 
 """ Creates a r x 1 vector and initializes all entries to 0"""
 def init2(r):
@@ -304,7 +289,6 @@ def add(a,b,n):
         s[i] = (a[i]+b[i])%n
     return(s)
 
-
 """ Recursive algorithm for calculating a^-1 (mod b) assuming gcd(a,b) = 1"""
 def inverse2(a,b):
     if (a==0 or b==0):
@@ -315,7 +299,6 @@ def inverse2(a,b):
         t = (b-((b*inverse2(b%a,a))//a))
         return(t)
 
-
 def multcnvl2(a,b,p):
     t1 = len(a)
     t2 = len(b)
@@ -325,8 +308,6 @@ def multcnvl2(a,b,p):
         s1 = (a[i]*b[i])%p
         s = (s+s1)%p
     return(s)
-
-
 
 """ This multiplies two polynomials modulo a cubic polynomial q(x)
 that is it calculates c(x) = a(x)*b(x) <mod q(x)>
@@ -384,7 +365,6 @@ def mult3d(a,b,q,q1,n):
     c = [t12,t11,t10]
     return(c)
 
-
 """ exp3d is an exponentiation algorithm based on mult3d """
 def exp3d(e,g,q,q1,n):
     t = [[0,0,0],[0,0,0],[0,0,1]]
@@ -398,7 +378,6 @@ def exp3d(e,g,q,q1,n):
             e1 = e1//2
         sq = mult3d(sq,sq,q,q1,n)
     return(t)
-
 
 """ Primality test """
 def is_prime(p):
@@ -419,7 +398,6 @@ def is_prime(p):
         b = False
     return(b)
 
-
 """ Finds a prime p such that p = 1 (mod c) and p > c*m
 If c is odd then the prime p = 3 (mod 4)
 If 2^a divides c and 2^(a+1) does not divide c where a>0
@@ -439,7 +417,6 @@ def findprime(c,m):
         t = is_prime(t1)
         i = i+2
     return(t1)
-
 
 """ This is the main function used in the improved GF(p^3) algorithm for
 calculating the square root of a quadratic residue d mod a prime p where p > 3
@@ -487,8 +464,7 @@ def S4(d,b,p):
         t = (3*t)%p
         t = (p-t)%p
 
-    return(t)
-        
+    return(t)        
 
 
 """ This is the improved GF(p^3) square root algorithm and is based on the
@@ -512,8 +488,5 @@ def sqrt4(d,p):
                 break    
     if (t==False):
         t = 0
-    return(t)
-      
-        
-
-
+    return(t)     
+       
