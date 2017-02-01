@@ -1,4 +1,3 @@
-
 typedef int integer;
 typedef integer *STRING[220];
 
@@ -2902,7 +2901,7 @@ for(i=0;i<(l2+1);i++)
 	exp7(i,a2,a4,p);
 	exp7(d,a4,a6,p);
 
-    cmult(a3,a5,a4,p);
+    	cmult(a3,a5,a4,p);
 	a3[0] = a4[0];
 	a3[1] = a4[1];
 
