@@ -1,6 +1,6 @@
 from math104 import *
-from modsqrt20 import sqrt1
-import modsqrt23v04 as sqrt
+from modsqrt2 import sqrt1
+import modsqrt21 as sqrt
 
 
 """ Display an element of the group """
