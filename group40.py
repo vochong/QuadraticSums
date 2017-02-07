@@ -2276,16 +2276,13 @@ def init3(flag4,c1,d,p):
         h1 = k.series(1,p-1,0,2)
         d1 = h1[0]
         h2 = k.series(1,p-1,0,4)
-        d2 = h2[0]
-        # print("\n\n d1 = {0}   d2 = {1}".format(d1,d2))
+        d2 = h2[0]       
         h1 = k.series(1,(p-1)//(3*c1),0,2)
         d3 = h1[0]
-        d4 = h1[1]
-        # print(" d3 = {0}   d4 = {1}".format(d3,d4))
+        d4 = h1[1]     
         h2 = k.series(1,(p-1)//(6*c1),0,4)
         d5 = h2[0]
         d6 = h2[1]
-        # print(" d5 = {0}   d6 = {1}".format(d5,d6))
 
     d1 = (d1+d[0])%p
     d2 = (d2+d[1])%p
@@ -2349,3 +2346,4 @@ def init3(flag4,c1,d,p):
     l2solve(15,h1,b2,m,p)
     
     return(h1)
+
