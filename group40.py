@@ -97,8 +97,8 @@ class group:
         "find4","calc2","printlist","printlist2","printlist3","calc20",
         "calc21","calc22","calc23","calc24","calc25","calc26","calc27",
         "calc28","calc29","list1","list2","series_d","series_d1","series_d3",
-        "series_d20","hs20","hs21","hs","ws","f1","f20","f21","k32","calc32",
-        "f32","calc64","f81","f81d","f27","f9","k60","k61","calc6",
+        "series_d20","hs20","hs21","hs","ws","f1","f20","f21","k24","k32",
+        "calc32","f32","calc64","f81","f81d","f27","f9","k60","k61","calc6",
         "exp4b2","exp","h20","series","series1","series3","series20",
         "display","display2","display4")
                 
