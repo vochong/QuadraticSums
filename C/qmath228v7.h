@@ -1,9 +1,3 @@
-/*
-#include "stdio.h"
-#include "time.h"
-#include "alloc.h"
-#include "process.h"
-*/
 
 typedef int integer;
 typedef integer *STRING[220];
