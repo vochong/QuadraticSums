@@ -45,13 +45,10 @@ void calc11q(int m2, integer e, integer e2, int c1, integer a2[], integer h11[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
 void calc14(int m2, integer e, int c1, integer a2[], integer h11[], integer h12[],
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
-
 void calc14k(int m2, integer e, int c1, integer a2[], integer h11[], integer h12[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
-
 void calc14q(int m2, integer e, integer e2, int c1, integer a2[], integer h11[], integer h12[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
-
 void calc15(int m2, integer e, integer a2[], integer h11[], integer h12[],
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
 void calc15q(int m2, integer e, integer e2, integer a2[], integer h11[], integer h12[],
@@ -68,12 +65,10 @@ void calc18k(int m2, integer e, integer a2[], integer h11[], integer h12[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
 
 void fn60(int c1, int c2, int t1, int t2, integer a2[], integer a3[], integer p);
-
 void series20(int c1, int c2, integer a2[], integer h11[], long int d1, integer p);
 void fn60d(int c1, int c2, int t1, int t2, integer a2[], integer a3[], integer p);
 void fn61(int c1, int d1, int t1, int d2, integer a2[], integer h11[], integer h15[], integer p);
 void fn61d(int c1, int d1, int t1, int d2, integer a2[], integer h11[], integer h15[], integer p);
-
 void calc19(int m2, int flag4, integer e, int c1, int e1, integer a2[], integer h11[], integer h12[],
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
 
