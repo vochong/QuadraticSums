@@ -1,12 +1,8 @@
-/** derived from qs08v419.c **/
-/** and qs08v479.c in qs24 directory **/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "qmath228v7.h"
 #include "qmath229v2.h"
 #include "calc2v6.h"
-
 
 typedef int integer;
 typedef integer *STRING[220];
@@ -111,7 +107,7 @@ int main(void)
 	integer hs1[144] = {0};
 	integer hs2[144] = {0};
 	integer hs3[144] = {0};
-    integer hs4[144] = {0};
+    	integer hs4[144] = {0};
 
 	integer ws1[27] = {0};
 	integer ws2[27] = {0};
@@ -153,15 +149,8 @@ int main(void)
 	m2 = m;
 
 
-    p = 1249;
-
-    p = 4513;
 
     p = 4129;
-
-
-
-
 
 
     printf("\n \n char = %d",sizeof(char));
@@ -239,13 +228,13 @@ int main(void)
 
 
 /** change **/
-    printf("\n \n test of calc42 ");
+    printf("\n \n test of calc42d");
     exp7((p-1)/3,a2,a3,p);
     cmult(a2,a3,a5,p);
     a3[1] = (p-a3[1])%p;
     cmult(a2,a3,a6,p);
     e4 = calc42d(5*(p-1)/12-4,(p-1)/12,a2,a5,a6,k40,k41,p-1,p);
-    printf("\n \n calc42 e4 = %d",e4);
+    printf("\n \n calc42d e4 = %d",e4);
 
     printf("\n \n k40 = ");
     displayh(6,k40);
@@ -255,7 +244,7 @@ int main(void)
 
 
 
-    printf("\n \n test of fn60k");
+	printf("\n \n test of fn60k");
 	fn60k(5,29,7,34,a2,a3,4,p);
 	series(5,29,a2,0,h11,4,p);
 	series(7,34,a2,0,h12,4,p);
@@ -267,7 +256,7 @@ int main(void)
 	displayh(2,a3);
 
 
-    printf("\n \n Enter 1 to continue ");
+	printf("\n \n Enter 1 to continue ");
 	scanf("%d",&s1);
 
 
@@ -277,7 +266,7 @@ int main(void)
 	i2 = find4(g,p-1,p);
 	printf("\n \n from find4 i2 = %d",i2);
 
-    calc2(g,i2,a2,p);
+    	calc2(g,i2,a2,p);
 	printf("\n \n from calc2 a2 = ");
 	displayh(2,a2);
 
@@ -361,7 +350,7 @@ int main(void)
 	displayh11(h11);
 	printf("\n \n after exp4d");
 
-    e1 = e + 4;
+    	e1 = e + 4;
 	exp4a(1*e1,0,201,a2,ptr2,p);
 	printf("\n \n &&&&&& the answer (exp4a) is ");
 	ndisplay(ptr2[201]);
@@ -370,7 +359,7 @@ int main(void)
 	printf("\n \n &&&&& the answer (exp4a) is \n");
 	display27(ptr2[202]);
 
-    printf("\n \n i2 = %d  a2 = (%d,%d)",i2,a2[0],a2[1]);
+    	printf("\n \n i2 = %d  a2 = (%d,%d)",i2,a2[0],a2[1]);
 	series(1,p-1,a2,0,h11,2,p);
 	printf("\n \n (2) series h11 = ");
 	displayh(4,h11);
@@ -379,7 +368,7 @@ int main(void)
 	printf("\n \n (4) series h11 = ");
 	displayh(4,h11);
 
-    c1 = 2;
+    	c1 = 2;
 /** calc3 **/
 	flag0 = 1*1;
 /** flag3 = 1 implies c = 5 **/
@@ -389,7 +378,7 @@ int main(void)
 		if(j==0)
 			{
 			calc3k(c1,e,e1,flag0,flag3,a2,kmax,h11,h12,str1,str1a,str2,str2a,m2,
-                   t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
+                   		t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
 
             calc6(m2,8,3,ptr2,h11,str1,p);
             k42[0] = h11[0];
@@ -407,7 +396,7 @@ int main(void)
             i2 = (p+i2)%p;
             a5[1] = (p+a5[1])%p;
 			calc3k(c1,e,e1,flag0,flag3,a5,kmax,h11,h12,str1,str1a,str2,str2a,m2,
-                  t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
+                  		t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
 
             calc6(m2,8,3,ptr2,h20,str1,p);
             k42[4] = h20[0];
@@ -418,13 +407,13 @@ int main(void)
             calc6(m2,9,4,ptr2,h20,str1,p);
             k42[7] = h20[0];
 			}
-        if(j==2)
+        	if(j==2)
 			{
             exp7((p-1)/3,a2,a4,p);
             cmult(a4,a4,a3,p);
             cmult(a2,a3,a6,p);
 			calc3k(c1,e,e1,flag0,flag3,a6,kmax,h11,h12,str1,str1a,str2,str2a,m2,
-                  t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
+                  		t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
 
             calc6(m2,8,3,ptr2,h11,str1,p);
             k42[8] = h11[0];
@@ -563,9 +552,7 @@ int main(void)
 
 
 
-
-
-    series(1,p-1,a2,0,h14,4,p);
+    	series(1,p-1,a2,0,h14,4,p);
 	printf("\n \n \n \n s5 = %d  series =  ",s5);
 	displayh(4,h14);
 
@@ -577,9 +564,9 @@ int main(void)
 
 
 
-    printf("\n \n p = %d",p);
+    	printf("\n \n p = %d",p);
 	printf("      i2 = %d",i2);
-    printf("      g = %d",g);
+    	printf("      g = %d",g);
 	printf("      a2 = ");
 	displayh(2,a2);
 	printf("\n \n a5 = ");
@@ -709,7 +696,7 @@ for(j=0;j<t;j++)
 
 /* 4-i */
 		tuple2(2,str1,str1a,str2,str2a,flag0,y,c6,s1,
-				 m2,l2,a2,ws1,hs1,ws2,hs2,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
+			m2,l2,a2,ws1,hs1,ws2,hs2,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
 		l2 = 2*l2;
 
 		if (a[i]==0)
@@ -721,7 +708,7 @@ for(j=0;j<t;j++)
 			{
 			l3 = l2 + 4;
 			tuple1(2,str2,str1,str1a,
-					 m2,l2,l3,a2,hs1,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
+				m2,l2,l3,a2,hs1,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
 			l2 = l3;
 			}
 
@@ -825,7 +812,7 @@ for(j=0;j<t;j++)
 
 /* 4-i */
 		tuple2(2,str1,str1a,str2,str2a,flag0,y,c6,s1,
-               m2,l2,a2,ws1,hs1,ws2,hs2,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
+               		m2,l2,a2,ws1,hs1,ws2,hs2,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
 		l2 = 2*l2;
 
 		if (a[i]==0)
@@ -1127,8 +1114,6 @@ for(j=0;j<t;j++)
         }
 
 
-
-
 	for(i=0;i<(e2+1);i++)
 		{
 		s1 = 0;
@@ -1141,7 +1126,7 @@ for(j=0;j<t;j++)
 
 /* 4-i */
 		tuple2(2,str1,str1a,str2,str2a,flag0,y,c6,s1,
-               m2,l2,a2,ws1,hs1,ws2,hs2,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
+               		m2,l2,a2,ws1,hs1,ws2,hs2,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
 		l2 = 2*l2;
 
 /** test 1 **/
@@ -1188,7 +1173,6 @@ if (l4>0)
     }
 return(e2);
 }
-
 
 
 
