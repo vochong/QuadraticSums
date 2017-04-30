@@ -1,4 +1,3 @@
-
 typedef int integer;
 typedef integer *STRING[220];
 
@@ -1176,7 +1175,6 @@ int t5,t6;
 	h20[7] = (h21[7]+h20[34])%p;
 	h20[8] = (h21[8]+h20[35])%p;
 
-
 	exp7(l2,a2,a3,p);
 	exp7(l2,a3,a4,p);
 	exp7(4,a4,a3,p);
@@ -1409,7 +1407,6 @@ integer h2[6] = {0,0,0,0,0,0};
 	set2d(131,163,ptr2);
 	set2d(132,164,ptr2);
 
-
 	t3 = flag0;
 	for(i=0;i<6;i++)
 		{
@@ -1445,7 +1442,6 @@ integer h2[6] = {0,0,0,0,0,0};
 		}
 }
 
-
 void tuple2(int d, integer *str1, integer *str1a, integer *str2, integer *str2a, integer flag0,
             int y, int c6, integer c, int m2, int l2, integer a2[], integer ws1[], integer hs1[],
             integer ws2[], integer hs2[], integer cs[], integer sn[],integer h11[], integer cs1[],
@@ -1463,7 +1459,6 @@ setcs(2*l2,a2,cs,sn,p);
 setcs1(2*l2,a2,cs1,sn1,p);
 setcs2(2*l2,a2,cs2,sn2,p);
 
-
 a3[0] = a2[0];
 a3[1] = a2[1];
 for(i=0;i<d;i++)
@@ -1474,7 +1469,6 @@ for(i=0;i<d;i++)
 	ws1 = &str1a[t2];
 	hs2 = &str1[t1+144];
 	ws2 = &str1a[t2+27];
-
 
 	for(j=0;j<6;j++)
 		{
@@ -1508,7 +1502,6 @@ for(i=0;i<d;i++)
 	}
 }
 
-
 void zerotuple(int e1, int e2, integer *str1, integer *str1a)
 {
 int i,j;
@@ -1528,7 +1521,6 @@ for(i=e1;i<(e2+1);i++)
 		}
 	}
 }
-
 
 void equaltuple2(int e1, integer *str1, integer *str1a, integer *str2, integer *str2a)
 {
@@ -1572,7 +1564,6 @@ integer t1,t2,t3,t4,t5;
     t4 = (t5*t4)%p;
     s[0] = (t1+t3)%p;
     s[1] = (t2+t4)%p;
-
 }
 
 void exp2q (integer e, integer a1[], integer a2[], integer q[], integer p)
@@ -1626,7 +1617,6 @@ while (e1 != 0)
 	sq = (sq * sq) % n;
 	}
 return(t);
-
 }
 
 integer cl(integer c, integer b, integer p)
@@ -1656,11 +1646,9 @@ t2 = c%p;
 q[0] = t1;
 q[1] = t2;
 
-
 exp2q(e,a,a1,q,p);
 t1 = s*a1[1];
 return(t1);
-
 }
 
 integer sqrt1(integer c, integer p)
@@ -1680,9 +1668,7 @@ for(i=1;i<m1;i++)
         i = m1;
         }
     }
-
 return(t);
-
 }
 
 void calc2(integer g, integer i2, integer a2[], integer p)
@@ -1696,11 +1682,9 @@ a2[0] = (t1*t2)%p;
 t2 = (t+(p-g))%p;
 t2 = (t1*t2)%p;
 a2[1] = (i2*t2)%p;
-
 }
 
 integer findnqr (integer p)
-
 {
 integer k;
 integer t1,t2,t3;
@@ -1716,9 +1700,7 @@ for(k=2;k<51;k++)
 		k = 101;
 		}
 	}
-
 return(t3);
-
 }
 
 integer find2 (integer g, integer p)
@@ -1750,13 +1732,10 @@ if (t4==10)
     {
     t1 = 1;
     }
-
 return(t1);
-
 }
 
 integer find3 (integer p)
-
 {
 integer k;
 integer t1,t2;
@@ -1771,9 +1750,7 @@ for(k=2;k<51;k++)
 		k = 101;
 		}
 	}
-
 return(t1);
-
 }
 
 
