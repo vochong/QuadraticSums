@@ -1,4 +1,3 @@
-
 typedef int integer;
 typedef integer *STRING[220];
 
@@ -1789,9 +1788,6 @@ void equation66(int l2, integer ws1[], integer ws2[], integer cs[], integer sn[]
                 integer h11[], integer h12[], STRING ptr2, integer b2[], integer p)
 {
 unsigned int t;
-/*
-unsigned int t1;
-*/
 integer c11,c12,c22,s11,s12,s22;
 integer t2,t3,t4;
 integer c,s;
@@ -1893,11 +1889,7 @@ int a4[2] = {0};
 	h12[4] = a4[1];
 
 	solve2m(5,&ptr2[t],h12,p);
-/*
-	t1 = det(5,&ptr2[t]);
-*/
 	setzero2(10,h11);
-
 	l2solve(5,h11,h12,&ptr2[t],p);
 
 	h12[0] = h11[0];
@@ -2018,9 +2010,6 @@ void equation67a4(int l2, integer a2[], integer hs1[], integer hs2[], integer h1
 unsigned int i,j;
 unsigned int t;
 unsigned int s;
-/*
-unsigned int t1;
-*/
 integer c8[9] = {0};
 integer s8[9] = {0};
 integer t2,t3,t4,t5,t6;
@@ -2087,9 +2076,6 @@ int a6[2] = {0};
 
 	t2 = (a3[0]*c1)%p;
 	t3 = (a3[1]*c2)%p;
-/*
-	t3 = (p-t3)%p;
-*/
 	t2 = (t2+t3)%p;
 
 	t4 = (a3[1]*c1)%p;
@@ -2237,11 +2223,7 @@ int a6[2] = {0};
 	h12[4] = s41;
 
 	solve2m(5,&ptr2[t],h12,p);
-/*
-	t1 = det(5,&ptr2[t]);
-*/
 	setzero2(10,h11);
-
 	l2solve(5,h11,h12,&ptr2[t],p);
 
 	t = 150;
@@ -2282,9 +2264,6 @@ int a6[2] = {0};
 	h12[4] = s42;
 
 	solve2m(5,&ptr2[t],h12,p);
-/*
-	t1 = det(5,&ptr2[t]);
-*/
 	l2solve(5,&h11[5],h12,&ptr2[t],p);
 
 	for(j=0;j<8;j++)
@@ -2556,7 +2535,6 @@ integer a22[2];
 
 	setzero2(40,h12);
 	l2solve(9,h12,h11,&ptr2[150],p);
-
 
 /* 2 */
 	for(i=0;i<9;i++)
@@ -2974,7 +2952,6 @@ for(i=0;i<(l2+1);i++)
 	h11[3] = (h11[3]+a4[1])%p;
 	}
 }
-
 
 
 
