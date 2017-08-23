@@ -2,7 +2,6 @@ from math105 import *
 from modsqrt21 import sqrt1
 import modsqrt21 as sqrt
 
-
 """ Display an element of the group """
 def display4(e1):
     display144h(e1[0])
@@ -2381,7 +2380,6 @@ def add(a,b,n):
         s[i] = (a[i]+b[i])%n
     return(s)
 
-
 def init3(flag4,c1,d,p):
     k = group(0,p)
     # k = group(k.g**2,p)
@@ -2704,7 +2702,6 @@ def init8(k,c,temp1,flag4):
     b2 = [1,0,2*a4[1]%p,(p-1)//6,     s,0,0,0]
 
     # test 1
-
     for i in range(8):
         m[5][i] = (12*m[8][i]+3*m[9][i])%p
         # m[5][i] = m[8][i]
@@ -2727,5 +2724,4 @@ def init8(k,c,temp1,flag4):
     # m[5] = [0,0,0,0, 0,0,0,0]
     m[6] = [0,0,0,0, 0,0,0,0]
     m[7] = [0,0,0,0, 0,0,0,0]
-
     return(m,b2)      
