@@ -11,9 +11,6 @@ based on commonly known theorems involving quadratic sums.  However
 the last 4 equations m[3] through m[6] are not as obvious.
 """
 
-
-# p = 3761
-
 p = 3121
 
 k = group(0,p)
@@ -33,7 +30,6 @@ t1 = (q//5)%5
 if (t1==1 or t1==4):
     s = p-s
 print("\n \n s = ",s)
-
 
 m[0] = [p-2,2,p-2,2,p-1,1,
         0,0,0,0,0,0]
@@ -157,7 +153,6 @@ l2solve(12,h1,v1,m,p)
 print("after solve2 = ",h1)
 print("\n \n")
 
-
 e = (p-1)//10
 h1 = k.series3(e,0*e,2)
 h2 = k.series3(e,4*e,2)
@@ -239,4 +234,3 @@ if e1%5==2 or e1%5==3:
     print("\n t1 = ",t1)
     s5 = [t1*temp3[0]%p,t1*temp3[1]%p]
     print("\n s5 = ",s5)
-
