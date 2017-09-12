@@ -74,7 +74,6 @@ void solve16(int m2, integer a2[], STRING ptr2, integer b1[], integer *str1, int
 integer find4(integer g, integer q, integer p);
 
 
-
 int main(void)
 {
 	int i,j,k;
@@ -138,13 +137,9 @@ int main(void)
 	integer k4[16] = {0};
 
 
-
-
 	m2 = m;
 
     	p = 7129;
-
-
 
 
     printf("\n \n char = %d",sizeof(char));
@@ -152,8 +147,6 @@ int main(void)
     printf("\n int = %d",sizeof(int));
     printf("\n long = %d",sizeof(long));
     printf("\n \n");
-
-
 
 	for(i=0;i<m2;i++)
 		{
@@ -221,10 +214,6 @@ int main(void)
     	printf("\n \n from calc2 a2 = ");
 	displayh(2,a2);
 
-
-
-
-
     	printf("\n \n test of fn60");
 	fn60(5,29,7,34,a2,a3,p);
 	series(5,29,a2,0,h11,2,p);
@@ -236,7 +225,6 @@ int main(void)
 	printf(" \n a3 = ");
 	displayh(2,a3);
 
-
     printf("\n \n =========================== test of calc12");
     flag4 = 1;
     calc12(96,a2,flag4,k1,k2,p);
@@ -245,9 +233,6 @@ int main(void)
     series20(-5,20,a2,h11,2,p);
     printf("\n h11 =");
     displayh(4,h11);
-
-
-
 
     printf("\n \n test of fn61");
     s1 = 89;
@@ -272,7 +257,6 @@ int main(void)
     fn61d(20,12,29,16,a3,h11,h15,s1);
     printf("\n \n h15 = ");
     displayh(4,h15);
-
 
     printf("\n \n test of f32");
 
@@ -299,11 +283,8 @@ int main(void)
     displayh2(16,k4);
 
 
-
 	printf("\n \n Enter 1 to continue ");
 	scanf("%d",&s1);
-
-
 
 	for(k=0;k<50;k++)
     	{
@@ -326,7 +307,6 @@ int main(void)
         	k = 50;
         	s1 = 1;
 	 	}
-
 
 
 /** test **/
@@ -377,8 +357,6 @@ int main(void)
     e = (p-1)/9;
     e2 = e%4;
     e = 1*e-e2;
-
-
 
     e = e - 4;
 
@@ -520,40 +498,39 @@ int main(void)
     printf("\n \n series = ");
     displayh(4,h11);
 
-
 /**
     printf("\n \n \n \n");
-	calc11(m2,e,6,a2,h11,h12,ptr2,str1,hs1,hs2,p);
-	printf("\n \n \n \n");
+    calc11(m2,e,6,a2,h11,h12,ptr2,str1,hs1,hs2,p);
+    printf("\n \n \n \n");
 
     calc15(m2,e,a2,h11,h12,ptr2,str1,hs1,hs2,p);
     printf("\n \n \n \n");
 
 
 /**
-	calc14(m2,e,6,a2,h11,h12,ptr2,str1,hs2,hs3,p);
+    calc14(m2,e,6,a2,h11,h12,ptr2,str1,hs2,hs3,p);
     printf("\n \n \n \n");
 
-	calc14k(m2,e,8,a2,h11,h12,ptr2,str1,hs2,hs3,p);
+    calc14k(m2,e,8,a2,h11,h12,ptr2,str1,hs2,hs3,p);
     printf("\n \n \n \n");
 
-	calc14k(m2,e,10,a2,h11,h12,ptr2,str1,hs2,hs3,p);
+    calc14k(m2,e,10,a2,h11,h12,ptr2,str1,hs2,hs3,p);
     printf("\n \n \n \n");
 **/
 
 
 /**
     calc11q(m2,e,e2,4,a2,h11,h12,ptr2,str1,hs1,hs2,p);
-	printf("\n \n \n \n");
+    printf("\n \n \n \n");
 
     calc14q(m2,e,e2,6,a2,h11,h12,ptr2,str1,hs1,hs2,p);
-	printf("\n \n \n \n");
+    printf("\n \n \n \n");
 **/
 
 
 /**
     calc11q(m2,e,e2,6,a2,h11,h12,ptr2,str1,hs1,hs2,p);
-	printf("\n \n \n \n");
+    printf("\n \n \n \n");
 
     calc15q(m2,e,e2,a2,h11,h12,ptr2,str1,hs1,hs2,p);
     printf("\n \n \n \n");
@@ -565,14 +542,13 @@ int main(void)
     printf("\n \n \n \n");
 
     calc10(m2,e,7,a2,h11,h12,ptr2,str1,hs1,hs2,p);
-	printf("\n \n \n \n");
-
+    printf("\n \n \n \n");
 
     calc10(m2,e,3,a2,h11,h12,ptr2,str1,hs1,hs2,p);
-	printf("\n \n \n \n");
+    printf("\n \n \n \n");
 
     calc10(m2,e,5,a2,h11,h12,ptr2,str1,hs1,hs2,p);
-	printf("\n \n \n \n");
+    printf("\n \n \n \n");
 **/
 
 
@@ -587,7 +563,7 @@ int main(void)
 
 
 /**
-	calc16(m2,e,a2,h11,h12,ptr2,str1,hs1,hs2,p);
+    calc16(m2,e,a2,h11,h12,ptr2,str1,hs1,hs2,p);
     printf("\n \n \n \n");
 
     calc16k(m2,e,a2,h11,h12,ptr2,str1,hs1,hs2,p);
@@ -595,16 +571,13 @@ int main(void)
 **/
 
 
-
 /**
-	calc18(m2,e,a2,h11,h12,ptr2,str1,hs1,hs2,p);
+    calc18(m2,e,a2,h11,h12,ptr2,str1,hs1,hs2,p);
     printf("\n \n \n \n");
 
-	calc18k(m2,e,a2,h11,h12,ptr2,str1,hs1,hs2,p);
+    calc18k(m2,e,a2,h11,h12,ptr2,str1,hs1,hs2,p);
     printf("\n \n \n \n");
 **/
-
-
 
     calc19(m2,1,e,2,e+e2,a2,h11,h12,ptr2,str1,hs1,hs4,p);
     printf("\n \n \n \n");
@@ -623,7 +596,6 @@ int main(void)
     printf("\n \n \n \n");
 
 
-
 	q = (p-1)/2;
 	t1 = (6*e)%q;
 
@@ -638,9 +610,6 @@ int main(void)
 	printf("\n \n 3rd h11 = ");
 	displayh(4,h11);
 	e = e-4;
-
-
-
 
 /**
         printf("\n \n \n \n");
@@ -658,12 +627,9 @@ int main(void)
         printf("\n \n \n \n");
 
 
-
         printf("\n \n");
         calc14d(m2,e+4,a2,h11,h12,ptr2,str1,hs1,hs2,p);
         printf("\n \n \n \n");
-
-
 
         printf("\n \n");
         calc17d(m2,e+4,a2,h11,h12,ptr2,str1,hs1,hs2,p);
@@ -725,8 +691,6 @@ int main(void)
 **/
 
 
-
-
 /**
     i = 2;
     printf("\n \n i = %d \n",i);
@@ -739,7 +703,6 @@ int main(void)
     display12(h12);
 	mult12(1,1,h11,h12,hs1,p);
 **/
-
 
 
     series(1,p-1,a2,0,h14,4,p);
@@ -757,8 +720,6 @@ int main(void)
     exp7(4,a4,a3,p);
     printf("\n \n exp7 a3 = ");
     displayh(2,a3);
-
-
 
 
     printf("\n \n \n \n solve12 = ");
@@ -911,7 +872,6 @@ for(j=0;j<t;j++)
 		}
 return(e2);
 }
-
 
 
 int exp4d2 (integer e, integer a2[], int kmax, integer h11[], integer h12[],
