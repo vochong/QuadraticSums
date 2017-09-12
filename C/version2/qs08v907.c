@@ -139,7 +139,6 @@ int main(void)
 
 
     	m2 = m;
-
     	p = 4129;
 
 	for(i=0;i<m2;i++)
@@ -219,7 +218,6 @@ int main(void)
     	printf("\n \n k41 = ");
     	displayh(12,k41);
 
-
 	printf("\n \n test of fn60k");
 	fn60k(5,29,7,34,a2,a3,4,p);
 	series(5,29,a2,0,h11,4,p);
@@ -231,10 +229,8 @@ int main(void)
 	printf(" \n a3 = ");
 	displayh(2,a3);
 
-
 	printf("\n \n Enter 1 to continue ");
 	scanf("%d",&s1);
-
 
 	for(k=0;k<50;k++)
     	{
@@ -254,7 +250,6 @@ int main(void)
         	s1 = 1;
         	}
 
-
 	exp7(s1,a2,a3,p);
 	a2[0] = a3[0];
 	a2[1] = a3[1];
@@ -267,18 +262,14 @@ int main(void)
         a2[1] = (p-a2[1])%p;
         }
 
-
-
 	l2 = 4;
 	l3 = l2+4;
 
 	setzero(200,ptr2);
 
 
-
 /** if flag0 = 1 then set141 is normal (i.e. correct) **/
 /** if flag0 = 0 then set141 is set to zero plus offset of e1 **/
-
 
 	printf("\n \n before exp4d");
 
@@ -407,7 +398,6 @@ int main(void)
 
 **/
 
-
         if ((flag3==flag3)&&(j==0))
             {
             printf("\n \n ======= calc6 from (0 to 8) ========");
@@ -425,8 +415,6 @@ int main(void)
             }
 
 		}
-
-
 
     printf("\n \n k42 = ");
     displayh(12,k42);
@@ -457,8 +445,6 @@ int main(void)
         t4 = (t2*t4)%p;
         }
 
-
-
     for(i=0;i<3;i++)
         {
         s1 = k42[4*i+2];
@@ -483,15 +469,11 @@ int main(void)
         }
 **/
 
-
-
-
     printf("\n \n k42 = ");
     displayh(6,k42);
 
     printf("\n \n k43 = ");
     displayh(6,k43);
-
 
     s1 = (k42[0]+k42[2])%p;
     s1 = (s1+k42[4])%p;
@@ -505,19 +487,16 @@ int main(void)
     s4 = (s4+k43[5])%p;
     printf("\n \n \n \n s3 = %d  s4 = %d",s3,s4);
 
-
     printf("\n \n \n \n k40 = ");
     displayh(6,k40);
 
     printf("\n \n k41 = ");
     displayh(12,k41);
 
-
 /**
     q = p-1;
     equation4(e4,a2,a5,a6,k40,k41,k42,q,p);
 **/
-
 
     	series(1,p-1,a2,0,h14,4,p);
 	printf("\n \n \n \n s5 = %d  series =  ",s5);
@@ -527,7 +506,6 @@ int main(void)
 	printf("\n a2 = ");
 	displayh(2,a2);
 	printf("\n e = %d",e);
-
 
     	printf("\n \n p = %d",p);
 	printf("      i2 = %d",i2);
@@ -541,8 +519,7 @@ int main(void)
 
 	exp7((p-1)/3,a2,a3,p);
 	printf("\n\n a3 = ");
-	displayh(2,a3);
-		
+	displayh(2,a3);		
 
     	series(1,(p-1)/2,a2,0,h11,2,p);
     	printf("\n \n (2) series = ");
@@ -554,13 +531,10 @@ int main(void)
 
 	printf("\n \n det_sum = %d",det_sum);
 	printf("\n det_l144 = %d",det_l144);
-
     }
 
 	return(0);
-
 }
-
 
 
 int exp4d (integer e, integer a2[], int kmax, integer h11[], integer h12[],
@@ -585,7 +559,6 @@ integer cs2[10] = {0};
 integer sn2[10] = {0};
 
 integer a[16] = {0,0,1,0,0};
-
 
 /* Make sure that h11[] is array of size >= kmax */
 
@@ -675,7 +648,6 @@ for(j=0;j<t;j++)
 return(e2);
 }
 
-
 int exp4d2 (integer e, integer a2[], int kmax, integer h11[], integer h12[],
             integer *str1, integer *str1a, integer *str2, integer *str2a,
             int m2, integer flag0, int x, int y, int c6, integer s,
@@ -700,7 +672,6 @@ integer sn2[10] = {0};
 integer a[16] = {0,0,1,0,0};
 
 integer l4 = 4;
-
 
 /* Make sure that h11[] is array of size >= kmax */
 
@@ -750,7 +721,6 @@ for(j=0;j<t;j++)
 		a[j] = h11[j]-2;
 		}
 
-
 	k = 5;
 	l2 = 4;
 	init2(l2,a2,k,ptr2,hs3,str1,str1a,p);
@@ -784,7 +754,6 @@ for(j=0;j<t;j++)
 			tuple1(2,str2,str1,str1a,m2,l2,l3,a2,hs1,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
 			l2 = l3;
 			}
-
         }
 
 if (l4>0)
@@ -796,8 +765,6 @@ if (l4>0)
     }
 return(e2);
 }
-
-
 
 int exp4d3 (integer c, integer e, integer a2[], int kmax, int flag4, integer h11[], integer h12[],
             integer *str1, integer *str1a, integer *str2, integer *str2a,
@@ -836,8 +803,6 @@ integer b1[15] = {0};
 integer l4 = 4;
 
 
-
-
 /* Make sure that h11[] is array of size >= kmax */
 
 setzero2(40,h11);
@@ -886,12 +851,9 @@ for(j=0;j<t;j++)
 		a[j] = h11[j]-2;
 		}
 
-
-
 /*
 	displaytuple(k,str1,str1a);
 */
-
 
     c1 = 2;
     c1 = c;
@@ -900,7 +862,6 @@ for(j=0;j<t;j++)
     l2 = 1*(p-1)/(3*c1);
     init2(l2,a2,k,ptr2,hs3,str2,str2a,p);
 
-
     d[0] = 0;
     d[1] = 0;
     d[2] = 0;
@@ -908,7 +869,6 @@ for(j=0;j<t;j++)
     d[4] = 0;
     d[5] = 0;
     init3(0,a2,c1,d,b1,ptr2,p);
-
 
     for(i=0;i<16;i++)
         {
@@ -919,18 +879,13 @@ for(j=0;j<t;j++)
             }
         }
 
-
     *(str2+1*144+9*0+0) = b1[0];
     *(str2+1*144+9*0+1) = 0;
     *(str2+1*144+9*0+2) = b1[1];
 
-
-
     *(str2+1*144+9*15+0) = b1[2];
     *(str2+1*144+9*15+1) = 0;
     *(str2+1*144+9*15+2) = b1[3];
-
-
 
     *(str2+1*144+9*3+0) = b1[4];
     *(str2+1*144+9*3+1) = b1[5];
@@ -939,8 +894,6 @@ for(j=0;j<t;j++)
     *(str2+1*144+9*12+0) = b1[4];
     *(str2+1*144+9*12+1) = (p-b1[5])%p;
     *(str2+1*144+9*12+2) = b1[6];
-
-
 
 
     *(str2+1*144+9*5+0) = b1[7];
@@ -960,8 +913,6 @@ for(j=0;j<t;j++)
     *(str2+1*144+9*10+2) = b1[8];
 
 
-
-
     *(str2+1*144+9*1+0) = b1[9];
     *(str2+1*144+9*1+1) = b1[10];
     *(str2+1*144+9*1+2) = b1[11];
@@ -977,8 +928,6 @@ for(j=0;j<t;j++)
     *(str2+1*144+9*8+0) = b1[9];
     *(str2+1*144+9*8+1) = (p-b1[10])%p;
     *(str2+1*144+9*8+2) = b1[11];
-
-
 
 
     *(str2+1*144+9*7+0) = b1[12];
@@ -997,7 +946,6 @@ for(j=0;j<t;j++)
     *(str2+1*144+9*14+1) = (p-b1[13])%p;
     *(str2+1*144+9*14+2) = b1[14];
 
-
     for(i=0;i<16;i++)
         {
         t1 = *(str2+1*144+9*i+1);
@@ -1010,9 +958,6 @@ for(j=0;j<t;j++)
             *(str2+1*144+9*i+2*j+2) = t2;
             }
         }
-
-
-
 
     if (flag4==1)
         {
@@ -1029,7 +974,6 @@ for(j=0;j<t;j++)
             printf("  %d",s1);
             }
         }
-
 
     l2 = 1*(p-1)/(3*c1);
 
@@ -1107,7 +1051,6 @@ for(j=0;j<t;j++)
             }
 **/
 
-
 		if (a[i]==0)
 			{
 			equaltuple2(1,str2,str2a,str1,str1a);
@@ -1119,7 +1062,6 @@ for(j=0;j<t;j++)
 			tuple1(2,str2,str1,str1a,m2,l2,l3,a2,hs1,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
 			l2 = l3;
 			}
-
         }
 
 if (l4>0)
@@ -1131,8 +1073,6 @@ if (l4>0)
     }
 return(e2);
 }
-
-
 
 void calc3 (integer e, integer e1, integer flag0, integer flag3, integer a2[], int kmax,
             integer h11[], integer h12[], integer *str1, integer *str1a,
@@ -1168,7 +1108,6 @@ if (flag3==1)
 	{
 	c = 2;
 	}
-
 
 for(i=0;i<c;i++)
 	{
@@ -1209,9 +1148,7 @@ for(i=0;i<c;i++)
 		s1 = (s1+s2)%p;
 		s1 = (2*s1)%p;
 		*(str1+t3+9*i+j) = s1;
-
 		}
-
 
 	if (f3[i]==1)
 		{
@@ -1275,7 +1212,6 @@ if (flag3==1)
 	{
 	c = 1;
 	}
-
 
 for(i=0;i<c;i++)
 	{
@@ -1367,7 +1303,6 @@ void calc3d (integer e, integer e1, integer flag0, integer flag3, integer a2[], 
              integer *str2, integer *str2a, int m2, int t1, int c1, int c2,
              integer ws1[], integer hs1[], integer ws2[], integer hs2[],
              integer hs3[], STRING ptr2, integer b2[], integer p)
-
 {
 int i,j;
 int c;
@@ -1435,8 +1370,6 @@ for(i=0;i<c;i++)
 		s2 = (*(str1+12*9+j)+*(str1+15*9+j))%p;
 */
 
-
-
 		s2 = (p-s2)%p;
 		s1 = (s1+s2)%p;
 		*(str1+t2+9*i+j) = s1;
@@ -1445,16 +1378,14 @@ for(i=0;i<c;i++)
 		s2 = *(str1+13*9+j);
 
 /*
-    	s1 = *(str1+4*9+j);
+    		s1 = *(str1+4*9+j);
 		s2 = *(str1+7*9+j);
 */
 
 		s1 = (s1+s2)%p;
 		s1 = (2*s1)%p;
 		*(str1+t3+9*i+j) = s1;
-
 		}
-
 
 	if (f3[i]==1)
 		{
@@ -1555,25 +1486,20 @@ for(i=0;i<c;i++)
 		s2 = (*(str1+12*9+j)+*(str1+15*9+j))%p;
 */
 
-
 		s2 = (p-s2)%p;
 		s1 = (s1+s2)%p;
 		*(str1+t2+9*i+j) = s1;
 
 		s1 = *(str1+1*9+j);
 		s2 = *(str1+13*9+j);
-
 /*
     	s1 = *(str1+4*9+j);
 		s2 = *(str1+7*9+j);
 */
-
 		s1 = (s1+s2)%p;
 		s1 = (2*s1)%p;
 		*(str1+t3+9*i+j) = s1;
-
 		}
-
 
 	if (f3[i]==1)
 		{
@@ -1595,7 +1521,6 @@ for(i=0;i<c;i++)
 		}
 	}
 }
-
 
 void display16d(unsigned int r, STRING ptr2, integer b1[])
 
@@ -1652,8 +1577,6 @@ integer h11[4] = {0};
 integer h12[40] = {0};
 integer h14[40] = {0};
 
-
-
 /** Make sure that h12[] is array of size >= kmax **/
 
 setzero2(40,h12);
@@ -1685,7 +1608,6 @@ while(t1!=1)
 		}
 	}
 
-
 	i = i-1;
 	t = (i+(i%2))/2;
 
@@ -1694,7 +1616,6 @@ while(t1!=1)
     printf("\n \n in calc12d p = %d",p);
     printf("\n in calc12d e = %d e2 = %d",e,e2);
 
-
 for(j=0;j<t;j++)
 	{
 	t1 = h12[i-j];
@@ -1702,10 +1623,8 @@ for(j=0;j<t;j++)
 	h12[j] = t1;
 	}
 
-
 printf("\n \n in calc12d h12 = ");
 displayh11(h12);
-
 
 t1 = 4;
 for (j=0;j<kmax;j++)
@@ -1724,7 +1643,6 @@ for (j=0;j<(e2+1);j++)
         {
         t1 = 2*t1+4;
         }
-
     }
 
 printf("\n \n in calc12d h14 = ");
@@ -1745,7 +1663,6 @@ if (e2<3)
     printf("\n \n error in calc12d e should be greater than or equal to 68");
     }
 
-
     k1[0] = 1;
     k1[1] = 2*h14[e2-3];
     k1[2] = h14[e2-2];
@@ -1759,7 +1676,6 @@ if (e2<3)
     k1[9] = 5*(t1/2);
     k1[10] = 2*t1;
     k1[11] = 3*t1;
-
 
 printf("\n \n");
 for(j=0;j<6;j++)
@@ -1819,7 +1735,6 @@ displayh(2,h11);
 
 }
 
-
 void calc12(integer e, integer a2[], int flag4, integer k1[], integer k2[], integer p)
 {
 int i,j;
@@ -1829,8 +1744,6 @@ integer t1,t2;
 integer h11[4] = {0};
 integer h12[40] = {0};
 integer h14[40] = {0};
-
-
 
 /** Make sure that h12[] is array of size >= kmax **/
 
@@ -1862,8 +1775,7 @@ while(t1!=1)
 		t1 = 1;
 		}
 	}
-
-
+	
 	i = i-1;
 	t = (i+(i%2))/2;
 
@@ -1906,7 +1818,6 @@ for (j=0;j<(e2+1);j++)
         {
         t1 = 2*t1+4;
         }
-
     }
 
 if (flag4==1)
@@ -1918,14 +1829,10 @@ if (flag4==1)
         }
     }
 
-
 if (e2<3)
     {
     printf("\n \n error in calc12 e should be greater than or equal to 68");
     }
-
-
-
 
     k1[0] = 1;
     k1[1] = 4*h14[e2-2];
@@ -1947,7 +1854,6 @@ if (e2<3)
     k1[9] = 5*(t2/2);
     k1[10] = 2*t2;
     k1[11] = 3*t2;
-
 
 if (flag4==1)
 {
@@ -2016,8 +1922,6 @@ if (flag4==1)
     }
 }
     
-
-
 void displayh2(int d, integer h16[])
 {
 int i;
@@ -2078,7 +1982,6 @@ if (t!=(p-1))
 
 return(s);
 }
-
 
 void displayh11(integer h11[])
 {
