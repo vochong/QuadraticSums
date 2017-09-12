@@ -71,7 +71,6 @@ void equation4(integer e4, integer a2[], integer a5[], integer a6[], integer k40
                integer k42[], integer q, integer p);
 
 
-
 int main(void)
 {
 	int i,j,k;
@@ -84,8 +83,6 @@ int main(void)
 	int t1;
 
 	integer t2,t3,t4;
-
-
 	integer p;
 
 	integer a2[2] = {0};
@@ -125,7 +122,7 @@ int main(void)
 	integer flag0,flag3;
 	int flag4;
 	int x,y,c6,kmax;
-
+	
 	integer s,e,e1,e2,e3,e4;
 	integer s1,s2,s3,s4;
 	integer i2;
@@ -133,7 +130,6 @@ int main(void)
 	integer q,q1;
 
 	integer s5;
-
 	integer c1;
 
 	integer k40[6] = {0};
@@ -142,21 +138,9 @@ int main(void)
 	integer k43[12] = {0};
 
 
+    	m2 = m;
 
-	m2 = m;
-
-
-
-    p = 4129;
-
-
-    printf("\n \n char = %d",sizeof(char));
-    printf("\n short = %d",sizeof(short));
-    printf("\n int = %d",sizeof(int));
-    printf("\n long = %d",sizeof(long));
-    printf("\n long long = %d",sizeof(long long));
-    printf("\n \n");
-
+    	p = 4129;
 
 	for(i=0;i<m2;i++)
 		{
@@ -195,19 +179,18 @@ int main(void)
 	setzero2(40,h11);
 
 
-    g = findnqr(p);
-    printf("\n g = f(%d) = %d",p,g);
+    	g = findnqr(p);
+    	printf("\n g = f(%d) = %d",p,g);
 
 
 /** Determine g **/
-    g = find3(p);
+    	g = find3(p);
 
-    printf("\n from find3 g = %d",g);
+    	printf("\n from find3 g = %d",g);
 
-    g = exp1(1,g,p);
+    	g = exp1(1,g,p);
 
-    g = (1*g)%p;
-
+    	g = (1*g)%p;
 
 
 /** Determine i2 and a2 **/
@@ -217,28 +200,24 @@ int main(void)
 
 	i2 = (p+i2)%p;
 
-    calc2(g,i2,a2,p);
-    printf("\n \n from calc2 a2 = ");
+    	calc2(g,i2,a2,p);
+    	printf("\n \n from calc2 a2 = ");
 	displayh(2,a2);
 
 
-
-
 /** change **/
-    printf("\n \n test of calc42d");
-    exp7((p-1)/3,a2,a3,p);
-    cmult(a2,a3,a5,p);
-    a3[1] = (p-a3[1])%p;
-    cmult(a2,a3,a6,p);
-    e4 = calc42d(5*(p-1)/12-4,(p-1)/12,a2,a5,a6,k40,k41,p-1,p);
-    printf("\n \n calc42d e4 = %d",e4);
+    	printf("\n \n test of calc42d");
+    	exp7((p-1)/3,a2,a3,p);
+    	cmult(a2,a3,a5,p);
+    	a3[1] = (p-a3[1])%p;
+    	cmult(a2,a3,a6,p);
+    	e4 = calc42d(5*(p-1)/12-4,(p-1)/12,a2,a5,a6,k40,k41,p-1,p);
+    	printf("\n \n calc42d e4 = %d",e4);
 
-    printf("\n \n k40 = ");
-    displayh(6,k40);
-    printf("\n \n k41 = ");
-    displayh(12,k41);
-
-
+    	printf("\n \n k40 = ");
+    	displayh(6,k40);
+    	printf("\n \n k41 = ");
+    	displayh(12,k41);
 
 
 	printf("\n \n test of fn60k");
@@ -258,7 +237,7 @@ int main(void)
 
 
 	for(k=0;k<50;k++)
-    {
+    	{
 
 	i2 = find4(g,p-1,p);
 	printf("\n \n from find4 i2 = %d",i2);
@@ -270,10 +249,10 @@ int main(void)
   	printf("\n \n Enter a value for s1 ");
 	scanf("%d",&s1);
 	if (s1<1)
-        {
-        k = 50;
-        s1 = 1;
-        }
+        	{
+        	k = 50;
+        	s1 = 1;
+        	}
 
 
 	exp7(s1,a2,a3,p);
@@ -306,17 +285,15 @@ int main(void)
 /** e mod 4 must equal 0 **/
 	flag0 = 1;
 
-    e = (p-1)/24;
-    e = 7*e;
+    	e = (p-1)/24;
+    	e = 7*e;
 
-    e2 = e%4;
-    e = 1*e-e2;
+    	e2 = e%4;
+    	e = 1*e-e2;
 
+    	e = e - 4;
 
-
-    e = e - 4;
-
-    printf("\n \n &&&&&&&&&&&&&&&&&&&&&&&&&&&& ######### e = %d",e);
+    	printf("\n \n &&&&&&&&&&&&&&&&&&&&&&&&&&&& ######### e = %d",e);
 
 	e1 = e;
 	kmax = 10*2;
@@ -333,7 +310,7 @@ int main(void)
 	flag_2 = 1;
 	c1 = 2;
 	t1 = exp4d3(c1,e,a2,kmax,1,h11,h12,str1,str1a,str2,str2a,m2,
-                flag0,x,y,c6,s,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
+                    flag0,x,y,c6,s,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
 	flag_2 = 0;
 	printf("\n \n  l2 = %d",e);
 	printf("\n t1 = %d",t1);
@@ -393,7 +370,7 @@ int main(void)
             i2 = (p+i2)%p;
             a5[1] = (p+a5[1])%p;
 			calc3k(c1,e,e1,flag0,flag3,a5,kmax,h11,h12,str1,str1a,str2,str2a,m2,
-                  		t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
+                  	       t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
 
             calc6(m2,8,3,ptr2,h20,str1,p);
             k42[4] = h20[0];
@@ -410,7 +387,7 @@ int main(void)
             cmult(a4,a4,a3,p);
             cmult(a2,a3,a6,p);
 			calc3k(c1,e,e1,flag0,flag3,a6,kmax,h11,h12,str1,str1a,str2,str2a,m2,
-                  		t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
+                  	       t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
 
             calc6(m2,8,3,ptr2,h11,str1,p);
             k42[8] = h11[0];
@@ -429,8 +406,6 @@ int main(void)
 		displaytuple2(8,9,str1,str1a);
 
 **/
-
-
 
 
         if ((flag3==flag3)&&(j==0))
@@ -531,9 +506,6 @@ int main(void)
     printf("\n \n \n \n s3 = %d  s4 = %d",s3,s4);
 
 
-
-
-
     printf("\n \n \n \n k40 = ");
     displayh(6,k40);
 
@@ -547,8 +519,6 @@ int main(void)
 **/
 
 
-
-
     	series(1,p-1,a2,0,h14,4,p);
 	printf("\n \n \n \n s5 = %d  series =  ",s5);
 	displayh(4,h14);
@@ -557,8 +527,6 @@ int main(void)
 	printf("\n a2 = ");
 	displayh(2,a2);
 	printf("\n e = %d",e);
-
-
 
 
     	printf("\n \n p = %d",p);
@@ -574,21 +542,15 @@ int main(void)
 	exp7((p-1)/3,a2,a3,p);
 	printf("\n\n a3 = ");
 	displayh(2,a3);
+		
 
-/**
-    series(100,20,a2,0,h11,2,p);
-    printf("\n \n test series = ");
-    displayh(4,h11);
-**/
+    	series(1,(p-1)/2,a2,0,h11,2,p);
+    	printf("\n \n (2) series = ");
+    	displayh(4,h11);
 
-    series(1,(p-1)/2,a2,0,h11,2,p);
-    printf("\n \n (2) series = ");
-    displayh(4,h11);
-
-    series(1,(p-1)/4,a2,0,h11,4,p);
-    printf("\n \n (4) series = ");
-    displayh(4,h11);
-
+    	series(1,(p-1)/4,a2,0,h11,4,p);
+    	printf("\n \n (4) series = ");
+    	displayh(4,h11);
 
 	printf("\n \n det_sum = %d",det_sum);
 	printf("\n det_l144 = %d",det_l144);
@@ -712,7 +674,6 @@ for(j=0;j<t;j++)
 		}
 return(e2);
 }
-
 
 
 int exp4d2 (integer e, integer a2[], int kmax, integer h11[], integer h12[],
