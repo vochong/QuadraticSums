@@ -4,7 +4,6 @@
 #include "qmath229v2.h"
 #include "calc2v4.h"
 
-
 typedef int integer;
 typedef integer *STRING[220];
 
@@ -140,14 +139,7 @@ int main(void)
 	m2 = m;
 
     	p = 7129;
-
-
-    printf("\n \n char = %d",sizeof(char));
-    printf("\n short = %d",sizeof(short));
-    printf("\n int = %d",sizeof(int));
-    printf("\n long = %d",sizeof(long));
-    printf("\n \n");
-
+ 
 	for(i=0;i<m2;i++)
 		{
 		c = m2;
@@ -282,7 +274,6 @@ int main(void)
     printf("  k4  = \n");
     displayh2(16,k4);
 
-
 	printf("\n \n Enter 1 to continue ");
 	scanf("%d",&s1);
 
@@ -308,17 +299,6 @@ int main(void)
         	s1 = 1;
 	 	}
 
-
-/** test **/
-/**
-    a3[0] = 434;
-    a3[1] = 739;
-    cmult(a2,a3,a4,p);
-    a2[0] = a4[0];
-    a2[1] = (p+a4[1])%p;
-**/
-
-
 	exp7(s1,a2,a3,p);
 	a2[0] = a3[0];
 	a2[1] = a3[1];
@@ -339,26 +319,19 @@ int main(void)
 
 	setzero(200,ptr2);
 
-
 /** if flag0 = 1 then set141 is normal (i.e. correct) **/
 /** if flag0 = 0 then set141 is set to zero plus offset of e1 **/
-
-
-/*
-	printf("\n \n Enter 1 to continue &&&&& ");
-	scanf("%d",&t1);
-*/
 
 	printf("\n \n before exp4d");
 
 /** e mod 4 must equal 0 **/
-	flag0 = 1;
+    	flag0 = 1;
 
-    e = (p-1)/9;
-    e2 = e%4;
-    e = 1*e-e2;
+    	e = (p-1)/9;
+    	e2 = e%4;
+    	e = 1*e-e2;
 
-    e = e - 4;
+    	e = e - 4;
 
 	e1 = e;
 	kmax = 10;
@@ -374,7 +347,7 @@ int main(void)
 
 	flag_2 = 1;
 	t1 = exp4d2(e,a2,kmax,h11,h12,str1,str1a,str2,str2a,m2,
-                flag0,x,y,c6,s,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
+                   flag0,x,y,c6,s,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
 	flag_2 = 0;
 	printf("\n \n  l2 = %d",e);
 	printf("\n t1 = %d",t1);
@@ -414,12 +387,12 @@ int main(void)
 		if(j==0)
 			{
 			calc3d(e,e1,flag0,flag3,a2,kmax,h11,h12,str1,str1a,str2,str2a,m2,
-                   t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
+                               t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
 			}
 		if(j==1)
 			{
 			calc3(e+28,e1,flag0,flag3,a2,kmax,h11,h12,str1,str1a,str2,str2a,m2,
-                  t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
+                  	      t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
 			}
 		printf("\n \n  l2 = %d",e);
 		printf("\n calc3 = ",i);
@@ -445,8 +418,6 @@ int main(void)
         printf("\n \n the 2nd answer series =  ");
         displayh(4,h14);
 
-
-
         if (flag3==0)
             {
             printf("\n \n ======= calc6 from (0 to 8) ========");
@@ -464,8 +435,6 @@ int main(void)
             }
 
 		}
-
-
 
     e = e+4;
     series(0,e,a2,0,h11,2,p);
