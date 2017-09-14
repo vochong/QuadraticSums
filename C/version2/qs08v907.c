@@ -184,25 +184,16 @@ int main(void)
 
 /** Determine g **/
     	g = find3(p);
-
     	printf("\n from find3 g = %d",g);
-
     	g = exp1(1,g,p);
-
     	g = (1*g)%p;
 
-
 /** Determine i2 and a2 **/
-
 	i2 = find4(g,p-1,p);
 	printf("\n \n from find4 i2 = %d",i2);
-
-	i2 = (p+i2)%p;
-
     	calc2(g,i2,a2,p);
     	printf("\n \n from calc2 a2 = ");
 	displayh(2,a2);
-
 
 /** change **/
     	printf("\n \n test of calc42d");
@@ -1941,7 +1932,6 @@ int e;
 		printf(" %d ",h16[i]);
 		}
 	printf(")");
-
 }
 
 integer find4(integer g, integer q, integer p)
@@ -2296,8 +2286,6 @@ integer m[225] =   {1,85,1,85,2,0,170,        0,0,        0,0,0,0,0,0,
     displayh(15,b1);
 }
 
-
-
 integer calc42(integer e, integer a2[], integer a5[], integer a6[], integer k40[], integer k41[], integer q, integer p)
 {
 int i,j;
@@ -2309,8 +2297,6 @@ integer h11[4] = {0};
 integer h12[40] = {0};
 integer h14[40] = {0};
 integer h15[6] = {0};
-
-
 
 /** Make sure that h12[] is array of size >= kmax **/
 
@@ -2343,7 +2329,6 @@ while(t1!=1)
 		}
 	}
 
-
 	i = i-1;
 	t = (i+(i%2))/2;
 
@@ -2352,8 +2337,6 @@ while(t1!=1)
     printf("\n \n in calc42 p = %d",p);
     printf("\n in calc42 e = %d e2 = %d",e,e2);
 
-
-
 for(j=0;j<t;j++)
 	{
 	t1 = h12[i-j];
@@ -2361,10 +2344,8 @@ for(j=0;j<t;j++)
 	h12[j] = t1;
 	}
 
-
 printf("\n \n in calc42 h12 = ");
 displayh11(h12);
-
 
 t1 = 4;
 t1 = (p-1)/3;
@@ -2385,7 +2366,6 @@ for (j=0;j<(e2+1);j++)
         {
         t1 = 2*t1+8;
         }
-
     }
 
 printf("\n \n in calc42 h14 = ");
@@ -2393,7 +2373,6 @@ for (j=0;j<(e2+1);j++)
     {
     printf("\n \n h14[%d] = %d",j,h14[j]);
     }
-
 
 e4 = h14[e2+1]+4;
 t1 = (p-1)/3;
@@ -2415,7 +2394,6 @@ if (e2<3)
     printf("\n \n error in calc42 e should be greater than or equal to 68");
     }
 
-
     e3 = e2+1;
     k41[0] = h14[0];
     k41[1] = 2*h14[e3-4];
@@ -2431,13 +2409,11 @@ if (e2<3)
     k41[10] = 2*t1;
     k41[11] = 3*t1;
 
-
 printf("\n \n");
 for(j=0;j<6;j++)
     {
     printf("\n  j = %d  ( %d , %d )",j,k41[2*j],k41[2*j+1]);
     }
-
 
 /** calculate k40 **/
 k40[0] = 0;
@@ -2489,9 +2465,7 @@ for(j=0;j<(e2-3);j++)
         series(t1+1,t2-1,a6,0,h12,4,p);
         k40[4] = (k40[4]+h12[0])%p;
         k40[5] = (k40[5]+h12[1])%p;
-
         }
-
     }
 
 /** test of calculating k40 **/
@@ -2542,7 +2516,6 @@ h15[5] = h11[1];
 printf("\n \n h15 = ");
 displayh(6,h15);
 
-
 t1 = h14[e2]+4;
 q1 = q/12;
 if ((t1%q1)!=0)
@@ -2550,9 +2523,7 @@ if ((t1%q1)!=0)
     t1 = t1+4;
     }
 return(t1);
-
 }
-
 
 integer calc42d(integer e, integer e1, integer a2[], integer a5[], integer a6[], integer k40[], integer k41[], integer q, integer p)
 {
@@ -2565,8 +2536,6 @@ integer h11[4] = {0};
 integer h12[40] = {0};
 integer h14[40] = {0};
 integer h15[6] = {0};
-
-
 
 /** Make sure that h12[] is array of size >= kmax **/
 
@@ -2599,11 +2568,8 @@ while(t1!=1)
 		}
 	}
 
-
-
     printf("\n \n in calc42d ^^^^^^^^^^^ e = %d     h12 = ",e);
     displayh11(h12);
-
 
 	i = i-1;
 	t = (i+(i%2))/2;
@@ -2613,8 +2579,6 @@ while(t1!=1)
     printf("\n \n in calc42d p = %d",p);
     printf("\n in calc42d e = %d e2 = %d",e,e2);
 
-
-
 for(j=0;j<t;j++)
 	{
 	t1 = h12[i-j];
@@ -2622,10 +2586,8 @@ for(j=0;j<t;j++)
 	h12[j] = t1;
 	}
 
-
 printf("\n \n in calc42d h12 = ");
 displayh11(h12);
-
 
 t1 = 4;
 
@@ -2651,7 +2613,6 @@ for (j=0;j<(e2+1);j++)
         {
         t1 = 2*t1+8;
         }
-
     }
 
 printf("\n \n in calc42d h14 = ");
@@ -2668,7 +2629,6 @@ if (e4%t1!=0)
     e4 = e4+4;
     }
 
-
 /**
 	for(j=0;j<(e2+1);j++)
 		{
@@ -2680,7 +2640,6 @@ if (e2<3)
     {
     printf("\n \n error in calc42d e should be greater than or equal to 68");
     }
-
 
     e3 = e2+1;
     k41[0] = h14[0];
@@ -2697,13 +2656,11 @@ if (e2<3)
     k41[10] = 2*t1;
     k41[11] = 3*t1;
 
-
 printf("\n \n");
 for(j=0;j<6;j++)
     {
     printf("\n  j = %d  ( %d , %d )",j,k41[2*j],k41[2*j+1]);
     }
-
 
 /** calculate k40 **/
 k40[0] = 0;
@@ -2755,9 +2712,7 @@ for(j=0;j<(e2-3);j++)
         series(t1+1,t2-1,a6,0,h12,4,p);
         k40[4] = (k40[4]+h12[0])%p;
         k40[5] = (k40[5]+h12[1])%p;
-
         }
-
     }
 
 /** test of calculating k40 **/
@@ -2808,7 +2763,6 @@ h15[5] = h11[1];
 printf("\n \n h15 = ");
 displayh(6,h15);
 
-
 t1 = h14[e2]+4;
 q1 = q/12;
 if ((t1%q1)!=0)
@@ -2818,11 +2772,6 @@ if ((t1%q1)!=0)
 return(t1);
 
 }
-
-
-
-
-
 
 void fn60k(int c1, int c2, int t1, int t2, integer a2[], integer a3[], long int d1, integer p)
 {
@@ -2864,10 +2813,8 @@ a3[0] = (a3[0]+a4[0])%p;
 a3[1] = (a3[1]+a4[1])%p;
 }
 
-
 void equation4(integer e4, integer a2[], integer a5[], integer a6[], integer k40[], integer k41[],
                integer k42[], integer q, integer p)
-
 {
 int i;
 int flag4;
@@ -2881,11 +2828,9 @@ integer a4[2] = {0};
 integer h1[4] = {0};
 integer s[6] = {0,0,0,0,0,0};
 
-
 q1 = q/4;
 printf("\n \n beginning of equation4");
 printf("\n \n in equation4 q = %d  q1 = %d",q,q1);
-
 
 t1 = (p+k40[0])%p;
 s[0] = (k42[0]+t1)%p;
@@ -2938,7 +2883,6 @@ a3[1] = (a3[1]+a4[1])%p;
 s[0] = (s[0]+a3[0])%p;
 s[3] = (s[3]+a3[1])%p;
 
-
 fn60k(k41[0],k41[1],c1,c2,a5,a3,4,p);
 fn60k(k41[4],k41[5],c3,c4,a5,a4,4,p);
 a3[0] = (a3[0]+a4[0])%p;
@@ -2950,7 +2894,6 @@ a3[0] = (a3[0]+a4[0])%p;
 a3[1] = (a3[1]+a4[1])%p;
 s[1] = (s[1]+a3[0])%p;
 s[4] = (s[4]+a3[1])%p;
-
 
 fn60k(k41[0],k41[1],c1,c2,a6,a3,4,p);
 fn60k(k41[4],k41[5],c3,c4,a6,a4,4,p);
@@ -2971,22 +2914,7 @@ displayh(6,s);
 if ((q1%4)==3)
     {
     printf("\n \n in equation4 q1 = %d",q1);
-
-/**
-    t1 = a4[0];
-    t2 = a4[1];
-    set7(t,0,t1,ptr2);
-    set7(t,4,t1,ptr2);
-    set7(t,1,t2,ptr2);
-    set7(t,5,t2,ptr2);
-    set7(t,9,p-1,ptr2);
-    set7(t,11,1,ptr2);
-**/
-
-
     }
 
-
 return(0);
-
 }
