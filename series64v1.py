@@ -1,4 +1,4 @@
-from a24v038 import *
+from group42 import *
 
 """
 For the output to be correct p should be a prime
@@ -9,9 +9,7 @@ involving the variables stored in the array k8.
 """
 
 p1 = [2113,3137,4673]
-
 p3 = [2753,4289]
-
 
 p = p3[1]
 
@@ -19,9 +17,7 @@ print("\n \n p =",p)
 print()
 
 k = group(0,p)
-
 k = group(exp1(1,k.g,p),p)
-
 k.f32(0,0,2)
 k16 = k.k32((p-1)//2,2)
 k8 = k16[8:]
@@ -50,8 +46,7 @@ if q%4==1:
 
     m[5] = [1,0,p-1,0,0,0,0,0]
     m[6] = [0,1,0,p-1,0,0,0,0]
-    m[7] = [0,0,0,0,1,1,1,1]
-    
+    m[7] = [0,0,0,0,1,1,1,1]    
 
 if q%4==3:
     a3 = exp2a(8*q**2,k.a2,p)
@@ -80,10 +75,9 @@ print("\n \n b2 = ",b2)
 
 if q%4==1:
     b1 = [0,0,0,0,0,0,0,0]
-
+    
 if q%4==3:
     b1 = [0,0,s,1,0,0,0,0]
-
 
 print("\n \n b1 = ",b1)
 
@@ -124,7 +118,6 @@ g2 = h2[0]
 h2 = h2[1]
 s3 = 4*(e2+g2)%p
 s4 = 4*(f2+h2)%p
-
 
 print("\n e2 = {0}  f2 = {1}  g2 = {2}  h2 = {3}".format(e2,f2,g2,h2))
 print("\n \n s3 = {0}  s4 = {1}".format(s3,s4))
