@@ -1,7 +1,6 @@
 from math104 import *
 from modsqrt2 import sqrt1 
 
-
 """ Display an element of the group """
 def display4(e1):
     display144h(e1[0])
@@ -445,7 +444,6 @@ class group:
             self.printlist(a,k2,d1)
         return(k2)
 
-
     def calc26(self,flag4,d1,q,p):
         k2 = init2(40)
         if ((q%4)==0):
@@ -472,7 +470,6 @@ class group:
             a = len(str(p))
             self.printlist2(a,k2,d1) 
         return(k2)
-
 
     def calc27(self,flag4,d1,q,p):
         k2 = init2(14)
@@ -927,7 +924,6 @@ class group:
             q = q//d1           
             t = self.calc32(e1,e2,q,d1)
 
-
     def calc64(self,e1,e2,q,d1):
         """ p = 64q + 1 """
         k = self
@@ -1062,8 +1058,7 @@ class group:
         t1 = (2*s1[2])%p
         s[2] = (t1+s1[8])%p
         t1 = (2*s1[3])%p
-        s[3] = (t1+s1[9])%p
-        
+        s[3] = (t1+s1[9])%p       
 
         t = exp1(12*q//9,k.g,p)
         g1 = (k.g*t)%p
@@ -1091,8 +1086,6 @@ class group:
         t1 = (2*s1[3])%p
         s[7] = (t1+s1[9])%p
 
-
-
         t = exp1(6*q//9,k.g,p)
         g2 = (k.g*t)%p
         if (flag4==1):
@@ -1102,10 +1095,8 @@ class group:
             t3 = exp1((p-1)//3,g2,p)
             print("   ",t1,t2,t3)
         k4 = group(g2,p)
-        k2 = k4.calc29(flag4,d1,q,p)
-        
-        
-
+        k2 = k4.calc29(flag4,d1,q,p)      
+       
         g1 = exp1(9,k.g,p)
         k1 = group(g1,p)
         k3 = k1.calc20(flag4,d1,q//9,p)
@@ -1122,7 +1113,6 @@ class group:
         s[10] = h1[2]
         s[11] = h1[3]      
         return(s)
-
 
     def f27(self,flag4,q,d1):
         k = self
@@ -1172,8 +1162,6 @@ class group:
 
         return(s1,s2,s3,s4)
 
-
-
     def f9(self,flag4,q,d1):
         k = self
         q = abs(q)
@@ -1185,15 +1173,13 @@ class group:
             h1 = k.series(b1[2*i],b1[2*i+1],0,d1)
             s1[2*i] = h1[0]
             s1[2*i+1] = h1[1]
-        print("\n in f20 s1 = ",s1)
-      
+        print("\n in f20 s1 = ",s1)     
 
         g1 = exp1(9,k.g,p)
         k1 = group(g1,p)
         print("\n \n g = ",k.g,"  g1 = ",g1)
         b2 = k1.calc20(1,d1,q//9,p)
-        print("\n in f20 b2 = ",b2)
-        
+        print("\n in f20 b2 = ",b2)        
       
         h1 = k1.series1(1,b2[3],3,0,d1)
         h2 = k1.series1(2,b2[3],3,0,d1)
@@ -1268,7 +1254,6 @@ class group:
         s[6] = h1[2]
         s[7] = h1[3]
         return(s)
-
 
     def k61(self,flag4,q,d1):
         k = self
@@ -1363,7 +1348,6 @@ class group:
         t = [t1,t2]
         display4(t)
 
-
     """ Calculates quadratic sums in GF(p) in exponential time """
     def series(self,c1,c2,d,d1):
         t = self.series_d(c1,c2,self.a2,d,d1,self.p)
@@ -1414,8 +1398,6 @@ class group:
         display144h(e1[0])
         print()
         display27(e1[1])
-
-
 
 class group2:
 
@@ -2117,8 +2099,7 @@ def fn61(c1,d1,t1,d2,a2,h11,p):
     h15[3] = ((p-h11[0])+h11[2])%p
     h15[3] = (s1*h15[3])%p;
 
-    return(h15)
-    
+    return(h15)    
     
 """ This prints the complex nth roots of unity in GF(p) for p = 1 (mod 4)
 k is defined as k = group(g,p) for some modulus p where p = 1 (mod 4) and
@@ -2157,7 +2138,6 @@ def findprime(c,m):
         i = i+2
     return(t1)
 
-
 def find4(g,q,p):
     q1 = q
     i = 0
@@ -2180,7 +2160,4 @@ def find4(g,q,p):
     t = (s*s)%p
     if (t!=(p-1)):
         s = 0
-    return(s)
-    
-    
-
+    return(s)      
