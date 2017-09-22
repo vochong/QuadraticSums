@@ -1,6 +1,5 @@
 from group42 import *
 
-
 def init8(k,c,flag4):
     p = k.p
     
@@ -112,10 +111,7 @@ def init8(k,c,flag4):
         s2 = (s2+(p-2))%p
         s3 = s*t4%p
         s4 = s*t1%p
-        m[11] = [0,0,0,0,           s1,s2,s3,s4]
-
-
-    
+        m[11] = [0,0,0,0,           s1,s2,s3,s4]    
 
     for i in range(8):
         m[8][i] = m[10][i]
@@ -144,7 +140,6 @@ def init8(k,c,flag4):
     s = (p-s)%p
     b2 = [1,0,2*a4[1]%p,(p-1)//6,     s,0,0,0]
 
-
     # test 
 
     m[5] = [0,0,0,0,    0,0,0,0]
@@ -162,7 +157,6 @@ def init8(k,c,flag4):
     s = 2*a4[1]%p
     m[7] = [p-1,p-s,0,0,  p-12,0,0,0]
     m[6] = [0,0,0,0,  0,0,0,0]
-
 
     return(m,b2)
     
