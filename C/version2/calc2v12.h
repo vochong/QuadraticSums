@@ -4,13 +4,11 @@ void displayh(int d, integer h16[]);
 void display12(integer h16[]);
 void mult12 (integer c, integer s, integer h11[], integer h12[], integer ws1[], integer p);
 
-
 /**           4-tuple units are 1/8                       **/
 /**           calc10d(1 or 3) = (+1)(1 or 3)              **/
 /**           calc14d = (+2)(2)                           **/
 /**           calc17d = (0)(2)                            **/
 /**           calc18d = (0)(4)                            **/
-
 
 void calc10d(int m2, integer e, int c1, int flag4, integer a2[], integer h11[], integer h12[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
@@ -20,7 +18,6 @@ void calc17d(int m2, integer e, int flag4, integer a2[], integer h11[], integer 
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
 void calc18d(int m2, integer e, int flag4, integer a2[], integer h11[], integer h12[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
-
 
 /**           2-tuple units are 1/4                       **/
 /**           calc10(3,5 or 7) = (+1)(3,5 or 7)           **/
@@ -69,17 +66,13 @@ void calc18(int m2, integer e, int flag4, integer a2[], integer h11[], integer h
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
 void calc18k(int m2, integer e, int flag4, integer a2[], integer h11[], integer h12[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
-
 void fn60(int c1, int c2, int t1, int t2, integer a2[], integer a3[], integer p);
-
 void series20(int c1, int c2, integer a2[], integer h11[], long int d1, integer p);
 void fn60d(int c1, int c2, int t1, int t2, integer a2[], integer a3[], integer p);
 void fn61(int c1, int d1, int t1, int d2, integer a2[], integer h11[], integer h15[], integer p);
 void fn61d(int c1, int d1, int t1, int d2, integer a2[], integer h11[], integer h15[], integer p);
-
 void calc19(int m2, int flag4, integer e, int c1, int e1, integer a2[], integer h11[], integer h12[],
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
-
 
 /**             calc20d = k.list2(6)              **/
 /**             calc21d = k.list2(12)             **/
@@ -89,7 +82,6 @@ void calc19(int m2, int flag4, integer e, int c1, int e1, integer a2[], integer 
 /**             calc25d = k.list2(5)              **/
 /**             calc28d = k.list2(8)              **/
 /**             calc29d = k.list2(9)              **/
-
 
 void calc20d(integer a2[], int flag4, integer h15[], long int d1, integer q, integer p);
 void calc21d(integer a2[], integer h15[], long int d1, integer q, integer p);
