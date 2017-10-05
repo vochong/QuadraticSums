@@ -191,7 +191,6 @@ print("\n    b2 = ",b2)
 print("\n b1[0] = ",b1[0:8])
 print("\n b1[1] = ",b1[8:])
 
-
 h1 = [0 for i in range(8)]
 
 b3 = b2[0:8]
@@ -202,7 +201,6 @@ display(0,7,0,7,m,b3)
 l2solve(8,h1,b3,m,p)
 print("after solve2 = ",h1)
 print("\n \n")
-
 
 e = (p-1)//9
 h1 = k.series5(e,2*e)
@@ -227,7 +225,6 @@ t2 = inverse(s4,p)*s2%p
 s = t1*t1%p
 print("\n \n t1 =",t1,"  t2 =",t2,"  s =",s)
 
-
 print("\n \n (1) (1/72, 12) ")
 p = 77761
 k = group(0,p)
@@ -250,7 +247,6 @@ s4 = 3*(h4[1]+(p-1)*h3[1])%p
 print("\n \n s1 = {0}   s2 = {1}".format(s1,s2))
 print("\n s3 = {0}   s4 = {1}".format(s3,s4))
 print()
-
 
 print("\n (2)  (1/36, 6) ")
 
