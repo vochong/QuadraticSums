@@ -1398,12 +1398,12 @@ integer a5[2] = {0};
 	exp7(e/2,a4,a3,p);
 	exp7(25,a3,a5,p);
 
-    if (flag4==1)
-        {
-        printf("\n \n in calc17 a3 = ");
-        printf("(%d",a3[0]);
-        printf(" , %d)",a3[1]);
-        }
+    	if (flag4==1)
+        	{
+        	printf("\n \n in calc17 a3 = ");
+        	printf("(%d",a3[0]);
+        	printf(" , %d)",a3[1]);
+        	}
 
 	calc6(m2,8,c1+4,ptr2,h11,str1,p);
 	calc6(m2,9,c1+4+1,ptr2,h12,str1,p);
@@ -1415,7 +1415,6 @@ integer a5[2] = {0};
 
 	mult12(a5[0],(p-a5[1])%p,hs1,&hs1[30],hs2,p);
 	mult12(a5[1],a5[0],hs1,&hs1[30],&hs2[30],p);
-
 
 	calc6(m2,8,4-c1,ptr2,h11,str1,p);
 	calc6(m2,9,(4+1)-c1,ptr2,h12,str1,p);
@@ -1441,20 +1440,20 @@ integer a5[2] = {0};
 	mult12(a4[0],(p-a4[1])%p,h11,h12,&hs1[30],p);
 	mult12(a4[1],a4[0],h11,h12,&hs1[90],p);
 
-    if (flag4==1)
-        {
-        printf("\n \n in calc17(%d)",c1);
-        for(i=0;i<4;i++)
-            {
-            printf("\n \n hs1(%d) = ",i);
-            printf("\n ");
-            display12(&hs1[30*i]);
-            }
+    	if (flag4==1)
+        	{
+        	printf("\n \n in calc17(%d)",c1);
+        	for(i=0;i<4;i++)
+            		{
+            		printf("\n \n hs1(%d) = ",i);
+            		printf("\n ");
+            		display12(&hs1[30*i]);
+            		}
 
-        series(5*(e/4),9*(e/4),a2,c1*e,h11,2,p);
-        printf("\n \n h1 = ");
-        displayh(4,h11);
-        }
+        	series(5*(e/4),9*(e/4),a2,c1*e,h11,2,p);
+        	printf("\n \n h1 = ");
+        	displayh(4,h11);
+        	}
 }
 
 void calc18(int m2, integer e, int flag4, integer a2[], integer h11[], integer h12[],
@@ -1470,12 +1469,12 @@ integer a4[2] = {0};
 	exp7(e/2,a3,a4,p);
 	exp7(16,a4,a3,p);
 
-    if (flag4==1)
-        {
-        printf("\n \n in calc18 a3 = ");
-        printf("  (%d",a3[0]);
-        printf(" , %d)",a3[1]);
-        }
+    	if (flag4==1)
+        	{
+        	printf("\n \n in calc18 a3 = ");
+       	 	printf("  (%d",a3[0]);
+        	printf(" , %d)",a3[1]);
+        	}
 
 	calc6(m2,8,7,ptr2,h11,str1,p);
 	calc6(m2,9,8,ptr2,h12,str1,p);
@@ -1488,7 +1487,6 @@ integer a4[2] = {0};
 	mult12(a3[0],(p-a3[1])%p,hs1,&hs1[30],hs2,p);
 	mult12(a3[1],a3[0],hs1,&hs1[30],&hs2[30],p);
 
-
 	calc6(m2,8,0,ptr2,h11,str1,p);
 	calc6(m2,9,0,ptr2,h12,str1,p);
 	mult12(1,0,h11,h12,hs1,p);
@@ -1499,7 +1497,6 @@ integer a4[2] = {0};
 
 	mult12(a3[0],(p-a3[1])%p,hs1,&hs1[30],&hs2[60],p);
 	mult12(a3[1],a3[0],hs1,&hs1[30],&hs2[90],p);
-
 
 /**  changed **/
 	exp7(2*1,a3,a4,p);
@@ -1531,7 +1528,6 @@ integer a4[2] = {0};
         }
 }
 
-
 void calc18k(int m2, integer e, int flag4, integer a2[], integer h11[], integer h12[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p)
 {
@@ -1547,11 +1543,11 @@ integer a5[2] = {0};
 	exp7(16,a3,a5,p);
 
 	if (flag4==1)
-        {
-        printf("\n \n in calc18k a3 = ");
-        printf("(%d",a3[0]);
-        printf(" , %d)",a3[1]);
-        }
+        	{
+        	printf("\n \n in calc18k a3 = ");
+        	printf("(%d",a3[0]);
+        	printf(" , %d)",a3[1]);
+       	 	}
 
 	calc6(m2,8,5,ptr2,h11,str1,p);
 	calc6(m2,9,6,ptr2,h12,str1,p);
@@ -1766,7 +1762,6 @@ integer b1[4] = {0};
     printf("\n \n in fn61 a6 = ");
     displayh(2,a6);
 
-
     c = (h11[0] + h11[3])%p;
     s = (h11[1] + (p-h11[2]))%p;
     s1 = d1/4;
@@ -1814,7 +1809,6 @@ integer b1[4] = {0};
     printf("\n \n in fn61 h11 = ");
     displayh(4,h12);
 
-
     t = (p+1)/2;
     h15[0] = (h12[0]+h12[2])%p;
     h15[0] = (t*h15[0])%p;
@@ -1834,9 +1828,7 @@ integer b1[4] = {0};
     series(0,t1,a2,d2,h14,2,p);
     printf("\n \n in fn61 h14 = ");
     displayh(4,h14);
-
 }
-
 
 void fn61d(int c1, int d1, int t1, int d2, integer a2[], integer h11[], integer h15[], integer p)
 
@@ -1879,8 +1871,6 @@ integer b1[4] = {0};
     a6[0] = (a5[0]+a3[0])%p;
     a6[1] = (a5[1]+a3[1])%p;
 
-
-
     c = (h11[0] + h11[3])%p;
     s = (h11[1] + (p-h11[2]))%p;
     s1 = d1/4;
@@ -1913,7 +1903,6 @@ integer b1[4] = {0};
     h12[2] = a4[0];
     h12[3] = a4[1];
 
-
     t = (p+1)/2;
     h15[0] = (h12[0]+h12[2])%p;
     h15[0] = (t*h15[0])%p;
@@ -1926,16 +1915,6 @@ integer b1[4] = {0};
 
     h15[3] = ((p-h12[0])+h12[2])%p;
     h15[3] = (t*h15[3])%p;
-
-/**
-    printf("\n \n in fn61 h15 = ");
-    displayh(4,h15);
-
-
-    series(0,t1,a2,d2,h14,2,p);
-    printf("\n \n in fn61 h14 = ");
-    displayh(4,h14);
-**/
 
 }
 
@@ -1955,7 +1934,6 @@ integer a4[2] = {0};
             hs1[60+i] = 0;
             hs1[90+i] = 0;
             }
-
         }
 
     if ((c1>0)&&(c1<9))
@@ -1985,11 +1963,7 @@ integer a4[2] = {0};
         h11[3] = hs1[90+i];
 
         fn61d(e,c1*e,e1,c1*e1,a2,h11,h12,p);
-        /**
-        printf("\n \n in calc19 h12 = ");
-        displayh(4,h12);
-        **/
-
+	    
         hs2[0+i] = h12[0];
         hs2[30+i] = h12[1];
         hs2[60+i] = h12[2];
