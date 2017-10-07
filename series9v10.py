@@ -152,8 +152,6 @@ def init8(k,c,flag4):
     m[6][0] = 2
     m[6][2] = p-1
 
-    # m[7] = [2,0,p-1,0,   0,0,0,0]
-
     s = 2*a4[1]%p
     m[7] = [p-1,p-s,0,0,  p-12,0,0,0]
     m[6] = [0,0,0,0,  0,0,0,0]
@@ -166,21 +164,17 @@ where gcd(3,n)=1
 """
 
 p = 2377
-
 k = group(0,p)
 k = group(exp1(1,k.g,p),p)
 flag4 = 0
 
 k8 = k.f81(1,(p-1)//2,2)
 print("\n \n k8 = ",k8)
-
 b1 = init2(16)
 # flag4 = 1
 m,b2 = init8(k,p-6,flag4)
-
 print("\n \n")
 display(0,15,0,7,m,b1)
-
 
 for i in range(16):
     b1[i] = multcnvl2(m[i],k8,p)
@@ -228,7 +222,6 @@ print("\n \n t1 =",t1,"  t2 =",t2,"  s =",s)
 print("\n \n (1) (1/72, 12) ")
 p = 77761
 k = group(0,p)
-
 e = (p-1)//72
 h1 = k.series(0,e,12*e,2)
 h2 = k.series(8*e+1,9*e,0,2)
@@ -249,7 +242,6 @@ print("\n s3 = {0}   s4 = {1}".format(s3,s4))
 print()
 
 print("\n (2)  (1/36, 6) ")
-
 e = (p-1)//36
 h1 = k.series(0,e,6*e,2)
 h2 = k.series(7*e//2+1,9*e//2,0,2)
