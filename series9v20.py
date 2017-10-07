@@ -116,7 +116,7 @@ p1 = [1657,1801,2953,6841,7489]
 p = p1[4]
 
 k = group(0,p)
-k = group(exp1(5,k.g,p),p)
+k = group(exp1(1,k.g,p),p)
 k1 = group(exp1(9,k.g,p),p)
 k2 = group(exp1(81,k.g,p),p)
 
