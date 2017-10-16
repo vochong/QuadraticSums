@@ -2,7 +2,6 @@ from math105 import *
 from modsqrt21 import sqrt1
 import modsqrt21 as sqrt
 
-
 """ Display an element of the group """
 def display4(e1):
     display144h(e1[0])
@@ -101,8 +100,7 @@ class group:
         "hs20","hs21","hs","ws","f1","f20","f21","k16","k20","k24","k32",
         "calc32","f32","calc64","f81","f81d","f82","f27","f9","k60","k61",
         "calc6","exp4b2","exp","h20","series","series1","series2","series3",
-        "series4","series5","series20","display","display2","display4")
-                
+        "series4","series5","series20","display","display2","display4")                
                         
     def functions(self,n):
         if (n<0 or n>3):
