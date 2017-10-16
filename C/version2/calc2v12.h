@@ -32,7 +32,7 @@ void calc18d(int m2, integer e, int flag4, integer a2[], integer h11[], integer 
 /**           calc18 = (+4)(4)                            **/
 /**           calc18k = (+4)(2)                           **/
 
-/**   calc10d, calc14d, calc17d, clac18d,                 **/
+/**   calc10d, calc14d, calc17d, calc18d,                 **/
 /**   calc10, calc10k, calc11, calc14, calc14k, calc15,   **/
 /**   calc16, calc16k, calc17, calc18, and calc18k        **/
 /**   all have the variable flag4 added                   **/
@@ -758,14 +758,12 @@ integer hs4[144] = {0};
 	mult12(1,0,&hs4[90],&hs4[90],h12,p);
 	mult12(1,p-1,h11,h12,hs1,p);
 
-
 	mult12(1,0,&hs4[60],&hs4[60],h11,p);
 	mult12(1,0,&hs4[30],&hs4[30],h12,p);
 	mult12(1,1,h11,h12,&hs1[30],p);
 
 	mult12(a3[0],(p-a3[1])%p,hs1,&hs1[30],hs2,p);
 	mult12(a3[1],a3[0],hs1,&hs1[30],&hs2[30],p);
-
 
 	calc19(m2,flag4,e,c1-2,e+e2,a2,h11,h12,ptr2,str1,hs3,hs4,p);
 	mult12(1,0,&hs4[0],&hs4[0],h11,p);
@@ -1235,7 +1233,6 @@ integer hs4[144] = {0};
         	printf("\n \n h1 = ");
         	displayh(4,h11);
         	}
-
 }
 
 void calc16(int m2, integer e, int flag4, integer a2[], integer h11[], integer h12[],
@@ -1559,7 +1556,6 @@ integer a5[2] = {0};
 
 	mult12(a5[0],(p-a5[1])%p,hs1,&hs1[30],hs2,p);
 	mult12(a5[1],a5[0],hs1,&hs1[30],&hs2[30],p);
-
 
 	calc6(m2,8,1,ptr2,h11,str1,p);
 	calc6(m2,9,2,ptr2,h12,str1,p);
@@ -1945,16 +1941,6 @@ integer a4[2] = {0};
         calc6(m2,9,c1,ptr2,&hs1[90],str1,p);
         }
 
-/**
-	printf("\n \n in calc19");
-	for(i=0;i<4;i++)
-		{
-		printf("\n \n hs1(%d) = ",i);
-        printf("\n");
-		display12(&hs1[30*i]);
-		}
-**/
-
     for(i=0;i<13;i++)
         {
         h11[0] = hs1[0+i];
@@ -1999,7 +1985,6 @@ integer a4[2] = {0};
             displayh(2,a4);
             }
         }
-
 }
 
 void calc20d(integer a2[], int flag4, integer h15[], long int d1, integer q, integer p)
