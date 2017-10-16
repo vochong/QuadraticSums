@@ -2111,16 +2111,13 @@ def ddh(k,x,y,z):
     h1 = series(1,t1,a2,0,1,p)
     h2 = series(1,t1,a3,0,1,p)
     h3 = series(1,t1,a4,0,1,p)
-    h4 = series(1,t1,a5,0,1,p)
-    # print(" in ddh h1 = ",h1,"h2 = ",h2," h3 = ",h3," h4 = ",h4)
+    h4 = series(1,t1,a5,0,1,p)    
 
     s = init2(4)
     s[0] = (h1[0]+h1[1])%p
     s[1] = (h2[0]+h2[1])%p
     s[2] = (h3[0]+h3[1])%p
-    s[3] = (h4[0]+h4[1])%p
-
-    # print(" \n \n in ddh s = ",s)
+    s[3] = (h4[0]+h4[1])%p   
 
     t1 = 0
     t2 = p-s[0]
@@ -2424,16 +2421,13 @@ def init3(flag4,c1,d,p):
         h1 = k.series(1,p-1,0,2)
         d1 = h1[0]
         h2 = k.series(1,p-1,0,4)
-        d2 = h2[0]
-        # print("\n\n d1 = {0}   d2 = {1}".format(d1,d2))
+        d2 = h2[0]        
         h1 = k.series(1,(p-1)//(3*c1),0,2)
         d3 = h1[0]
-        d4 = h1[1]
-        # print(" d3 = {0}   d4 = {1}".format(d3,d4))
+        d4 = h1[1]      
         h2 = k.series(1,(p-1)//(6*c1),0,4)
         d5 = h2[0]
-        d6 = h2[1]
-        # print(" d5 = {0}   d6 = {1}".format(d5,d6))
+        d6 = h2[1]      
 
     d1 = (d1+d[0])%p
     d2 = (d2+d[1])%p
@@ -2706,7 +2700,6 @@ def init8(k,c,temp1,flag4):
     b2 = [1,0,2*a4[1]%p,(p-1)//6,     s,0,0,0]
 
     # test 1
-
     for i in range(8):
         m[5][i] = (12*m[8][i]+3*m[9][i])%p
         # m[5][i] = m[8][i]
@@ -2726,9 +2719,8 @@ def init8(k,c,temp1,flag4):
     print("\n \n s = ",s)
     m[2] = [1,s,p-1,p-s, 0,0,0,p-12]
     m[2] = [p-s,1,s,p-1,     0,0,12,0]
-    # m[5] = [0,0,0,0, 0,0,0,0]
     m[6] = [0,0,0,0, 0,0,0,0]
     m[7] = [0,0,0,0, 0,0,0,0]
 
-    return(m,b2)   
+    return(m,b2) 
     
