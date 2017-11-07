@@ -2,7 +2,6 @@ from math105 import *
 from modsqrt21 import sqrt1
 import modsqrt21 as sqrt
 
-
 """ Display an element of the group """
 def display4(e1):
     display144h(e1[0])
@@ -2763,8 +2762,5 @@ def init8(k,c,temp1,flag4):
     m[6] = [0,0,0,0, 0,0,0,0]
     m[7] = [0,0,0,0, 0,0,0,0]
 
-    return(m,b2)
+    return(m,b2)   
     
-    
-
-
