@@ -1,6 +1,5 @@
 from group45 import *
 
-
 """
 The prime p should be of the form p = 80n+1
 where n = 1 mod 5 or n = 3 mod 5
@@ -20,7 +19,6 @@ p4 = [3121,4721,5521,7121,9521]
 p5 = [1201,1601,2801,4001,4801]
 
 p = p3[3]
-
 
 k = group(0,p)
 flag4 = 0
@@ -45,7 +43,6 @@ for i in range(5):
     k20[2*i+11] = h2[1]
 
 print("\n \n  k20 = ",k20)
-
 
 m = init1(20,20)
 b1 = init2(20)
@@ -268,11 +265,6 @@ t1 = (p+5)%p
 m[12] = [2*c1,2*s1,   c1+c2,s1+s2,   c1+c2,s1+s2,
         c2,s2-1,  c2,s2-1,
         0,0, 0,0, 0,0, 0,t1, 0,t1]
-"""
-
-"""
-m[11] = init2(20)
-m[12] = init2(20)
 """
 
 
