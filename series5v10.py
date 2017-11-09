@@ -14,7 +14,6 @@ the last 4 equations m[3] through m[6] are not as obvious.
 p = 3121
 
 k = group(0,p)
-
 flag4 = 0
 g = k.g
 k = group(exp1(1,g,p),p)
@@ -77,7 +76,6 @@ m[9] = [0,0,0,0,0,0,
 t1 = 1966//2
 t2 = (p-42)//2
 c = p-1966
-# c = p-2715
 m[10] = [c,0,t1,t2,t1,t2,
          0,0,0,0,0,0]
 
@@ -136,7 +134,6 @@ print("\n \n k12 = ",k12)
 print("\n b2 = ",b2)
 print("\n b3 = ",b3)
 print("\n \n")
-
 
 v1 = init2(12)
 
