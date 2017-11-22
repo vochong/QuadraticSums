@@ -1,5 +1,3 @@
-/** derived from qs08v419.c **/
-/** and qs08v479.c in qs24 directory **/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -99,7 +97,6 @@ void init3(integer flag4, integer a2[], integer c1, integer d[], integer b1[], S
 void init4(integer flag4, integer a2[], integer c1, integer d[], integer b1[], STRING ptr2, integer p);
 
 
-
 int main(void)
 {
 	int i,j,k;
@@ -130,7 +127,7 @@ int main(void)
 	integer hs1[144] = {0};
 	integer hs2[144] = {0};
 	integer hs3[144] = {0};
-    integer hs4[144] = {0};
+    	integer hs4[144] = {0};
 
 	integer ws1[27] = {0};
 	integer ws2[27] = {0};
@@ -178,27 +175,7 @@ int main(void)
 
 
 
-	m2 = m;
-
-
-    p = 1249;
-
-    p = 829;
-
-
-    p = 1117;
-
-    p = 757;
-    p = 1549;
-
-    p = 3637;
-
-    p = 3709;
-
-    p = 829;
-
-    p = 1489;
-    p = 1777;
+    m2 = m;
 
     p = 3169;
 
@@ -262,11 +239,7 @@ int main(void)
 
     g = exp1(1,g,p);
 
-
     g = (1*g)%p;
-
-
-
 
 /** Determine i2 and a2 **/
 	i2 = sqrt1(p-1,p);
@@ -281,14 +254,11 @@ int main(void)
 	i2 = find4(g,p-1,p);
 	printf("\n \n from find4 i2 = %d",i2);
 
-    calc2(g,i2,a2,p);
-    printf("\n \n from calc2 a2 = ");
+    	calc2(g,i2,a2,p);
+    	printf("\n \n from calc2 a2 = ");
 	displayh(2,a2);
 
-
-
-
-    printf("\n \n test of fn60");
+	printf("\n \n test of fn60");
 	fn60(5,29,7,34,a2,a3,p);
 	series(5,29,a2,0,h11,2,p);
 	series(7,34,a2,0,h12,2,p);
@@ -299,11 +269,8 @@ int main(void)
 	printf(" \n a3 = ");
 	displayh(2,a3);
 
-
-
-    printf("\n \n Enter 1 to continue ");
+    	printf("\n \n Enter 1 to continue ");
 	scanf("%d",&s1);
-
 
     printf("\n \n =========================== test of calc12");
     flag4 = 1;
@@ -317,7 +284,7 @@ int main(void)
 
 
     printf("\n \n Enter 1 to continue ");
-	scanf("%d",&s1);
+    scanf("%d",&s1);
 
 
     printf("\n \n test of fn61");
@@ -351,16 +318,16 @@ int main(void)
 
     printf("\n \n test of f32");
 
-	i2 = sqrt1(p-1,p);
-	s2 = exp1((p-1)/2,g,p);
-	if (s2==(p-1))
+    i2 = sqrt1(p-1,p);
+    s2 = exp1((p-1)/2,g,p);
+    if (s2==(p-1))
         {
         i2 = exp1((p-1)/4,g,p);
         }
-	i2 = (p+i2)%p;
-	printf("\n \n g = %d i2 = %d",g,i2);
+     i2 = (p+i2)%p;
+     printf("\n \n g = %d i2 = %d",g,i2);
 
-	i2 = find4(g,p-1,p);
+    i2 = find4(g,p-1,p);
     printf("\n \n i2 = %d",i2);
     printf("\n \n");
 
@@ -387,7 +354,6 @@ int main(void)
     printf("\n \n from calc22d k16 = \n");
     displayh(16,k16);
 
-
     printf("\n \n test k60");
     k60(1,a2,k10,2,q,p);
 
@@ -405,11 +371,10 @@ int main(void)
 
 
     printf("\n \n Enter 1 to continue ");
-	scanf("%d",&s1);
+    scanf("%d",&s1);
 
-
-	for(k=0;k<50;k++)
-    {
+    for(k=0;k<50;k++)
+     	{
 /**
 	i2 = sqrt1(p-1,p);
 	s2 = exp1((p-1)/2,g,p);
@@ -424,7 +389,7 @@ int main(void)
 	i2 = find4(g,p-1,p);
 	printf("\n \n from find4 i2 = %d",i2);
 
-    calc2(g,i2,a2,p);
+    	calc2(g,i2,a2,p);
 	printf("\n \n from calc2 a2 = ");
 	displayh(2,a2);
 
@@ -435,8 +400,6 @@ int main(void)
         k = 50;
         s1 = 1;
         }
-
-
 
 	exp7(s1,a2,a3,p);
 	a2[0] = a3[0];
@@ -450,19 +413,10 @@ int main(void)
         a2[1] = (p-a2[1])%p;
         }
 
-/**
-	exp7(5,a2,a5,p);
-**/
-
-
-
-
 	l2 = 4;
 	l3 = l2+4;
 
 	setzero(200,ptr2);
-
-
 
 /** if flag0 = 1 then set141 is normal (i.e. correct) **/
 /** if flag0 = 0 then set141 is set to zero plus offset of e1 **/
@@ -483,8 +437,6 @@ int main(void)
 
     e2 = e%4;
     e = 1*e-e2;
-
-
 
     e = e - 4;
 
@@ -527,7 +479,7 @@ int main(void)
 	printf("\n \n &&&&& the answer (exp4a) is \n");
 	display27(ptr2[202]);
 
-    printf("\n \n i2 = %d  a2 = (%d,%d)",i2,a2[0],a2[1]);
+    	printf("\n \n i2 = %d  a2 = (%d,%d)",i2,a2[0],a2[1]);
 	series(1,p-1,a2,0,h11,2,p);
 	printf("\n \n (2) series h11 = ");
 	displayh(4,h11);
@@ -545,32 +497,32 @@ int main(void)
 		if(j==0)
 			{
 			calc3d(e,e1,flag0,flag3,a2,kmax,h11,h12,str1,str1a,str2,str2a,m2,
-                   t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
+                   	       t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
 
-            calc6(m2,8,1,ptr2,h11,str1,p);
-            k42[0] = h11[0];
-            calc6(m2,9,1,ptr2,h11,str1,p);
-            k42[1] = h11[0];
-            calc6(m2,8,3,ptr2,h11,str1,p);
-            k42[2] = h11[0];
-            calc6(m2,9,3,ptr2,h11,str1,p);
-            k42[3] = h11[0];
+            		calc6(m2,8,1,ptr2,h11,str1,p);
+            		k42[0] = h11[0];
+            		calc6(m2,9,1,ptr2,h11,str1,p);
+            		k42[1] = h11[0];
+            		calc6(m2,8,3,ptr2,h11,str1,p);
+            		k42[2] = h11[0];
+            		calc6(m2,9,3,ptr2,h11,str1,p);
+            		k42[3] = h11[0];
 			}
 		if(j==1)
 			{
-            exp7((p-1)/3,a2,a3,p);
-            cmult(a2,a3,a5,p);
+            		exp7((p-1)/3,a2,a3,p);
+            		cmult(a2,a3,a5,p);
 			calc3k(e,e1,flag0,flag3,a5,kmax,h11,h12,str1,str1a,str2,str2a,m2,
-                  t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
+                  	       t1,8,9,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
 
-            calc6(m2,8,1,ptr2,h11,str1,p);
-            k42[4] = h11[0];
-            calc6(m2,9,1,ptr2,h11,str1,p);
-            k42[5] = h11[0];
-            calc6(m2,8,3,ptr2,h11,str1,p);
-            k42[6] = h11[0];
-            calc6(m2,9,3,ptr2,h11,str1,p);
-            k42[7] = h11[0];
+            		calc6(m2,8,1,ptr2,h11,str1,p);
+            		k42[4] = h11[0];
+            		calc6(m2,9,1,ptr2,h11,str1,p);
+            		k42[5] = h11[0];
+            		calc6(m2,8,3,ptr2,h11,str1,p);
+            		k42[6] = h11[0];
+            		calc6(m2,9,3,ptr2,h11,str1,p);
+            		k42[7] = h11[0];
 			}
 		printf("\n \n  l2 = %d",e);
 		printf("\n calc3 = ",i);
@@ -617,12 +569,8 @@ int main(void)
 
 		}
 
-
-
     printf("\n\n k42 = ");
     displayh(12,k42);
-
-
 
     e = e+4;
     series(0,e,a2,0,h11,2,p);
@@ -660,8 +608,8 @@ int main(void)
 
 /**
     printf("\n \n \n \n");
-	calc11(m2,e,4,a2,h11,h12,ptr2,str1,hs1,hs2,p);
-	printf("\n \n \n \n");
+    calc11(m2,e,4,a2,h11,h12,ptr2,str1,hs1,hs2,p);
+    printf("\n \n \n \n");
 
     calc15(m2,e,a2,h11,h12,ptr2,str1,hs1,hs2,p);
     printf("\n \n \n \n");
@@ -669,29 +617,29 @@ int main(void)
 
 
 /**
-	calc14(m2,e,6,a2,h11,h12,ptr2,str1,hs2,hs3,p);
+    calc14(m2,e,6,a2,h11,h12,ptr2,str1,hs2,hs3,p);
     printf("\n \n \n \n");
 
-	calc14k(m2,e,8,a2,h11,h12,ptr2,str1,hs2,hs3,p);
+    calc14k(m2,e,8,a2,h11,h12,ptr2,str1,hs2,hs3,p);
     printf("\n \n \n \n");
 
-	calc14k(m2,e,10,a2,h11,h12,ptr2,str1,hs2,hs3,p);
+    calc14k(m2,e,10,a2,h11,h12,ptr2,str1,hs2,hs3,p);
     printf("\n \n \n \n");
 **/
 
 
 /**
     calc11q(m2,e,e2,4,a2,h11,h12,ptr2,str1,hs1,hs2,p);
-	printf("\n \n \n \n");
+    printf("\n \n \n \n");
 
     calc11q(m2,e,e2,6,a2,h11,h12,ptr2,str1,hs1,hs2,p);
-	printf("\n \n \n \n");
+    printf("\n \n \n \n");
 **/
 
 
 /**
     calc11q(m2,e,e2,6,a2,h11,h12,ptr2,str1,hs1,hs2,p);
-	printf("\n \n \n \n");
+    printf("\n \n \n \n");
 
     calc15q(m2,e,e2,a2,h11,h12,ptr2,str1,hs1,hs2,p);
     printf("\n \n \n \n");
@@ -703,15 +651,13 @@ int main(void)
     printf("\n \n \n \n");
 
     calc10(m2,e,3,a2,h11,h12,ptr2,str1,hs1,hs2,p);
-	printf("\n \n \n \n");
+    printf("\n \n \n \n");
 
     calc10(m2,e,5,a2,h11,h12,ptr2,str1,hs1,hs2,p);
-	printf("\n \n \n \n");
+    printf("\n \n \n \n");
 
     calc10(m2,e,7,a2,h11,h12,ptr2,str1,hs1,hs2,p);
-	printf("\n \n \n \n");
-
-
+    printf("\n \n \n \n");
 
 /**
     calc17(m2,e,1,a2,h11,h12,ptr2,str1,hs1,hs2,p);
@@ -721,9 +667,8 @@ int main(void)
     printf("\n \n \n \n");
 **/
 
-
 /**
-	calc16(m2,e,a2,h11,h12,ptr2,str1,hs1,hs2,p);
+    calc16(m2,e,a2,h11,h12,ptr2,str1,hs1,hs2,p);
     printf("\n \n \n \n");
 
     calc16k(m2,e,a2,h11,h12,ptr2,str1,hs1,hs2,p);
@@ -732,17 +677,17 @@ int main(void)
 
 
 /**
-	calc18(m2,e,a2,h11,h12,ptr2,str1,hs1,hs2,p);
+    calc18(m2,e,a2,h11,h12,ptr2,str1,hs1,hs2,p);
     printf("\n \n \n \n");
 
-	calc18k(m2,e,a2,h11,h12,ptr2,str1,hs1,hs2,p);
+    calc18k(m2,e,a2,h11,h12,ptr2,str1,hs1,hs2,p);
     printf("\n \n \n \n");
 **/
 
 
 /** (2) **/
 /**
-	calc19(m2,1,e,2,e+e2+2*0,a2,h11,h12,ptr2,str1,hs1,hs4,p);
+    calc19(m2,1,e,2,e+e2+2*0,a2,h11,h12,ptr2,str1,hs1,hs4,p);
     printf("\n \n \n \n");
     k3[0] = hs4[30*0];
     k3[1] = hs4[30*1];
@@ -771,17 +716,17 @@ int main(void)
 
 
 /**
-	calc19(m2,1,e,6,e+e2,a2,h11,h12,ptr2,str1,hs1,hs2,p);
+     calc19(m2,1,e,6,e+e2,a2,h11,h12,ptr2,str1,hs1,hs2,p);
     printf("\n \n \n \n");
     k3[2] = hs2[30*2];
     k3[3] = hs2[30*3];
 **/
 
 /**
-	calc19(m2,1,e,4,e+e2,a2,h11,h12,ptr2,str1,hs1,hs4,p);
+    calc19(m2,1,e,4,e+e2,a2,h11,h12,ptr2,str1,hs1,hs4,p);
     printf("\n \n \n \n");
 
-	calc19(m2,1,e,8,e+e2,a2,h11,h12,ptr2,str1,hs1,hs2,p);
+    calc19(m2,1,e,8,e+e2,a2,h11,h12,ptr2,str1,hs1,hs2,p);
     printf("\n \n \n \n");
 **/
 
@@ -796,13 +741,9 @@ int main(void)
     e = 2*260*93;
 **/
 
-
-
     printf("\n \n k3 = ");
     displayh(6,k3);
-	e = e-4;
-
-
+    e = e-4;
 
 
 /**
@@ -854,8 +795,6 @@ int main(void)
 **/
 
 
-
-
 /**
     i = 2;
     printf("\n \n i = %d \n",i);
@@ -872,22 +811,19 @@ int main(void)
 
 
     series(1,p-1,a2,0,h14,4,p);
-	printf("\n \n \n \n s5 = %d  series =  ",s5);
-	displayh(4,h14);
+    printf("\n \n \n \n s5 = %d  series =  ",s5);
+    displayh(4,h14);
 
-	printf("\n \n g = %d   i2 = %d   p = %d",g,i2,p);
-	printf("\n a2 = ");
-	displayh(2,a2);
-	printf("\n e = %d",e);
-
+    printf("\n \n g = %d   i2 = %d   p = %d",g,i2,p);
+    printf("\n a2 = ");
+    displayh(2,a2);
+    printf("\n e = %d",e);
 
     exp7(e,a2,a3,p);
     exp7(e,a3,a4,p);
     exp7(4,a4,a3,p);
     printf("\n \n exp7 a3 = ");
     displayh(2,a3);
-
-
 
 
 /** 1 **/
@@ -908,19 +844,16 @@ int main(void)
     printf("\n \n");
     displayh2(12,k3);
 
-
     solve2m(12,&ptr2[150],h14,p);
-	s1 = det(12,&ptr2[150]);
+    s1 = det(12,&ptr2[150]);
 
-	setzero2(12,h11);
-	l2solve(12,h11,h14,&ptr2[150],p);
+    setzero2(12,h11);
+    l2solve(12,h11,h14,&ptr2[150],p);
 
     printf("\n \n \n \n det = %d",s1);
     printf("\n \n");
     display12d(150,ptr2,h14);
 **/
-
-
 
 
 /** 2 **/
@@ -943,16 +876,15 @@ int main(void)
 
 
     solve2m(8,&ptr2[150],h14,p);
-	s1 = det(8,&ptr2[150]);
+    s1 = det(8,&ptr2[150]);
 
-	setzero2(8,h11);
-	l2solve(8,h11,h14,&ptr2[150],p);
+    setzero2(8,h11);
+    l2solve(8,h11,h14,&ptr2[150],p);
 
     printf("\n \n \n \n det = %d",s1);
     printf("\n \n");
     display8d(0,150,ptr2,h14);
 **/
-
 
 
 /** 3 **/
@@ -962,7 +894,6 @@ int main(void)
     printf("\n \n");
     q = (p-1)/2;
     solve16(m2,a2,ptr2,h14,str1,e,hs4,hs2,k3,q,p);
-
 
 
 /**
@@ -976,7 +907,6 @@ int main(void)
 **/
 
 
-
     multcnvl2(31,150,k4,k3,ptr2,p);
     printf(" \n \n \n \n multcnvl2 = ");
     displayh(16,k3);
@@ -985,17 +915,14 @@ int main(void)
 
 
     solve2m(16,&ptr2[150],h14,p);
-	s1 = det(16,&ptr2[150]);
+    s1 = det(16,&ptr2[150]);
 
-	setzero2(16,h11);
-	l2solve(16,h11,h14,&ptr2[150],p);
+    setzero2(16,h11);
+    l2solve(16,h11,h14,&ptr2[150],p);
 
     printf("\n \n \n \n det = %d",s1);
     printf("\n \n");
     display16d(150,ptr2,h14);
-
-
-
 
 
 /** 4 **/
@@ -1016,19 +943,16 @@ int main(void)
     printf("\n \n");
     displayh2(12,k3);
 
-
     solve2m(12,&ptr2[150],h14,p);
-	s1 = det(12,&ptr2[150]);
+    s1 = det(12,&ptr2[150]);
 
-	setzero2(12,h11);
-	l2solve(12,h11,h14,&ptr2[150],p);
+    setzero2(12,h11);
+    l2solve(12,h11,h14,&ptr2[150],p);
 
     printf("\n \n \n \n det = %d",s1);
     printf("\n \n");
     display12d(150,ptr2,h14);
 **/
-
-
 
 
 /** 5 **/
@@ -1051,10 +975,10 @@ int main(void)
 
 
     solve2m(8,&ptr2[150],h14,p);
-	s1 = det(8,&ptr2[150]);
+    s1 = det(8,&ptr2[150]);
 
-	setzero2(8,h11);
-	l2solve(8,h11,h14,&ptr2[150],p);
+    setzero2(8,h11);
+    l2solve(8,h11,h14,&ptr2[150],p);
 
     printf("\n \n \n \n det = %d",s1);
     printf("\n \n");
@@ -1062,17 +986,13 @@ int main(void)
 **/
 
 
-
-
-
-
     printf("\n \n p = %d",p);
-	printf("      i2 = %d",i2);
+    printf("      i2 = %d",i2);
     printf("      g = %d",g);
-	printf("      a2 = ");
-	displayh(2,a2);
-	printf("\n \n a5 = ");
-	displayh(2,a5);
+    printf("      a2 = ");
+    displayh(2,a2);
+    printf("\n \n a5 = ");
+    displayh(2,a5);
 
     series(100,20,a2,0,h11,2,p);
     printf("\n \n test series = ");
