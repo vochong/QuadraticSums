@@ -5,7 +5,6 @@
 #include "qmath229v2.h"
 #include "calc2v6.h"
 
-
 typedef int integer;
 typedef integer *STRING[220];
 
@@ -172,15 +171,9 @@ int main(void)
 	integer k41[12] = {0};
 	integer k42[12] = {0};
 
-
-
-
     m2 = m;
 
     p = 3169;
-
-
-
 
     printf("\n \n char = %d",sizeof(char));
     printf("\n short = %d",sizeof(short));
@@ -188,8 +181,6 @@ int main(void)
     printf("\n long = %d",sizeof(long));
     printf("\n long long = %d",sizeof(long long));
     printf("\n \n");
-
-
 
 	for(i=0;i<m2;i++)
 		{
@@ -203,34 +194,32 @@ int main(void)
 
 /* 1 */
 	if ((str1 = (integer *) calloc(1584,sizeof(integer))) == NULL)
-        {
-         printf("Not enough memory for str1\n");
+        	{
+         	 printf("Not enough memory for str1\n");
 		 /*
 		 exit(1);
 		 */
-        }
+        	}
 /* 2 */
 	 if ((str2 = (integer *) calloc(1584,sizeof(integer))) == NULL)
-        {
+        	{
 		 printf("Not enough memory for str2\n");
-        }
+        	}
 /* 3 */
 	if ((str1a = (integer *) calloc(297,sizeof(integer))) == NULL)
-        {
+        	{
 		 printf("Not enough memory for str1a\n");
-        }
+        	}
 /* 4 */
 	if ((str2a = (integer *) calloc(297,sizeof(integer))) == NULL)
-        {
+        	{
 		 printf("Not enough memory for str2a\n");
-        }
+        	}
 
 	setzero2(40,h11);
 
-
     g = findnqr(p);
     printf("\n g = f(%d) = %d",p,g);
-
 
 /** Determine g **/
     g = find3(p);
@@ -732,7 +721,6 @@ int main(void)
 
 
 
-
 /**
     e = 2*260*69;
 
@@ -805,10 +793,8 @@ int main(void)
     calc6(m2,8,i,ptr2,h12,str1,p);
     printf("\n");
     display12(h12);
-	mult12(1,1,h11,h12,hs1,p);
+    mult12(1,1,h11,h12,hs1,p);
 **/
-
-
 
     series(1,p-1,a2,0,h14,4,p);
     printf("\n \n \n \n s5 = %d  series =  ",s5);
@@ -836,7 +822,6 @@ int main(void)
 
     printf("\n \n");
     display12d(150,ptr2,h14);
-
 
     multcnvl2(12,150,k12,k3,ptr2,p);
     printf(" \n \n \n \n multcnvl2 = ");
@@ -866,7 +851,6 @@ int main(void)
 
     printf("\n \n");
     display8d(1,150,ptr2,h14);
-
 
     multcnvl2(16,150,k8,k3,ptr2,p);
     printf(" \n \n \n \n multcnvl2 = ");
@@ -1110,7 +1094,7 @@ for(j=0;j<t;j++)
 
 /* 4-i */
 		tuple2(2,str1,str1a,str2,str2a,flag0,y,c6,s1,
-				 m2,l2,a2,ws1,hs1,ws2,hs2,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
+		       m2,l2,a2,ws1,hs1,ws2,hs2,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
 		l2 = 2*l2;
 
 		if (a[i]==0)
@@ -1122,7 +1106,7 @@ for(j=0;j<t;j++)
 			{
 			l3 = l2 + 4;
 			tuple1(2,str2,str1,str1a,
-					 m2,l2,l3,a2,hs1,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
+			       m2,l2,l3,a2,hs1,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
 			l2 = l3;
 			}
 
@@ -1156,7 +1140,6 @@ integer sn2[10] = {0};
 integer a[16] = {0,0,1,0,0};
 
 integer l4 = 4;
-
 
 /* Make sure that h11[] is array of size >= kmax */
 
@@ -1401,8 +1384,6 @@ for(j=0;j<t;j++)
     *(str2+1*144+9*12+2) = b1[6];
 
 
-
-
     *(str2+1*144+9*5+0) = b1[7];
     *(str2+1*144+9*5+1) = 0;
     *(str2+1*144+9*5+2) = b1[8];
@@ -1418,8 +1399,6 @@ for(j=0;j<t;j++)
     *(str2+1*144+9*10+0) = b1[7];
     *(str2+1*144+9*10+1) = 0;
     *(str2+1*144+9*10+2) = b1[8];
-
-
 
 
     *(str2+1*144+9*1+0) = b1[9];
@@ -1470,8 +1449,6 @@ for(j=0;j<t;j++)
             *(str2+1*144+9*i+2*j+2) = t2;
             }
         }
-
-
 
 
     if (flag4==1)
