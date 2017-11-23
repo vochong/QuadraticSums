@@ -1,6 +1,5 @@
 from group45 import*
 
-
 def calc9(k,c1):
     p = k.p
     q1 = init2(10)
@@ -105,25 +104,18 @@ def calc9(k,c1):
         t9 = (p-t9)%p
         q3 = [t2,t1,t4,t3,t6,t5,t8,t7,t10,t9]
 
-    return(q1,q2,q3,q4)
-        
+    return(q1,q2,q3,q4)       
 
 
 
 p1 = [1657,1801,2953,6841,7489]
-
-p = p1[4]    
-
-
+p = p1[4]  
 k = group(0,p)
 
 flag4 = 0
-k = group(exp1(59,k.g,p),p)
-
+k = group(exp1(1,k.g,p),p)
 k1 = group(exp1(9,k.g,p),p)
-
 k2 = group(exp1(81,k.g,p),p)
-
 
 k.list2(9,2)
 k1.list1(3,2,(p-1)//18)
@@ -140,12 +132,10 @@ for i in range(5):
     k20[2*i+1] = h1[1]
     h2 = k2.series(s2[2*i],s2[2*i+1],0,2)
     k20[2*i+10] = h2[0]
-    k20[2*i+11] = h2[1]    
-
+    k20[2*i+11] = h2[1]   
 
 print("\n \n s1 = ",s1)
 print("\n \n s2 = ",s2)
-
 print("\n \n k20 = ",k20)
 
 m = init1(30,20)
@@ -227,8 +217,6 @@ m[21] = [0,0,0,0,0,0,0,0,0,0,
         0,2*t,0,0,0,p-t,0,p-t,0,0]
 
 
-
-
 e = (p-1)//9
 h1 = k.series(1,e,2*e,2)
 h2 = k.series(1,e,4*e,2)
@@ -247,7 +235,6 @@ m[22] = [0,0,0,0,0,0,0,0,0,0,
 
 m[23] = [0,0,0,0,0,0,0,0,0,0,
          0,2*t%p,0,t,0,p-t,0,p-t,0,p-t]
-
 
 
 e1 = (p-1)//9
@@ -282,9 +269,6 @@ for i in range(0,10):
     m[11][i+10] = t1*m[23][i+10]%p
     m[12][i+10] = t1*m[24][i+10]%p
     m[13][i+10] = t1*m[25][i+10]%p
-
-
-
 
 
 
