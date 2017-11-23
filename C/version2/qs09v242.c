@@ -92,20 +92,16 @@ void equation4d(integer e4, integer a2[], integer s1, integer s2, integer k40[],
                 integer a3[], integer q, integer p);
 
 void calc7(int m2, int c1, int d1, STRING ptr2, integer h12[], integer *str1, integer p);
-
 void calc5(integer h20[], integer h21[], integer h22[], integer p);
 
 void calc19k4(int m2, integer c1, int flag4, STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer hs3[], integer p);
-
 void calc19k5(int m2, integer e, integer c1, int flag4,  integer a2[], STRING ptr2 , integer *str1,
               integer hs1[], integer hs2[], integer hs3[], integer p);
 
 void calc60(int m2, integer c1, integer c2, integer e, integer e2, integer a2[], int flag4, STRING ptr2 , integer *str1,
             integer hs1[], integer hs2[], integer hs3[], integer hs4[], integer p);
-
 void calc73(int m2, integer e, int flag4, integer a2[], integer h11[], integer h12[],
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
-
 void calc74(int m2, integer e, int c1, int flag4, integer a2[], integer h11[], integer h12[],
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
 
@@ -180,15 +176,10 @@ int main(void)
 	integer k41[12] = {0};
 	integer k42[12] = {0};
 
-    m2 = m;
-    p = 9857;
-
-    printf("\n \n char = %d",sizeof(char));
-    printf("\n short = %d",sizeof(short));
-    printf("\n int = %d",sizeof(int));
-    printf("\n long = %d",sizeof(long));
-    printf("\n long long = %d",sizeof(long long));
-    printf("\n \n");
+	
+   	m2 = m;
+	
+    	p = 9857;
 
 	for(i=0;i<m2;i++)
 		{
