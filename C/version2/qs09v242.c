@@ -175,7 +175,6 @@ int main(void)
 	integer k40[6] = {0};
 	integer k41[12] = {0};
 	integer k42[12] = {0};
-
 	
    	m2 = m;
 	
@@ -239,7 +238,6 @@ int main(void)
    	calc2(g,i2,a2,p);
     	printf("\n \n from calc2 a2 = ");
 	displayh(2,a2);
-
 
     printf("\n \n test of calc42k");
     a5[0] = a2[0];
@@ -305,14 +303,9 @@ int main(void)
         a2[1] = (p-a2[1])%p;
         }
 
-
-
 	l2 = 4;
 	l3 = l2+4;
-
 	setzero(200,ptr2);
-
-
 
 /** if flag0 = 1 then set141 is normal (i.e. correct) **/
 /** if flag0 = 0 then set141 is set to zero plus offset of e1 **/
@@ -325,11 +318,8 @@ int main(void)
     e = (p-1)/16;
     e = 1*e;
 
-    e = e;
-
     e2 = e%4;
     e = 1*e-e2;
-
 
     e = e - 4;
 
@@ -349,8 +339,7 @@ int main(void)
 
 	flag_2 = 1;
 	c1 = 1;
-	t1 = exp4d2(e,a2,kmax,h11,h12,str1,str1a,str2,str2a,m2,
-                    flag0,x,y,c6,s,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
+	t1 = exp4d2(e,a2,kmax,h11,h12,str1,str1a,str2,str2a,m2,flag0,x,y,c6,s,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
 	flag_2 = 0;
 	printf("\n \n  l2 = %d",e);
 	printf("\n  t1 = %d",t1);
@@ -510,7 +499,6 @@ int main(void)
         printf("\n \n \n \n");
 **/
 
-
 /**
         calc16(m2,e+4,1,a2,h11,h12,ptr2,str1,hs2,hs3,p);
         printf("\n \n \n \n");
@@ -574,16 +562,13 @@ int main(void)
         calc10d(m2,e+4,3,1,a2,h11,h12,ptr2,str1,hs1,hs2,p);
         printf("\n \n \n \n");
 
-
         printf("\n \n");
         calc14d(m2,e+4,1,a2,h11,h12,ptr2,str1,hs1,hs2,p);
         printf("\n \n \n \n");
 
-
         printf("\n \n");
         calc17d(m2,e+4,1,a2,h11,h12,ptr2,str1,hs1,hs2,p);
         printf("\n \n \n \n");
-
 
         calc18d(m2,e+4,1,a2,h11,h12,ptr2,str1,hs1,hs2,p);
         printf("\n \n \n \n");
@@ -691,16 +676,12 @@ int main(void)
     printf("\n \n s1 = %d  s2 = %d",s1,s2);
 **/
 
-
     printf("\n \n \n \n k40 = ");
     displayh(6,k40);
-
     printf("\n \n k41 = ");
     displayh(12,k41);
-
     printf("\n \n k42 = ");
     displayh(6,k42);
-
 
 /**
     q = p-1;
@@ -742,9 +723,8 @@ int main(void)
     printf("\n \n (4) series = ");
     displayh(4,h20);
 
-
-	printf("\n \n det_sum = %d",det_sum);
-	printf("\n det_l144 = %d",det_l144);
+    printf("\n \n det_sum = %d",det_sum);
+    printf("\n det_l144 = %d",det_l144);
     }
 
 	return(0);
@@ -975,8 +955,6 @@ if (l4>0)
     }
 return(e2);
 }
-
-
 
 int exp4d3 (integer c, integer e, integer a2[], int kmax, int flag4, integer h11[], integer h12[],
             integer *str1, integer *str1a, integer *str2, integer *str2a,
