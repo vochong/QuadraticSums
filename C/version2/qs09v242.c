@@ -13,98 +13,78 @@ int exp4d (integer e, integer a2[], int kmax, integer h11[], integer h12[],
            int m2, integer flag0, int x, int y, int c6, integer s,
            integer ws1[], integer hs1[], integer ws2[], integer hs2[],
            integer hs3[], STRING ptr2, integer b2[], integer p);
-
 int exp4d2 (integer e, integer a2[], int kmax, integer h11[], integer h12[],
             integer *str1, integer *str1a, integer *str2, integer *str2a,
             int m2, integer flag0, int x, int y, int c6, integer s,
             integer ws1[], integer hs1[], integer ws2[], integer hs2[],
             integer hs3[], STRING ptr2, integer b2[], integer p);
-
 int exp4d3 (integer c, integer e, integer a2[], int kmax, int flag4, integer h11[], integer h12[],
             integer *str1, integer *str1a, integer *str2, integer *str2a,
             int m2, integer flag0, int x, int y, int c6, integer s,
             integer ws1[], integer hs1[], integer ws2[], integer hs2[],
             integer hs3[], STRING ptr2, integer b2[], integer p);
-
 void calc3 (integer e, integer e1, integer flag0, integer flag3, integer a2[], int kmax,
             integer h11[], integer h12[], integer *str1, integer *str1a,
             integer *str2, integer *str2a, int m2, int t1, int c1, int c2,
             integer ws1[], integer hs1[], integer ws2[], integer hs2[],
             integer hs3[], STRING ptr2, integer b2[], integer p);
-
 void calc3k (integer c3, integer e, integer e1, integer flag0, integer flag3, integer a2[], int kmax,
              integer h11[], integer h12[], integer *str1, integer *str1a,
              integer *str2, integer *str2a, int m2, int t1, int c1, int c2,
              integer ws1[], integer hs1[], integer ws2[], integer hs2[],
              integer hs3[], STRING ptr2, integer b2[], integer p);
-
 void calc4 (integer e, integer e1, integer flag0, integer flag3, integer a2[], int kmax,
             integer h11[], integer h12[], integer *str1, integer *str1a,
             integer *str2, integer *str2a, int m2, int t1, int c1, int c2,
             integer ws1[], integer hs1[], integer ws2[], integer hs2[],
             integer hs3[], STRING ptr2, integer b2[], integer p);
-
 void calc3d (integer e, integer e1, integer flag0, integer flag3, integer a2[], int kmax,
              integer h11[], integer h12[], integer *str1, integer *str1a,
              integer *str2, integer *str2a, int m2, int t1, int c1, int c2,
              integer ws1[], integer hs1[], integer ws2[], integer hs2[],
              integer hs3[], STRING ptr2, integer b2[], integer p);
-
 void calc3k2 (integer e, integer e1, integer flag0, integer flag3, integer a2[], int kmax,
              integer h11[], integer h12[], integer *str1, integer *str1a,
              integer *str2, integer *str2a, int m2, int t1, int c1, int c2,
              integer ws1[], integer hs1[], integer ws2[], integer hs2[],
              integer hs3[], STRING ptr2, integer b2[], integer p);
-
 void calc4d (integer e, integer e1, integer flag0, integer flag3, integer a2[], int kmax,
             integer h11[], integer h12[], integer *str1, integer *str1a,
             integer *str2, integer *str2a, int m2, int t1, int c1, int c2,
             integer ws1[], integer hs1[], integer ws2[], integer hs2[],
             integer hs3[], STRING ptr2, integer b2[], integer p);
-
 void display16d(unsigned int r, STRING ptr2, integer b1[]);
 void multcnvl2(int l2, int e1, integer k4[], integer k3[], STRING ptr2, integer p);
 void calc12d(integer e, integer a2[], integer k1[], integer k2[], integer p);
 void calc12(integer e, integer a2[], int flag4, integer k1[], integer k2[], integer p);
-
 void displayh2(int d, integer h16[]);
-
 integer find4(integer g, integer q, integer p);
 void displayh11(integer h11[]);
-
 void init3(integer flag4, integer a2[], integer c1, integer d[], integer b1[], STRING ptr2, integer p);
 void init4(integer flag4, integer a2[], integer c1, integer d[], integer b1[], STRING ptr2, integer p);
-
 integer calc42(integer e4, integer a2[], integer a5[], integer a6[], integer k40[], integer k41[], integer q, integer p);
 integer calc42d(integer e, integer e1, integer a2[], integer a5[], integer a6[], integer k40[], integer k41[], integer q, integer p);
 integer calc42k(integer e, integer e1, integer a2[], integer a5[], integer a6[], integer k40[], integer k41[], integer q, integer p);
-
 void fn60k(int c1, int c2, int t1, int t2, integer a2[], integer a3[], long int d1, integer p);
-
 void calc19d(int m2, integer e, int c1, int flag4, integer a2[], integer h11[], integer h12[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
 void calc19k(int m2, integer e, int c1, int flag4, integer a2[], integer h11[], integer h12[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
-
 void equation4(integer e4, integer a2[], integer a5[], integer a6[], integer k40[], integer k41[],
                integer k42[], integer q, integer p);
 void equation4d(integer e4, integer a2[], integer s1, integer s2, integer k40[], integer k41[],
                 integer a3[], integer q, integer p);
-
 void calc7(int m2, int c1, int d1, STRING ptr2, integer h12[], integer *str1, integer p);
 void calc5(integer h20[], integer h21[], integer h22[], integer p);
-
 void calc19k4(int m2, integer c1, int flag4, STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer hs3[], integer p);
 void calc19k5(int m2, integer e, integer c1, int flag4,  integer a2[], STRING ptr2 , integer *str1,
               integer hs1[], integer hs2[], integer hs3[], integer p);
-
 void calc60(int m2, integer c1, integer c2, integer e, integer e2, integer a2[], int flag4, STRING ptr2 , integer *str1,
             integer hs1[], integer hs2[], integer hs3[], integer hs4[], integer p);
 void calc73(int m2, integer e, int flag4, integer a2[], integer h11[], integer h12[],
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
 void calc74(int m2, integer e, int c1, int flag4, integer a2[], integer h11[], integer h12[],
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
-
 
 int main(void)
 {
