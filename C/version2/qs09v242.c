@@ -359,12 +359,11 @@ int main(void)
 	printf("\n \n");
 	displaytuple(1,str1,str1a);
 
-
 	printf("\n \n \n \n from exp4d h11 = \n \n",i);
 	displayh11(h11);
 	printf("\n \n after exp4d");
 
-    e1 = e + 4;
+    	e1 = e + 4;
 	exp4a(1*e1,0,201,a2,ptr2,p);
 	printf("\n \n &&&&&& the answer (exp4a) is ");
 	ndisplay(ptr2[201]);
@@ -373,7 +372,7 @@ int main(void)
 	printf("\n \n &&&&& the answer (exp4a) is \n");
 	display27(ptr2[202]);
 
-    printf("\n \n i2 = %d  a2 = (%d,%d)",i2,a2[0],a2[1]);
+    	printf("\n \n i2 = %d  a2 = (%d,%d)",i2,a2[0],a2[1]);
 	series(1,p-1,a2,0,h11,2,p);
 	printf("\n \n (2) series = ");
 	displayh(4,h11);
@@ -382,7 +381,7 @@ int main(void)
 	printf("\n \n (4) series = ");
 	displayh(4,h11);
 
-    c1 = 1;
+    	c1 = 1;
 /** calc3 **/
 	flag0 = 1*1;
 /** flag3 = 1 implies c = 5 **/
@@ -566,8 +565,6 @@ int main(void)
         calc60(m2,20,c2,e,e2,a2,flag4,ptr2,str1,hs1,hs2,hs3,hs4,p);
 **/
 
-
-
 /**
         printf("\n \n \n \n");
         printf("\n \n ^^^^^^^^^^^ e = %ld",e);
@@ -591,8 +588,6 @@ int main(void)
         calc18d(m2,e+4,1,a2,h11,h12,ptr2,str1,hs1,hs2,p);
         printf("\n \n \n \n");
 **/
-
-
 
 /**
         flag4 = 1;
@@ -633,9 +628,6 @@ int main(void)
 /**
         calc19k5(m2,e,2,1,a2,ptr2,str1,hs1,hs2,hs3,p);
 **/
-
-
-
 
 /**
         mult12(0,4,h20,h21,h25,p);
@@ -725,7 +717,6 @@ int main(void)
 	printf("\n \n a2 = ");
 	displayh(2,a2);
 
-
 	printf("\n \n a5 = ");
 	displayh(2,a5);
 	printf("    a6 = ");
@@ -754,11 +745,9 @@ int main(void)
 
 	printf("\n \n det_sum = %d",det_sum);
 	printf("\n det_l144 = %d",det_l144);
-
     }
 
 	return(0);
-
 }
 
 int exp4d (integer e, integer a2[], int kmax, integer h11[], integer h12[],
@@ -852,8 +841,7 @@ for(j=0;j<t;j++)
 		zerotuple(2,2,str1,str1a);
 
 /* 4-i */
-		tuple2(2,str1,str1a,str2,str2a,flag0,y,c6,s1,
-				 m2,l2,a2,ws1,hs1,ws2,hs2,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
+		tuple2(2,str1,str1a,str2,str2a,flag0,y,c6,s1,m2,l2,a2,ws1,hs1,ws2,hs2,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
 		l2 = 2*l2;
 
 		if (a[i]==0)
@@ -864,16 +852,12 @@ for(j=0;j<t;j++)
 		if (a[i]==1)
 			{
 			l3 = l2 + 4;
-			tuple1(2,str2,str1,str1a,
-					 m2,l2,l3,a2,hs1,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
+			tuple1(2,str2,str1,str1a,m2,l2,l3,a2,hs1,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
 			l2 = l3;
 			}
-
 		}
 return(e2);
 }
-
-
 
 int exp4d2 (integer e, integer a2[], int kmax, integer h11[], integer h12[],
             integer *str1, integer *str1a, integer *str2, integer *str2a,
@@ -899,7 +883,6 @@ integer sn2[10] = {0};
 integer a[16] = {0,0,1,0,0};
 
 integer l4 = 4;
-
 
 /* Make sure that h11[] is array of size >= kmax */
 
@@ -949,14 +932,13 @@ for(j=0;j<t;j++)
 		a[j] = h11[j]-2;
 		}
 
-
 	k = 5;
 	l2 = 4;
 	init2(l2,a2,k,ptr2,hs3,str1,str1a,p);
 /*
 	displaytuple(k,str1,str1a);
 */
-
+	
 	for(i=0;i<(e2+1);i++)
 		{
 		s1 = 0;
@@ -964,12 +946,10 @@ for(j=0;j<t;j++)
 			{
 			s1 = s;
 			}
-
 		zerotuple(2,2,str1,str1a);
 
 /* 4-i */
-		tuple2(2,str1,str1a,str2,str2a,flag0,y,c6,s1,
-               m2,l2,a2,ws1,hs1,ws2,hs2,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
+		tuple2(2,str1,str1a,str2,str2a,flag0,y,c6,s1,m2,l2,a2,ws1,hs1,ws2,hs2,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
 		l2 = 2*l2;
 
 		if (a[i]==0)
@@ -1016,26 +996,16 @@ int l2,l3;
 integer q;
 integer cs[10] = {0};
 integer sn[10] = {0};
-
 integer cs1[10] = {0};
 integer sn1[10] = {0};
-
 integer cs2[10] = {0};
 integer sn2[10] = {0};
-
 integer a3[2];
 integer a4[2];
-
 integer a[16] = {0,0,1,0,0};
-
 integer d[6] = {0};
-
 integer b1[15] = {0};
-
 integer l4 = 4;
-
-
-
 
 /* Make sure that h11[] is array of size >= kmax */
 
@@ -1181,8 +1151,6 @@ for(j=0;j<t;j++)
     *(str2+1*144+9*8+2) = b1[11];
 
 
-
-
     *(str2+1*144+9*7+0) = b1[12];
     *(str2+1*144+9*7+1) = b1[13];
     *(str2+1*144+9*7+2) = b1[14];
@@ -1213,9 +1181,6 @@ for(j=0;j<t;j++)
             }
         }
 
-
-
-
     if (flag4==1)
         {
         printf("\n \n in exp4d3(1) &&&&&&&&&&&&&&&&&&&&&&&&");
@@ -1244,7 +1209,6 @@ for(j=0;j<t;j++)
     a4[1] = (a2[0]+(p-a2[1]))%p;
 **/
 
-
     l3 = l2+4;
     tuple1(2,str2,str1,str1a,m2,l2,l3,a2,hs1,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
     l2 = l3;
@@ -1269,13 +1233,10 @@ for(j=0;j<t;j++)
 
     if (flag4==1)
         {
-        printf("\n \n in exp4d3(2) &&&&&&&&&&&&&&&&&&&&&&&&");
+        printf("\n \n in exp4d3(2)");
         printf("\n \n");
         displaytuple(1,str1,str1a);
         }
-
-
-
 
 	for(i=0;i<(e2+1);i++)
 		{
@@ -1284,7 +1245,6 @@ for(j=0;j<t;j++)
 			{
 			s1 = s;
 			}
-
 		zerotuple(2,2,str1,str1a);
 
 /* 4-i */
@@ -1303,7 +1263,6 @@ for(j=0;j<t;j++)
 			tuple1(2,str2,str1,str1a,m2,l2,l3,a2,hs1,cs,sn,h12,cs1,sn1,cs2,sn2,ptr2,b2,p);
 			l2 = l3;
 			}
-
         }
 
 if (l4>0)
@@ -1315,9 +1274,6 @@ if (l4>0)
     }
 return(e2);
 }
-
-
-
 
 void calc3 (integer e, integer e1, integer flag0, integer flag3, integer a2[], int kmax,
             integer h11[], integer h12[], integer *str1, integer *str1a,
