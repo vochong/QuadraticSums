@@ -33,7 +33,6 @@ def equation22(a4,m,b1,t,q,p):
                 0,t1,0,t1,  t1,0,t1,0]
         b1[t] = 0
 
-
 def equation23(a2,m,b1,t,q,p):
     q1 = q//16
     a4 = exp2a(2*q1*q1,a2,p)
@@ -170,8 +169,7 @@ def init32(k,q):
 
         if ((q1%8)==7):
             t3 = p-1
-        b1[1] = (t3*t4)%p
-              
+        b1[1] = (t3*t4)%p              
 
     if (q1%4)==3:
         t1 = a4[0]
@@ -219,16 +217,12 @@ def init32(k,q):
         t2 = a4[1]
         m[5] = [0,0,t1,t2, 0,0,t1,t2,
                 0,p-1,0,1, 0,0,0,0]
-        b1[5] = 0
-        
+        b1[5] = 0        
 
-    equation22(a4,m,b1,6,q,p)
-    
+    equation22(a4,m,b1,6,q,p)    
     equation23(a2,m,b1,7,q,p)      
         
     return(m,b1)
-
-
 
 """ For the output to be correct the prime p
 should be of the form 32n+1 where gcd(2,n) = 1
@@ -239,24 +233,16 @@ If n = 3 mod 4 then three equations are nonzero
 and the other six are zero.
 """
 
-
-
 p1 = [3169,3361,3617,4001,4129,4513,5153,5281,5857,7393]
-
 p = p1[8]
-
 print("\n \n p = ",p)
 print("\n \n")
-
 k = group(0,p)
 q = (p-1)//2
-
 k.f32(0,0,2)
 k16 = k.k32(q,2)
 
 m,b1 = init32(k,q)
-
-
 
 b2 = init2(16)
 for i in range(16):
@@ -266,8 +252,7 @@ b3 = init2(16)
 b3[:] = b1
 
 print("\n \n b2 = ",b2)
-print("\n \n b3 = ",b3)              
-
+print("\n \n b3 = ",b3)             
 
 v1 = init2(16)
 print("\n \n")
@@ -280,8 +265,6 @@ display(0,15,0,15,m,v1)
 l2solve(16,h1,v1,m,p)
 print("after solve2 = ",h1)
 print("\n \n")
-
-
 
 p = 3169
 k = group(0,p)
@@ -296,5 +279,4 @@ for i in range(16):
     t4 = 16*(a4[1]*a5[1])**2%p    
     
     print(i,t4)
-
 
