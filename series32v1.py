@@ -272,11 +272,9 @@ a3 = exp2a(1*(p-1)//16,k.a2,p)
 for i in range(16):
     a4 = exp2a(1*i,a3,p)
     a5 = exp2a(3*i,a3,p)
-    a6 = exp2a(6*i,a3,p)
-    a7 = exp2a(16*i,a3,p)
     
     t3 = 16*(a4[0]*a5[0])**2%p
-    t4 = 16*(a4[1]*a5[1])**2%p    
+    t4 = 16*(a4[1]*a5[1])**2%p
     
     print(i,t4)
 
