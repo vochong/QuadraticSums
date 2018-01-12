@@ -25,12 +25,6 @@ k1.list2(12,4)
 k2.list2(12,4)
 """
 
-"""
-k.a2[1] = p-k.a2[1]
-k1.a2[1] = p-k1.a2[1]
-k2.a2[1] = p-k2.a2[1]
-"""    
-
 h1 = k.calc21(1,2*d2,(p-1)//(2*d2),p)
 print("\n\n h1 =",h1)
 
@@ -182,25 +176,18 @@ if (q1%4==0):
     t3 = s-3
     t4 = (2*p+1)//3
     t4 = 2*t4%p
-    t4 = t3*t4%p
+    t4 = t3*t4%p    
     b1 = [p-1,p-1,p-1,p-2,s-1,0,0,0,0,t1,t2,t1+1,p-t2,0,0,t4,0,0]
-    
-    b1 = [p-1,p-1,p-1,p-2,s-1,0,0,0,0,t1,t2,t1+1,p-t2,0,0,t4,0,0]
-
 
 for i in range(13,18):
     b1[i] = 0    
 
 print("\n\n b1 = \n",b1)
-
 v1 = init2(18)
 v1 = b2[:]
-
 print("\n \n")
 display(0,17,0,17,m,v1)
-
 h1 = [0 for i in range(18)]
-
 solve2(18,m,v1,p)
 t1 = det(18,m)
 print("\n \n det = ",t1)
