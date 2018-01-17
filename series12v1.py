@@ -5,7 +5,6 @@ where gcd(3,n) = 1 """
 
 p = 1753
 k = group(0,p)
-# k = group(1*k.g%p,p)
 k = group(exp1(1,k.g,p),p)
 
 c = ((p-1)//3)%3
@@ -129,10 +128,7 @@ if q1%4==0:
     m[16] = init2(18)
     m[17] = init2(18)    
 
-for i in range(18,18):
-    m[i] = [0 for j in range(18)]
-
-b2 = [9 for i in range(18)]
+b2 = [0 for i in range(18)]
 for i in range(18):
     b2[i] = multcnvl2(m[i],k12,p)
 
