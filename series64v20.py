@@ -22,8 +22,7 @@ def list64(k,e1,e2,q,d1):
         # t3 = (h1[0]+h2[0]+(p-1)*h3[0]+(p-1)*h4[0])%p
         # t4 = (h1[1]+h2[1]+(p-1)*h3[1]+(p-1)*h4[1])%p
         
-        a = [t3,t4]
-        
+        a = [t3,t4]        
 
         s1 = t+(t2+3)%16
         s2 = t+(t2+5)%16
@@ -44,7 +43,6 @@ def list64(k,e1,e2,q,d1):
         t3 = [s1,s2,s3,s4,t1]
         # print("\n ({0})  {1}    {2}".format(i,t3,s))
         print("\n ({0})   {1}  {2}  ".format(i,a,b))
-
 
 def f8(k,q,d1):
     s = init2(8)
@@ -124,8 +122,7 @@ def equation23(k,m,b1,t,q):
     s7 = (p-2)*c1%p
     s8 = 4*c2%p
     t8 = (s5*k8[0]+s6*k8[1]+s7*k8[2]+s8*k8[3])%p
-    print("\n \n in equation23 t7 = {0}  t8 = {1}".format(t7,t8))
-    
+    print("\n \n in equation23 t7 = {0}  t8 = {1}".format(t7,t8))    
     
     a5 = exp2a(2*q1*q1//9,k.a2,p)    
     q2 = (q1//3)%16
@@ -242,8 +239,7 @@ def init64(k,q):
         b1[1] = 0
         t2 = ((p-1)*c+s)%p
         m[2] = [0,1,p-1,0,  t2,0,0,0]
-        b1[2] = 0
-        
+        b1[2] = 0        
 
     if q1%4==3:
         m[0] = [0,0,0,0, 1,p-1,0,0]
@@ -285,7 +281,6 @@ def init64(k,q):
         a4 = exp2a(49,a3,p)
         print("\n \n in init64 a3 = {0}   a4 = {1}".format(a3,a4))
 
-
         t2 = (c+s)%p
         t2 = (p-t2)%p
         m[1] = [16,0,0,p-16,    16*t2%p,0,0,0]
@@ -293,7 +288,6 @@ def init64(k,q):
         t2 = ((p-1)*c+s)%p
         m[2] = [0,16,16,0,  16*t2%p,0,0,0]
         b1[2] = (t4+t5)%p
-
 
     equation22(k,m,b1,3,q)
 
@@ -309,29 +303,22 @@ def init64(k,q):
     m[5] = [c1,3*s1,p-s1,3*c1,  2*c2,2*s2,p-c2,p-s2]
 
     m[5] = [5*c1,(p-7)*s1,(p+5)*s1,7*c1,  0,0,0,0]
-
-
-
     
     a3 = exp2a(2*9*9*q1*q1,k.a2,p)
     c1 = a3[0]
     s1 = a3[1]
-    m[6] = [0,0,0,0,  6*c1,6*s1,(p-c1)%p,(p-s1)%p]
-   
+    m[6] = [0,0,0,0,  6*c1,6*s1,(p-c1)%p,(p-s1)%p]   
    
     # m[6] = init2(8)
     m[7] = init2(8)
         
     # equation24(k,m,b1,5,q)      
         
-    return(m,b1)  
-  
+    return(m,b1)    
   
 
 p1 = [2113,1601,3137,4673,5441,5953,8513]
-
 p3 = [2753,4289,4801,6337,7873,8641]
-
 p = p1[0]
 k = group(0,p)
 k = group(exp1(1,k.g,p),p)
@@ -379,7 +366,6 @@ if (e%4)==3:
 a3 = exp2a(2*t1*e,k.a2,p)
 print("\n c,s = [{0}, {1}]    a3 = {2}".format(c,s,a3))
 
-
 a = [1,15]
 q1 = (p-1)//64
 b = []
@@ -391,7 +377,6 @@ for i in range(1,32,2):
         
 print("\n \n b = ",b)
 
-
 a = [7,9]
 q1 = (p-1)//64
 b = []
@@ -402,7 +387,6 @@ for i in range(1,32,2):
         b.append(i)
         
 print("\n \n b = ",b)
-
 
 m,b2 = init64(k,(p-1)//2)
 b1 = init2(8)
@@ -418,15 +402,10 @@ for i in range(8):
 
 print("\n \n b1 = ",b1)
 print("\n b2 = ",b2)
-
-
 v1 = init2(8)
-
 print("\n \n")
 display(0,7,0,7,m,v1)
-
 h1 = init2(8)
-
 solve2(8,m,v1,p)
 t1 = det(8,m)
 print("\n \n det = ",t1)
@@ -448,4 +427,3 @@ c2,s2 = a4[0],a4[1]
 t3 = 2*(c1*k8[0]+c2*k8[2])%p
 t4 = 2*(c1*k8[1]+c2*k8[3])%p
 print("\n t3 = {0}  t4 = {1}".format(t3,t4))
-
