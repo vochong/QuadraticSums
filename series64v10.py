@@ -95,13 +95,11 @@ print("\n \n s1 = ",s1,"  s2 = ",s2)
 h1 = k.series1(4,e,8,0,2)
 h2 = k.series1(0,e,8,0,2)
 print("\n \n",h1,"\n \n",h2)
-
 e2 = h1[0]
 f2 = h1[1]
 g2 = h2[0]
 h2 = h2[1]
 s3 = 4*(e2+g2)%p
 s4 = 4*(f2+h2)%p
-
 print("\n e2 = {0}  f2 = {1}  g2 = {2}  h2 = {3}".format(e2,f2,g2,h2))
 print("\n \n s3 = {0}  s4 = {1}".format(s3,s4))
