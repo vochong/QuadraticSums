@@ -41,8 +41,6 @@ def list64(k,e1,e2,q,d1):
 
         b = [t3,t4]
         
-        t3 = [s1,s2,s3,s4,t1]
-        # print("\n ({0})  {1}    {2}".format(i,t3,s))
         print("\n ({0})   {1}  {2}  ".format(i,a,b))
 
 def f8(k,q,d1):
