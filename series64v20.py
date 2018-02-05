@@ -1,6 +1,7 @@
 from group42 import *
 
 def list64(k,e1,e2,q,d1):
+    p = k.p
     q1 = q//32
     print("\n \n p = {0}  q = {1}  q1 = {2}".format(p,q,q1))      
     for i in range(e1,e2+1):
