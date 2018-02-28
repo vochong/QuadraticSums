@@ -1973,16 +1973,6 @@ integer h1[4] = {0};
 	mult12(a3[0],(p-a3[1])%p,hs1,&hs1[30],&hs2[60],p);
 	mult12(a3[1],a3[0],hs1,&hs1[30],&hs2[90],p);
 
-/**
-	printf("\n \n in calc73(%d)",c1);
-	for(i=0;i<4;i++)
-		{
-		printf("\n \n hs2(%d) = ",i);
-        printf("\n ");
-		display12(&hs2[30*i]);
-		}
-**/
-
 	exp7(2*c1,a3,a4,p);
 	a4[1] = (p-a4[1])%p;
 
@@ -2047,8 +2037,6 @@ void calc74(int m2, integer e, int c1, int flag4, integer a2[], integer h11[], i
         calc73(m2,e,flag4,a2,h11,h12,ptr2,str1,hs1,hs2,p);
         }
 }
-
-
 
 void calc75(int m2, integer e, int c1, int flag4, integer a2[], integer h11[], integer h12[],
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer hs3[], integer hs4[], integer p)
@@ -2137,7 +2125,6 @@ integer h14[40] = {0};
         hs1[60+i] = 0;
         hs1[90+i] = 0;
         }
-
 
     if (flag4==1)
         {
@@ -2352,7 +2339,6 @@ integer b1[4] = {0};
     printf("\n \n in fn61 a6 = ");
     displayh(2,a6);
 
-
     c = (h11[0] + h11[3])%p;
     s = (h11[1] + (p-h11[2]))%p;
     s1 = d1/4;
@@ -2400,7 +2386,6 @@ integer b1[4] = {0};
     printf("\n \n in fn61 h11 = ");
     displayh(4,h12);
 
-
     t = (p+1)/2;
     h15[0] = (h12[0]+h12[2])%p;
     h15[0] = (t*h15[0])%p;
@@ -2420,9 +2405,7 @@ integer b1[4] = {0};
     series(0,t1,a2,d2,h14,2,p);
     printf("\n \n in fn61 h14 = ");
     displayh(4,h14);
-
 }
-
 
 void fn61d(int c1, int d1, int t1, int d2, integer a2[], integer h11[], integer h15[], integer p)
 
@@ -2465,8 +2448,6 @@ integer b1[4] = {0};
     a6[0] = (a5[0]+a3[0])%p;
     a6[1] = (a5[1]+a3[1])%p;
 
-
-
     c = (h11[0] + h11[3])%p;
     s = (h11[1] + (p-h11[2]))%p;
     s1 = d1/4;
@@ -2498,7 +2479,6 @@ integer b1[4] = {0};
     h12[1] = a3[1];
     h12[2] = a4[0];
     h12[3] = a4[1];
-
 
     t = (p+1)/2;
     h15[0] = (h12[0]+h12[2])%p;
@@ -2541,7 +2521,6 @@ integer a4[2] = {0};
             hs1[60+i] = 0;
             hs1[90+i] = 0;
             }
-
         }
 
     if ((c1>0)&&(c1<9))
@@ -2611,7 +2590,6 @@ integer a4[2] = {0};
             displayh(2,a4);
             }
         }
-
 }
 
 void calc20d(integer a2[], int flag4, integer h15[], long int d1, integer q, integer p)
