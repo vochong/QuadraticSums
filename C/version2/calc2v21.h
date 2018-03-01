@@ -2470,16 +2470,6 @@ integer b1[4] = {0};
     h15[3] = ((p-h12[0])+h12[2])%p;
     h15[3] = (t*h15[3])%p;
 
-/**
-    printf("\n \n in fn61 h15 = ");
-    displayh(4,h15);
-
-
-    series(0,t1,a2,d2,h14,2,p);
-    printf("\n \n in fn61 h14 = ");
-    displayh(4,h14);
-**/
-
 }
 
 void calc19(int m2, int flag4, integer e, int c1, int e1, integer a2[], integer h11[], integer h12[],
@@ -2508,16 +2498,6 @@ integer a4[2] = {0};
         calc6(m2,8,c1,ptr2,&hs1[60],str1,p);
         calc6(m2,9,c1,ptr2,&hs1[90],str1,p);
         }
-
-/**
-	printf("\n \n in calc19");
-	for(i=0;i<4;i++)
-		{
-		printf("\n \n hs1(%d) = ",i);
-        printf("\n");
-		display12(&hs1[30*i]);
-		}
-**/
 
     for(i=0;i<13;i++)
         {
