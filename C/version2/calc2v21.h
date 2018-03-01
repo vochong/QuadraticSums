@@ -62,10 +62,8 @@ void calc14k(int m2, integer e, int c1, int flag4, integer a2[], integer h11[], 
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
 void calc14q(int m2, integer e, integer e2, int c1, int flag41, integer a2[], integer h11[], integer h12[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
-
 void calc14q2(int m2, integer e, integer e2, int c1, int flag41, integer a2[], integer h11[], integer h12[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
-
 void calc15(int m2, integer e, int flag4, integer a2[], integer h11[], integer h12[],
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
 void calc15q(int m2, integer e, integer e2, int flag41, integer a2[], integer h11[], integer h12[],
@@ -80,29 +78,23 @@ void calc18(int m2, integer e, int flag4, integer a2[], integer h11[], integer h
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
 void calc18k(int m2, integer e, int flag4, integer a2[], integer h11[], integer h12[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
-
 void calc71(int m2, integer e, int flag4, integer a2[], integer h11[], integer h12[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
 void calc72(int m2, integer e, int c1, int flag4, integer a2[], integer h11[], integer h12[],
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
-
 void calc73(int m2, integer e, int flag4, integer a2[], integer h11[], integer h12[],
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
 void calc74(int m2, integer e, int c1, int flag4, integer a2[], integer h11[], integer h12[],
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
-
 void calc75(int m2, integer e, int c1, int flag4, integer a2[], integer h11[], integer h12[],
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer hs3[], integer hs4[], integer p);
 void calc76(int m2, integer e, int c1, int flag4, integer a2[], integer h11[], integer h12[],
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer hs3[], integer hs4[], integer p);
-
 void fn60(int c1, int c2, int t1, int t2, integer a2[], integer a3[], integer p);
-
 void series20(int c1, int c2, integer a2[], integer h11[], long int d1, integer p);
 void fn60d(int c1, int c2, int t1, int t2, integer a2[], integer a3[], integer p);
 void fn61(int c1, int d1, int t1, int d2, integer a2[], integer h11[], integer h15[], integer p);
 void fn61d(int c1, int d1, int t1, int d2, integer a2[], integer h11[], integer h15[], integer p);
-
 void calc19(int m2, int flag4, integer e, int c1, int e1, integer a2[], integer h11[], integer h12[],
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
 
@@ -159,7 +151,6 @@ setzero2a(m2,150,161,ptr2);
 			h12[i] = s3;
 		}
 }
-
 
 void displayh(int d, integer h16[])
 {
@@ -235,7 +226,6 @@ integer h14[4] = {0};
         printf(" , %d)",a3[1]);
         }
 
-
 	calc6(m2,8,4+c1,ptr2,h11,str1,p);
 	calc6(m2,9,5+c1,ptr2,h12,str1,p);
 	mult12(1,p-1,h11,h12,hs1,p);
@@ -247,7 +237,6 @@ integer h14[4] = {0};
 	mult12(a3[0],a3[1],hs1,&hs1[30],hs2,p);
 	mult12((p-a3[1])%p,a3[0],hs1,&hs1[30],&hs2[30],p);
 
-
 	calc6(m2,8,4-c1,ptr2,h11,str1,p);
 	calc6(m2,9,5-c1,ptr2,h12,str1,p);
 	mult12(1,p-1,h11,h12,hs1,p);
@@ -258,7 +247,6 @@ integer h14[4] = {0};
 
 	mult12(a3[0],a3[1],hs1,&hs1[30],&hs2[60],p);
 	mult12((p-a3[1])%p,a3[0],hs1,&hs1[30],&hs2[90],p);
-
 
     if (flag4==1)
         {
@@ -276,7 +264,6 @@ integer h14[4] = {0};
         printf("  (%d",a3[0]);
         printf(" , %d)",a3[1]);
         }
-
 
 	s = (p+1)/2;
 	mult12(s,s,hs2,&hs2[60],h11,p);
@@ -303,7 +290,6 @@ integer h14[4] = {0};
         printf("\n \n in calc10d h14 = ");
         displayh(4,h14);
         }
-
 }
 
 void calc14d(int m2, integer e, int flag4, integer a2[], integer h11[], integer h12[],
@@ -356,7 +342,6 @@ integer h14[4] = {0};
 
 	mult12(a3[0],a3[1],hs1,&hs1[30],&hs2[60],p);
 	mult12((p-a3[1])%p,a3[0],hs1,&hs1[30],&hs2[90],p);
-
 
     if (flag4==1)
         {
@@ -442,7 +427,6 @@ integer h14[4] = {0};
 	mult12(s,(p-s)%p,&hs2[30],&hs2[90],&hs1[60],p);
     	mult12((p-s)%p,s,hs2,&hs2[60],&hs1[90],p);
 
-
     if (flag4==1)
         {
         printf("\n \n in calc17d");
@@ -457,7 +441,6 @@ integer h14[4] = {0};
         displayh(4,h14);
         }
 }
-
 
 void calc18d(int m2, integer e, int flag4, integer a2[], integer h11[], integer h12[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p)
@@ -620,7 +603,6 @@ integer s;
 integer a3[2] = {0};
 integer a4[2] = {0};
 
-
 	exp7(e/4,a2,a3,p);
 	exp7(e/2,a3,a4,p);
 	exp7(1,a4,a3,p);
@@ -729,7 +711,6 @@ integer a4[2] = {0};
 	mult12(a3[0],(p-a3[1])%p,hs1,&hs1[30],&hs2[60],p);
 	mult12(a3[1],a3[0],hs1,&hs1[30],&hs2[90],p);
 
-
 	exp7(1*c1,a3,a4,p);
 
 	s = (p+1)/2;
@@ -768,9 +749,6 @@ integer a4[2] = {0};
         }
 }
 
-
-
-
 void calc11q(int m2, integer e, integer e2, int c1, int flag41, integer a2[], integer h11[], integer h12[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p)
 {
@@ -806,7 +784,6 @@ integer hs4[144] = {0};
 	mult12(1,0,&hs4[0],&hs4[0],h11,p);
 	mult12(1,0,&hs4[90],&hs4[90],h12,p);
 	mult12(1,p-1,h11,h12,hs1,p);
-
 
 	mult12(1,0,&hs4[60],&hs4[60],h11,p);
 	mult12(1,0,&hs4[30],&hs4[30],h12,p);
