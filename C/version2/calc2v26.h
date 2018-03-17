@@ -116,7 +116,6 @@ void calc28k(integer a2[], int flag4, integer h16[], long int d1, integer q, int
 void calc29d(integer a2[], int flag4, integer k2[], long int d1, integer q, integer p);
 void calc30d(integer a2[], int flag4, integer k2[], long int d1, integer q, integer p);
 
-
 void calc6(int m2, int c1, int d1, STRING ptr2, integer h12[], integer *str1, integer p)
 {
 int i,j;
@@ -148,7 +147,6 @@ setzero2a(m2,150,161,ptr2);
 			h12[i] = s3;
 		}
 }
-
 
 void displayh(int d, integer h16[])
 {
@@ -2492,7 +2490,6 @@ integer a4[2] = {0};
             hs1[60+i] = 0;
             hs1[90+i] = 0;
             }
-
         }
 
     if ((c1>0)&&(c1<9))
