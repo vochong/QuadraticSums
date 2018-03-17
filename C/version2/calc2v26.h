@@ -4,13 +4,11 @@ void displayh(int d, integer h16[]);
 void display12(integer h16[]);
 void mult12 (integer c, integer s, integer h11[], integer h12[], integer ws1[], integer p);
 
-
 /**         4-tuple units are 1/8                           **/
 /**         calc10d(1 or 3) = (+1)(1 or 3)                  **/
 /**         calc14d = (+2)(2)                               **/
 /**         calc17d = (0)(2)                                **/
 /**         calc18d = (0)(4)                                **/
-
 
 void calc10d(int m2, integer e, int c1, int flag4, integer a2[], integer h11[], integer h12[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
@@ -20,7 +18,6 @@ void calc17d(int m2, integer e, int flag4, integer a2[], integer h11[], integer 
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
 void calc18d(int m2, integer e, int flag4, integer a2[], integer h11[], integer h12[],
              STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
-
 
 /**         2-tuple units are 1/4                           **/
 /**         calc10(3,5 or 7) = (+1)(3,5 or 7)               **/
@@ -98,7 +95,6 @@ void fn61d(int c1, int d1, int t1, int d2, integer a2[], integer h11[], integer 
 void calc19(int m2, int flag4, integer e, int c1, int e1, integer a2[], integer h11[], integer h12[],
             STRING ptr2 , integer *str1, integer hs1[], integer hs2[], integer p);
 
-
 /**             calc20d = k.list2(6)              **/
 /**             calc21d = k.list2(12)             **/
 /**             calc22d = k.list2(15)             **/
@@ -108,7 +104,6 @@ void calc19(int m2, int flag4, integer e, int c1, int e1, integer a2[], integer 
 /**             calc28d = k.list2(8)              **/
 /**             calc29d = k.list2(9)              **/
 /**             calc30d = k.list2(16)             **/
-
 
 void calc20d(integer a2[], int flag4, integer h15[], long int d1, integer q, integer p);
 void calc21d(integer a2[], int flag4, integer h15[], long int d1, integer q, integer p);
@@ -120,7 +115,6 @@ void calc28d(integer a2[], int flag4, integer h15[], long int d1, integer q, int
 void calc28k(integer a2[], int flag4, integer h16[], long int d1, integer q, integer p);
 void calc29d(integer a2[], int flag4, integer k2[], long int d1, integer q, integer p);
 void calc30d(integer a2[], int flag4, integer k2[], long int d1, integer q, integer p);
-
 
 
 void calc6(int m2, int c1, int d1, STRING ptr2, integer h12[], integer *str1, integer p)
@@ -230,7 +224,6 @@ integer h14[4] = {0};
         printf(" , %d)",a3[1]);
         }
 
-
 	calc6(m2,8,4+c1,ptr2,h11,str1,p);
 	calc6(m2,9,5+c1,ptr2,h12,str1,p);
 	mult12(1,p-1,h11,h12,hs1,p);
@@ -242,7 +235,6 @@ integer h14[4] = {0};
 	mult12(a3[0],a3[1],hs1,&hs1[30],hs2,p);
 	mult12((p-a3[1])%p,a3[0],hs1,&hs1[30],&hs2[30],p);
 
-
 	calc6(m2,8,4-c1,ptr2,h11,str1,p);
 	calc6(m2,9,5-c1,ptr2,h12,str1,p);
 	mult12(1,p-1,h11,h12,hs1,p);
@@ -253,7 +245,6 @@ integer h14[4] = {0};
 
 	mult12(a3[0],a3[1],hs1,&hs1[30],&hs2[60],p);
 	mult12((p-a3[1])%p,a3[0],hs1,&hs1[30],&hs2[90],p);
-
 
     if (flag4==1)
         {
@@ -402,7 +393,6 @@ integer a4[2] = {0};
 integer a5[2] = {0};
 integer h14[4] = {0};
 
-
 	exp7(e,a2,a4,p);
 	exp7(e,a4,a3,p);
 	exp7(2,a3,a4,p);
@@ -418,7 +408,6 @@ integer h14[4] = {0};
 	mult12(a4[0],a4[1],hs1,&hs1[30],hs2,p);
 	mult12((p-a4[1])%p,a4[0],hs1,&hs1[30],&hs2[30],p);
 
-
 	calc6(m2,8,1,ptr2,h11,str1,p);
 	calc6(m2,9,2,ptr2,h12,str1,p);
 	mult12(1,p-1,h11,h12,hs1,p);
@@ -432,9 +421,9 @@ integer h14[4] = {0};
 
 	s = (p+1)/2;
 	mult12(s,s,hs2,&hs2[60],hs1,p);
-    mult12(s,s,&hs2[30],&hs2[90],&hs1[30],p);
+    	mult12(s,s,&hs2[30],&hs2[90],&hs1[30],p);
 	mult12(s,(p-s)%p,&hs2[30],&hs2[90],&hs1[60],p);
-    mult12((p-s)%p,s,hs2,&hs2[60],&hs1[90],p);
+    	mult12((p-s)%p,s,hs2,&hs2[60],&hs1[90],p);
 
     if (flag4==1)
         {
@@ -549,7 +538,7 @@ integer a5[2] = {0};
 
 	exp7(c1*c1,a3,a5,p);
 
-    printf("\n \n in calc10 a5 = ");
+    	printf("\n \n in calc10 a5 = ");
 	printf("(%d",a5[0]);
 	printf(" , %d)",a5[1]);
 
@@ -611,7 +600,6 @@ int i;
 integer s;
 integer a3[2] = {0};
 integer a4[2] = {0};
-
 
 	exp7(e/4,a2,a3,p);
 	exp7(e/2,a3,a4,p);
