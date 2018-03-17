@@ -2496,7 +2496,6 @@ integer a4[2] = {0};
         {
         calc6(m2,8,c1-1,ptr2,hs1,str1,p);
         calc6(m2,9,c1-1,ptr2,&hs1[30],str1,p);
-
         calc6(m2,8,c1,ptr2,&hs1[60],str1,p);
         calc6(m2,9,c1,ptr2,&hs1[90],str1,p);
         }
@@ -2507,9 +2506,7 @@ integer a4[2] = {0};
         h11[1] = hs1[30+i];
         h11[2] = hs1[60+i];
         h11[3] = hs1[90+i];
-
         fn61d(e,c1*e,e1,c1*e1,a2,h11,h12,p);
-
         hs2[0+i] = h12[0];
         hs2[30+i] = h12[1];
         hs2[60+i] = h12[2];
@@ -2558,7 +2555,6 @@ integer h1[4] = {0};
 printf("\n \n in calc20d a2 = ");
 displayh(2,a2);
 printf("\n \n in calc20d d1 = %d",d1);
-
 if((q%2)==0)
 	{
 	t1 = (q%6);
@@ -2585,7 +2581,6 @@ if((q%2)==1)
     h15[3] = 2*t2;
     h15[4] = 2*t2+1;
     h15[5] = (q-1)/2;
-
     h15[6] = h15[5]+1;
     h15[7] = q-(2*t2+1);
     h15[8] = h15[7]+1;
@@ -2635,10 +2630,10 @@ if((q%4)==0)
 		{
 		h15[i+6] = h15[i]+(q/4);
 		}
-    for(i=0;i<12;i++)
-        {
-        h15[i+12] = h15[i]+(q/2);
-        }
+    	for(i=0;i<12;i++)
+        	{
+        	h15[i+12] = h15[i]+(q/2);
+        	}
 	}
 
 if (flag4==1)
@@ -2728,14 +2723,12 @@ integer h14[4] = {0};
 
 t1 = (q%3);
 t2 = (q-t1)/3;
-
 k2[0] = 1;
 k2[1] = t2;
 k2[2] = t2+1;
 k2[3] = q-t2-1;
 k2[4] = q-t2;
 k2[5] = q-1;
-
 if (flag4==1)
     {
     printf("\n \n in calc23 p = %d  q = %d",p,q);
@@ -2759,7 +2752,6 @@ if((q%2)==0)
 	{
     printf("\n \n error in calc24d q mod 2 should equal 1");
 	}
-
 if((q%2)==1)
     {
     t3 = 0;
@@ -2801,7 +2793,6 @@ integer h14[4] = {0};
 
 t1 = (q%5);
 t2 = (q-t1)/5;
-
 k2[0] = 1;
 k2[1] = t2;
 k2[2] = t2+1;
@@ -2836,12 +2827,9 @@ if ((q%4)!=0)
     {
     printf("error in calc28 q mod 4 should equal 0");
     }
-
 t1 = q/4;
-
 t2 = (q%32);
 t2 = 32-t2;
-
 if((q%8)==4)
 	{
 	t2 = (t1-1)/2;
@@ -2897,7 +2885,6 @@ if((q%2)==0)
 	{
     printf("\n \n error in calc28k q mod 2 should equal 1");
 	}
-
 if((q%2)==1)
     {
     t3 = 0;
@@ -2971,7 +2958,6 @@ integer h14[4] = {0};
 
 t1 = (q%9);
 t2 = (q-t1)/9;
-
 k2[0] = 1;
 k2[1] = t2;
 k2[2] = t2+1;
@@ -3016,9 +3002,7 @@ if((q%4)!=0)
 	{
     printf("\n \n error in calc30d q mod 4 should equal 10");
 	}
-
 calc28d(a2,0,k1,d1,q,p);
-
 if((q%4)==0)
     {
     t = k1[1]-k1[0];
