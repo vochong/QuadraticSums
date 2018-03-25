@@ -1,5 +1,4 @@
-from a24v048 import *
-
+from group48 import *
 
 def list64(k,e1,e2,q,d1):
     p = k.p
@@ -24,8 +23,7 @@ def list64(k,e1,e2,q,d1):
         # t3 = (h1[0]+h2[0]+(p-1)*h3[0]+(p-1)*h4[0])%p
         # t4 = (h1[1]+h2[1]+(p-1)*h3[1]+(p-1)*h4[1])%p
         
-        a = [t3,t4]
-        
+        a = [t3,t4]        
 
         s1 = t+(t2+3)%16
         s2 = t+(t2+5)%16
@@ -46,7 +44,6 @@ def list64(k,e1,e2,q,d1):
         t3 = [s1,s2,s3,s4,t1]
         # print("\n ({0})  {1}    {2}".format(i,t3,s))
         print("\n ({0})   {1}  {2}  ".format(i,a,b))
-
 
 def f8(k,q,d1):
     s = init2(8)
@@ -241,7 +238,6 @@ def equation22(k,m,b1,t,q):
     m[t+1] = [0,t1,0,t2,  0,0,0,0,  p-t4,t3,t4,p-t3]
     """
 
-
 # (+4)(4) at 1/64
 def equation23(k,m,b1,t,q):    
     a2 = k.a2
@@ -260,7 +256,6 @@ def equation23(k,m,b1,t,q):
 
     m[t] = [0,0,0,0,    t1,0,t2,0,  t3,t4,0,0,     t3,t4,0,0]
     m[t+1] = [0,0,0,0,  0,t1,0,t2,  p-t4,t3,0,0,   p-t4,t3,0,0]
-
 
 # (+4)(12) at 1/64
 def equation24(k,m,b1,t,q):
@@ -283,7 +278,6 @@ def equation24(k,m,b1,t,q):
     b1[t] = b1[5]
     b1[t+1] = b1[6]
 
-
 # (+8)(4) at 1/64
 def equation25(k,m,b1,t,q):
     a2 = k.a2
@@ -304,11 +298,9 @@ def equation25(k,m,b1,t,q):
         m[t] = [0,0,0,0,    0,p-t2,0,t1,  0,0,t3,t4,     0,0,t3,t4]
         m[t+1] = [0,0,0,0,  t2,0,p-t1,0,  0,0,p-t4,t3,   0,0,p-t4,t3]
 
-
     if q1%4==3:
         m[t] = [0,0,0,0,    0,t2,0,p-t1,  0,0,t3,t4,     0,0,t3,t4]
         m[t+1] = [0,0,0,0,  p-t2,0,t1,0,  0,0,p-t4,t3,   0,0,p-t4,t3]
-
 
 # (+4)(2) at 1/32
 def equation26(k,m,b1,t,q):
@@ -330,7 +322,6 @@ def equation26(k,m,b1,t,q):
     m[t] =   [0,p-t2,0,t1,    0,p-t2,0,t1,  0,0,t3,t4, t3,t4,2*t3,2*t4]
     m[t+1] = [t2,0,p-t1,0,    t2,0,p-t1,0,  0,0,t5,t3, t5,t3,2*t5,2*t3]
 
-
 def equation27(k,m,b1,t,q):
     a2 = k.a2
     p = k.p
@@ -346,9 +337,7 @@ def equation27(k,m,b1,t,q):
     t3 = a3[0]
     t4 = a3[1]
     m[t] = [t1,0,t2,0,    0,0,0,0,  t3,t4,t3,t4]
-    m[t+1] = [0,t1,0,t2,  0,0,0,0,  p-t4,t3,p-t4,t3]
-
-    
+    m[t+1] = [0,t1,0,t2,  0,0,0,0,  p-t4,t3,p-t4,t3]    
 
 def init64(k,q):
     p = k.p
@@ -370,8 +359,7 @@ def init64(k,q):
         a3 = exp2a(2*t1*q1,k.a2,p)
         print("\n \n in init64 a3 = ",a3)
         c = a3[0]
-        s = a3[1]
-    
+        s = a3[1]    
 
         print("\n \n in init64 c,s = [{0} , {1}]".format(c,s))
         t2 = (c+s)%p
@@ -388,8 +376,7 @@ def init64(k,q):
         m[3] = [1,0,0,1,    p-1,0,0,p-1,  0,0,0,0,  0,0,0,0]
         b1[3] = 0
         m[4] = [0,1,p-1,0,  0,p-1,1,0,    0,0,0,0,  0,0,0,0]
-        b1[4] = 0
-        
+        b1[4] = 0        
 
     if q1%4==3:
         m[0] = [0,0,0,0,   0,0,0,0,   1,p-1,1,p-1,   1,p-1,1,p-1]
@@ -454,22 +441,18 @@ def init64(k,q):
     # m[12] = [0,0,0,0,     0,0,0,0,   0,1,0,1,    0,p-1,0,p-1]
 
     # m[13] = [0,0,0,0,     0,0,0,0,   1,0,0,0,  0,0,p-1,0]
-    # m[14] = [0,0,0,0,     0,0,0,0,   0,1,0,0,    0,0,0,p-1]    
-  
-          
-    return(m,b1) 
-   
-  
+    # m[14] = [0,0,0,0,     0,0,0,0,   0,1,0,0,    0,0,0,p-1]   
+            
+    return(m,b1)   
+
 
 p1 = [2113,1601,3137,4673,5441,5953,8513]
 
 p3 = [2753,4289,4801,6337,7873,8641]
 
 p = p1[0]
-
 k = group(0,p)
 k = group(exp1(289,k.g,p),p)
-
 q = (p-1)//2
 list64(k,0,7,q,2)
 
@@ -484,7 +467,6 @@ print("\n \n k12 = ",k12)
 k16 = f16(k,q,2)
 print("\n \n k16 = ",k16)
 
-
 e = (p-1)//2
 s1 = init2(2)
 s2 = init2(2)
@@ -494,7 +476,6 @@ h3 = k.series1(9,e,16,0,2)
 h4 = k.series1(15,e,16,0,2)
 s1[0] = (h1[0]+(p-1)*h2[0]+(p-1)*h3[0]+h4[0])%p
 s1[1] = (h1[1]+(p-1)*h2[1]+(p-1)*h3[1]+h4[1])%p
-
 
 h1 = k.series1(3,e,16,0,2)
 h2 = k.series1(5,e,16,0,2)
@@ -522,7 +503,6 @@ if (e%4)==3:
 a3 = exp2a(2*t1*e,k.a2,p)
 print("\n c,s = [{0}, {1}]    a3 = {2}".format(c,s,a3))
 
-
 a = [1,15]
 q1 = (p-1)//64
 b = []
@@ -543,18 +523,14 @@ for i in range(1,32,2):
         b.append(i)        
 print("\n \n b = ",b)
 
-
 m,b2 = init64(k,(p-1)//2)
 b1 = init2(16)
-
 
 for i in range(16):
     b1[i] = multcnvl2(m[i],k16,p)
 
 print("\n \n b1 = ",b1)
 print("\n b2 = ",b2)
-
-
 
 v1 = init2(16)
 print("\n \n")
@@ -567,5 +543,4 @@ display(0,15,0,15,m,v1)
 l2solve(16,h1,v1,m,p)
 print("after solve2 = ",h1)
 print("\n \n")
-
 
