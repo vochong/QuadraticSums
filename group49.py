@@ -2,7 +2,6 @@ from math105 import *
 from modsqrt21 import sqrt1
 import modsqrt21 as sqrt
 
-
 """ Display an element of the group """
 def display4(e1):
     display144h(e1[0])
@@ -2929,4 +2928,3 @@ def list64(k,e1,e2,q,d1):
         t3 = [s1,s2,s3,s4,t1]
         # print("\n ({0})  {1}    {2}".format(i,t3,s))
         print("\n ({0})   {1}  {2}  ".format(i,a,b))
-
