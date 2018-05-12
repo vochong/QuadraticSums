@@ -163,10 +163,6 @@ int i;
 integer t;
 integer t1[220] = {0};
 integer t2[220] = {0};
-/*
-integer t1[m] = {0};
-integer t2[m] = {0};
-*/
 
 for (i=0;i<m2;i++)
 	{
@@ -708,7 +704,6 @@ for(i=0;i<16;i++)
 	}
 }
 
-
 void mult8a (int m2, integer c, integer s, int e, int k, int s1, int s2,
              STRING ptr2, integer v1[], integer p)
 {
@@ -791,7 +786,6 @@ for(i=0;i<8;i++)
 	multm4(m2,1,s1,k+b,ptr2,v1,p);
 	}
 }
-
 
 integer multcnvl (int l2, int e1, int e2, STRING ptr2, integer p)
 {
@@ -928,7 +922,7 @@ unsigned int i,j;
 
 for(i=0;i<144;i++)
 
-{
+	{
 	for(j=0;j<c;j++)
 		{
 		*(ptr2[s1]+j) = *(ptr2[i]+c1+j);
@@ -945,7 +939,7 @@ for(i=0;i<144;i++)
 		{
 		*(ptr2[i]+c2+j) = *(ptr2[s1]+j);
 		}
-}
+	}
 
 }
 
