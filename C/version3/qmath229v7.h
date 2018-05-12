@@ -54,12 +54,9 @@ integer find2 (integer g, integer p);
 integer find3 (integer p);
 
 
-
 unsigned long det_sum = 0;
 unsigned long det_l144 = 0;
 int flag_2 = 0;
-
-
 
 
 void display27(integer ws1[])
@@ -105,7 +102,6 @@ int i,j;
 		printf(") ");
 		}
 }
-
 
 void exp4(int l2, int c, int e, int e1, integer a2[], STRING ptr2, integer p)
 {
@@ -991,7 +987,6 @@ int t5,t6;
 	t1 = multcnvl(143,186,218,ptr2,p);
 	h20[8] = t1;
 
-
 	det5b(6,2,0,0,m2,170,200,198,199,ptr2,b2,p);
 	t1 = cs[2];
 	t2 = sn[2];
@@ -999,7 +994,6 @@ int t5,t6;
 	t1 = cs[2];
 	t2 = sn[2];
 	mult8b(m2,t1,t2,200,170,198,199,ptr2,b2,p);
-
 
 	det5b(-2,2,0,0,m2,150,200,198,199,ptr2,b2,p);
 	t1 = cs[2];
@@ -1175,7 +1169,6 @@ int t5,t6;
 	h20[6] = (h21[6]+h20[33])%p;
 	h20[7] = (h21[7]+h20[34])%p;
 	h20[8] = (h21[8]+h20[35])%p;
-
 
 	exp7(l2,a2,a3,p);
 	exp7(l2,a3,a4,p);
