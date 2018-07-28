@@ -4799,8 +4799,6 @@ integer h21[40] = {0};
             }
         }
 
-
-
     /** e = (p-1)/12 **/
 
     if (c1==12)
@@ -4938,11 +4936,6 @@ integer h14[4] = {0};
             display12(&hs1[30*i]);
             }
 
-        /**
-        series(0,e,a2,4*e,h14,4,p);
-        printf("\n \n in calc8d h14 = ");
-        displayh(4,h14);
-        **/
         }
 }
 
