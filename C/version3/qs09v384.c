@@ -1,4 +1,3 @@
-/** from qs09v283.c in qs28 directory **/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -136,7 +135,7 @@ int main(void)
 	integer hs1[144] = {0};
 	integer hs2[144] = {0};
 	integer hs3[144] = {0};
-    integer hs4[144] = {0};
+    	integer hs4[144] = {0};
 
 	integer ws1[27] = {0};
 	integer ws2[27] = {0};
@@ -148,9 +147,9 @@ int main(void)
 	integer h21[40] = {0};
 	integer h22[40] = {0};
 	integer h23[40] = {0};
-    integer h24[40] = {0};
-    integer h25[40] = {0};
-    integer h26[40] = {0};
+    	integer h24[40] = {0};
+    	integer h25[40] = {0};
+    	integer h26[40] = {0};
 
 	integer *str1;
 	integer *str1a;
@@ -176,21 +175,10 @@ int main(void)
 	integer k41[12] = {0};
 	integer k42[12] = {0};
 
-
-
 	m2 = m;
 
 
-
-    p = 4289;
-
-
-    printf("\n \n char = %d",sizeof(char));
-    printf("\n short = %d",sizeof(short));
-    printf("\n int = %d",sizeof(int));
-    printf("\n long = %d",sizeof(long));
-    printf("\n long long = %d",sizeof(long long));
-    printf("\n \n");
+    	p = 4289;
 
 
 	for(i=0;i<m2;i++)
@@ -243,9 +231,6 @@ int main(void)
 
     g = (1*g)%p;
 
-
-
-
 /** Determine i2 and a2 **/
 
 	i2 = find4(g,p-1,p);
@@ -253,12 +238,9 @@ int main(void)
 
 	i2 = (p+i2)%p;
 
-    calc2(g,i2,a2,p);
-    printf("\n \n from calc2 a2 = ");
+   	calc2(g,i2,a2,p);
+    	printf("\n \n from calc2 a2 = ");
 	displayh(2,a2);
-
-
-
 
 
     printf("\n \n test of calc42k");
@@ -289,7 +271,7 @@ int main(void)
 
 
 
-    printf("\n \n test of fn60k");
+    	printf("\n \n test of fn60k");
 	fn60k(5,29,7,34,a2,a3,4,p);
 	series(5,29,a2,0,h11,4,p);
 	series(7,34,a2,0,h12,4,p);
@@ -301,7 +283,7 @@ int main(void)
 	displayh(2,a3);
 
 
-    printf("\n \n Enter 1 to continue ");
+    	printf("\n \n Enter 1 to continue ");
 	scanf("%d",&s1);
 
 
@@ -313,7 +295,7 @@ int main(void)
 	i2 = find4(g,p-1,p);
 	printf("\n \n from find4 i2 = %d",i2);
 
-    calc2(g,i2,a2,p);
+    	calc2(g,i2,a2,p);
 	printf("\n \n from calc2 a2 = ");
 	displayh(2,a2);
 
@@ -344,8 +326,6 @@ int main(void)
 	l3 = l2+4;
 
 	zero(200,ptr2);
-
-
 
 /** if flag0 = 1 then init141 is normal (i.e. correct) **/
 /** if flag0 = 0 then init141 is set to zero plus offset of e1 **/
@@ -391,7 +371,7 @@ int main(void)
 
 
 	t1 = exp4d2(e,a2,kmax,h11,h12,str1,str1a,str2,str2a,m2,
-                flag0,x,y,c6,s,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
+                    flag0,x,y,c6,s,ws1,hs1,ws2,hs2,hs3,ptr2,b2,p);
 
 
 	flag_2 = 0;
@@ -416,7 +396,7 @@ int main(void)
 	printf("\n \n &&&&& the answer (exp4a) is \n");
 	display27(ptr2[202]);
 
-    printf("\n \n i2 = %d  a2 = (%d,%d)",i2,a2[0],a2[1]);
+    	printf("\n \n i2 = %d  a2 = (%d,%d)",i2,a2[0],a2[1]);
 	series(1,p-1,a2,0,h11,2,p);
 	printf("\n \n (2) series = ");
 	displayh(4,h11);
@@ -493,8 +473,6 @@ int main(void)
 		displaytuple2(8,9,str1,str1a);
 
 **/
-
-
 
 
         if ((flag3==flag3)&&(j==j))
@@ -635,10 +613,6 @@ int main(void)
 **/
 
 
-
-
-
-
         printf("\n \n \n \n");
         printf("\n \n ^^^^^^^^^^^ e = %ld",e);
         calc10d(m2,e+4,1,1,a2,h11,h12,ptr2,str1,hs1,hs2,p);
@@ -656,8 +630,6 @@ int main(void)
 
         calc18d(m2,e+4,1,a2,h11,h12,ptr2,str1,hs1,hs2,p);
         printf("\n \n");
-
-
 
 
 /**
@@ -766,7 +738,6 @@ int main(void)
     printf("\n \n s1 = %d  s2 = %d",s1,s2);
 **/
 
-
     printf("\n \n \n \n k40 = ");
     displayh(6,k40);
 
@@ -792,8 +763,6 @@ int main(void)
 	printf("\n \n g = %d     i2 = %d     p = %d",g,i2,p);
 	printf("\n \n a2 = ");
 	displayh(2,a2);
-
-
 
 	printf("\n \n a5 = ");
 	displayh(2,a5);
@@ -4386,25 +4355,25 @@ if (c2==8)
 
 /**   (s1)(s1)(s3)(s3)  **/
 
-    calc6(m2,8,0,ptr2,&hs3[60],str1,p);
-    calc6(m2,8,1,ptr2,hs1,str1,p);
+    	calc6(m2,8,0,ptr2,&hs3[60],str1,p);
+    	calc6(m2,8,1,ptr2,hs1,str1,p);
 	calc6(m2,8,5,ptr2,&hs1[30],str1,p);
 	calc6(m2,8,3,ptr2,&hs1[60],str1,p);
-    calc6(m2,8,7,ptr2,&hs1[90],str1,p);
-    mult12(s1,s3,hs1,&hs1[30],hs3,p);
-    mult12(s2,s4,&hs1[60],&hs1[90],&hs3[30],p);
-    mult12(1,1,hs3,&hs3[30],&hs3[90],p);
-    mult12(s0,1,&hs3[60],&hs3[90],hs2,p);
+    	calc6(m2,8,7,ptr2,&hs1[90],str1,p);
+    	mult12(s1,s3,hs1,&hs1[30],hs3,p);
+    	mult12(s2,s4,&hs1[60],&hs1[90],&hs3[30],p);
+    	mult12(1,1,hs3,&hs3[30],&hs3[90],p);
+    	mult12(s0,1,&hs3[60],&hs3[90],hs2,p);
 
-    calc6(m2,9,0,ptr2,&hs3[60],str1,p);
-    calc6(m2,9,1,ptr2,hs1,str1,p);
+    	calc6(m2,9,0,ptr2,&hs3[60],str1,p);
+    	calc6(m2,9,1,ptr2,hs1,str1,p);
 	calc6(m2,9,5,ptr2,&hs1[30],str1,p);
 	calc6(m2,9,3,ptr2,&hs1[60],str1,p);
-    calc6(m2,9,7,ptr2,&hs1[90],str1,p);
-    mult12(s1,s3,hs1,&hs1[30],hs3,p);
-    mult12(s2,s4,&hs1[60],&hs1[90],&hs3[30],p);
-    mult12(1,1,hs3,&hs3[30],&hs3[90],p);
-    mult12(s0,1,&hs3[60],&hs3[90],&hs2[30],p);
+    	calc6(m2,9,7,ptr2,&hs1[90],str1,p);
+    	mult12(s1,s3,hs1,&hs1[30],hs3,p);
+    	mult12(s2,s4,&hs1[60],&hs1[90],&hs3[30],p);
+   	 mult12(1,1,hs3,&hs3[30],&hs3[90],p);
+    	mult12(s0,1,&hs3[60],&hs3[90],&hs2[30],p);
 
 
     if (flag4==1)
@@ -4529,10 +4498,7 @@ if (c2==8)
             }
         }
 
-
-
 }
-
 
 void calc60(int m2, integer c1, integer c2, integer e, integer e2, integer a2[], int flag4, STRING ptr2 , integer *str1,
             integer hs1[], integer hs2[], integer hs3[], integer hs4[], integer p)
@@ -4979,5 +4945,4 @@ integer h14[4] = {0};
         **/
         }
 }
-
 
