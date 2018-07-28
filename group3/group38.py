@@ -1824,7 +1824,6 @@ class group2:
         print()
         display144h(e1[1])
 
-
 def series(c1,c2,a2,d,d1,p):
     h1 = init2(4)
     for i in range(c1,c2+1):
@@ -1846,7 +1845,6 @@ def series(c1,c2,a2,d,d1,p):
         h1[3] = (h1[3]+a4[1])%p
     return(h1)
 
-
 def series20(c1,c2,a2,d1,p):
     a5 = [0,0]
     for i in range(c1,c2+1):
@@ -1858,7 +1856,6 @@ def series20(c1,c2,a2,d1,p):
         a5[0] = (a5[0]+a3[0])%p
         a5[1] = (a5[1]+a3[1])%p      
     return(a5)
-
 
 def series21(c1,c2,a2,d,d1,p):
     h1 = init2(4)
@@ -1881,8 +1878,7 @@ def series21(c1,c2,a2,d,d1,p):
         a4[1] = (a3[1]*a6[1])%p
         h1[2] = (h1[2]+a4[0])%p
         h1[3] = (h1[3]+a4[1])%p
-    return(h1)    
-
+    return(h1)   
 
 def ddh(k,x,y,z):
     g = k.g
