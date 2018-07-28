@@ -2,7 +2,6 @@ from a24v051 import *
 import random
 from math import floor 
 
-
 def test2(k,m,v,p):
     h11 = init2(k)
     for i in range(k):
@@ -30,8 +29,6 @@ def test2(k,m,v,p):
     l2solve(k,h11,v,m,p)    
     return(h11)
 
-
-
 def display81(b):
     for i in range(4):
         print("(",end=' ')
@@ -45,13 +42,9 @@ def display81(b):
             print("{0:2}".format(b[27*i+18+j]),end=' ')     
         print(")")
   
-
-
 def equal2(m,c,s,t):
     s1 = 9*s[0]+s[1]
     m[c][s1] = t
-
-
 
 def series22(c1,c2,g,a2,d,d1,p):
     h1 = init2(2)
@@ -70,8 +63,6 @@ def series22(c1,c2,g,a2,d,d1,p):
 
     return(h1)
 
-
-
 def series23(c1,c2,s,g,a2,d,d1,p):
     h1 = init2(2)
     t1 = 0
@@ -89,8 +80,6 @@ def series23(c1,c2,s,g,a2,d,d1,p):
         h1[1] = (h1[1]+a4[1]*g1)%p
 
     return(h1)
-
-
 
 def series24(c1,c2,g,a2,i2,d,d1,p):
     h1 = init2(5)
@@ -122,7 +111,6 @@ def series24(c1,c2,g,a2,i2,d,d1,p):
 
     return(h1)  
 
-
 def mult2(m,e1,c1,c2,p):
     m[e1] = init2(81)
     for i in range(9):
@@ -132,8 +120,7 @@ def mult2(m,e1,c1,c2,p):
             t3 = t1*t2%p
             t = 9*i+j
             m[e1][t] = t3
-                
-
+              
 def series25(c1,c2,g,a2,i2,d,d1,p):
     h1 = init2(25)
     d2 = d[0]
@@ -180,8 +167,6 @@ def series25(c1,c2,g,a2,i2,d,d1,p):
 
     return(h1)  
 
-
-
 def series26(c1,c2,g,a2,i2,d,d1,p):
     h1 = init2(9)
     d2 = d[0]
@@ -204,8 +189,6 @@ def series26(c1,c2,g,a2,i2,d,d1,p):
             h1[i] = (h1[i]+t4)%p
 
     return(h1)  
-
-
 
 def series27(c1,c2,g,a2,i2,d,d1,p):
     h1 = init2(81)
@@ -239,7 +222,6 @@ def series27(c1,c2,g,a2,i2,d,d1,p):
 
     return(h1)  
 
-
 def series28(c1,c2,s,g,a2,d,d1,p):
     h1 = init2(4)
     t1 = 0
@@ -263,8 +245,6 @@ def series28(c1,c2,s,g,a2,d,d1,p):
         h1[3] = (h1[3]+s4*g1)%p
 
     return(h1)
-
-
 
 def series29(c1,c2,s,g,a2,d,d1,p):
     h1 = init2(8)
@@ -299,20 +279,17 @@ def series29(c1,c2,s,g,a2,d,d1,p):
 
     return(h1)
 
-
 def mult25(m,c1,c2,d1,d2,d3,p):
     for i in range(25):
         t1 = c1*m[d1][i]%p
         t2 = c2*m[d2][i]%p
         m[d3][i] = (t1+t2)%p
-        
-
+       
 def mult81(m,c1,c2,d1,d2,d3,p):
     for i in range(81):
         t1 = c1*m[d1][i]%p
         t2 = c2*m[d2][i]%p
         m[d3][i] = (t1+t2)%p
-
 
 def equation20(k,l2,d,d1,d2,m,e1,b1):
     a2 = k.a2
@@ -350,7 +327,6 @@ def equation20(k,l2,d,d1,d2,m,e1,b1):
     mult2(m,t+1,c1,s2,p)    
     mult2(m,t+2,s1,c2,p)
     mult2(m,t+3,s1,s2,p)
-
     
     # 1
     l3 = l2*d1
@@ -364,8 +340,7 @@ def equation20(k,l2,d,d1,d2,m,e1,b1):
     
     a3 = exp2a(l2*t1,a2,p)
     a3[1] = (p-a3[1])%p
-    mult81(m,a3[1],a3[0],90,91,e1,p)
-    
+    mult81(m,a3[1],a3[0],90,91,e1,p)   
     
     # 2
     mult81(m,1,1,t,t+3,92,p)
@@ -381,7 +356,6 @@ def equation20(k,l2,d,d1,d2,m,e1,b1):
         a3[1] = (p-a3[1])%p
     mult81(m,a3[1],a3[0],92,93,e1+1,p)
     
-
 
 def equation21(k,l2,d,d1,d2,m,e1,b1):
     g = k.g
@@ -1046,14 +1020,6 @@ for i in range(4):
     equation21(k,l2,d,d1,d2,m,i+49,b1)
 
 
-"""
-d1 = 4
-d2 = [6,8]
-equation22(k,l2,d,d1,d2,m,53,b1)
-"""
-
-
-
 d3 = [[2,2] , [2,4] , [2,6] , [2,8],
       [4,2] , [4,4] , [4,6] , [4,8],
       [6,2] , [6,4] , [6,6] , [6,8]]
@@ -1063,16 +1029,9 @@ for i in range(12):
     equation22(k,l2,d,d1,d2,m,2*i+53,b1)
 
 
-
-
 d1 = 4
 d2 = [6,2]
 equation23(k,l2,d,d1,d2,m,77,b1)
-
-
-
-
-
 
 
 h1 = series26(-5,5,k.g,k.a2,k.i2,[d[0]],16,p)
@@ -1081,16 +1040,6 @@ print("\n \n h1 = ",h1)
 
 h2 = series26(-5,5,k.g,k.a2,k.i2,[d[1]],16,p)
 print("\n \n h2 = ",h2)
-
-
-"""
-h3 = k.series24(-5,5,[d[0]],16)
-print("\n \n h3 = ",h3)
-
-
-h4 = k.series24(-5,5,[d[1]],16)
-print("\n \n h4 = ",h4)
-"""
 
 
 b2 = [0 for i in range(27*4)]
@@ -1102,16 +1051,7 @@ for i in range(27*4):
 print("\n \n b2 = ")
 display81(b2)
 
-
-# print("\n\n b1 =",b1)
-
-# m[23][:] = init2(25)
-# m[24][:] = init2(25)
-
 v1 = init2(81)
-
-print("\n \n")
-# display(0,80,0,80,m,v1)
 
 h1 = [0 for i in range(81)]
 
@@ -1121,6 +1061,4 @@ print("\n \n det = ",t1)
 display(0,5,70,80,m,v1)
 l2solve(81,h1,v1,m,p)
 print("after solve2 = ",h1)
-print("\n \n")
-
-       
+print("\n \n")      
