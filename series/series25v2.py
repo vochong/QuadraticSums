@@ -31,7 +31,6 @@ def test2(k,m,v,p):
     return(h1)
 
 
-
 def display50(b):
     for i in range(2):
         print("(",end=' ')
@@ -52,11 +51,9 @@ def display50(b):
         print(")")
   
 
-
 def equal2(m,c,s,t):
     s1 = 5*s[0]+s[1]
     m[c][s1] = t
-
 
 
 def series22(c1,c2,g,a2,d,d1,p):
@@ -77,7 +74,6 @@ def series22(c1,c2,g,a2,d,d1,p):
     return(h1)
 
 
-
 def series23(c1,c2,s,g,a2,d,d1,p):
     h1 = init2(2)
     t1 = 0
@@ -95,7 +91,6 @@ def series23(c1,c2,s,g,a2,d,d1,p):
         h1[1] = (h1[1]+a4[1]*g1)%p
 
     return(h1)
-
 
 
 def series24(c1,c2,g,a2,i2,d,d1,p):
@@ -192,8 +187,7 @@ def mult25(m,c1,c2,d1,d2,d3,p):
         t1 = c1*m[d1][i]%p
         t2 = c2*m[d2][i]%p
         m[d3][i] = (t1+t2)%p
-        
-
+       
 
 def equation21(k,l2,d,d1,d2,m,e1,b1):
     a2 = k.a2
@@ -252,8 +246,6 @@ def equation21(k,l2,d,d1,d2,m,e1,b1):
     mult25(m,a3[1],a3[0],32,33,e1+1,p)
     
 
-
-
 def equation22(k,l2,d,d1,d2,m,e1,b1):
     g = k.g
     a2 = k.a2
@@ -278,7 +270,6 @@ def equation22(k,l2,d,d1,d2,m,e1,b1):
         c2,s2 = t3,t4
     if d2[0]==4:
         c2,s2 = t5,t6
-
  
 
     t = 25
@@ -286,7 +277,6 @@ def equation22(k,l2,d,d1,d2,m,e1,b1):
     mult2(m,t+1,c1,s2,p)    
     mult2(m,t+2,s1,c2,p)
     mult2(m,t+3,s1,s2,p)
-
 
     
     # 1
@@ -335,8 +325,6 @@ def equation22(k,l2,d,d1,d2,m,e1,b1):
     """
 
 
-
-
     c1 = [1 , (p-3)*i2%p   , p-3,          i2,    0]
     s1 = [0,  1,            (p-3)*i2%p,    p-3,       i2]
 
@@ -370,7 +358,6 @@ def equation22(k,l2,d,d1,d2,m,e1,b1):
     mult125(m,a3[1],a3[0],133,134,e1,p)
     """
 
-
   
     # 4
     mult25(m,1,1,t,t+3,45,p)
@@ -400,10 +387,7 @@ def equation22(k,l2,d,d1,d2,m,e1,b1):
     # m[20][:] = m[35]
     # m[21][:] = m[36]
 
-
-
-    
-
+   
     # 1
     s1 = d[0]+d2[0]*d[1]
     s2 = l2*s1
@@ -438,7 +422,6 @@ def equation22(k,l2,d,d1,d2,m,e1,b1):
     print("\n \n in equation22 t4 = ",t4)
 
 
-
     # 2
     s = d[0]-d2[0]*d[1]
     s1 = abs(s)
@@ -469,16 +452,11 @@ def equation22(k,l2,d,d1,d2,m,e1,b1):
     print("\n \n in equation22 t6 = ",t6)
 
 
-
-
-
 def equation24(k,l2,d,d1,d2,m,e1,b1):
     g = k.g
     a2 = k.a2
     i2 = k.i2
     p = k.p
-
-
 
     t3 = [1,0,p-6,0,1]
     t4 = [0,4,0,p-4,0]
@@ -492,7 +470,6 @@ def equation24(k,l2,d,d1,d2,m,e1,b1):
         c2,s2 = t1,t2
     if d2[1]==4:
         c2,s2 = t3,t4
-
 
     t = 25
     mult2(m,t+0,c1,c2,p)
@@ -545,16 +522,11 @@ def equation24(k,l2,d,d1,d2,m,e1,b1):
     mult25(m,1,p-1,37,38,23,p)
 
 
-
-
-
-
 def equation25(k,l2,d,d1,m,e1,b1):
     g = k.g
     a2 = k.a2
     i2 = k.i2
     p = k.p
-
     
     # 1
     c1 = [1,2*i2%p,0,2*i2%p,p-1]
@@ -600,8 +572,7 @@ def equation25(k,l2,d,d1,m,e1,b1):
     s2 = [0,0,1,0,p-1]
     s3 = [0,0,2,0,0]
     s4 = [0,0,0,2,0]
-    
-    
+   
     t = 25
     mult2(m,t+0,c1,s1,p)
     mult2(m,t+1,c1,s2,p)
@@ -653,14 +624,8 @@ def equation25(k,l2,d,d1,m,e1,b1):
     c2,s2 = t3,t4
 
     # mult2(m,24,c1,s2,p)
-    
-
-
-
-
-  
-  
-
+   
+ 
 def equation26(k,l2,d,d1,d2,m,e1,b1):
     g = k.g
     a2 = k.a2
@@ -701,7 +666,6 @@ def equation26(k,l2,d,d1,d2,m,e1,b1):
     # mult25(m,1,1,t+1,t+2,24,p)
 
 
-
     # 2
     c1,s1 = t1,t2
     c2,s2 = t1,t2
@@ -713,7 +677,6 @@ def equation26(k,l2,d,d1,d2,m,e1,b1):
 
     mult25(m,1,p-1,t+0,t+3,23,p)
     # mult25(m,1,1,t+1,t+2,24,p)    
-
 
     
     # 3
@@ -727,10 +690,6 @@ def equation26(k,l2,d,d1,d2,m,e1,b1):
 
     mult25(m,1,p-1,t+0,t+3,24,p)
     # mult25(m,1,1,t+1,t+2,24,p)
-
-
-
-
 
 
 def equation27(k,l2,d,d1,d2,m,e1,b1):
@@ -785,8 +744,7 @@ def equation27(k,l2,d,d1,d2,m,e1,b1):
     h1 = series23(l3-20,l3+20,4,k.g,k.a2,abs(t1),1,p)
     print("\n \n in equation27 t1 = ",t1,"   h1 = ",h1)
 
-    
-
+  
     # 2
     i3 = (p+i2)%p
     c1 = [1,  i2,  p-3,     (p-3)*i2%p,  0]
@@ -820,7 +778,6 @@ def equation27(k,l2,d,d1,d2,m,e1,b1):
     print("\n \n in equation27 t1 = ",t1,"   h1 = ",h1)
 
 
-
     # 3
     t1 = [1,0,0,0,p-1]
     t2 = [0,2,0,2,0]
@@ -846,7 +803,6 @@ def equation27(k,l2,d,d1,d2,m,e1,b1):
     print("\n \n in equation27 t1 = ",t1,"   h1 = ",h1)
     
 
-
     # 4
     t1 = [1,0,0,0,p-1]
     t2 = [0,2,0,2,0]
@@ -868,8 +824,6 @@ def equation27(k,l2,d,d1,d2,m,e1,b1):
     print("\n \n in equation27 l3 = ",l3)
     h1 = series23(-20,20,4,k.g,k.a2,abs(t1),1,p)
     print("\n \n in equation27 t1 = ",t1,"   h1 = ",h1)
-
-
 
 
 def equation28(k,l2,d,d1,d2,m,e1,b1):
@@ -925,7 +879,7 @@ def equation28(k,l2,d,d1,d2,m,e1,b1):
     h1 = series23(l3-20,l3+20,4,k.g,k.a2,abs(t1),1,p)
     print("\n \n in equation28 t1 = ",t1,"   h1 = ",h1)
 
-    
+   
 
     # 2
     i3 = (p+i2)%p
@@ -960,7 +914,6 @@ def equation28(k,l2,d,d1,d2,m,e1,b1):
     print("\n \n in equation28 t1 = ",t1,"   h1 = ",h1)
 
 
-
     # 3
     t1 = [1,0,0,0,p-1]
     t2 = [0,2,0,2,0]
@@ -988,7 +941,6 @@ def equation28(k,l2,d,d1,d2,m,e1,b1):
     print("\n \n in equation28 t1 = ",t1,"   h1 = ",h1)
     
 
-
     # 4
     t1 = [1,0,0,0,p-1]
     t2 = [0,2,0,2,0]
@@ -1013,10 +965,6 @@ def equation28(k,l2,d,d1,d2,m,e1,b1):
     h1 = series23(-20,20,4,k.g,k.a2,abs(t1),1,p)
     print("\n \n in equation28 t1 = ",t1,"   h1 = ",h1)
     
-
-
-
-
 
 def init5(k,m1,g,d,s,flag4):
     s1 = s[0]
@@ -1146,9 +1094,6 @@ def init5(k,m1,g,d,s,flag4):
         m[4] = [t1,t2,t3,t4,t5]
         """
 
-
-
-
     
         # 9
         t1 = (2*c2+c1)%p
@@ -1180,8 +1125,7 @@ def init5(k,m1,g,d,s,flag4):
         print("\n")
         print(3*f2%p,3*f3%p)
 
-
-        
+       
 
         c = 6
         i2 = k.i2
@@ -1267,7 +1211,6 @@ def init5(k,m1,g,d,s,flag4):
         t1 = (c1*t30+c1*t31+1*t32)%p
         t2 = (c2*t30+c2*t31+1*t32)%p
         """
-
    
 
         # 19
@@ -1296,9 +1239,6 @@ def init5(k,m1,g,d,s,flag4):
         print("\n \n t1 = {0}  t2 = {1}".format(t1,t2))
         print("\n")
         print(3*f2%p,3*f3%p)
-
-
-
 
 
 def init6(k,m1,g,d,s,flag4):
@@ -1363,7 +1303,6 @@ def init6(k,m1,g,d,s,flag4):
         t5 = 1
         t23 = (t1*f1+t2*f2+t3*f3+t4*f4+t5*f5)%p
         print("\n \n in init6 t23 = ",t23)
-
 
 
         # 5
@@ -1460,8 +1399,7 @@ def init6(k,m1,g,d,s,flag4):
         t1 = (c1*t23+c2*t24+c2*t25)%p
         t2 = (c2*t23+c1*t24+c1*t25)%p
 
-
-        
+       
         
         t1 = 1
         t2 = 1
@@ -1505,13 +1443,7 @@ def init6(k,m1,g,d,s,flag4):
         print("\n")
         print(3*f2%p,3*f3%p)
         
-    
-
-
-
-
-        
-        
+                  
         c = 6
         i2 = p-k.i2
         f1 = (s1[c]+i2*s1[c+1])%p
@@ -1528,7 +1460,6 @@ def init6(k,m1,g,d,s,flag4):
         t5 = 1
         t30 = (t1*f1+t2*f2+t3*f3+t4*f4+t5*f5)%p
         print("\n \n in init6 t30 = ",t30)
-
 
 
         # 15
