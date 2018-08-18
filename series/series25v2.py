@@ -2,7 +2,6 @@ from group51 import *
 import random
 from math import floor 
 
-
 def test2(k,m,v,p):
     h1 = init2(k)
     for i in range(k):
@@ -1918,8 +1917,6 @@ print("\n \n t29 = ",t29)
 m[4] = [t1,t2,t3,t4,t5]
 
 
-
-
 if flag4==1:
 
     m[3] = init2(5)
@@ -1946,15 +1943,11 @@ if flag4==1:
     print("\n \n t29 = ",t29)
     m[4] = [t1,t2,t3,t4,t5]
 
-
     t1 = (c1*t23+c2*t24+c2*t25)%p
     t2 = (c2*t23+c1*t24+c1*t25)%p
 
-
 print("\n \n t1 = {0}  t2 = {1}".format(t1,t2))
 print("\n \n")
-
-
 
 c = 6
 i2 = k.i2
@@ -1973,8 +1966,6 @@ t5 = 1
 t30 = (t1*f1+t2*f2+t3*f3+t4*f4+t5*f5)%p
 print("\n \n t30 = ",t30)
 
-
-
 # 15
 t1 = 1
 t2 = 0
@@ -1983,7 +1974,6 @@ t4 = c1
 t5 = c2
 t31 = (t1*f1+t2*f2+t3*f3+t4*f4+t5*f5)%p
 print("\n \n t31 = ",t31)
-
 
 # 16
 t1 = 1
@@ -1994,7 +1984,6 @@ t5 = c1
 t32 = (t1*f1+t2*f2+t3*f3+t4*f4+t5*f5)%p
 print("\n \n t32 = ",t32)
 
-
 # 17
 t1 = (2*c1+1)%p
 t2 = 0
@@ -2004,7 +1993,6 @@ t5 = (2*c1+1)%p
 t33 = (t1*f1+t2*f2+t3*f3+t4*f4+t5*f5)%p
 print("\n \n t33 = ",t33)
 
-
 # 18
 t1 = (2*c2+1)%p
 t2 = 0
@@ -2013,8 +2001,6 @@ t4 = (2*c2+1)%p
 t5 = (2*c1+c2)%p
 t34 = (t1*f1+t2*f2+t3*f3+t4*f4+t5*f5)%p
 print("\n \n t34 = ",t34)
-
-
 
 # 19
 t1 = (2*c1+1)%p
@@ -2026,7 +2012,6 @@ t35 = (t1*f1+t2*f2+t3*f3+t4*f4+t5*f5)%p
 print("\n \n t35 = ",t35)
 # m[4] = [t1,t2,t3,t4,t5]
 
-
 # 20
 t1 = (2*c2+1)%p
 t2 = 0
@@ -2036,8 +2021,6 @@ t5 = (2*c1+c2)%p
 t36 = (t1*f1+t2*f2+t3*f3+t4*f4+t5*f5)%p
 print("\n \n t36 = ",t36)
 # m[4] = [t1,t2,t3,t4,t5]
-
-
 
 # 21
 t1 = 1
@@ -2080,8 +2063,6 @@ if flag4==1:
 
 print("\n \n t1 = {0}  t2 = {1}".format(t1,t2))
 print("\n \n")
-
-
 
 t1 = 1
 t2 = 1
@@ -2142,15 +2123,6 @@ print("\n \n m2 = ")
 display(0,4,0,4,m2,v2)
 print("\n \n")
 
-"""
-m = [[1,1,1],
-     [1,c2,c1],
-     [1,c1,c2]]
-"""
-
-# m[2] = init2(5)
-# m[4] = init2(5)
-
 v1 = [c1,c1,1,0,0]
 v1 = [m[0][0] , m[1][0] , m[2][0] , m[3][0] , m[4][0]]
 
@@ -2165,5 +2137,4 @@ t1 = det(5,m)
 print("\n \n det = ",t1)
 display(0,4,0,4,m,v1)
 l2solve(5,h1,v1,m,p)
-print("\n \n after solve2 = ",h1)
-       
+print("\n \n after solve2 = ",h1)      
