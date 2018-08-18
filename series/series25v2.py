@@ -1,4 +1,4 @@
-from a24v051 import *
+from group51 import *
 import random
 from math import floor 
 
@@ -1630,15 +1630,9 @@ def init6(k,m1,g,d,s,flag4):
 
 
 
-
-
-
 p = 4013
 
 p = 2473
-
-
-
 
 
 m = init1(50,25)
@@ -1659,7 +1653,6 @@ for i in range(5):
     c = c+1
 
 
-
 for i in range(4):
     m[c] = init2(25)
     s = [i,0]
@@ -1671,9 +1664,7 @@ for i in range(4):
     c = c+1
 
 
-
 print("\n \n c = ",c)
-
 
 
 b1 = init2(50)
@@ -1707,11 +1698,6 @@ d1 = 16
 k25 = series25(-l2,l2,k.g,k.a2,k.i2,d,d1,p)
 
 
-
-
-
-
-
 """
 d1 = 4
 d2 = [2,4]
@@ -1741,7 +1727,6 @@ equation23(k,l2,d,d1,d2,m,17,b1)
 """
 
 
-
 d1 = 4
 d2 = [2,4]
 equation26(k,l2,d,d1,d2,m,17,b1)
@@ -1750,25 +1735,20 @@ equation26(k,l2,d,d1,d2,m,17,b1)
 # m[24] = init2(25)
 
 
-
 d1 = 4
 d2 = [2,4]
 equation27(k,l2,d,d1,d2,m,17,b1)
-
 
 
 d1 = 4
 d2 = [2,4]
 equation28(k,l2,d,d1,d2,m,17,b1)
 
-
-
 """
 d1 = 4
 d2 = [2,4]
 equation25(k,l2,d,d1,m,17,b1)
 """
-
 
 h1 = series24(-5,5,k.g,k.a2,k.i2,[d[0]],16,p)
 print("\n \n h1 = ",h1)
@@ -1796,8 +1776,6 @@ print("\n \n b2 = ")
 display50(b2)
 
 
-
-
 # print("\n\n b1 =",b1)
 
 
@@ -1813,8 +1791,6 @@ v1[:] = b2
 # test
 v1[23] = (v1[23]+e2)%p
 v1[24] = (v1[24]+e3)%p
-
-
 
 
 print("\n \n")
@@ -1886,7 +1862,6 @@ s10 = [65,766,2240,1958,198,544,973,534]
 
 
 
-
 m = init1(5,5)
 
 c1 = exp1((p-1)//3,g,p)
@@ -1927,7 +1902,6 @@ t5 = p-1
 t22 = (t1*s1[3]+t2*s2[3]+t3*s3[3]+t4*s4[3]+t5*s5[3])%p
 print("\n \n t22 = ",t22)
 m[2] = [t1,t2,t3,t4,t5]
-
 
 
 
@@ -2048,10 +2022,6 @@ if flag4==1:
 
 print("\n \n t1 = {0}  t2 = {1}".format(t1,t2))
 print("\n \n")
-
-
-
-
 
 
 
@@ -2182,7 +2152,6 @@ print("\n \n")
 
 
 
-
 t1 = 1
 t2 = 1
 t3 = 1
@@ -2214,12 +2183,10 @@ for i3 in range(3):
             a = [i3,j3,k3]
             b = [t1,t2,t3]
             print(9*i3+3*j3+k3,a,b,t4)
-
             
                 
 print("\n \n")
 print(3*f2%p,3*f3%p)
-
 
 
 """ test 1
@@ -2243,11 +2210,6 @@ init6(k,m2,g,d,s,flag4)
 print("\n \n m2 = ")
 display(0,4,0,4,m2,v2)
 print("\n \n")
-
-
-
-
-
 
 """
 m = [[1,1,1],
@@ -2273,8 +2235,4 @@ print("\n \n det = ",t1)
 display(0,4,0,4,m,v1)
 l2solve(5,h1,v1,m,p)
 print("\n \n after solve2 = ",h1)
-
-
-
-
-        
+       
