@@ -2070,10 +2070,8 @@ def init6(k,m1,g,d,s,flag4):
         t4 = c2
         t5 = c1
         t32 = (t1*f1+t2*f2+t3*f3+t4*f4+t5*f5)%p
-        print("\n \n in init6 t32 = ",t32)  
-
-    
-      
+        print("\n \n in init6 t32 = ",t32)
+         
         # 17
         t1 = (2*c1+1)%p
         t2 = p-3
@@ -2083,7 +2081,6 @@ def init6(k,m1,g,d,s,flag4):
         t33 = (t1*f1+t2*f2+t3*f3+t4*f4+t5*f5)%p
         print("\n \n in init6 t33 = ",t33)
         m1[2] = [t1,t2,t3,t4,t5]
-
 
         # 18
         t1 = (2*c2+1)%p
@@ -2095,9 +2092,7 @@ def init6(k,m1,g,d,s,flag4):
         print("\n \n in init6 t34 = ",t34)
         # m1[4] = [t1,t2,t3,t4,t5]
 
-        print()
-        
-
+        print()       
         
         t1 = 1
         t2 = 1
@@ -2130,8 +2125,6 @@ def init6(k,m1,g,d,s,flag4):
                     a = [i3,j3,k3]
                     b = [t1,t2,t3]
                     print(9*i3+3*j3+k3,a,b,t4)
-
-
     
         # t1 = (c1*t30+c2*t31+c2*t32)%p
         # t2 = (c2*t30+c1*t31+c1*t32)%p
@@ -2142,7 +2135,6 @@ def init6(k,m1,g,d,s,flag4):
         print("\n \n t1 = {0}  t2 = {1}".format(t1,t2))
         print("\n")
         print(3*f2%p,3*f3%p)
-
 
 def init125(g,g1,g2,l2,d,d1,h,p,flag):
 
@@ -2157,7 +2149,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
         y1 = init2(50)
         for i in range(50):
             y1[i] = multcnvl2(m1[i],k25,p)
-
 
         print("\n \n in init125 y1 = ")
         display50(y1)
@@ -2176,7 +2167,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
         for i in range(50):
             y2[i] = multcnvl2(m2[i],k25,p)
 
-
         print("\n \n in init125 y2 = ")
         display50(y2)
         print("\n \n in init125 b2 = ")
@@ -2194,12 +2184,10 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
         for i in range(50):
             y3[i] = multcnvl2(m3[i],k25,p)
 
-
         print("\n \n in init125 y3 = ")
         display50(y3)
         print("\n \n in init125 b3 = ")
-        display25(b3)
-    
+        display25(b3)    
 
     # 4
     print("\n \n in init125 d = ",d)
@@ -2215,7 +2203,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
         y4 = init2(50)
         for i in range(50):
             y4[i] = multcnvl2(m4[i],k25,p)
-
 
         print("\n \n in init125 y4 = ")
         display50(y4)
@@ -2236,12 +2223,10 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
         for i in range(50):
             y5[i] = multcnvl2(m5[i],k25,p)
 
-
         print("\n \n in init125 y5 = ")
         display50(y5)
         print("\n \n in init125 b5 = ")
         display25(b5)
-
 
     s1 = [y1[25] , y1[26] , y1[27] , y1[28] , y1[30], y1[31] , y1[32] , y1[33]]
     s2 = [y2[25] , y2[26] , y2[27] , y2[28] , y2[30], y2[31] , y2[32] , y2[33]]
@@ -2254,7 +2239,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
     s8 =  [y3[35] , y3[36] , y3[37] , y3[38] , y3[40], y3[41] , y3[42] , y3[43]]
     s9 =  [y4[35] , y4[36] , y4[37] , y4[38] , y4[40], y4[41] , y4[42] , y4[43]]
     s10 = [y5[35] , y5[36] , y5[37] , y5[38] , y5[40], y5[41] , y5[42] , y5[43]]
-
 
     k = group(g,p)
     i2 = k.i2
@@ -2291,7 +2275,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
     v5[3] = (s4[6]+i2*s4[7])%p
     v5[4] = (s5[6]+i2*s5[7])%p
 
-
     t1 = d[0]%3
     t2 = d[1]%3
 
@@ -2327,7 +2310,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
             t = multcnvl2(m7[i],t1,p)
             print("\n in init125 i = ",i,"  t = ",t)
 
-
     k = group(g,p)
     i2 = k.i2
     v6 = init2(5)
@@ -2362,8 +2344,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
     v10[2] = (s8[6]+i2*s8[7])%p
     v10[3] = (s9[6]+i2*s9[7])%p
     v10[4] = (s10[6]+i2*s10[7])%p
-
-
     
     t1 = d[0]%3
     t2 = d[1]%3
@@ -2400,7 +2380,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
             t = multcnvl2(m8[i],t1,p)
             print("\n in init125 i = ",i,"  t = ",t)
 
-
     if flag==1:
         v1 = init2(5)
         solve2(5,m7,v1,p)
@@ -2415,23 +2394,13 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
         solve2(5,m8,v1,p)
         t2 = det(5,m8)
         print("\n \n in init125 det = ",t2)
-        display(0,4,0,4,m8,v1)
+        display(0,4,0,4,m8,v1)           
 
-
-            
-
-p = 4013
 
 p = 2473
 
-
-
-
-
 m = init1(50,25)
-
 v = init2(25)
-
 
 c = 0
 for i in range(5):
@@ -2444,8 +2413,6 @@ for i in range(5):
     equal2(m,c,s,1)
     c = c+1
 
-
-
 for i in range(4):
     m[c] = init2(25)
     s = [i,0]
@@ -2456,11 +2423,7 @@ for i in range(4):
     equal2(m,c,s,1)
     c = c+1
 
-
-
 print("\n \n c = ",c)
-
-
 
 b1 = init2(50)
 
@@ -2473,17 +2436,12 @@ g1 = g*t1%p
 g2 = g*t2%p
 print("\n \n g = {0}  g1 = {1}  g2 = {2}".format(g,g1,g2))
 
-
 k = group(g,p)
-
 d = [32,8*0+224]
-
 flag4 = d[1]%3
-
 
 e1 = 32*(p-1)//3
 d = [32,8*0+224+0*e1]
-
 
 e2 = 0
 e3 = 0
@@ -2495,16 +2453,11 @@ k25 = series25(-l2,l2,k.g,k.a2,k.i2,d,d1*d1,p)
 # d1 = 16
 # k25 = series25(-l2,l2,k.g,k.a2,k.i2,d,d1,p)
 
-
-
-
-
 """
 d1 = 4
 d2 = [2,4]
 equation21(k,l2,d,d1,d2,m,10,b1)
 """
-
 
 d3 = [[2,2] , [2,4] , [4,2] , [4,4]]
 
@@ -2513,15 +2466,12 @@ for i in range(4):
     d2 = d3[i]
     equation21(k,l2,d,d1,d2,m,2*i+9,b1)
 
-
 d1 = d1
 d2 = [2]
 equation22(k,l2,d,d1,d2,m,17,b1)
 
 d2 = [4]
 equation22(k,l2,d,d1,d2,m,20,b1)
-
-
 
 d1 = d1
 d2 = [2,4]
@@ -2530,12 +2480,9 @@ equation26(k,l2,d,d1,d2,m,17,b1)
 # m[23] = init2(25)
 # m[24] = init2(25)
 
-
-
 d1 = d1
 d2 = [2,4]
 equation27(k,l2,d,d1,d2,m,17,b1)
-
 
 """
 d1 = 4
@@ -2543,33 +2490,24 @@ d2 = [2,4]
 equation28(k,l2,d,d1,d2,m,17,b1)
 """
 
-
-
-
 h1 = series24(-l2,l2,k.g,k.a2,k.i2,[d[0]],d1*d1,p)
 print("\n \n h1 = ",h1)
-
 
 h2 = series24(-l2,l2,k.g,k.a2,k.i2,[d[1]],d1*d1,p)
 print("\n \n h2 = ",h2)
 
-
 h3 = k.series24(-l2,l2,[d[0]],d1*d1)
 print("\n \n h3 = ",h3)
 
-
 h4 = k.series24(-l2,l2,[d[1]],d1*d1)
 print("\n \n h4 = ",h4)
-
 
 b2 = [0 for i in range(50)]
 for i in range(50):
     b2[i] = multcnvl2(m[i],k25,p)
 
-
 print("\n \n b2 = ")
 display50(b2)
-
 
 # test 1
 m4,b4 = init25(g,l2,d,d1,h3,h4,p)
@@ -2583,8 +2521,6 @@ display50(b3)
 
 print("\n \n b4 = ")
 display25(b4)
-
-
 
 h = init2(10)
 for i in range(10):
@@ -2612,12 +2548,7 @@ h[9] = k1.series24(-l2,l2,[2*e1+d[1]],d1*d1)
 
 init125(g,g1,g2,l2,d,d1,h,p,1)
 
-
-
-
-
 # print("\n\n b1 =",b1)
-
 
 # m[23][:] = init2(25)
 # m[24][:] = init2(25)
@@ -2626,14 +2557,10 @@ v1 = init2(25)
 
 v1[:] = b2
 
-
 ################################################
 # test
 v1[23] = (v1[23]+e2)%p
 v1[24] = (v1[24]+e3)%p
-
-
-
 
 print("\n \n")
 # display(0,24,0,24,m,v1)
@@ -2686,7 +2613,6 @@ s9 = [510,1291,498,24,1929,1229,1605,1091]
 s10 = [1153,246,2070,155,1197,1906,198,544]
 
 
-
 """
 s1 = [465,1036,1454,1823,1463,1325]
 s2 = [2232,423,2303,1379,1294,653]
@@ -2694,7 +2620,6 @@ s3 = [2358,35,323,2397,2361,857]
 s4 = [868,375,1773,561,243,591]
 s5 = [1323,2044,196,1402,1394,287]
 """
-
 
 """
 s1 = [1655,1950,456,778,610,1620,74,719]
@@ -2710,14 +2635,10 @@ s9 = [565,931,718,1312,1605,1091,1456,1249]
 s10 = [65,766,2240,1958,198,544,973,534]
 """
 
-
-
 m = init1(5,5)
 
 c1 = exp1((p-1)//3,g,p)
 c2 = c1**2%p
-
-
 
 """ test 1 """
 
@@ -2729,8 +2650,6 @@ init5(k,m1,g,d,s,flag4)
 print("\n \n m1 = ")
 display(0,4,0,4,m1,v2)
 print("\n \n")
-
-
 
 """ test 2 """
 """
@@ -2744,13 +2663,8 @@ display(0,4,0,4,m2,v2)
 print("\n \n")
 """
 
-
-
 m = m1
 # m = m2
-
-# m[2] = init2(5)
-# m[4] = init2(5)
 
 v1 = [m[0][0] , m[1][0] , m[2][0] , m[3][0] , m[4][0]]
 
@@ -2766,8 +2680,4 @@ print("\n \n det = ",t1)
 display(0,4,0,4,m,v1)
 l2solve(5,h1,v1,m,p)
 print("\n \n after solve2 = ",h1)
-
-
-
-
         
