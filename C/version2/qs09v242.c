@@ -203,21 +203,16 @@ int main(void)
 
 /** Determine g **/
     g = find3(p);
-
     printf("\n from find3 g = %d",g);
-
-    g = exp1(1,g,p);
-    g = (1*g)%p;
+    g = exp1(1,g,p);   
 
 /** Determine i2 and a2 **/
 
-	i2 = find4(g,p-1,p);
-	printf("\n \n from find4 i2 = %d",i2);
-	i2 = (p+i2)%p;
-
-   	calc2(g,i2,a2,p);
-    	printf("\n \n from calc2 a2 = ");
-	displayh(2,a2);
+    i2 = find4(g,p-1,p);
+    printf("\n \n from find4 i2 = %d",i2);
+    calc2(g,i2,a2,p);
+    printf("\n \n from calc2 a2 = ");
+    displayh(2,a2);
 
     printf("\n \n test of calc42k");
     a5[0] = a2[0];
