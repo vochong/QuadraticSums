@@ -112,68 +112,54 @@ int main(void)
 	unsigned long int c;
 	int l2,l3;
 	STRING ptr2;
-
 	integer b2[220] = {0};
 	int t1;
-
 	integer p;
-
 	integer a2[2] = {0};
 	integer a3[2] = {0};
 	integer a4[2] = {0};
 	integer a5[2] = {0};
 	integer a6[2] = {0};
-
 	integer cs[10] = {0};
 	integer sn[10] = {0};
 	integer cs1[10] = {0};
 	integer sn1[10] = {0};
 	integer cs2[10] = {0};
 	integer sn2[10] = {0};
-
 	integer hs1[144] = {0};
 	integer hs2[144] = {0};
 	integer hs3[144] = {0};
     	integer hs4[144] = {0};
-
 	integer ws1[27] = {0};
 	integer ws2[27] = {0};
-
 	integer h11[40] = {0};
 	integer h12[40] = {0};
 	integer h20[40] = {0};
-
 	integer h21[40] = {0};
 	integer h22[40] = {0};
 	integer h23[40] = {0};
     	integer h24[40] = {0};
     	integer h25[40] = {0};
     	integer h26[40] = {0};
-
 	integer *str1;
 	integer *str1a;
 	integer *str2;
 	integer *str2a;
-
 	integer flag0,flag3;
 	int flag4;
 	int x,y,c6,kmax;
-
 	integer s,e,e1,e2,e3,e4;
 	integer s1,s2,s3,s4;
-
 	integer i2;
 	integer g;
 	integer q,q1;
 	integer s5;
 	integer c1,c2;
-
 	integer k40[6] = {0};
 	integer k41[12] = {0};
 	integer k42[12] = {0};
 
 	m2 = m;
-
 
     	p = 4289;
 
@@ -189,45 +175,43 @@ int main(void)
 
 /* 1 */
 	if ((str1 = (integer *) calloc(1584,sizeof(integer))) == NULL)
-        {
-         printf("Not enough memory for str1\n");
+        	{
+         	printf("Not enough memory for str1\n");
 		 /*
 		 exit(1);
 		 */
-        }
+        	}
 /* 2 */
 	 if ((str2 = (integer *) calloc(1584,sizeof(integer))) == NULL)
-        {
+        	{
 		 printf("Not enough memory for str2\n");
-        }
+        	}
 /* 3 */
 	if ((str1a = (integer *) calloc(297,sizeof(integer))) == NULL)
-        {
+        	{
 		 printf("Not enough memory for str1a\n");
-        }
+        	}
 /* 4 */
 	if ((str2a = (integer *) calloc(297,sizeof(integer))) == NULL)
-        {
+        	{
 		 printf("Not enough memory for str2a\n");
-        }
+        	}
 
-	zero2(40,h11);
-
+    zero2(40,h11);
     g = findnqr(p);
     printf("\n g = f(%d) = %d",p,g);
 
 /** Determine g **/
     g = find3(p);
     printf("\n from find3 g = %d",g);
-    g = exp1(1,g,p);
-
+   
 /** Determine i2 and a2 **/
 
-	i2 = find4(g,p-1,p);
-	printf("\n \n from find4 i2 = %d",i2);
-   	calc2(g,i2,a2,p);
-    	printf("\n \n from calc2 a2 = ");
-	displayh(2,a2);
+    i2 = find4(g,p-1,p);
+    printf("\n \n from find4 i2 = %d",i2);
+    calc2(g,i2,a2,p);
+    printf("\n \n from calc2 a2 = ");
+    displayh(2,a2);
 
     printf("\n \n test of calc42k");
     a5[0] = a2[0];
