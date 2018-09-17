@@ -1,6 +1,5 @@
 from group51 import *
 
-
 def display25(b):
     for j in range(5):
         print("(",end=' ')
@@ -270,7 +269,6 @@ def equation22(k,l2,d,d1,d2,m,e1,b1):
     a3[1] = (p-a3[1])%p
     mult125(m,a3[1],a3[0],133,134,e1,p)
     """
-
     
     # 2
     mult25(m,1,1,t,t+3,45,p)
@@ -293,7 +291,6 @@ def equation22(k,l2,d,d1,d2,m,e1,b1):
     a3[1] = (p-a3[1])%p
     mult125(m,a3[1],a3[0],133,134,e1,p)
     """
-
 
     c1 = [1 , (p-3)*i2%p   , p-3,          i2,    0]
     s1 = [0,  1,            (p-3)*i2%p,    p-3,       i2]
@@ -354,7 +351,6 @@ def equation22(k,l2,d,d1,d2,m,e1,b1):
     # m[19][:] = m[31]
     # m[20][:] = m[35]
     # m[21][:] = m[36]
-
     
 
     # 1
@@ -471,7 +467,6 @@ def equation23(k,l2,d,d1,d2,m,e1,b1):
     mult25(m,a3[1],a3[0],32,33,e1+1,p)
 
 
-
 def equation24(k,l2,d,d1,d2,m,e1,b1):
     g = k.g
     a2 = k.a2
@@ -502,7 +497,6 @@ def equation24(k,l2,d,d1,d2,m,e1,b1):
     mult2(m,t+2,s1,c2,p)
     mult2(m,t+3,s1,s2,p)
 
-
     
     # 1
     mult25(m,1,p-1,t,t+3,45,p)
@@ -522,8 +516,6 @@ def equation24(k,l2,d,d1,d2,m,e1,b1):
     mult25(m,s,0,45,45,30,p)
     mult25(m,s,0,46,46,31,p)
 
-
-
     
     # 2
     mult25(m,1,1,t,t+3,45,p)
@@ -542,7 +534,6 @@ def equation24(k,l2,d,d1,d2,m,e1,b1):
     s = inverse(t1,p)*t2%p
     mult25(m,s,0,45,45,32,p)
     mult25(m,s,0,46,46,33,p)
-
 
 
     c1 = [1 , (p-3)*i2%p   , p-3,          i2,    0]
@@ -573,9 +564,6 @@ def equation24(k,l2,d,d1,d2,m,e1,b1):
     mult25(m,s,0,45,45,35,p)
     mult25(m,s,0,46,46,36,p)
 
-
-
-
   
     # 4
     mult25(m,1,1,t,t+3,45,p)
@@ -587,7 +575,6 @@ def equation24(k,l2,d,d1,d2,m,e1,b1):
     print("\n \n in equation22 t4 = ",t4,"   h4 = ",h4)
     """
 
-
     d4 = l2*d1
     t1 = exp1(d4*d4,g,p)
     l3 = d4+3*(d1//4)
@@ -595,9 +582,6 @@ def equation24(k,l2,d,d1,d2,m,e1,b1):
     s = inverse(t1,p)*t2%p
     mult25(m,s,0,45,45,37,p)
     mult25(m,s,0,46,46,38,p)
-
-
-
     
 
     # 1
@@ -636,7 +620,6 @@ def equation24(k,l2,d,d1,d2,m,e1,b1):
     b1[e1+1] = t4
 
 
-
     # 2
     s = d[0]-d2[0]*d[1]
     s1 = abs(s)
@@ -666,8 +649,6 @@ def equation24(k,l2,d,d1,d2,m,e1,b1):
     # print("\n \n in equation22  t1 = {0}  t2 = {1}".format(t1,t2))
     # print("\n \n in equation22 t6 = ",t6)
     b1[e1+2] = t5
-
-
 
     
 
@@ -729,8 +710,7 @@ def init25(g,l2,d,d1,h1,h2,p):
     for i in range(4):
         b1[i+5] = h1[i]
     
-    return(m,b1)
-    
+    return(m,b1)    
 
 
 def equation26(k,l2,d,d1,d2,m,e1,b1):
