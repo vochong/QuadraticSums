@@ -1929,7 +1929,6 @@ def init6(k,m1,g,d,s,flag4):
         print("\n \n in init6 t20 = ",t20)
         m1[0] = [t1,t2,t3,t4,t5]
 
-
         # 2
         t1 = (1+(p-1)*c1)%p
         t2 = 0 
@@ -1940,7 +1939,6 @@ def init6(k,m1,g,d,s,flag4):
         print("\n \n in init6 t21 = ",t21)
         m1[1] = [t1,t2,t3,t4,t5]
 
-
         # 3
         t1 = 0
         t2 = c2
@@ -1950,8 +1948,6 @@ def init6(k,m1,g,d,s,flag4):
         t22 = (t1*s1[3]+t2*s2[3]+t3*s3[3]+t4*s4[3]+t5*s5[3])%p
         print("\n \n in init6 t22 = ",t22)
         m1[2] = [t1,t2,t3,t4,t5]
-
-
 
         c = 4
         i2 = k.i2
@@ -1970,8 +1966,6 @@ def init6(k,m1,g,d,s,flag4):
         t23 = (t1*f1+t2*f2+t3*f3+t4*f4+t5*f5)%p
         print("\n \n in init6 t23 = ",t23)
 
-
-
         # 5
         t1 = 1
         t2 = 0
@@ -1980,7 +1974,7 @@ def init6(k,m1,g,d,s,flag4):
         t5 = c2
         t24 = (t1*f1+t2*f2+t3*f3+t4*f4+t5*f5)%p
         print("\n \n  in init6 t24 = ",t24)
-
+        
         # 6
         t1 = 1
         t2 = 0
@@ -2049,9 +2043,7 @@ def init6(k,m1,g,d,s,flag4):
 
         print("\n \n t1 = {0}  t2 = {1}".format(t1,t2))
         print("\n")
-        print(3*f2%p,3*f3%p)
-        
-
+        print(3*f2%p,3*f3%p)       
         
         c = 6
         i2 = k.i2
@@ -2086,10 +2078,8 @@ def init6(k,m1,g,d,s,flag4):
         t4 = c2
         t5 = c1
         t32 = (t1*f1+t2*f2+t3*f3+t4*f4+t5*f5)%p
-        print("\n \n in init6 t32 = ",t32)  
-
-    
-      
+        print("\n \n in init6 t32 = ",t32) 
+   
         # 17
         t1 = (2*c1+1)%p
         t2 = p-3
@@ -2099,7 +2089,6 @@ def init6(k,m1,g,d,s,flag4):
         t33 = (t1*f1+t2*f2+t3*f3+t4*f4+t5*f5)%p
         print("\n \n in init6 t33 = ",t33)
         m1[2] = [t1,t2,t3,t4,t5]
-
 
         # 18
         t1 = (2*c2+1)%p
@@ -2111,9 +2100,7 @@ def init6(k,m1,g,d,s,flag4):
         print("\n \n in init6 t34 = ",t34)
         # m1[4] = [t1,t2,t3,t4,t5]
 
-        print()
-        
-
+        print()      
         
         t1 = 1
         t2 = 1
@@ -2146,8 +2133,6 @@ def init6(k,m1,g,d,s,flag4):
                     a = [i3,j3,k3]
                     b = [t1,t2,t3]
                     print(9*i3+3*j3+k3,a,b,t4)
-
-
     
         # t1 = (c1*t30+c2*t31+c2*t32)%p
         # t2 = (c2*t30+c1*t31+c1*t32)%p
@@ -2158,7 +2143,6 @@ def init6(k,m1,g,d,s,flag4):
         print("\n \n t1 = {0}  t2 = {1}".format(t1,t2))
         print("\n")
         print(3*f2%p,3*f3%p)
-
 
 def init125(g,g1,g2,l2,d,d1,h,p,flag):
 
