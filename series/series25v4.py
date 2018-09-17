@@ -1868,8 +1868,7 @@ def init6(k,m1,g,d,s,flag4):
         t5 = (2*c2+1)%p
         t34 = (t1*f1+t2*f2+t3*f3+t4*f4+t5*f5)%p
         print("\n \n in init6 t34 = ",t34)
-        m1[4] = [t1,t2,t3,t4,t5]   
-
+        m1[4] = [t1,t2,t3,t4,t5]  
         
         t1 = 1
         t2 = 1
@@ -1901,9 +1900,7 @@ def init6(k,m1,g,d,s,flag4):
                     t4 = (t1*t30+t2*t31+t3*t32)%p
                     a = [i3,j3,k3]
                     b = [t1,t2,t3]
-                    print(9*i3+3*j3+k3,a,b,t4)
-
- 
+                    print(9*i3+3*j3+k3,a,b,t4) 
     
         t1 = (c1*t30+c2*t31+c2*t32)%p
         t2 = (c2*t30+c1*t31+c1*t32)%p
@@ -1911,7 +1908,6 @@ def init6(k,m1,g,d,s,flag4):
         print("\n \n t1 = {0}  t2 = {1}".format(t1,t2))
         print("\n")
         print(3*f2%p,3*f3%p)
-
 
     if flag4==2:
         
@@ -2158,12 +2154,11 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
         for i in range(50):
             y1[i] = multcnvl2(m1[i],k25,p)
 
-
         print("\n \n in init125 y1 = ")
         display50(y1)
         print("\n \n in init125 b1 = ")
         display25(b1)
-
+        
     # 2
     h1 = h[2]
     h2 = h[3]
@@ -2175,7 +2170,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
         y2 = init2(50)
         for i in range(50):
             y2[i] = multcnvl2(m2[i],k25,p)
-
 
         print("\n \n in init125 y2 = ")
         display50(y2)
@@ -2194,12 +2188,10 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
         for i in range(50):
             y3[i] = multcnvl2(m3[i],k25,p)
 
-
         print("\n \n in init125 y3 = ")
         display50(y3)
         print("\n \n in init125 b3 = ")
-        display25(b3)
-    
+        display25(b3)    
 
     # 4
     print("\n \n in init125 d = ",d)
@@ -2215,7 +2207,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
         y4 = init2(50)
         for i in range(50):
             y4[i] = multcnvl2(m4[i],k25,p)
-
 
         print("\n \n in init125 y4 = ")
         display50(y4)
@@ -2236,7 +2227,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
         for i in range(50):
             y5[i] = multcnvl2(m5[i],k25,p)
 
-
         print("\n \n in init125 y5 = ")
         display50(y5)
         print("\n \n in init125 b5 = ")
@@ -2254,7 +2244,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
     s8 =  [y3[35] , y3[36] , y3[37] , y3[38] , y3[40], y3[41] , y3[42] , y3[43]]
     s9 =  [y4[35] , y4[36] , y4[37] , y4[38] , y4[40], y4[41] , y4[42] , y4[43]]
     s10 = [y5[35] , y5[36] , y5[37] , y5[38] , y5[40], y5[41] , y5[42] , y5[43]]
-
 
     k = group(g,p)
     i2 = k.i2
@@ -2327,7 +2316,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
             t = multcnvl2(m7[i],t1,p)
             print("\n in init125 i = ",i,"  t = ",t)
 
-
     k = group(g,p)
     i2 = k.i2
     v6 = init2(5)
@@ -2362,8 +2350,7 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
     v10[2] = (s8[6]+i2*s8[7])%p
     v10[3] = (s9[6]+i2*s9[7])%p
     v10[4] = (s10[6]+i2*s10[7])%p
-
-
+    
     
     t1 = d[0]%3
     t2 = d[1]%3
@@ -2400,7 +2387,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
             t = multcnvl2(m8[i],t1,p)
             print("\n in init125 i = ",i,"  t = ",t)
 
-
     if flag==1:
         v1 = init2(5)
         solve2(5,m7,v1,p)
@@ -2417,10 +2403,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
         print("\n \n in init125 det = ",t2)
         display(0,4,0,4,m8,v1)
 
-
-
-
-
 def equation31(k,l2,d,d1,k25):
     g = k.g
     a2 = k.a2
@@ -2433,14 +2415,11 @@ def equation31(k,l2,d,d1,k25):
     t1 = [1,0,0,0,p-1]
     t2 = [0,2,0,2,0]
     t3 = [1,0,p-6,0,1]
-    t4 = [0,4,0,p-4,0]
-
- 
+    t4 = [0,4,0,p-4,0] 
 
     # 1
     t1 = [1 , 2*i2%p , 0 , 2*i2%p , p-1]
     t2 = [1,0,2,0,1]
-
 
     t = 0
     mult2(m,t+0,t1,t2,p)
@@ -2468,9 +2447,7 @@ def equation31(k,l2,d,d1,k25):
     print("\n \n in equation31 t4 = ",t4)  
     t5 = k.series23(-l3,l3,d1//2,0,1)
     print("\n \n in equation31 t5 = ",t5)
-    b1[0] = t4
-
-    
+    b1[0] = t4    
 
     # 2
     t1 = [1 , 2*i2%p , 0 , 2*i2%p , p-1]
@@ -2523,7 +2500,6 @@ def equation31(k,l2,d,d1,k25):
     print("\n \n in equation31 t11 = ",t11)
     b1[1] = t9
     b1[2] = t10
-
 
     # 3
     t1 = [1 , 2*i2%p , 0 , 2*i2%p , p-1]
@@ -2598,10 +2574,6 @@ def equation31(k,l2,d,d1,k25):
     h2 = k.series24(-l3,l3,[d[1]//2],(d1*d1)//4)
     print("\n \n h2 = ",h2)
 
-
-
-
-
 def equation32(k,l2,d,d1,k25):
     g = k.g
     a2 = k.a2
@@ -2633,8 +2605,7 @@ def equation32(k,l2,d,d1,k25):
     t3 = multcnvl2(k25,m[3],p)
     g3 = exp1(l5*l5,g,p)
     t4 = (t3+(p-1)*g3)%p
-    b1[0] = t4
-    
+    b1[0] = t4    
 
     # 2
     t1 = [1 , 2*i2%p , 0 , 2*i2%p , p-1]
@@ -2680,7 +2651,6 @@ def equation32(k,l2,d,d1,k25):
     t10 = (t7+(p-1)*a3[1])%p
     b1[1] = t9
     b1[2] = t10
-
 
     # 3
     t1 = [1 , 2*i2%p , 0 , 2*i2%p , p-1]
@@ -2747,9 +2717,7 @@ def equation32(k,l2,d,d1,k25):
     # h2 = k.series24(-l3,l3,[d[1]//2],(d1*d1)//4)
     # print("\n \n in equation32 h2 = ",h2)
 
-    return(h1)   
-
-
+    return(h1)
 
 def equation34(k,l2,d,d1,s,k5):
     g = k.g
