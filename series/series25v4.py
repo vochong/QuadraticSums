@@ -2232,7 +2232,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
         print("\n \n in init125 b5 = ")
         display25(b5)
 
-
     s1 = [y1[25] , y1[26] , y1[27] , y1[28] , y1[30], y1[31] , y1[32] , y1[33]]
     s2 = [y2[25] , y2[26] , y2[27] , y2[28] , y2[30], y2[31] , y2[32] , y2[33]]
     s3 = [y3[25] , y3[26] , y3[27] , y3[28] , y3[30], y3[31] , y3[32] , y3[33]]
@@ -2279,7 +2278,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
     v5[2] = (s3[6]+i2*s3[7])%p
     v5[3] = (s4[6]+i2*s4[7])%p
     v5[4] = (s5[6]+i2*s5[7])%p
-
 
     t1 = d[0]%3
     t2 = d[1]%3
@@ -2349,8 +2347,7 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
     v10[1] = (s7[6]+i2*s7[7])%p
     v10[2] = (s8[6]+i2*s8[7])%p
     v10[3] = (s9[6]+i2*s9[7])%p
-    v10[4] = (s10[6]+i2*s10[7])%p
-    
+    v10[4] = (s10[6]+i2*s10[7])%p    
     
     t1 = d[0]%3
     t2 = d[1]%3
@@ -2554,7 +2551,6 @@ def equation31(k,l2,d,d1,k25):
     b1[4] = t10
     print("\n \n in equation31 b1 = ",b1)
 
-
     m1 = init1(5,5)
     m1[0] = [1,0,2,0,1]    
     m1[1] = [1,0,0,0,p-1]
@@ -2697,7 +2693,6 @@ def equation32(k,l2,d,d1,k25):
     b1[3] = t9
     b1[4] = t10
 
-
     m1 = init1(5,5)
     m1[0] = [1,0,2,0,1]    
     m1[1] = [1,0,0,0,p-1]
@@ -2743,7 +2738,6 @@ def equation34(k,l2,d,d1,s,k5):
         h2 = k.series22(-l3,l3,0,d1*d1)
         print("\n \n in equation34 h2 = ",h2)
 
-
         # 2
         c1 = [1,0,0,0,p-1]
         s1 = [0,2,0,2,0]
@@ -2768,8 +2762,7 @@ def equation34(k,l2,d,d1,s,k5):
         b1[1] = t3
         b1[2] = t4
         h4 = k.series22(-l3,l3,2*d[0],d1*d1)
-        print("\n \n in equation34 h4 = ",h4)
-    
+        print("\n \n in equation34 h4 = ",h4)    
 
         # 3
         c1 = [1,0,p-6,0,1]
@@ -2797,7 +2790,6 @@ def equation34(k,l2,d,d1,s,k5):
         h6 = k.series22(-l3,l3,4*d[0],d1*d1)
         print("\n \n in equation34 h6 = ",h6)
 
-
         m1 = init1(5,5)
         m1[0] = [1,0,2,0,1]    
         m1[1] = [1,0,0,0,p-1]
@@ -2819,7 +2811,6 @@ def equation34(k,l2,d,d1,s,k5):
     
         print("\n \n b1 = ",b1)
 
-
     if s==-1:
         # 1
         t1 = [1,0,2,0,1]
@@ -2834,7 +2825,6 @@ def equation34(k,l2,d,d1,s,k5):
         l3 = l2-1
         h2 = k.series22(-l3,l3,0,d1*d1)
         print("\n \n in equation34 h2 = ",h2)
-
         
         # 2
         c1 = [1,0,0,0,p-1]
@@ -2865,7 +2855,6 @@ def equation34(k,l2,d,d1,s,k5):
         l3 = l2-1
         h4 = k.series22(-l3,l3,2*d[0],d1*d1)
         print("\n \n in equation34 h4 = ",h4)
-
 
         # 3
         c1 = [1,0,p-6,0,1]
@@ -2895,9 +2884,7 @@ def equation34(k,l2,d,d1,s,k5):
         b1[4] = a3[1]
         l3 = l2-1
         h4 = k.series22(-l3,l3,4*d[0],d1*d1)
-        print("\n \n in equation34 h4 = ",h4)
-    
-
+        print("\n \n in equation34 h4 = ",h4)   
 
         m1 = init1(5,5)
         m1[0] = [1,0,2,0,1]    
@@ -2918,10 +2905,8 @@ def equation34(k,l2,d,d1,s,k5):
         h2 = k.series24(-l3,l3,[d[0]],d1*d1)
         print("\n \n in equation32 h2 = ",h2)  
     
-        print("\n \n b1 = ",b1)
-        
-    
-
+        print("\n \n b1 = ",b1)       
+   
 def equation35(k,l2,d,d1,s,k5):
     g = k.g
     a2 = k.a2
@@ -2941,7 +2926,6 @@ def equation35(k,l2,d,d1,s,k5):
         b1[0] = (t2+2*g1)%p     
         l3 = l2+1
 
-
         # 2
         c1 = [1,0,0,0,p-1]
         s1 = [0,2,0,2,0]
@@ -2957,8 +2941,7 @@ def equation35(k,l2,d,d1,s,k5):
         t3 = (t3+a3[0])%p
         t4 = (t4+a3[1])%p
         b1[1] = t3
-        b1[2] = t4
-        
+        b1[2] = t4        
 
         # 3
         c1 = [1,0,p-6,0,1]
@@ -2977,7 +2960,6 @@ def equation35(k,l2,d,d1,s,k5):
         b1[3] = t3
         b1[4] = t4
 
-
         m1 = init1(5,5)
         m1[0] = [1,0,2,0,1]    
         m1[1] = [1,0,0,0,p-1]
@@ -2995,8 +2977,7 @@ def equation35(k,l2,d,d1,s,k5):
         # print("\n \n after solve2 h1 = ",h1)
         l3 = l2+1
         # h2 = k.series24(-l3,l3,[d[0]],d1*d1)
-        # print("\n \n in equation35 h2 = ",h2)
-   
+        # print("\n \n in equation35 h2 = ",h2)   
 
     if s==-1:
         # 1
@@ -3007,7 +2988,6 @@ def equation35(k,l2,d,d1,s,k5):
         g1 = exp1(l3*l3,g,p)
         b1[0] = (t2+(p-2)*g1)%p       
         l3 = l2-1
-
         
         # 2
         c1 = [1,0,0,0,p-1]
@@ -3030,7 +3010,6 @@ def equation35(k,l2,d,d1,s,k5):
         b1[2] = a3[1]
         l3 = l2-1
 
-
         # 3
         c1 = [1,0,p-6,0,1]
         s1 = [0,4,0,p-4,0]
@@ -3050,8 +3029,7 @@ def equation35(k,l2,d,d1,s,k5):
         a3 = cmult(a4,[t1,t2],p)    
         b1[3] = a3[0]
         b1[4] = a3[1]
-        l3 = l2-1
-    
+        l3 = l2-1    
 
         m1 = init1(5,5)
         m1[0] = [1,0,2,0,1]    
@@ -3072,23 +3050,14 @@ def equation35(k,l2,d,d1,s,k5):
         # h2 = k.series24(-l3,l3,[d[0]],d1*d1)
         # print("\n \n in equation35 h2 = ",h2)
 
-    return(h1)
-    
+    return(h1)   
   
         
                 
-
-p = 4013
-
 p = 2473
 
-
-
-
 m = init1(50,25)
-
 v = init2(25)
-
 
 c = 0
 for i in range(5):
