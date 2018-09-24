@@ -1926,12 +1926,9 @@ def equation38(k,l2,d,d1,d2,m,e1,b1):
     a6 = cmult(a4,h2,p)
     b1[e1+2] = (a5[0]+(p-1)*a6[0])%p
     # b1[e1+3] = (a5[1]+(p-1)*a6[1])%p
-
                 
 p = 2473
-
 b1 = init2(50)
-
 k = group(0,p)
 k = group(exp1(1,k.g,p),p)
 g = k.g
@@ -1948,12 +1945,10 @@ d = [8+64*t1,224-64*t1]
 
 flag4 = d[1]%3
 
-
 e1 = 8*(p-1)//3
 d = [8+64*t1,224-64*t1+0*e1]
 
 # d = [32,224]
-
 
 e2 = 0
 e3 = 1
@@ -1968,7 +1963,6 @@ k25 = series25(-l2,l2,k.g,k.a2,k.i2,d,d1*d1,p)
 # k25 = series25(-l2,l2,k.g,k.a2,k.i2,d,d1,p)
 
 
-
 h1 = series24(-l2,l2,k.g,k.a2,k.i2,[d[0]],d1*d1,p)
 print("\n \n h1 = ",h1)
 h2 = series24(-l2,l2,k.g,k.a2,k.i2,[d[1]],d1*d1,p)
@@ -1977,7 +1971,6 @@ h3 = k.series24(-l2,l2,[d[0]],d1*d1)
 print("\n \n h3 = ",h3)
 h4 = k.series24(-l2,l2,[d[1]],d1*d1)
 print("\n \n h4 = ",h4)
-
 
 # test 1
 m4,b4 = init25(g,l2,d,d1,h3,h4,p)
@@ -1991,7 +1984,6 @@ print("\n \n b3 = ")
 display50(b3)
 print("\n \n b4 = ")
 display25(b4)
-
 
 h = init2(14)
 for i in range(10):
@@ -2024,9 +2016,7 @@ h[11] = k3.series24(-l2,l2,[1*e1+d[1]],d2)
 h[12] = k3.series24(-l2,l2,[d[0]],d2)
 h[13] = k3.series24(-l2,l2,[2*e1+d[1]],d2)
 
-
 # init125(g,g1,g2,l2,d,d1,h,p,1)
-
 
 # print("\n\n b1 =",b1)
 # m[23][:] = init2(25)
@@ -2041,7 +2031,6 @@ m = m4
 # test
 v1[23] = (v1[23]+e2)%p
 v1[24] = (v1[24]+e3)%p
-
 
 # display(0,24,0,24,m,v1)
 
@@ -2074,14 +2063,12 @@ e2 = 32*1*(d[0]+d[1])//(2*d1)
 a4 =  exp2a(e2,k.a2,p)
 print("\n \n a4 = ",a4)
 
-
 print("\n \n test of equation32")
 h1 = equation32(k,l2,d,d1,k25)
 print("\n \n h1 = ",h1)
 l3 = 2*l2
 h2 = k.series24(-l3,l3,[d[1]//2],(d1*d1)//4)
 print("\n \n h2 = ",h2)
-
 
 print("\n \n test of equation35")
 k5 = k.series24(-l2,l2,[d[1]],d1*d1)
@@ -2091,6 +2078,4 @@ h1 = equation35(k,l2,[d[1]],d1,s,k5)
 print("\n \n h1 = ",h1)
 l3 = l2+s
 h2 = k.series24(-l3,l3,[d[1]],d1*d1)
-print("\n \n h2 = ",h2)
-
-        
+print("\n \n h2 = ",h2)        
