@@ -1,6 +1,5 @@
 from group51 import *
 
-
 def display25(b):
     for j in range(5):
         print("(",end=' ')
@@ -544,8 +543,7 @@ def equation24(k,l2,d,d1,d2,m,e1,b1):
     t2 = exp1(l3*l3,g,p)
     s = inverse(t1,p)*t2%p
     mult25(m,s,0,45,45,37,p)
-    mult25(m,s,0,46,46,38,p)
-    
+    mult25(m,s,0,46,46,38,p)    
 
     # 1
     s1 = d[0]+d2[0]*d[1]
@@ -610,9 +608,7 @@ def equation24(k,l2,d,d1,d2,m,e1,b1):
     t6 = (t1+t2)%p
     # print("\n \n in equation22  t1 = {0}  t2 = {1}".format(t1,t2))
     # print("\n \n in equation22 t6 = ",t6)
-    b1[e1+2] = t5
-
-    
+    b1[e1+2] = t5    
 
 def init25(g,l2,d,d1,h1,h2,p):
     k = group(g,p)
@@ -668,8 +664,7 @@ def init25(g,l2,d,d1,h1,h2,p):
     # equation29(k,l2,d,d1,m)
     # equation30(k,l2,d,d1,m)
 
-    equation31(k,l2,d,d1,m)
-    
+    equation31(k,l2,d,d1,m)   
     
 
     for i in range(5):
@@ -799,7 +794,6 @@ def equation29(k,l2,d,d1,m):
 
     mult25(m,1,1,t+0,t+3,30,p)
     mult25(m,1,p-1,t+1,t+2,31,p)
-
 
     # test 1
     mult25(m,1,p-1,t+0,t+3,30,p)
@@ -1072,7 +1066,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
         for i in range(50):
             y4[i] = multcnvl2(m4[i],k25,p)
 
-
         print("\n \n in init125 y4 = ")
         display50(y4)
         print("\n \n in init125 b4 = ")
@@ -1243,8 +1236,6 @@ def init125(g,g1,g2,l2,d,d1,h,p,flag):
     v10[2] = (s8[6]+i2*s8[7])%p
     v10[3] = (s9[6]+i2*s9[7])%p
     v10[4] = (s10[6]+i2*s10[7])%p
-
-
     
     t1 = d[0]%3
     t2 = d[1]%3
@@ -1593,11 +1584,8 @@ def equation35(k,l2,d,d1,s,k5):
         # h2 = k.series24(-l3,l3,[d[0]],d1*d1)
         # print("\n \n in equation35 h2 = ",h2)
 
-    return(h1)    
-          
-
-
-
+    return(h1)  
+        
 def equation31(k,l2,d,d1,m):
     g = k.g
     a2 = k.a2
@@ -1633,8 +1621,7 @@ def equation31(k,l2,d,d1,m):
     
     print("\n \n in equation31 l3 = ",l3)
     h1 = series23(l3-20,l3+20,4,k.g,k.a2,abs(t1),1,p)
-    print("\n \n in equation31 t1 = ",t1,"   h1 = ",h1)
-      
+    print("\n \n in equation31 t1 = ",t1,"   h1 = ",h1)      
 
     # 2
     i3 = (p+i2)%p
@@ -1645,7 +1632,6 @@ def equation31(k,l2,d,d1,m):
     c2 = [1,  i3,  p-3,     (p-3)*i3%p,  0]
     s2 = [0,  3,   3*i3%p,   p-1,        (p-1)*i3%p]
 
-
     t = 35
     mult2(m,t+0,c1,c2,p)
     mult2(m,t+1,c1,s2,p)    
@@ -1653,8 +1639,7 @@ def equation31(k,l2,d,d1,m):
     mult2(m,t+3,s1,s2,p)
 
     mult25(m,1,p-1,t+0,t+3,30,p)
-    mult25(m,1,1,t+1,t+2,31,p)
-    
+    mult25(m,1,1,t+1,t+2,31,p)    
 
     d4 = l2*d1
     g1 = exp1(d4*d4,g,p)
@@ -1665,13 +1650,10 @@ def equation31(k,l2,d,d1,m):
     t2 = inverse(g1,p)*g2%p
     mult25(m,t2,0,30,30,27,p)
     mult25(m,t2,0,31,31,28,p)
-
     
     print("\n \n in equation31 l3 = ",l3)
     h1 = series23(l3-20,l3+20,4,k.g,k.a2,abs(t1),1,p)
-    print("\n \n in equation31 t1 = ",t1,"   h1 = ",h1)
-    
-
+    print("\n \n in equation31 t1 = ",t1,"   h1 = ",h1)   
 
 
 def equation38(k,l2,d,d1,d2,m,e1,b1):
@@ -1728,9 +1710,7 @@ def equation38(k,l2,d,d1,d2,m,e1,b1):
     t2 = exp1(l3*l3,g,p)
     s = inverse(t1,p)*t2%p
     mult25(m,s,0,45,45,30,p)
-    mult25(m,s,0,46,46,31,p)
-
-    
+    mult25(m,s,0,46,46,31,p)    
     
     # 2
     mult25(m,1,1,t,t+3,45,p)
@@ -1753,7 +1733,6 @@ def equation38(k,l2,d,d1,d2,m,e1,b1):
     
     # l3 = d4-(d1//4)
     l3 = d4-9*(d1//4)
-
     
     t2 = exp1(l3*l3,g,p)
     s = inverse(t1,p)*t2%p
@@ -1767,9 +1746,7 @@ def equation38(k,l2,d,d1,d2,m,e1,b1):
     mult2(m,t+0,c1,c2,p)
     mult2(m,t+1,c1,s2,p)    
     mult2(m,t+2,s1,c2,p)
-    mult2(m,t+3,s1,s2,p)
-
-    
+    mult2(m,t+3,s1,s2,p)    
   
     # 3
     mult25(m,1,p-1,t,t+3,45,p)
@@ -1796,9 +1773,7 @@ def equation38(k,l2,d,d1,d2,m,e1,b1):
     t2 = exp1(l3*l3,g,p)
     s = inverse(t1,p)*t2%p
     mult25(m,s,0,45,45,35,p)
-    mult25(m,s,0,46,46,36,p)
-
-    
+    mult25(m,s,0,46,46,36,p)    
   
     # 4
     mult25(m,1,1,t,t+3,45,p)
@@ -1891,7 +1866,6 @@ def equation38(k,l2,d,d1,d2,m,e1,b1):
     a6 = cmult(a4,h2,p)
     b1[e1] = (a5[0]+(p-1)*a6[0])%p
     b1[e1+1] = (a5[1]+(p-1)*a6[1])%p
-
     
 
     # 2
@@ -1953,23 +1927,8 @@ def equation38(k,l2,d,d1,d2,m,e1,b1):
     b1[e1+2] = (a5[0]+(p-1)*a6[0])%p
     # b1[e1+3] = (a5[1]+(p-1)*a6[1])%p
 
-
                 
-
-p = 4013
-
-p = 2857
-
-p = 2713
-
-p = 2521
-
 p = 2473
-
-
-
-
-
 
 b1 = init2(50)
 
@@ -1981,7 +1940,6 @@ t2 = t1**2%p
 g1 = g*t1%p
 g2 = g*t2%p
 print("\n \n g = {0}  g1 = {1}  g2 = {2}".format(g,g1,g2))
-
 
 k = group(g,p)
 
@@ -2011,8 +1969,6 @@ k25 = series25(-l2,l2,k.g,k.a2,k.i2,d,d1*d1,p)
 
 
 
-
-
 h1 = series24(-l2,l2,k.g,k.a2,k.i2,[d[0]],d1*d1,p)
 print("\n \n h1 = ",h1)
 h2 = series24(-l2,l2,k.g,k.a2,k.i2,[d[1]],d1*d1,p)
@@ -2023,12 +1979,8 @@ h4 = k.series24(-l2,l2,[d[1]],d1*d1)
 print("\n \n h4 = ",h4)
 
 
-
-
 # test 1
 m4,b4 = init25(g,l2,d,d1,h3,h4,p)
-
-
 
 
 b3 = [0 for i in range(50)]
@@ -2073,9 +2025,7 @@ h[12] = k3.series24(-l2,l2,[d[0]],d2)
 h[13] = k3.series24(-l2,l2,[2*e1+d[1]],d2)
 
 
-
 # init125(g,g1,g2,l2,d,d1,h,p,1)
-
 
 
 # print("\n\n b1 =",b1)
@@ -2142,7 +2092,5 @@ print("\n \n h1 = ",h1)
 l3 = l2+s
 h2 = k.series24(-l3,l3,[d[1]],d1*d1)
 print("\n \n h2 = ",h2)
-
-
 
         
