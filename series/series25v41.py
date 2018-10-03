@@ -1,6 +1,5 @@
 from group51 import *
 
-
 def display25(b):
     for j in range(5):
         print("(",end=' ')
@@ -1867,8 +1866,7 @@ def equation40(k,l2,d,d7,d1,k5):
 
     for i in range(5):
         for j in range(5):
-            m[i][j] = m[i][j]*s2[i]%p
-            
+            m[i][j] = m[i][j]*s2[i]%p            
 
     v1 = init2(5)
     # v1[:] = s1
@@ -1889,7 +1887,7 @@ def equation40(k,l2,d,d7,d1,k5):
     print("\n \n k5 = ",k5)
     print("\n \n k6 = ",k6)
     # l3 = l2+1
-    # h2 = k.series24(-l3,l3,[d[0]],d1*d1)       
+    # h2 = k.series24(-l3,l3,[d[0]],d1*d1)      
     
      
 def equation40v2(k,l2,d,d7,d1,k5):
@@ -1964,12 +1962,10 @@ def equation40v2(k,l2,d,d7,d1,k5):
     # print("\n \n h5 = ",h5,"  s[4] = ",s[4])
 
 
-
     # k6 = k.series24(-l2,l2,[d7[1]],d1*d1)
     # s1 = init2(5)
     # for i in range(5):
-        # s1[i] = multcnvl2(m[i],k6,p)
-        
+        # s1[i] = multcnvl2(m[i],k6,p)        
  
 
     if d[1]>d7[1]:
@@ -2018,8 +2014,6 @@ def equation40v2(k,l2,d,d7,d1,k5):
         t2 = (h6[0]+(p-1)*h7[0])%p
         # print("\n \n in equation40 t2 = ",t2)
 
-
-
     l3 = l2*d1
     g1 = exp1(l3*l3,g,p)
     d2 = d1*d1//2
@@ -2051,8 +2045,7 @@ def equation40v2(k,l2,d,d7,d1,k5):
 
     for i in range(5):
         for j in range(5):
-            m[i][j] = m[i][j]*s2[i]%p
-            
+            m[i][j] = m[i][j]*s2[i]%p            
 
     v1 = init2(5)
     v1[0] = s[0]
@@ -2069,9 +2062,7 @@ def equation40v2(k,l2,d,d7,d1,k5):
     h1 = init2(5)
     l2solve(5,h1,v1,m,p)
 
-    return(h1)
-
-        
+    return(h1)        
 
 def init50(g,l2,d,d7,d1,h,p,flag):
 
