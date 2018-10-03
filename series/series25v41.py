@@ -610,9 +610,7 @@ def equation24(k,l2,d,d1,d2,m,e1,b1):
     t6 = (t1+t2)%p
     # print("\n \n in equation22  t1 = {0}  t2 = {1}".format(t1,t2))
     # print("\n \n in equation22 t6 = ",t6)
-    b1[e1+2] = t5
-
-    
+    b1[e1+2] = t5    
 
 def init25(g,l2,d,d1,h1,h2,p):
     k = group(g,p)
@@ -673,8 +671,6 @@ def init25(g,l2,d,d1,h1,h2,p):
         b1[i+5] = h1[i]
     
     return(m,b1)
-
-
 
 def equation26(k,l2,d,d1,d2,m,e1,b1):
     g = k.g
@@ -737,9 +733,6 @@ def equation26(k,l2,d,d1,d2,m,e1,b1):
 
     mult25(m,1,p-1,t+0,t+3,24,p)
     # mult25(m,1,1,t+1,t+2,24,p)
-
-
-
 
 def equation32(k,l2,d,d1,k25):
     g = k.g
@@ -1030,12 +1023,8 @@ def equation35(k,l2,d,d1,s,k5):
         # h2 = k.series24(-l3,l3,[d[0]],d1*d1)
         # print("\n \n in equation35 h2 = ",h2)
 
-    return(h1)    
-          
-
-
-
-
+    return(h1)  
+        
 def equation31v2(k,l2,d,d1,m):
     g = k.g
     a2 = k.a2
@@ -1110,11 +1099,7 @@ def equation31v2(k,l2,d,d1,m):
     h1 = series23(l3-20,l3+20,4,k.g,k.a2,abs(t1),1,p)
     print("\n \n in equation31 t1 = ",t1,"   h1 = ",h1)
     """
-
-
-
-    
-
+ 
 def equation38(k,l2,d,d1,d2,m,e1,b1):
     g = k.g
     a2 = k.a2
@@ -1170,7 +1155,6 @@ def equation38(k,l2,d,d1,d2,m,e1,b1):
     s = inverse(t1,p)*t2%p
     mult25(m,s,0,45,45,30,p)
     mult25(m,s,0,46,46,31,p)
-
     
     
     # 2
@@ -1209,7 +1193,6 @@ def equation38(k,l2,d,d1,d2,m,e1,b1):
     mult2(m,t+1,c1,s2,p)    
     mult2(m,t+2,s1,c2,p)
     mult2(m,t+3,s1,s2,p)
-
     
   
     # 3
@@ -1238,7 +1221,6 @@ def equation38(k,l2,d,d1,d2,m,e1,b1):
     s = inverse(t1,p)*t2%p
     mult25(m,s,0,45,45,35,p)
     mult25(m,s,0,46,46,36,p)
-
     
   
     # 4
@@ -1393,9 +1375,6 @@ def equation38(k,l2,d,d1,d2,m,e1,b1):
     a6 = cmult(a4,h2,p)
     b1[e1+2] = (a5[0]+(p-1)*a6[0])%p
     # b1[e1+3] = (a5[1]+(p-1)*a6[1])%p
-
-
-
 
 def equation38v2(k,l2,d,d1,d2,m,e1,b1):
     g = k.g
@@ -1494,9 +1473,7 @@ def equation38v2(k,l2,d,d1,d2,m,e1,b1):
     mult2(m,t+0,c1,c2,p)
     mult2(m,t+1,c1,s2,p)    
     mult2(m,t+2,s1,c2,p)
-    mult2(m,t+3,s1,s2,p)
-
-    
+    mult2(m,t+3,s1,s2,p)    
   
     # 3
     mult25(m,1,p-1,t,t+3,45,p)
@@ -1525,9 +1502,7 @@ def equation38v2(k,l2,d,d1,d2,m,e1,b1):
     t2 = exp1(l3*l3,g,p)
     s = inverse(t1,p)*t2%p
     mult25(m,s,0,45,45,35,p)
-    mult25(m,s,0,46,46,36,p)
-
-    
+    mult25(m,s,0,46,46,36,p)    
   
     # 4
     mult25(m,1,1,t,t+3,45,p)
@@ -1556,8 +1531,7 @@ def equation38v2(k,l2,d,d1,d2,m,e1,b1):
     t2 = exp1(l3*l3,g,p)
     s = inverse(t1,p)*t2%p
     mult25(m,s,0,45,45,37,p)
-    mult25(m,s,0,46,46,38,p)
-    
+    mult25(m,s,0,46,46,38,p)    
 
     # 1
     # s1 = d[0]+d2[0]*d[1]
@@ -1622,7 +1596,6 @@ def equation38v2(k,l2,d,d1,d2,m,e1,b1):
     a6 = cmult(a4,h2,p)
     b1[e1] = (a5[0]+(p-1)*a6[0])%p
     b1[e1+1] = (a5[1]+(p-1)*a6[1])%p
-
     
 
     # 2
@@ -1683,9 +1656,6 @@ def equation38v2(k,l2,d,d1,d2,m,e1,b1):
     a6 = cmult(a4,h2,p)
     b1[e1+2] = (a5[0]+(p-1)*a6[0])%p
     # b1[e1+3] = (a5[1]+(p-1)*a6[1])%p
-
-
-
 
 def equation40(k,l2,d,d7,d1,k5):
     g = k.g
@@ -1866,7 +1836,6 @@ def equation40(k,l2,d,d7,d1,k5):
         print("\n \n in equation40 t2 = ",t2)
 
 
-
     l3 = l2*d1
     g1 = exp1(l3*l3,g,p)
     d2 = d1*d1//2
@@ -1920,11 +1889,9 @@ def equation40(k,l2,d,d7,d1,k5):
     print("\n \n k5 = ",k5)
     print("\n \n k6 = ",k6)
     # l3 = l2+1
-    # h2 = k.series24(-l3,l3,[d[0]],d1*d1)
-        
+    # h2 = k.series24(-l3,l3,[d[0]],d1*d1)       
     
      
-
 def equation40v2(k,l2,d,d7,d1,k5):
     g = k.g
     a2 = k.a2
@@ -2027,7 +1994,6 @@ def equation40v2(k,l2,d,d7,d1,k5):
         h7 = k.series23(y3+d1,y4,d1,0,1)
         t2 = ((p-1)*h6[0]+h7[0])%p
         # print("\n \n in equation40 t2 = ",t2)
-
 
     if d[1]<d7[1]:
         l3 = l2*d1
@@ -2143,13 +2109,9 @@ def init50(g,l2,d,d7,d1,h,p,flag):
         print("\n \n in init125 y2 = ")
         display50(y2)
         print("\n \n in init125 b2 = ")
-        display25(b2)       
+        display25(b2)      
                 
-
-
 p = 2473
-
-
 b1 = init2(50)
 
 k = group(0,p)
@@ -2165,7 +2127,6 @@ d = [8+64*t1,224-64*t1]
 
 # d = [32,224]
 
-
 e2 = 0
 e3 = 0
 
@@ -2174,7 +2135,6 @@ e3 = 0
 l2 = 17
 d1 = 4
 k25 = series25(-l2,l2,k.g,k.a2,k.i2,d,d1*d1,p)
-
 
 
 h1 = series24(-l2,l2,k.g,k.a2,k.i2,[d[0]],d1*d1,p)
@@ -2286,7 +2246,6 @@ l3 = l2+s
 h2 = k.series24(-l3,l3,[d[1]],d1*d1)
 print("\n \n h2 = ",h2)
 
-
 """
 print("\n \n test of equation40")
 l2 = 17
@@ -2300,7 +2259,6 @@ print("\n \n k6 = ",k6)
 h1 = equation40(k,l2,d,d7,d1,k5)
 """
 
-
 print("\n \n test of equation40v2")
 l2 = 17
 d1 = 32
@@ -2312,5 +2270,4 @@ k6 = k.series24(-l2,l2,[d7[1]],d1*d1)
 print("\n \n k6 = ",k6)
 h1 = equation40v2(k,l2,d,d7,d1,k5)
 print("\n \n h1 = ",h1)
-
        
