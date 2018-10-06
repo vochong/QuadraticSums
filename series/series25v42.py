@@ -1,6 +1,5 @@
 from series4v1 import *
 
-
 def display25(b):
     for j in range(5):
         print("(",end=' ')
@@ -2195,8 +2194,6 @@ l2 = 17
 d1 = 4
 k25 = series25(-l2,l2,k.g,k.a2,k.i2,d,d1*d1,p)
 
-
-
 h1 = series24(-l2,l2,k.g,k.a2,k.i2,[d[0]],d1*d1,p)
 print("\n \n h1 = ",h1)
 h2 = series24(-l2,l2,k.g,k.a2,k.i2,[d[1]],d1*d1,p)
@@ -2205,7 +2202,6 @@ h3 = k.series24(-l2,l2,[d[0]],d1*d1)
 print("\n \n h3 = ",h3)
 h4 = k.series24(-l2,l2,[d[1]],d1*d1)
 print("\n \n h4 = ",h4)
-
 
 # test 1
 m4,b4 = init25(g,l2,d,d1,h3,h4,p)
@@ -2236,9 +2232,7 @@ print("\n \n d7 = ",d7)
 h[2] = k1.series24(-l2,l2,[d7[0]],d2)
 h[3] = k1.series24(-l2,l2,[d7[1]],d2)
 
-
 init50(g,l2,d,d7,d1,h,p,1)
-
 
 # print("\n\n b1 =",b1)
 # m[23][:] = init2(25)
@@ -2288,7 +2282,6 @@ t = 64*4*(d[0]+d[1])//(4*d2)
 a4 = exp2a(t,k.a2,p)
 print("\n \n a4 = ",a4)
 
-
 print("\n \n test of equation32")
 h1 = equation32(k,l2,d,d1,k25)
 print("\n \n h1 = ",h1)
@@ -2331,7 +2324,6 @@ k6 = k.series24(-l2,l2,[d7[1]],d1*d1)
 print("\n \n k6 = ",k6)
 h1 = equation40v2(k,l2,d,d7,d1,k5)
 print("\n \n h1 = ",h1)
-
 
 p = 2473
 l2 = 17
@@ -2379,7 +2371,6 @@ k25 = k.series25(-17,17,[32,512],8*8)
 k.double(k25)
 print("\n \n",k.series,"\n \n",k1.series)
 
-
 print("\n \n test of equation40v2")
 l2 = 17
 d1 = 32
@@ -2407,5 +2398,4 @@ print("\n \n k.series = ",k.series)
 print("\n \n k1.series = ",k1.series)
 k.adjust(256)
 print("\n \n after adjust k.series = ",k.series)
-
         
