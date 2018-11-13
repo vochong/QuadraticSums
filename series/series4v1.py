@@ -1058,7 +1058,7 @@ class series4:
                 k.d = [c]
    
 """ This prints the complex nth roots of unity in GF(p) for p = 1 (mod 4)
-k is defined as k = group(g,p) for some modulus p where p = 1 (mod 4) and
+k is defined as k = series(g,p) for some modulus p where p = 1 (mod 4) and
 where p = 1 (mod n) and where g generates a subgroup whose order is
 divisible by n assuming that g mod p does not equal 0,1 or -1 mod p.
 If g = 1 (mod p) then n should not be an even number """
@@ -1083,5 +1083,4 @@ def add(a,b,n):
     for i in range(t):
         s[i] = (a[i]+b[i])%n
     return(s)
-
 
