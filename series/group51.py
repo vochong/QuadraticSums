@@ -193,7 +193,7 @@ class group:
             s = 0
         return(s)
             
-    """ Determines a complex number a2 corrresponding to the base g
+    """ Determines a complex number a2 corresponding to the base g
     g = (a2[0] + i2*a2[1]) (mod p) """
     def calc2(self,g,i2,p):
         a2 = [1,0]
@@ -2035,7 +2035,7 @@ class group2:
             s = 0
         return(s)
                 
-    """ Determines a complex number a2 corrresponding to the base g
+    """ Determines a complex number a2 corresponding to the base g
     g = (a2[0] + i2*a2[1]) (mod p) """
     def calc2(self,g,i2,p):
         a2 = [1,0]
