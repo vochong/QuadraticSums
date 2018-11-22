@@ -1,6 +1,5 @@
 from series4v1 import *
 
-
 def display25(b):
     for j in range(5):
         print("(",end=' ')
@@ -305,8 +304,7 @@ def equation24(k,l2,d,d1,d2,m,e1,b1):
     t2 = exp1(l3*l3,g,p)
     s = inverse(t1,p)*t2%p
     mult25(m,s,0,45,45,37,p)
-    mult25(m,s,0,46,46,38,p)
-    
+    mult25(m,s,0,46,46,38,p)    
 
     # 1
     s1 = d[0]+d2[0]*d[1]
@@ -434,7 +432,6 @@ def equation26v2(k,l2,d,d1,m):
     mult25(m,1,p-1,t+0,t+3,25,p)
     mult25(m,1,1,t+1,t+2,26,p)
 
-
     print("\n \n in equation26v2")
     t1 = 2*d[0]+2*d[1]
     h1 = series23(-d4,d4,d1,k.g,k.a2,abs(t1),1,p)
@@ -496,7 +493,6 @@ def equation26v2(k,l2,d,d1,m):
     t1 = 0
     h1 = series23(-l3-d4,-l3+d4,d1,k.g,k.a2,abs(t1),1,p)
     print("\n \n ({0} , {1}) t1 = {2}   h1 = {3}".format(l3-d4,l3+d4,t1,h1))
-
 
     # 2
     d4 = d1*l2
