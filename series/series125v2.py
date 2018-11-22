@@ -1,4 +1,4 @@
-from a24v051 import *
+from group51 import *
 import random
 from math import floor 
 
