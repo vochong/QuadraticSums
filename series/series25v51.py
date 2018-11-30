@@ -2389,9 +2389,7 @@ def equation30(k,l2,d,d1,m):
     print("\n \n in equation30 l3 = ",l3)
     h1 = series23(-20,20,4,k.g,k.a2,abs(t1),1,p)
     print("\n \n in equation30 t1 = ",t1,"   h1 = ",h1)
-    """
-    
-
+    """   
 
     # 4
     t1 = [1,0,0,0,p-1]
@@ -2420,29 +2418,20 @@ def equation30(k,l2,d,d1,m):
     """
     
 
-
-
-
 p = 2473
-
-
 b1 = init2(50)
-
 k = series(0,p)
 k = series(exp1(1,k.g,p),p)
 g = k.g
 print("\n \n g = {0}".format(g))
 
-
 k = series(g,p)
-
 
 # d = [32 , 2048+64*0]
 
 d = [32, 64*5]
 
 # d = [9*32 , 2048-8*32]
-
 
 e2 = 0
 e3 = 0
@@ -2453,8 +2442,6 @@ l2 = 17+2+9
 d1 = 8
 k25 = series25(-l2,l2,k.g,k.a2,k.i2,d,d1*d1,p)
 
-
-
 h1 = series24(-l2,l2,k.g,k.a2,k.i2,[d[0]],d1*d1,p)
 print("\n \n h1 = ",h1)
 h2 = series24(-l2,l2,k.g,k.a2,k.i2,[d[1]],d1*d1,p)
@@ -2463,7 +2450,6 @@ h3 = k.series24(-l2,l2,[d[0]],d1*d1)
 print("\n \n h3 = ",h3)
 h4 = k.series24(-l2,l2,[d[1]],d1*d1)
 print("\n \n h4 = ",h4)
-
 
 # test 1
 m4,b4 = init25(g,l2,d,d1,h3,h4,p)
@@ -2476,7 +2462,6 @@ print("\n \n b3 = ")
 display50(b3)
 print("\n \n b4 = ")
 display25(b4)
-
 
 h = init2(6)
 for i in range(4):
@@ -2498,7 +2483,6 @@ l2 = l2
 d2 = d1*d1
 h[0] = k.series24(-l2,l2,[d[0]],d2)
 h[1] = k.series24(-l2,l2,[d[1]],d2)
-
 
 d7 = [9*d[0] , 2048-8*d[0]]
 
@@ -2562,7 +2546,6 @@ s1 = (a3[0]*c+a3[1]*s)%p
 s2 = (-a3[1]*c+a3[0]*s)%p
 print("\n \n c = {0}  s = {1}  s1 = {2}  s2 = {3}".format(c,s,s1,s2))
 
-
 k3 = series4(g,2*l2,[c1//2],4,p)
 print("\n \n k3.series = ",k3.series)
 c = (k3.series[0]+(p-1)*k3.series[4])%p
@@ -2588,7 +2571,6 @@ s1 = (a3[0]*c+a3[1]*s)%p
 s2 = (-a3[1]*c+a3[0]*s)%p
 print("\n \n c = {0}  s = {1}  s1 = {2}  s2 = {3}".format(c,s,s1,s2))
 
-
 k3 = series4(g,2*l2,[c1//2],4,p)
 print("\n \n k3.series = ",k3.series)
 c = (k3.series[0]+(p-6)*k3.series[2]+k3.series[4])%p
@@ -2610,6 +2592,4 @@ a = m[32]
 b = m[33]
 t3 = multcnvl2(h1,a,p)
 t4 = multcnvl2(h1,b,p)
-print("\n \n t3 = {0}  t4 = {1}".format(t3,t4))
-
-        
+print("\n \n t3 = {0}  t4 = {1}".format(t3,t4))        
