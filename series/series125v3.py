@@ -1,6 +1,5 @@
 from series4v1 import *
 
-
 def display125(b):
     for i in range(5):       
         for j in range(5):
@@ -9,7 +8,6 @@ def display125(b):
                 print("{0:2}".format(b[25*i+5*j+k]),end=' ')
             print(")  ",end=' ')      
         print()
-
     
 def display149(b):
     for i in range(5):       
@@ -30,14 +28,11 @@ def display149(b):
     print("(",end=' ')
     for i in range(141,149):
          print("{0:2}".format(b[i]),end=' ')
-    print(")")
-    
+    print(")")    
 
 def equal2(m,c,s,t):
     s1 = 25*s[0]+5*s[1]+s[2]
     m[c][s1] = t
-
-
 
 def series22(c1,c2,g,a2,d,d1,p):
     h1 = init2(2)
@@ -56,8 +51,6 @@ def series22(c1,c2,g,a2,d,d1,p):
 
     return(h1)
 
-
-
 def series23(c1,c2,s,g,a2,d,d1,p):
     h1 = init2(2)
     t1 = 0
@@ -75,7 +68,6 @@ def series23(c1,c2,s,g,a2,d,d1,p):
         h1[1] = (h1[1]+a4[1]*g1)%p
 
     return(h1)
-
 
 def series24(c1,c2,g,a2,i2,d,d1,p):
     h1 = init2(5)
@@ -105,9 +97,7 @@ def series24(c1,c2,g,a2,i2,d,d1,p):
             t4 = g1*t1%p            
             h1[i] = (h1[i]+t4)%p
 
-    return(h1)  
-
-
+    return(h1)
 
 def series25(c1,c2,g,a2,i2,d,d1,p):
     h1 = init2(25)
@@ -153,8 +143,7 @@ def series25(c1,c2,g,a2,i2,d,d1,p):
                 t = 5*i+j
                 h1[t] = (h1[t]+t4)%p
 
-    return(h1)  
-
+    return(h1) 
 
 def mult3(m,e1,c1,c2,c3,p):
     m[e1] = init2(125)
@@ -166,8 +155,7 @@ def mult3(m,e1,c1,c2,c3,p):
                 t3 = c3[k]
                 t4 = t1*t2*t3%p
                 t = 25*i+5*j+k
-                m[e1][t] = t4
-                
+                m[e1][t] = t4                
 
 def series125(c1,c2,g,a2,i2,d,d1,p):
     h1 = init2(125)
@@ -230,13 +218,11 @@ def series125(c1,c2,g,a2,i2,d,d1,p):
 
     return(h1)  
 
-
 def mult125(m,c1,c2,d1,d2,d3,p):
     for i in range(125):
         t1 = c1*m[d1][i]%p
         t2 = c2*m[d2][i]%p
-        m[d3][i] = (t1+t2)%p
-        
+        m[d3][i] = (t1+t2)%p        
 
 def equation21(k,l2,d,d1,d2,m,e1,b1):
     a2 = k.a2
@@ -262,7 +248,6 @@ def equation21(k,l2,d,d1,d2,m,e1,b1):
     if d2[2]==4:
         c3,s3 = t3,t4
 
-
     t = 125
     mult3(m,t+0,c1,c2,c3,p)
     mult3(m,t+1,c1,c2,s3,p)    
@@ -273,7 +258,6 @@ def equation21(k,l2,d,d1,d2,m,e1,b1):
     mult3(m,t+5,s1,c2,s3,p)   
     mult3(m,t+6,s1,s2,c3,p)
     mult3(m,t+7,s1,s2,s3,p)
-
     
     # 1
     l3 = l2*d1
@@ -330,9 +314,8 @@ def equation21(k,l2,d,d1,d2,m,e1,b1):
     a3[1] = (p-a3[1])%p
     if t3<0:
         a3[1] = (p-a3[1])%p
-    mult125(m,a3[1],a3[0],137,138,e1+2,p)   
+    mult125(m,a3[1],a3[0],137,138,e1+2,p) 
     
-
 
     # 4
     mult125(m,1,1,t,t+3,141,p)
@@ -352,8 +335,6 @@ def equation21(k,l2,d,d1,d2,m,e1,b1):
     if t4>0:
         a3[1] = (p-a3[1])%p
     mult125(m,a3[1],a3[0],139,140,e1+3,p)   
-
-
 
 
 def equation21v2(k,l2,d,d1,d2,m,e1,b1):
@@ -380,7 +361,6 @@ def equation21v2(k,l2,d,d1,d2,m,e1,b1):
     if d2[2]==4:
         c3,s3 = t3,t4
 
-
     t = 125
     mult3(m,t+0,c1,c2,c3,p)
     mult3(m,t+1,c1,c2,s3,p)    
@@ -391,7 +371,6 @@ def equation21v2(k,l2,d,d1,d2,m,e1,b1):
     mult3(m,t+5,s1,c2,s3,p)   
     mult3(m,t+6,s1,s2,c3,p)
     mult3(m,t+7,s1,s2,s3,p)
-
     
     # 1
     l3 = l2*d1
@@ -449,8 +428,6 @@ def equation21v2(k,l2,d,d1,d2,m,e1,b1):
         a3[1] = (p-a3[1])%p
     mult125(m,a3[1],a3[0],137,138,e1+2,p)   
     
-
-
     # 4
     mult125(m,1,1,t,t+3,141,p)
     mult125(m,1,p-1,t+5,t+6,142,p)
@@ -469,18 +446,15 @@ def equation21v2(k,l2,d,d1,d2,m,e1,b1):
     if t4>0:
         a3[1] = (p-a3[1])%p
     mult125(m,a3[1],a3[0],139,140,e1+3,p)   
-    
-
-  
-def equation22(k,l2,d,d2,m,e1,b1):
+   
+ def equation22(k,l2,d,d2,m,e1,b1):
     g = k.g
     a2 = k.a2
     i2 = k.i2
     p = k.p
 
     for i in range(8):
-        m[i+141] = init2(125)
-    
+        m[i+141] = init2(125)    
 
     t1 = [1,i2,1,i2,0]
     t2 = [0,1,i2,1,i2]
@@ -488,7 +462,6 @@ def equation22(k,l2,d,d2,m,e1,b1):
     t4 = [0,2,0,2,0]
     t5 = [1,0,p-6,0,1]
     t6 = [0,4,0,p-4,0]
-
 
     c1,s1 = t1,t2
         
@@ -502,7 +475,6 @@ def equation22(k,l2,d,d2,m,e1,b1):
     if d2[1]==4:
         c3,s3 = t5,t6
 
-
     t = 125
     mult3(m,t+0,c1,c2,c3,p)
     mult3(m,t+1,c1,c2,s3,p)    
@@ -513,7 +485,6 @@ def equation22(k,l2,d,d2,m,e1,b1):
     mult3(m,t+5,s1,c2,s3,p)   
     mult3(m,t+6,s1,s2,c3,p)
     mult3(m,t+7,s1,s2,s3,p)
-
     
     # 1
     mult125(m,1,p-1,t,t+3,141,p)
@@ -527,7 +498,6 @@ def equation22(k,l2,d,d2,m,e1,b1):
     t1 = d[0]+d2[0]*d[1]+d2[1]*d[2]
     h1 = series23(-19,21,4,k.g,k.a2,t1,1,p)
     print("\n \n in equation22 t1 = ",t1,"   h1 = ",h1)
-
 
     d4 = l2*d1
     t1 = exp1(d4*d4,g,p)
@@ -567,7 +537,6 @@ def equation22(k,l2,d,d2,m,e1,b1):
     mult125(m,a3[1],a3[0],135,136,e1+1,p)
     """
 
-
     # 3
     mult125(m,1,1,t,t+3,141,p)
     mult125(m,1,p-1,t+5,t+6,142,p)
@@ -591,8 +560,6 @@ def equation22(k,l2,d,d2,m,e1,b1):
         a3[1] = (p-a3[1])%p
     mult125(m,a3[1],a3[0],137,138,e1+2,p)   
     """
-
-
 
     # 4
     mult125(m,1,1,t,t+3,141,p)
@@ -618,9 +585,6 @@ def equation22(k,l2,d,d2,m,e1,b1):
     mult125(m,a3[1],a3[0],139,140,e1+3,p)
     """
 
- 
-
-
     c1 = [1 , (p-3)*i2%p   , p-3,          i2,    0]
     s1 = [0,  1,            (p-3)*i2%p,    p-3,       i2]
 
@@ -634,7 +598,6 @@ def equation22(k,l2,d,d2,m,e1,b1):
     mult3(m,t+5,s1,c2,s3,p)   
     mult3(m,t+6,s1,s2,c3,p)
     mult3(m,t+7,s1,s2,s3,p)
-
 
     # 5
     m[141] = init2(125)
@@ -667,8 +630,6 @@ def equation22(k,l2,d,d2,m,e1,b1):
     mult125(m,a3[1],a3[0],133,134,e1,p)
     """
 
-
-
     # 6
     mult125(m,1,p-1,t,t+3,151,p)
     mult125(m,1,1,t+5,t+6,152,p)
@@ -692,8 +653,6 @@ def equation22(k,l2,d,d2,m,e1,b1):
         a3[1] = (p-a3[1])%p
     mult125(m,a3[1],a3[0],135,136,e1+1,p)
     """
-
-
 
     # 7
     mult125(m,1,1,t,t+3,151,p)
@@ -719,8 +678,6 @@ def equation22(k,l2,d,d2,m,e1,b1):
     mult125(m,a3[1],a3[0],137,138,e1+2,p)   
     """
 
-
-
     # 8
     mult125(m,1,1,t,t+3,151,p)
     mult125(m,1,p-1,t+5,t+6,152,p)
@@ -744,16 +701,6 @@ def equation22(k,l2,d,d2,m,e1,b1):
         a3[1] = (p-a3[1])%p
     mult125(m,a3[1],a3[0],139,140,e1+3,p)
     """
-
-    """
-    m[100][:] = m[133]
-    m[101][:] = m[134]
-    m[102][:] = m[141]
-    m[103][:] = m[142]
-    """
-
-
-
     
     # 1    
     m[125][:] = init2(125)
@@ -801,8 +748,6 @@ def equation22(k,l2,d,d2,m,e1,b1):
     print("\n \n in equation22 t4 = ",t4)
     b1[e1] = t3
     b1[e1+1] = t4
-
-
    
     # 2    
     m[125][:] = init2(125)
@@ -832,13 +777,6 @@ def equation22(k,l2,d,d2,m,e1,b1):
     mult125(m,1,p-1,125,127,e1+2,p)
     # mult125(m,1,p-1,126,128,103,p)
 
-    """
-    # m[100][:] = m[133]
-    # m[101][:] = m[134]
-    m[102][:] = m[141]
-    m[103][:] = m[142]
-    """
-
     l3 = l2*d1+1*d1//4
     l4 = l2*d1+3*d1//4
     print("\n \n in equation22  l3 = {0}  l4 = {1}".format(l3,l4))
@@ -855,8 +793,6 @@ def equation22(k,l2,d,d2,m,e1,b1):
     # print("\n \n in equation22  t1 = {0}  t2 = {1}".format(t1,t2))
     print("\n \n in equation22 t4 = ",t4)
     b1[e1+2] = t3
-
-
 
     # 3    
     m[125][:] = init2(125)
@@ -911,9 +847,6 @@ def equation22(k,l2,d,d2,m,e1,b1):
     b1[e1+3] = t3
     b1[e1+4] = t4
 
-
-
-
     # 4    
     m[125][:] = init2(125)
     m[126][:] = init2(125)
@@ -942,13 +875,6 @@ def equation22(k,l2,d,d2,m,e1,b1):
     mult125(m,1,p-1,125,127,e1+5,p)
     # mult125(m,1,p-1,126,128,106,p)
 
-    """
-    # m[100][:] = m[133]
-    # m[101][:] = m[134]
-    m[102][:] = m[141]
-    m[103][:] = m[142]
-    """
-
     l3 = l2*d1+1*d1//4
     l4 = l2*d1+3*d1//4
     print("\n \n in equation22  l3 = {0}  l4 = {1}".format(l3,l4))
@@ -964,8 +890,7 @@ def equation22(k,l2,d,d2,m,e1,b1):
     t4 = (t1+(p+1)*t2)%p
     # print("\n \n in equation22  t1 = {0}  t2 = {1}".format(t1,t2))
     print("\n \n in equation22 t4 = ",t4)
-    b1[e1+5] = t3
-    
+    b1[e1+5] = t3    
 
 def equation22v2(k,l2,d,d2,m,e1,b1):
     g = k.g
@@ -984,7 +909,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     t5 = [1,0,p-6,0,1]
     t6 = [0,4,0,p-4,0]
 
-
     c1,s1 = t1,t2
         
     if d2[0]==2:
@@ -997,7 +921,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     if d2[1]==4:
         c3,s3 = t5,t6
 
-
     t = 125
     mult3(m,t+0,c1,c2,c3,p)
     mult3(m,t+1,c1,c2,s3,p)    
@@ -1008,7 +931,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     mult3(m,t+5,s1,c2,s3,p)   
     mult3(m,t+6,s1,s2,c3,p)
     mult3(m,t+7,s1,s2,s3,p)
-
     
     # 1
     mult125(m,1,p-1,t,t+3,141,p)
@@ -1023,7 +945,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     # h1 = series23(-19,21,4,k.g,k.a2,t1,1,p)
     # print("\n \n in equation22 t1 = ",t1,"   h1 = ",h1)
 
-
     d4 = l2*d1
     t1 = exp1(d4*d4,g,p)
     l3 = d4-(d1//4)
@@ -1031,8 +952,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     s = inverse(t1,p)*t2%p
     mult125(m,s,0,143,143,133,p)
     mult125(m,s,0,144,144,134,p)
-
-
 
     # 2
     mult125(m,1,p-1,t,t+3,141,p)
@@ -1050,8 +969,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     mult125(m,s,0,143,143,135,p)
     mult125(m,s,0,144,144,136,p)
 
-
-
     # 3
     mult125(m,1,1,t,t+3,141,p)
     mult125(m,1,p-1,t+5,t+6,142,p)
@@ -1068,7 +985,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     mult125(m,s,0,143,143,137,p)
     mult125(m,s,0,144,144,138,p)
 
-
     # 4
     mult125(m,1,1,t,t+3,141,p)
     mult125(m,1,p-1,t+5,t+6,142,p)
@@ -1083,9 +999,7 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     # print("\n \n in equation22 t4 = ",t4,"   h4 = ",h4)
 
     mult125(m,s,0,143,143,139,p)
-    mult125(m,s,0,144,144,140,p)
-
- 
+    mult125(m,s,0,144,144,140,p) 
 
     c1 = [1 , (p-3)*i2%p   , p-3,          i2,    0]
     s1 = [0,  1,            (p-3)*i2%p,    p-3,       i2]
@@ -1100,8 +1014,7 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     mult3(m,t+5,s1,c2,s3,p)   
     mult3(m,t+6,s1,s2,c3,p)
     mult3(m,t+7,s1,s2,s3,p)
-
-
+    
     # 5
     m[141] = init2(125)
     m[142] = init2(125)
@@ -1125,8 +1038,7 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     t2 = exp1(l3*l3,g,p)
     s = inverse(t1,p)*t2%p
     mult125(m,s,0,153,153,141,p)
-    mult125(m,s,0,154,154,142,p)
-    
+    mult125(m,s,0,154,154,142,p)    
  
     # 6
     mult125(m,1,p-1,t,t+3,151,p)
@@ -1144,8 +1056,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     mult125(m,s,0,153,153,143,p)
     mult125(m,s,0,154,154,144,p)
 
-
-
     # 7
     mult125(m,1,1,t,t+3,151,p)
     mult125(m,1,p-1,t+5,t+6,152,p)
@@ -1162,8 +1072,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     mult125(m,s,0,153,153,145,p)
     mult125(m,s,0,154,154,146,p)
 
-
-
     # 8
     mult125(m,1,1,t,t+3,151,p)
     mult125(m,1,p-1,t+5,t+6,152,p)
@@ -1179,7 +1087,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
 
     mult125(m,s,0,153,153,147,p)
     mult125(m,s,0,154,154,148,p)
-
     
     # 1    
     m[125][:] = init2(125)
@@ -1204,7 +1111,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     mult125(m,1,p-1,126,128,e1+1,p)
 
 
-
     l3 = l2*d1+1*d1//4
     l4 = l2*d1+3*d1//4
     # print("\n \n in equation22  l3 = {0}  l4 = {1}".format(l3,l4))
@@ -1220,8 +1126,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     # print("\n \n in equation22 t4 = ",t4)
     b1[e1] = t3
     b1[e1+1] = t4
-
-
    
     # 2    
     m[125][:] = init2(125)
@@ -1249,9 +1153,7 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     mult125(m,(p-a4[1])%p,a4[0],143,144,128,p)
 
     mult125(m,1,p-1,125,127,e1+2,p)
-    # mult125(m,1,p-1,126,128,103,p)
-
- 
+    # mult125(m,1,p-1,126,128,103,p) 
 
     l3 = l2*d1+1*d1//4
     l4 = l2*d1+3*d1//4
@@ -1267,8 +1169,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     t4 = (t1+(p+1)*t2)%p
     # print("\n \n in equation22 t4 = ",t4)
     b1[e1+2] = t3
-
-
 
     # 3    
     m[125][:] = init2(125)
@@ -1297,7 +1197,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
 
     mult125(m,1,p-1,125,127,e1+3,p)
     mult125(m,1,p-1,126,128,e1+4,p)
-
  
     l3 = l2*d1+1*d1//4
     l4 = l2*d1+3*d1//4
@@ -1314,9 +1213,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     # print("\n \n in equation22 t4 = ",t4)
     b1[e1+3] = t3
     b1[e1+4] = t4
-
-
-
 
     # 4    
     m[125][:] = init2(125)
@@ -1346,7 +1242,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     mult125(m,1,p-1,125,127,e1+5,p)
     # mult125(m,1,p-1,126,128,106,p)
 
-
     l3 = l2*d1+1*d1//4
     l4 = l2*d1+3*d1//4
     # print("\n \n in equation22  l3 = {0}  l4 = {1}".format(l3,l4))
@@ -1360,8 +1255,7 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     t2 = a4[1]*g2%p
     t4 = (t1+(p+1)*t2)%p
     # print("\n \n in equation22 t4 = ",t4)
-    b1[e1+5] = t3
-    
+    b1[e1+5] = t3    
 
 def equation23(k,l2,d,d1,d2,m,e1,b1):
     g = k.g
