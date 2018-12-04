@@ -481,7 +481,6 @@ def equation26v2(k,l2,d,d1,m):
     m[23][:] = m[25]
     m[24][:] = m[30]
 
-
     # 1
     d4 = d1*l2
     l3 = (2*d[0]+2*d[1])//(2*d1)
@@ -495,7 +494,6 @@ def equation26v2(k,l2,d,d1,m):
     t1 = 0
     h1 = series23(-l3-d4,-l3+d4,d1,k.g,k.a2,abs(t1),1,p)
     print("\n \n ({0} , {1}) t1 = {2}   h1 = {3}".format(l3-d4,l3+d4,t1,h1))
-
 
     # 2
     d4 = d1*l2
@@ -513,7 +511,6 @@ def equation26v2(k,l2,d,d1,m):
 
     # m[23][:] = m[40]
     # m[24][:] = m[41]
-
 
 def equation26v3(k,l2,d,d1,m,flag):
     g = k.g
@@ -546,7 +543,6 @@ def equation26v3(k,l2,d,d1,m,flag):
         h1 = series23(-d4,d4,d1,k.g,k.a2,abs(t1),1,p)
         print("\n \n ({0} , {1}) t1 = {2}   h1 = {3}".format(-d4,d4,t1,h1))
 
-
     t1 = [1,0,0,0,p-1]
     t2 = [0,2,0,2,0]
     t3 = [1,0,p-6,0,1]
@@ -572,9 +568,6 @@ def equation26v3(k,l2,d,d1,m,flag):
 
     m[23][:] = m[35]
     m[24][:] = m[37]
-
-
-
 
 def equation32(k,l2,d,d1,k25):
     g = k.g
@@ -921,8 +914,7 @@ def equation38(k,l2,d,d1,d2,m,e1,b1):
     t2 = exp1(l3*l3,g,p)
     s = inverse(t1,p)*t2%p
     mult25(m,s,0,45,45,30,p)
-    mult25(m,s,0,46,46,31,p)
-    
+    mult25(m,s,0,46,46,31,p)    
     
     # 2
     mult25(m,1,1,t,t+3,45,p)
@@ -959,8 +951,7 @@ def equation38(k,l2,d,d1,d2,m,e1,b1):
     mult2(m,t+0,c1,c2,p)
     mult2(m,t+1,c1,s2,p)    
     mult2(m,t+2,s1,c2,p)
-    mult2(m,t+3,s1,s2,p)
-    
+    mult2(m,t+3,s1,s2,p)    
   
     # 3
     mult25(m,1,p-1,t,t+3,45,p)
@@ -987,8 +978,7 @@ def equation38(k,l2,d,d1,d2,m,e1,b1):
     t2 = exp1(l3*l3,g,p)
     s = inverse(t1,p)*t2%p
     mult25(m,s,0,45,45,35,p)
-    mult25(m,s,0,46,46,36,p)
-    
+    mult25(m,s,0,46,46,36,p)    
   
     # 4
     mult25(m,1,1,t,t+3,45,p)
@@ -1015,8 +1005,7 @@ def equation38(k,l2,d,d1,d2,m,e1,b1):
     t2 = exp1(l3*l3,g,p)
     s = inverse(t1,p)*t2%p
     mult25(m,s,0,45,45,37,p)
-    mult25(m,s,0,46,46,38,p)
-    
+    mult25(m,s,0,46,46,38,p)    
 
     # 1
     # s1 = d[0]+d2[0]*d[1]
