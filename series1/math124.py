@@ -1,5 +1,4 @@
 
-
 """ This calculates g^e (mod n) for integers e,g, and n """
 def exp1(e,g,n):
     t = 1
