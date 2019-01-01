@@ -2279,7 +2279,6 @@ class series4:
         t = t*t1%p
         return(t)           
            
-  
 """ This prints the complex nth roots of unity in GF(p) for p = 1 (mod 4)
 k is defined as k = series(g,p) for some modulus p where p = 1 (mod 4) and
 where p = 1 (mod n) and where g generates a subgroup whose order is
@@ -2306,3 +2305,5 @@ def add(a,b,n):
     for i in range(t):
         s[i] = (a[i]+b[i])%n
     return(s)
+
+
