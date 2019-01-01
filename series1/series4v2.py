@@ -1,6 +1,5 @@
 from math124 import *
 
-
 def mult2(m,e1,c1,c2,p):
     m[e1] = init2(25)
     for i in range(5):
@@ -2278,9 +2277,9 @@ class series4:
         t = t+1
         t1 = (p+1)//2
         t = t*t1%p
-        return(t)            
-            
-   
+        return(t)           
+           
+  
 """ This prints the complex nth roots of unity in GF(p) for p = 1 (mod 4)
 k is defined as k = series(g,p) for some modulus p where p = 1 (mod 4) and
 where p = 1 (mod n) and where g generates a subgroup whose order is
@@ -2307,4 +2306,3 @@ def add(a,b,n):
     for i in range(t):
         s[i] = (a[i]+b[i])%n
     return(s)
-
