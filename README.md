@@ -1,3 +1,3 @@
-# QuadraticSums
+# Quadratic sums
 
 
