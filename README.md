@@ -1,2 +1,3 @@
-# NumberTheory2
+# QuadraticSums
+
 
