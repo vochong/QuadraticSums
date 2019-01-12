@@ -1115,8 +1115,6 @@ def init81(g,l2,d,d1,h1,h2,h3,p):
 
     return(m,b1)
 
-
-
 def equation42(k,l2,d,d1,m,e1,b1):
     a2 = k.a2
     i2 = k.i2
@@ -1127,7 +1125,6 @@ def equation42(k,l2,d,d1,m,e1,b1):
     t2 = [0,2,0,2,0]
     t3 = [1,0,p-6,0,1]
     t4 = [0,4,0,p-4,0]
-
 
     # 1
     t1 = [1, 2*i2%p, 0, 2*i2%p, p-1]
@@ -1141,7 +1138,6 @@ def equation42(k,l2,d,d1,m,e1,b1):
     t = 133
     mult3(m,t+0,t1,t2,c1,p)
     mult3(m,t+1,t1,t2,s1,p) 
-
 
     d4 = l2*d1
     l3 = -d4+(2*d[0]+4*d[1]+0*d[2])//(2*d1)
@@ -1181,8 +1177,6 @@ def equation42(k,l2,d,d1,m,e1,b1):
     mult3(m,t+5,s1,c2,s3,p)    
     mult3(m,t+6,s1,s2,c3,p)
     mult3(m,t+7,s1,s2,s3,p)
-
-
 
     d4 = l2*d1
     l3 = -d4+(0*d[0]+3*d[1]+1*d[2])//(2*d1)
@@ -1229,8 +1223,6 @@ def equation42(k,l2,d,d1,m,e1,b1):
     mult3(m,t+5,s1,c2,s3,p)    
     mult3(m,t+6,s1,s2,c3,p)
     mult3(m,t+7,s1,s2,s3,p)
-
-
 
     d4 = l2*d1
     l3 = -d4+(0*d[0]+1*d[1]-1*d[2])//(2*d1)
@@ -1297,8 +1289,7 @@ def equation42(k,l2,d,d1,m,e1,b1):
     t1 = 1*d[0]+1*d[1]-1*d[2]
     h1 = series23(l3,l4,d1,k.g,k.a2,abs(t1),1,p)
     print("\n \n in e42 ({0} , {1}) t1 = {2}   h1 = {3}".format(l3,l4,t1,h1))
-    
-
+   
 def equation31(k,l2,d,d1,b2,k25):
     g = k.g
     a2 = k.a2
@@ -1380,7 +1371,6 @@ def equation31(k,l2,d,d1,b2,k25):
     print("\n \n in equation31 h3 = ",h3)    
  
 
-
 p = 2473
 
 m = init1(157,125)
@@ -1399,12 +1389,9 @@ print("\n \n g = {0}  p = {1}".format(g,p))
 l2 = 20
 d1 = 8
 
-
 e = 8*(p-1)//3
 
 d = [d1*d1//2, 1024+0*64, 1024-1*64]
-
-
 
 
 k = series4(g,l2,[d[1] , d[2]],d1,p)
@@ -1436,7 +1423,6 @@ display149(b3)
 
 print("\n \n b4 =")
 display125(b4)
-
 
 m = m4
 
@@ -1491,16 +1477,13 @@ h2[5] = (t6+(p-1)*b3[130])%p
 print("\n \n h2 = ",h2)
 print("\n \n")
 
-
 k.double2(h1)
 k.variables()
 print("\n \n")
 
-
 k2 = series4(g,2*l2,[d[1]//2 , d[2]//2],d1//2,p)
 k2.variables()
 t = k2.f4(4,2)
-
 
 t1 = k.f4(4,2)
 t2 = k.l2*(4*k.d[0]+2*k.d[1])
@@ -1538,7 +1521,4 @@ k1.adjust2(64,128)
 print("\n \n k1 = ",k1.series)
 d = [d[0]+64 , d[1]+128]
 k2 = series4(g,l2,d,d1,p)
-print("\n \n k2 = ",k2.series)
-
-
-        
+print("\n \n k2 = ",k2.series)       
