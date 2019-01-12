@@ -2397,9 +2397,7 @@ class series4:
         v1[:] = b1
         solve2(25,m,v1,p)
         t1 = det(25,m)
-        # print("\n \n in equation83v2 det = ",t1)
         l2solve(25,h1,v1,m,p)
-        # print("\n \n h1 = ",h1)
 
         return(h1)
      
@@ -2650,3 +2648,5 @@ def add(a,b,n):
     for i in range(t):
         s[i] = (a[i]+b[i])%n
     return(s)
+
+
