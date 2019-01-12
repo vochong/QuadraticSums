@@ -1004,14 +1004,11 @@ def mult2(m,e1,c1,c2,p):
             t = 5*i+j
             m[e1][t] = t3
 
-
 def mult25(m,c1,c2,d1,d2,d3,p):
     for i in range(25):
         t1 = c1*m[d1][i]%p
         t2 = c2*m[d2][i]%p
         m[d3][i] = (t1+t2)%p
-
-
 
 def init81(g,l2,d,d1,h1,h2,h3,p):
     k = series(g,p)
@@ -1099,16 +1096,13 @@ def init81(g,l2,d,d1,h1,h2,h3,p):
     t4 = equation30(k,l2,d,d1,d2,m,123,b1)
     b2 = t1+t2+t3+t4
 
-
     k25 = init2(25)
     k25[:] = h2
     d3 = [d[0] , d[2]]
-    equation31(k,l2,d3,d1,b2,k25)
-    
+    equation31(k,l2,d3,d1,b2,k25)    
 
     print("\n \n in init81 t1 = {0} t2 = {1}".format(t1,t2))
-    print("\n           t3 = {0} t4 = {1}".format(t3,t4))
-    
+    print("\n           t3 = {0} t4 = {1}".format(t3,t4))    
 
     e1 = 140
     equation42(k,l2,d,d1,m,e1,b1)
@@ -1155,7 +1149,6 @@ def equation42(k,l2,d,d1,m,e1,b1):
     h1 = series23(l3,l4,d1,k.g,k.a2,abs(t1),1,p)
     print("\n \n in e42 ({0} , {1}) t1 = {2}   h1 = {3}".format(l3,l4,t1,h1))
 
-
     # 2
     c1 = [1,0,0,0,p-1]
     s1 = [0,2,0,2,0]
@@ -1166,7 +1159,6 @@ def equation42(k,l2,d,d1,m,e1,b1):
     i3 = p-i2
     c3 = [1, i2, p-3, 3*i3%p, 0]
     s3 = [0, 3, 3*i2%p, p-1, i3]
-
 
     t = 133
     mult3(m,t+0,c1,c2,c3,p)
@@ -1200,8 +1192,6 @@ def equation42(k,l2,d,d1,m,e1,b1):
     h1 = series23(l3,l4,d1,k.g,k.a2,abs(t1),1,p)
     print("\n \n in e42 ({0} , {1}) t1 = {2}   h1 = {3}".format(l3,l4,t1,h1))
 
-
-
     # 3
     c1 = [1,0,0,0,p-1]
     s1 = [0,2,0,2,0]
@@ -1212,7 +1202,6 @@ def equation42(k,l2,d,d1,m,e1,b1):
     
     c3 = [1, i3, p-3, 3*i2%p, 0]
     s3 = [0, 3, 3*i3%p, p-1, i2]
-
 
     t = 133
     mult3(m,t+0,c1,c2,c3,p)
@@ -1246,7 +1235,6 @@ def equation42(k,l2,d,d1,m,e1,b1):
     h1 = series23(l3,l4,d1,k.g,k.a2,abs(t1),1,p)
     print("\n \n in e42 ({0} , {1}) t1 = {2}   h1 = {3}".format(l3,l4,t1,h1))
 
-
     # 4
     c1 = [1, i2, 1, i2, 0]
     s1 = [0, 1, i2, 1, i2]
@@ -1256,7 +1244,6 @@ def equation42(k,l2,d,d1,m,e1,b1):
 
     c3 = [1, 3*i2%p, p-3, p-i2, 0]
     s3 = [0, 1, 3*i2%p, p-3, p-i2]
-
 
     t = 133
     mult3(m,t+0,c1,c2,c3,p)
@@ -1372,7 +1359,6 @@ def equation31(k,l2,d,d1,b2,k25):
  
 
 p = 2473
-
 m = init1(157,125)
 v = init2(125)
 
@@ -1393,9 +1379,7 @@ e = 8*(p-1)//3
 
 d = [d1*d1//2, 1024+0*64, 1024-1*64]
 
-
 k = series4(g,l2,[d[1] , d[2]],d1,p)
-
 k125 = k.series125(-l2,l2,d,d1*d1)
 
 d3 = [d[1] ,d[2]]
@@ -1410,7 +1394,6 @@ d3 = [d[0] , d[1]]
 h3 = k.series25(-l2,l2,d3,d1*d1)
 print("\n \n h3  = ",h3)
 
-
 m4,b4 = init81(g,l2,d,d1,h1,h2,h3,p)
 
 b3 = init2(157)
@@ -1420,20 +1403,16 @@ for i in range(149):
 
 print("\n \n b3 = ")
 display149(b3)
-
 print("\n \n b4 =")
 display125(b4)
 
 m = m4
-
 v1 = init2(125)
-
 v1[:] = b3
 t1 = 121
 t1 = 123
 v1[t1] = (v1[t1]+1)%p
 print("\n \n")
-# display(0,124,0,124,m,v1)
 
 h1 = [0 for i in range(125)]
 
@@ -1460,10 +1439,6 @@ t5 = multcnvl2(m[129],h1,p)
 t6 = multcnvl2(m[130],h1,p)
 print("\n \n t5 = {0}   t6 = {1}".format(t5,t6))
 
-#t5 = multcnvl2(m[147],h1,p)
-#t6 = multcnvl2(m[148],h1,p)
-# print("\n \n t5 = {0}   t6 = {1}".format(t5,t6))
-
 h2 = init2(6)
 h2[0] = (t1+(p-1)*b3[125])%p
 h2[1] = (t2+(p-1)*b3[126])%p
@@ -1472,8 +1447,6 @@ h2[3] = (t4+(p-1)*b3[128])%p
 h2[4] = (t5+(p-1)*b3[129])%p
 h2[5] = (t6+(p-1)*b3[130])%p
 
-# h2[4] = (t5+(p-1)*b3[147])%p
-# h2[5] = (t6+(p-1)*b3[148])%p
 print("\n \n h2 = ",h2)
 print("\n \n")
 
@@ -1521,4 +1494,6 @@ k1.adjust2(64,128)
 print("\n \n k1 = ",k1.series)
 d = [d[0]+64 , d[1]+128]
 k2 = series4(g,l2,d,d1,p)
-print("\n \n k2 = ",k2.series)       
+print("\n \n k2 = ",k2.series)
+
+
