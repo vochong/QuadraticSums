@@ -1558,23 +1558,18 @@ d3 = [d[0] , d[1]]
 h3 = k.series25(-l2,l2,d3,d1*d1)
 print("\n \n h3  = ",h3)
 
-
 m4,b4 = init81(g,l2,d,d1,h1,h2,h3,p)
 
 b3 = init2(157)
 for i in range(149):
     b3[i] = multcnvl2(m4[i],k125,p)
 
-
 print("\n \n b3 = ")
 display149(b3)
-
 print("\n \n b4 =")
 display125(b4)
 
-
 m = m4
-
 v1 = init2(125)
 
 v1[:] = b3
