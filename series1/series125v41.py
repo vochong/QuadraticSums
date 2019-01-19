@@ -295,7 +295,6 @@ def equation21v2(k,l2,d,d1,d2,m,e1,b1):
     if d2[2]==4:
         c3,s3 = t3,t4
 
-
     t = 125
     mult3(m,t+0,c1,c2,c3,p)
     mult3(m,t+1,c1,c2,s3,p)    
@@ -615,7 +614,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     # print("\n \n in equation22 t4 = ",t4)
     b1[e1] = t3
     b1[e1+1] = t4
-
    
     # 2    
     m[125][:] = init2(125)
@@ -645,7 +643,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     mult125(m,1,p-1,125,127,e1+2,p)
     # mult125(m,1,p-1,126,128,103,p)
  
-
     l3 = l2*d1+1*d1//4
     l4 = l2*d1+3*d1//4
     # print("\n \n in equation22  l3 = {0}  l4 = {1}".format(l3,l4))
@@ -748,7 +745,6 @@ def equation22v2(k,l2,d,d2,m,e1,b1):
     # print("\n \n in equation22 t4 = ",t4)
     b1[e1+5] = t3  
 
-
 def equation26(k,l2,d,d1,d2,m,e1,b1):
     g = k.g
     a2 = k.a2
@@ -774,7 +770,6 @@ def equation26(k,l2,d,d1,d2,m,e1,b1):
         c3,s3 = t1,t2
     if d2[2]==4:
         c3,s3 = t3,t4
-
 
     t = 125
     mult3(m,t+0,c1,c2,c3,p)
@@ -833,8 +828,6 @@ def equation26(k,l2,d,d1,d2,m,e1,b1):
     mult125(m,t1,t2,145,147,124,p)
     """
 
-
-
 def equation30(k,l2,d,d1,d2,m,e1,b1):
     g = k.g
     a2 = k.a2
@@ -873,7 +866,6 @@ def equation30(k,l2,d,d1,d2,m,e1,b1):
     mult3(m,t+5,s1,c2,s3,p)   
     mult3(m,t+6,s1,s2,c3,p)
     mult3(m,t+7,s1,s2,s3,p)
-
     
     # 1
     l3 = l2*d1
@@ -992,8 +984,6 @@ def equation30(k,l2,d,d1,d2,m,e1,b1):
 
     return(b2)
 
-
-
 def mult2(m,e1,c1,c2,p):
     m[e1] = init2(25)
     for i in range(5):
@@ -1004,14 +994,11 @@ def mult2(m,e1,c1,c2,p):
             t = 5*i+j
             m[e1][t] = t3
 
-
 def mult25(m,c1,c2,d1,d2,d3,p):
     for i in range(25):
         t1 = c1*m[d1][i]%p
         t2 = c2*m[d2][i]%p
         m[d3][i] = (t1+t2)%p
-
-
 
 def init81(g,l2,d,d1,h1,h2,h3,p):
     k = series(g,p)
@@ -1109,14 +1096,11 @@ def init81(g,l2,d,d1,h1,h2,h3,p):
     b1[119] = t1
 
     print("\n \n in init81 t1 = {0} t2 = {1}".format(t1,t2))
-    print("\n           t3 = {0} t4 = {1}".format(t3,t4))
-    
+    print("\n           t3 = {0} t4 = {1}".format(t3,t4))    
 
     equation42(k,l2,d,d1,m,b1)
 
     equation43(k,l2,d,d1,m,b1)
-
-
 
     # 1    
     t1 = (-2*d[0]+3*d[1]+3*d[2])//2
@@ -1144,10 +1128,7 @@ def init81(g,l2,d,d1,h1,h2,h3,p):
         t2 = g1*a5[1]%p
         print("\n \n in init81 t1 = {0}  t2 = {1}".format(t1,t2))
     
-
     return(m,b1)
-
-
 
 def equation42(k,l2,d,d1,m,b1):
     a2 = k.a2
