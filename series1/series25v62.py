@@ -304,8 +304,7 @@ def equation24(k,l2,d,d1,d2,m,e1,b1):
     t2 = exp1(l3*l3,g,p)
     s = inverse(t1,p)*t2%p
     mult25(m,s,0,45,45,37,p)
-    mult25(m,s,0,46,46,38,p)
-    
+    mult25(m,s,0,46,46,38,p)    
 
     # 1
     s1 = d[0]+d2[0]*d[1]
@@ -428,7 +427,6 @@ def equation26v3(k,l2,d,d1,m,flag):
 
     m[23][:] = m[35]
     m[24][:] = m[37]
-
 
 def equation26v4(k,l2,d,d1,m,flag):
     g = k.g
@@ -742,7 +740,6 @@ def init25(g,l2,d,d1,h1,h2,p,flag):
         equation38v3(k,l2,d,d1,d2,m,20,b1)  
 
     equation26v4(k,l2,d,d1,m,flag)
-
     equation29(k,l2,d,d1,m,flag)    
     equation30(k,l2,d,d1,m,flag)
     
