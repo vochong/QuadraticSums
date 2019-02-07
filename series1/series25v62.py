@@ -741,8 +741,7 @@ def init25(g,l2,d,d1,h1,h2,p,flag):
 
     equation26v4(k,l2,d,d1,m,flag)
     equation29(k,l2,d,d1,m,flag)    
-    equation30(k,l2,d,d1,m,flag)
-    
+    equation30(k,l2,d,d1,m,flag)    
     #equation26v3(k,l2,d,d1,m,flag) 
 
     for i in range(5):
@@ -889,4 +888,6 @@ def equation30(k,l2,d,d1,m,flag):
 
     if flag==1:
         h1 = series23(l3-d4,l3+d4,d1,k.g,k.a2,abs(t1),1,p)
-        print("\n \n in equation30 l3 = ",l3,"   t1 = ",t1,"   h1 = ",h1)        
+        print("\n \n in equation30 l3 = ",l3,"   t1 = ",t1,"   h1 = ",h1)
+        
+        
