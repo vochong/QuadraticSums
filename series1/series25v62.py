@@ -351,7 +351,6 @@ def equation24(k,l2,d,d1,d2,m,e1,b1):
     mult25(m,(p-a3[1])%p,a3[0],32,33,46,p)
     s3 = (l2+1)*s1
     a4 = exp2a(s3,a2,p)
-
     
     # print("\n \n in equation22 s2 = {0}  s3 = {1}".format(s2,s3))
     
@@ -372,7 +371,6 @@ def equation24(k,l2,d,d1,d2,m,e1,b1):
     # print("\n \n in equation22  t1 = {0}  t2 = {1}".format(t1,t2))
     # print("\n \n in equation22 t6 = ",t6)
     b1[e1+2] = t5
-
 
 def equation26v3(k,l2,d,d1,m,flag):
     g = k.g
@@ -404,7 +402,6 @@ def equation26v3(k,l2,d,d1,m,flag):
         t1 = 2*d[0]+2*d[1]
         h1 = series23(-d4,d4,d1,k.g,k.a2,abs(t1),1,p)
         print("\n \n ({0} , {1}) t1 = {2}   h1 = {3}".format(-d4,d4,t1,h1))
-
 
     t1 = [1,0,0,0,p-1]
     t2 = [0,2,0,2,0]
@@ -458,23 +455,8 @@ def equation26v4(k,l2,d,d1,m,flag):
     mult25(m,1,p-1,t+0,t+3,25,p)
     mult25(m,1,1,t+1,t+2,26,p)
 
-    """
-    print("\n \n in equation26v2")
-    t1 = 2*d[0]+2*d[1]
-    h1 = series23(-d4,d4,d1,k.g,k.a2,abs(t1),1,p)
-    print("\n \n ({0} , {1}) t1 = {2}   h1 = {3}".format(-d4,d4,t1,h1))
-    """
-
     mult25(m,1,1,t+0,t+3,27,p)
     mult25(m,1,p-1,t+1,t+2,28,p)
-
-    """
-    print("\n \n in equation26v2")
-    t1 = -2*d[0]+2*d[1]
-    h1 = series23(-d4,d4,d1,k.g,k.a2,abs(t1),1,p)
-    print("\n \n ({0} , {1}) t1 = {2}   h1 = {3}".format(-d4,d4,t1,h1))
-    """
-
 
     t1 = [1,0,0,0,p-1]
     t2 = [0,2,0,2,0]
@@ -493,26 +475,11 @@ def equation26v4(k,l2,d,d1,m,flag):
     mult25(m,1,p-1,t+0,t+3,30,p)
     mult25(m,1,1,t+1,t+2,31,p)
 
-    """
-    print("\n \n in equation26v2")
-    t1 = 2*d[0]+4*d[1]
-    h1 = series23(-d4,d4,d1,k.g,k.a2,abs(t1),1,p)
-    print("\n \n ({0} , {1}) t1 = {2}   h1 = {3}".format(-d4,d4,t1,h1))
-    """
-
     mult25(m,1,1,t+0,t+3,32,p)
     mult25(m,1,p-1,t+1,t+2,33,p)
 
-    """
-    print("\n \n in equation26v2")
-    t1 = -2*d[0]+4*d[1]
-    h1 = series23(-d4,d4,d1,k.g,k.a2,abs(t1),1,p)
-    print("\n \n ({0} , {1}) t1 = {2}   h1 = {3}".format(-d4,d4,t1,h1))
-    """
-
     m[23][:] = m[25]
     m[24][:] = m[30]
-
 
     # 1
     d4 = d1*l2
@@ -528,7 +495,6 @@ def equation26v4(k,l2,d,d1,m,flag):
         t1 = 0
         h1 = series23(-l3-d4,-l3+d4,d1,k.g,k.a2,abs(t1),1,p)
         print("\n \n ({0} , {1}) t1 = {2}   h1 = {3}".format(l3-d4,l3+d4,t1,h1))
-
 
     # 2
     d4 = d1*l2
@@ -777,8 +743,7 @@ def init25(g,l2,d,d1,h1,h2,p,flag):
 
     equation26v4(k,l2,d,d1,m,flag)
 
-    equation29(k,l2,d,d1,m,flag)
-    
+    equation29(k,l2,d,d1,m,flag)    
     equation30(k,l2,d,d1,m,flag)
     
     #equation26v3(k,l2,d,d1,m,flag) 
@@ -927,6 +892,4 @@ def equation30(k,l2,d,d1,m,flag):
 
     if flag==1:
         h1 = series23(l3-d4,l3+d4,d1,k.g,k.a2,abs(t1),1,p)
-        print("\n \n in equation30 l3 = ",l3,"   t1 = ",t1,"   h1 = ",h1) 
-
-       
+        print("\n \n in equation30 l3 = ",l3,"   t1 = ",t1,"   h1 = ",h1)        
