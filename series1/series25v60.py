@@ -1601,8 +1601,7 @@ def init25(g,l2,d,d1,h1,h2,p,flag):
     
     equation30(k,l2,d,d1,m,flag)
     
-    #equation26v3(k,l2,d,d1,m,flag)
-  
+    #equation26v3(k,l2,d,d1,m,flag)  
 
 
     for i in range(5):
@@ -1611,7 +1610,6 @@ def init25(g,l2,d,d1,h1,h2,p,flag):
         b1[i+5] = h1[i]
     
     return(m,b1)
-
 
 def equation29(k,l2,d,d1,m,flag):
     g = k.g
@@ -1646,13 +1644,11 @@ def equation29(k,l2,d,d1,m,flag):
     mult25(m,t2,0,30,30,25,p)
     mult25(m,t2,0,31,31,26,p)
 
-
     if flag==1:
         # print("\n \n in equation29 l3 = ",l3)
         h1 = series23(l3-d4,l3+d4,d1,k.g,k.a2,abs(t1),1,p)
         print("\n \n in equation29 l3 = ",l3,"   t1 = ",t1,"   h1 = ",h1)   
     
-
     # 2
     i3 = (p+i2)%p
     c1 = [1,  i2,  p-3,     (p-3)*i2%p,  0]
@@ -1682,12 +1678,10 @@ def equation29(k,l2,d,d1,m,flag):
     mult25(m,t2,0,30,30,27,p)
     mult25(m,t2,0,31,31,28,p)
 
-
     if flag==1:
         # print("\n \n in equation29 l3 = ",l3)
         h1 = series23(l3-d4,l3+d4,d1,k.g,k.a2,abs(t1),1,p)
         print("\n \n in equation29 l3 = ",l3,"  t1 = ",t1,"   h1 = ",h1)
-
 
 def equation30(k,l2,d,d1,m,flag):
     g = k.g
@@ -1703,7 +1697,6 @@ def equation30(k,l2,d,d1,m,flag):
     i3 = (p-i2)%p
     c2 = [1,  i3,  p-3,     (p-3)*i3%p,  0]
     s2 = [0,  3,   3*i3%p,   p-1,        (p-1)*i3%p]
-
 
     t = 40
     mult2(m,t+0,c1,c2,p)
@@ -1727,8 +1720,7 @@ def equation30(k,l2,d,d1,m,flag):
     if flag==1:        
         # print("\n \n in equation30 l3 = ",l3)
         h1 = series23(l3-d4,l3+d4,d1,k.g,k.a2,abs(t1),1,p)
-        print("\n \n in equation30 l3 = ",l3,"   t1 = ",t1,"   h1 = ",h1)
-    
+        print("\n \n in equation30 l3 = ",l3,"   t1 = ",t1,"   h1 = ",h1)    
 
     # 2
     i3 = (p+i2)%p
@@ -1738,7 +1730,6 @@ def equation30(k,l2,d,d1,m,flag):
     i3 = (p+i2)%p
     c2 = [1,  i3,  p-3,     (p-3)*i3%p,  0]
     s2 = [0,  3,   3*i3%p,   p-1,        (p-1)*i3%p]
-
 
     t = 40
     mult2(m,t+0,c1,c2,p)
@@ -1762,9 +1753,7 @@ def equation30(k,l2,d,d1,m,flag):
     if flag==1:
         # print("\n \n in equation30 l3 = ",l3)
         h1 = series23(l3-d4,l3+d4,d1,k.g,k.a2,abs(t1),1,p)
-        print("\n \n in equation30 l3 = ",l3,"   t1 = ",t1,"   h1 = ",h1)   
-
-
+        print("\n \n in equation30 l3 = ",l3,"   t1 = ",t1,"   h1 = ",h1)  
 
     # 3
     t1 = [1,0,0,0,p-1]
@@ -1788,14 +1777,6 @@ def equation30(k,l2,d,d1,m,flag):
     # mult25(m,1,0,30,30,27,p)
     # mult25(m,1,0,31,31,28,p)
 
-    """
-    print("\n \n in equation30 l3 = ",l3)
-    h1 = series23(-20,20,4,k.g,k.a2,abs(t1),1,p)
-    print("\n \n in equation30 t1 = ",t1,"   h1 = ",h1)
-    """
-    
-
-
     # 4
     t1 = [1,0,0,0,p-1]
     t2 = [0,2,0,2,0]
@@ -1815,10 +1796,5 @@ def equation30(k,l2,d,d1,m,flag):
     mult25(m,1,1,t+1,t+2,43,p)
 
     t1 = (2*d[0]+4*d[1])
-
-    """
-    print("\n \n in equation30 l3 = ",l3)
-    h1 = series23(-20,20,4,k.g,k.a2,abs(t1),1,p)
-    print("\n \n in equation30 t1 = ",t1,"   h1 = ",h1)
-    """    
+ 
      
