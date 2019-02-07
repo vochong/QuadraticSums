@@ -824,7 +824,6 @@ def equation29(k,l2,d,d1,m,flag):
     mult25(m,t2,0,31,31,26,p)
 
     if flag==1:
-        # print("\n \n in equation29 l3 = ",l3)
         h1 = series23(l3-d4,l3+d4,d1,k.g,k.a2,abs(t1),1,p)
         print("\n \n in equation29 l3 = ",l3,"   t1 = ",t1,"   h1 = ",h1) 
     
@@ -857,7 +856,6 @@ def equation29(k,l2,d,d1,m,flag):
     mult25(m,t2,0,31,31,28,p)
 
     if flag==1:
-        # print("\n \n in equation29 l3 = ",l3)
         h1 = series23(l3-d4,l3+d4,d1,k.g,k.a2,abs(t1),1,p)
         print("\n \n in equation29 l3 = ",l3,"  t1 = ",t1,"   h1 = ",h1)
 
@@ -896,7 +894,6 @@ def equation30(k,l2,d,d1,m,flag):
     mult25(m,t2,0,46,46,31,p)
 
     if flag==1:        
-        # print("\n \n in equation30 l3 = ",l3)
         h1 = series23(l3-d4,l3+d4,d1,k.g,k.a2,abs(t1),1,p)
         print("\n \n in equation30 l3 = ",l3,"   t1 = ",t1,"   h1 = ",h1)    
 
@@ -929,7 +926,6 @@ def equation30(k,l2,d,d1,m,flag):
     mult25(m,t2,0,46,46,33,p)
 
     if flag==1:
-        # print("\n \n in equation30 l3 = ",l3)
         h1 = series23(l3-d4,l3+d4,d1,k.g,k.a2,abs(t1),1,p)
         print("\n \n in equation30 l3 = ",l3,"   t1 = ",t1,"   h1 = ",h1) 
 
