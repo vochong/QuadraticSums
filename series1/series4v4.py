@@ -427,7 +427,7 @@ class series4:
             self.series = self.series25(-l2,l2,d,d1*d1)
 
         self.functionlist = ("functions","variables","find2","find3",
-        "find4","calc2","series_d22","series_d1","series_d23","series_d24",
+        "find4","calc2","series_d1","series_d22","series_d23","series_d24",
         "series_d25","series_d125","series1","series22","series23","series24",
         "series25","series125","equation32","equation35","equation40v2",
         "equation81v2","equation82v2","equation83v2","add","double","adjust",
