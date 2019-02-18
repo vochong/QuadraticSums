@@ -454,7 +454,7 @@ def equation26v4(k,l2,d,d1,m,flag):
     mult25(m,1,1,t+1,t+2,26,p)
 
     """
-    print("\n \n in equation26v2")
+    print("\n \n in equation26v4")
     t1 = 2*d[0]+2*d[1]
     h1 = series23(-d4,d4,d1,k.g,k.a2,abs(t1),1,p)
     print("\n \n ({0} , {1}) t1 = {2}   h1 = {3}".format(-d4,d4,t1,h1))
@@ -464,7 +464,7 @@ def equation26v4(k,l2,d,d1,m,flag):
     mult25(m,1,p-1,t+1,t+2,28,p)
 
     """
-    print("\n \n in equation26v2")
+    print("\n \n in equation26v4")
     t1 = -2*d[0]+2*d[1]
     h1 = series23(-d4,d4,d1,k.g,k.a2,abs(t1),1,p)
     print("\n \n ({0} , {1}) t1 = {2}   h1 = {3}".format(-d4,d4,t1,h1))
@@ -488,7 +488,7 @@ def equation26v4(k,l2,d,d1,m,flag):
     mult25(m,1,1,t+1,t+2,31,p)
 
     """
-    print("\n \n in equation26v2")
+    print("\n \n in equation26v4")
     t1 = 2*d[0]+4*d[1]
     h1 = series23(-d4,d4,d1,k.g,k.a2,abs(t1),1,p)
     print("\n \n ({0} , {1}) t1 = {2}   h1 = {3}".format(-d4,d4,t1,h1))
@@ -498,7 +498,7 @@ def equation26v4(k,l2,d,d1,m,flag):
     mult25(m,1,p-1,t+1,t+2,33,p)
 
     """
-    print("\n \n in equation26v2")
+    print("\n \n in equation26v4")
     t1 = -2*d[0]+4*d[1]
     h1 = series23(-d4,d4,d1,k.g,k.a2,abs(t1),1,p)
     print("\n \n ({0} , {1}) t1 = {2}   h1 = {3}".format(-d4,d4,t1,h1))
@@ -519,7 +519,6 @@ def equation26v4(k,l2,d,d1,m,flag):
     if flag==1:
         print("\n \n in equation26v4 l3 = ",l3)
         t1 = 0
-        # h1 = series23(-l3-d4,-l3+d4,d1,k.g,k.a2,abs(t1),1,p)
         h1 = series23(l3-d4,l3+d4,d1,k.g,k.a2,abs(t1),1,p)
         print("\n \n ({0} , {1}) t1 = {2}   h1 = {3}".format(l3-d4,l3+d4,t1,h1))
 
@@ -537,7 +536,6 @@ def equation26v4(k,l2,d,d1,m,flag):
     if flag==1:
         print("\n \n in equation26v4 l3 = ",l3)
         t1 = 0
-        # h1 = series23(-l3-d4,-l3+d4,d1,k.g,k.a2,abs(t1),1,p)
         h1 = series23(l3-d4,l3+d4,d1,k.g,k.a2,abs(t1),1,p)
         print("\n \n ({0} , {1}) t1 = {2}   h1 = {3}".format(l3-d4,l3+d4,t1,h1))
 
@@ -784,4 +782,6 @@ def init25(g,l2,d,d1,h1,h2,p,flag):
     for i in range(4):
         b1[i+5] = h1[i]
     
-    return(m,b1,y1,y2)        
+    return(m,b1,y1,y2)     
+
+
