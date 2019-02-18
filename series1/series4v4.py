@@ -2315,7 +2315,6 @@ class series4:
 
         return(h1)
 
-
     def equation83v2(self,l2,d,d1,d5,k25):
         k = self
         g = k.g
