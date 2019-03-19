@@ -212,8 +212,7 @@ def equation24(k,l2,d,d1,d2,m,e1,b1):
     t5 = [1,0,p-6,0,1]
     t6 = [0,4,0,p-4,0]
 
-    c1,s1 = t1,t2
-        
+    c1,s1 = t1,t2        
     if d2[0]==2:
         c2,s2 = t3,t4
     if d2[0]==4:
@@ -387,8 +386,7 @@ def equation24v2(k,l2,d,d1,d2,m,e1,b1):
     t5 = [1,0,p-6,0,1]
     t6 = [0,4,0,p-4,0]
 
-    c1,s1 = t1,t2
-        
+    c1,s1 = t1,t2        
     if d2[0]==2:
         c2,s2 = t3,t4
     if d2[0]==4:
@@ -1132,5 +1130,4 @@ def init25(g,l2,d,d1,h1,h2,p,flag):
     for i in range(4):
         b1[i+5] = h1[i]
     
-    return(m,b1,y1,y2)
-        
+    return(m,b1,y1,y2)        
