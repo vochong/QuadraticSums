@@ -383,9 +383,8 @@ class series:
 
     def series125(self,c1,c2,d,d1):
         t = self.series_d125(c1,c2,self.g,self.a2,self.i2,d,d1,self.p)
-        return(t)        
-    
-
+        return(t)       
+   
 class series4:
 
     def __init__(self,g,l2,d,d1,p): 
@@ -2709,4 +2708,3 @@ def add(a,b,n):
     for i in range(t):
         s[i] = (a[i]+b[i])%n
     return(s)
-
